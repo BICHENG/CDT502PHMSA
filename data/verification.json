@@ -1,0 +1,991 @@
+{
+  "cohort_sha256": "89c21d2ea6f5cb8ff6daad6ac60160608671a7b49c218bf9f917bfb88a2ce5a1",
+  "quality": {
+    "reports_before": 1550,
+    "reports_after": 1550,
+    "raw_fields": 468,
+    "analysis_fields": 20,
+    "removed_reports": 0,
+    "modified_source_category_or_outcome_values": 0,
+    "duplicate_report_ids": 0,
+    "exact_duplicate_rows": 0,
+    "core_blank_values": 0,
+    "all_blank_raw_fields": 61,
+    "casualty_reports": 369,
+    "fatality_reports": 103,
+    "injury_reports": 318,
+    "both_fatality_and_injury_reports": 52,
+    "flag_total_disagreements": 0,
+    "person_subtotal_total_disagreements": 0,
+    "incident_date_range": [
+      "2010-01-03",
+      "2026-02-10"
+    ],
+    "received_date_range": [
+      "2010-02-19",
+      "2026-02-18"
+    ],
+    "negative_reporting_delay": 0,
+    "different_received_vs_incident_year_reports": 161,
+    "reporting_delay_days": {
+      "median": 29.0,
+      "max": 1070
+    },
+    "material_unknown_reports": 44,
+    "report_types": {
+      "SUPPLEMENTAL FINAL": 953,
+      "ORIGINAL FINAL": 429,
+      "ORIGINAL": 110,
+      "SUPPLEMENTAL": 58
+    },
+    "commodities": {
+      "NATURAL GAS": 1464,
+      "": 63,
+      "PROPANE GAS": 15,
+      "OTHER GAS": 5,
+      "SYNTHETIC GAS": 3
+    },
+    "all_group_counts_unchanged": true,
+    "output_sha256": "1df76ec76b09e6d690d6e747b5765749a4487e8a4a8f603d9261dce14b24a201",
+    "script_sha256": "cd9ff97754f12676fd8ddaba1de1334687cd53250c1e980f84ca8c3466190aed",
+    "python": "3.12.13",
+    "pandas": "3.0.6"
+  },
+  "independent_count_check": [],
+  "independent_rows_compared": 21,
+  "independent_outcome": {
+    "production_read_raw_used": false,
+    "parser": "Python stdlib csv with quote handling",
+    "outcome": "positive FATAL or INJURE total, independently checked against flags and detail sums",
+    "saved_summary_used_only_as_comparison": true
+  },
+  "interval_method": "Wilson 95% per-group reference interval under independent Bernoulli reports; not a between-group test or reporting-bias correction",
+  "scope": "observed proportions only; no population ranking or causal estimate",
+  "scope_checks": {
+    "primary": {
+      "all_reports": {
+        "reports": 1550,
+        "casualty_reports": 369,
+        "comparisons": [
+          {
+            "field": "SYSTEM_PART_INVOLVED",
+            "left": {
+              "field": "SYSTEM_PART_INVOLVED",
+              "category": "SERVICE",
+              "reports": 241,
+              "casualty_reports": 90,
+              "proportion": 0.37344398340248963
+            },
+            "right": {
+              "field": "SYSTEM_PART_INVOLVED",
+              "category": "MAIN",
+              "reports": 726,
+              "casualty_reports": 146,
+              "proportion": 0.20110192837465565
+            },
+            "left_minus_right_pp": 17.234205502783396,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "CAST/WROUGHT IRON",
+              "reports": 60,
+              "casualty_reports": 22,
+              "proportion": 0.36666666666666664
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "PLASTIC",
+              "reports": 493,
+              "casualty_reports": 131,
+              "proportion": 0.2657200811359026
+            },
+            "left_minus_right_pp": 10.094658553076401,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "CAST/WROUGHT IRON",
+              "reports": 60,
+              "casualty_reports": 22,
+              "proportion": 0.36666666666666664
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "STEEL",
+              "reports": 735,
+              "casualty_reports": 165,
+              "proportion": 0.22448979591836735
+            },
+            "left_minus_right_pp": 14.217687074829929,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "PLASTIC",
+              "reports": 493,
+              "casualty_reports": 131,
+              "proportion": 0.2657200811359026
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "STEEL",
+              "reports": 735,
+              "casualty_reports": 165,
+              "proportion": 0.22448979591836735
+            },
+            "left_minus_right_pp": 4.123028521753527,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "LOCATION_TYPE",
+            "left": {
+              "field": "LOCATION_TYPE",
+              "category": "PRIVATE PROPERTY",
+              "reports": 638,
+              "casualty_reports": 179,
+              "proportion": 0.28056426332288403
+            },
+            "right": {
+              "field": "LOCATION_TYPE",
+              "category": "PUBLIC PROPERTY",
+              "reports": 470,
+              "casualty_reports": 101,
+              "proportion": 0.2148936170212766
+            },
+            "left_minus_right_pp": 6.567064630160743,
+            "observed_order_preserved": true
+          }
+        ]
+      },
+      "only_FINAL": {
+        "reports": 1382,
+        "casualty_reports": 316,
+        "comparisons": [
+          {
+            "field": "SYSTEM_PART_INVOLVED",
+            "left": {
+              "field": "SYSTEM_PART_INVOLVED",
+              "category": "SERVICE",
+              "reports": 211,
+              "casualty_reports": 81,
+              "proportion": 0.38388625592417064
+            },
+            "right": {
+              "field": "SYSTEM_PART_INVOLVED",
+              "category": "MAIN",
+              "reports": 651,
+              "casualty_reports": 123,
+              "proportion": 0.1889400921658986
+            },
+            "left_minus_right_pp": 19.494616375827203,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "CAST/WROUGHT IRON",
+              "reports": 52,
+              "casualty_reports": 19,
+              "proportion": 0.36538461538461536
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "PLASTIC",
+              "reports": 430,
+              "casualty_reports": 108,
+              "proportion": 0.25116279069767444
+            },
+            "left_minus_right_pp": 11.422182468694093,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "CAST/WROUGHT IRON",
+              "reports": 52,
+              "casualty_reports": 19,
+              "proportion": 0.36538461538461536
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "STEEL",
+              "reports": 668,
+              "casualty_reports": 148,
+              "proportion": 0.2215568862275449
+            },
+            "left_minus_right_pp": 14.382772915707045,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "PLASTIC",
+              "reports": 430,
+              "casualty_reports": 108,
+              "proportion": 0.25116279069767444
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "STEEL",
+              "reports": 668,
+              "casualty_reports": 148,
+              "proportion": 0.2215568862275449
+            },
+            "left_minus_right_pp": 2.9605904470129536,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "LOCATION_TYPE",
+            "left": {
+              "field": "LOCATION_TYPE",
+              "category": "PRIVATE PROPERTY",
+              "reports": 562,
+              "casualty_reports": 150,
+              "proportion": 0.2669039145907473
+            },
+            "right": {
+              "field": "LOCATION_TYPE",
+              "category": "PUBLIC PROPERTY",
+              "reports": 417,
+              "casualty_reports": 88,
+              "proportion": 0.21103117505995203
+            },
+            "left_minus_right_pp": 5.587273953079527,
+            "observed_order_preserved": true
+          }
+        ]
+      },
+      "only_explicit_NATURAL_GAS": {
+        "reports": 1464,
+        "casualty_reports": 347,
+        "comparisons": [
+          {
+            "field": "SYSTEM_PART_INVOLVED",
+            "left": {
+              "field": "SYSTEM_PART_INVOLVED",
+              "category": "SERVICE",
+              "reports": 233,
+              "casualty_reports": 88,
+              "proportion": 0.3776824034334764
+            },
+            "right": {
+              "field": "SYSTEM_PART_INVOLVED",
+              "category": "MAIN",
+              "reports": 701,
+              "casualty_reports": 137,
+              "proportion": 0.19543509272467904
+            },
+            "left_minus_right_pp": 18.224731070879738,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "CAST/WROUGHT IRON",
+              "reports": 57,
+              "casualty_reports": 21,
+              "proportion": 0.3684210526315789
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "PLASTIC",
+              "reports": 476,
+              "casualty_reports": 128,
+              "proportion": 0.2689075630252101
+            },
+            "left_minus_right_pp": 9.951348960636885,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "CAST/WROUGHT IRON",
+              "reports": 57,
+              "casualty_reports": 21,
+              "proportion": 0.3684210526315789
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "STEEL",
+              "reports": 706,
+              "casualty_reports": 153,
+              "proportion": 0.21671388101983002
+            },
+            "left_minus_right_pp": 15.17071716117489,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "PLASTIC",
+              "reports": 476,
+              "casualty_reports": 128,
+              "proportion": 0.2689075630252101
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "STEEL",
+              "reports": 706,
+              "casualty_reports": 153,
+              "proportion": 0.21671388101983002
+            },
+            "left_minus_right_pp": 5.219368200538005,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "LOCATION_TYPE",
+            "left": {
+              "field": "LOCATION_TYPE",
+              "category": "PRIVATE PROPERTY",
+              "reports": 597,
+              "casualty_reports": 170,
+              "proportion": 0.2847571189279732
+            },
+            "right": {
+              "field": "LOCATION_TYPE",
+              "category": "PUBLIC PROPERTY",
+              "reports": 451,
+              "casualty_reports": 97,
+              "proportion": 0.21507760532150777
+            },
+            "left_minus_right_pp": 6.96795136064654,
+            "observed_order_preserved": true
+          }
+        ]
+      }
+    },
+    "later": {
+      "all_reports": {
+        "reports": 1592,
+        "casualty_reports": 385,
+        "comparisons": [
+          {
+            "field": "SYSTEM_PART_INVOLVED",
+            "left": {
+              "field": "SYSTEM_PART_INVOLVED",
+              "category": "SERVICE",
+              "reports": 249,
+              "casualty_reports": 96,
+              "proportion": 0.3855421686746988
+            },
+            "right": {
+              "field": "SYSTEM_PART_INVOLVED",
+              "category": "MAIN",
+              "reports": 744,
+              "casualty_reports": 152,
+              "proportion": 0.20430107526881722
+            },
+            "left_minus_right_pp": 18.12410934058816,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "CAST/WROUGHT IRON",
+              "reports": 60,
+              "casualty_reports": 22,
+              "proportion": 0.36666666666666664
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "PLASTIC",
+              "reports": 511,
+              "casualty_reports": 138,
+              "proportion": 0.2700587084148728
+            },
+            "left_minus_right_pp": 9.660795825179386,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "CAST/WROUGHT IRON",
+              "reports": 60,
+              "casualty_reports": 22,
+              "proportion": 0.36666666666666664
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "STEEL",
+              "reports": 749,
+              "casualty_reports": 170,
+              "proportion": 0.22696929238985314
+            },
+            "left_minus_right_pp": 13.96973742768135,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "PLASTIC",
+              "reports": 511,
+              "casualty_reports": 138,
+              "proportion": 0.2700587084148728
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "STEEL",
+              "reports": 749,
+              "casualty_reports": 170,
+              "proportion": 0.22696929238985314
+            },
+            "left_minus_right_pp": 4.308941602501965,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "LOCATION_TYPE",
+            "left": {
+              "field": "LOCATION_TYPE",
+              "category": "PRIVATE PROPERTY",
+              "reports": 661,
+              "casualty_reports": 190,
+              "proportion": 0.2874432677760968
+            },
+            "right": {
+              "field": "LOCATION_TYPE",
+              "category": "PUBLIC PROPERTY",
+              "reports": 480,
+              "casualty_reports": 103,
+              "proportion": 0.21458333333333332
+            },
+            "left_minus_right_pp": 7.285993444276348,
+            "observed_order_preserved": true
+          }
+        ]
+      },
+      "only_FINAL": {
+        "reports": 1412,
+        "casualty_reports": 326,
+        "comparisons": [
+          {
+            "field": "SYSTEM_PART_INVOLVED",
+            "left": {
+              "field": "SYSTEM_PART_INVOLVED",
+              "category": "SERVICE",
+              "reports": 216,
+              "casualty_reports": 83,
+              "proportion": 0.38425925925925924
+            },
+            "right": {
+              "field": "SYSTEM_PART_INVOLVED",
+              "category": "MAIN",
+              "reports": 666,
+              "casualty_reports": 127,
+              "proportion": 0.1906906906906907
+            },
+            "left_minus_right_pp": 19.356856856856854,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "CAST/WROUGHT IRON",
+              "reports": 52,
+              "casualty_reports": 19,
+              "proportion": 0.36538461538461536
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "PLASTIC",
+              "reports": 444,
+              "casualty_reports": 113,
+              "proportion": 0.2545045045045045
+            },
+            "left_minus_right_pp": 11.088011088011084,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "CAST/WROUGHT IRON",
+              "reports": 52,
+              "casualty_reports": 19,
+              "proportion": 0.36538461538461536
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "STEEL",
+              "reports": 682,
+              "casualty_reports": 152,
+              "proportion": 0.22287390029325513
+            },
+            "left_minus_right_pp": 14.251071509136024,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "PLASTIC",
+              "reports": 444,
+              "casualty_reports": 113,
+              "proportion": 0.2545045045045045
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "STEEL",
+              "reports": 682,
+              "casualty_reports": 152,
+              "proportion": 0.22287390029325513
+            },
+            "left_minus_right_pp": 3.1630604211249387,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "LOCATION_TYPE",
+            "left": {
+              "field": "LOCATION_TYPE",
+              "category": "PRIVATE PROPERTY",
+              "reports": 570,
+              "casualty_reports": 154,
+              "proportion": 0.27017543859649124
+            },
+            "right": {
+              "field": "LOCATION_TYPE",
+              "category": "PUBLIC PROPERTY",
+              "reports": 430,
+              "casualty_reports": 93,
+              "proportion": 0.21627906976744185
+            },
+            "left_minus_right_pp": 5.389636882904939,
+            "observed_order_preserved": true
+          }
+        ]
+      },
+      "only_explicit_NATURAL_GAS": {
+        "reports": 1504,
+        "casualty_reports": 361,
+        "comparisons": [
+          {
+            "field": "SYSTEM_PART_INVOLVED",
+            "left": {
+              "field": "SYSTEM_PART_INVOLVED",
+              "category": "SERVICE",
+              "reports": 241,
+              "casualty_reports": 94,
+              "proportion": 0.3900414937759336
+            },
+            "right": {
+              "field": "SYSTEM_PART_INVOLVED",
+              "category": "MAIN",
+              "reports": 719,
+              "casualty_reports": 143,
+              "proportion": 0.19888734353268428
+            },
+            "left_minus_right_pp": 19.115415024324932,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "CAST/WROUGHT IRON",
+              "reports": 57,
+              "casualty_reports": 21,
+              "proportion": 0.3684210526315789
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "PLASTIC",
+              "reports": 494,
+              "casualty_reports": 135,
+              "proportion": 0.2732793522267207
+            },
+            "left_minus_right_pp": 9.514170040485826,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "CAST/WROUGHT IRON",
+              "reports": 57,
+              "casualty_reports": 21,
+              "proportion": 0.3684210526315789
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "STEEL",
+              "reports": 720,
+              "casualty_reports": 158,
+              "proportion": 0.21944444444444444
+            },
+            "left_minus_right_pp": 14.89766081871345,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "MATERIAL_INVOLVED",
+            "left": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "PLASTIC",
+              "reports": 494,
+              "casualty_reports": 135,
+              "proportion": 0.2732793522267207
+            },
+            "right": {
+              "field": "MATERIAL_INVOLVED",
+              "category": "STEEL",
+              "reports": 720,
+              "casualty_reports": 158,
+              "proportion": 0.21944444444444444
+            },
+            "left_minus_right_pp": 5.383490778227623,
+            "observed_order_preserved": true
+          },
+          {
+            "field": "LOCATION_TYPE",
+            "left": {
+              "field": "LOCATION_TYPE",
+              "category": "PRIVATE PROPERTY",
+              "reports": 619,
+              "casualty_reports": 180,
+              "proportion": 0.29079159935379645
+            },
+            "right": {
+              "field": "LOCATION_TYPE",
+              "category": "PUBLIC PROPERTY",
+              "reports": 461,
+              "casualty_reports": 99,
+              "proportion": 0.21475054229934923
+            },
+            "left_minus_right_pp": 7.604105705444722,
+            "observed_order_preserved": true
+          }
+        ]
+      }
+    }
+  },
+  "version_difference": {
+    "common_report_ids": 1549,
+    "primary_only_ids": [
+      "20260008"
+    ],
+    "later_only_ids": [
+      "20260010",
+      "20260011",
+      "20260012",
+      "20260014",
+      "20260015",
+      "20260016",
+      "20260017",
+      "20260018",
+      "20260019",
+      "20260020",
+      "20260021",
+      "20260022",
+      "20260023",
+      "20260024",
+      "20260025",
+      "20260026",
+      "20260027",
+      "20260028",
+      "20260029",
+      "20260030",
+      "20260031",
+      "20260032",
+      "20260034",
+      "20260036",
+      "20260037",
+      "20260038",
+      "20260039",
+      "20260040",
+      "20260041",
+      "20260042",
+      "20260043",
+      "20260044",
+      "20260045",
+      "20260046",
+      "20260047",
+      "20260048",
+      "20260049",
+      "20260050",
+      "20260051",
+      "20260052",
+      "20260053",
+      "20260055",
+      "20260056"
+    ],
+    "changed_common_record_ids": [
+      "20100006",
+      "20100018",
+      "20100094",
+      "20110006",
+      "20110023",
+      "20110065",
+      "20110233",
+      "20120060",
+      "20120079",
+      "20140050",
+      "20140076",
+      "20140121",
+      "20150031",
+      "20150049",
+      "20150069",
+      "20150079",
+      "20150106",
+      "20160018",
+      "20160026",
+      "20160106",
+      "20160124",
+      "20170006",
+      "20170029",
+      "20170030",
+      "20170040",
+      "20180004",
+      "20180010",
+      "20180026",
+      "20180064",
+      "20180071",
+      "20190013",
+      "20190027",
+      "20190034",
+      "20200030",
+      "20200056",
+      "20200072",
+      "20200112",
+      "20210106",
+      "20220013",
+      "20230001",
+      "20230022",
+      "20240009",
+      "20240042",
+      "20240051",
+      "20240074",
+      "20250005",
+      "20250014",
+      "20250041",
+      "20250051",
+      "20250060",
+      "20250064",
+      "20250066",
+      "20250067",
+      "20250068",
+      "20250069",
+      "20260002"
+    ],
+    "relevant_changes": [
+      {
+        "report": "20220013",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "SUPPLEMENTAL",
+            "later": "SUPPLEMENTAL FINAL"
+          },
+          "FATALITY_IND": {
+            "primary": "YES",
+            "later": "NO"
+          },
+          "FATAL": {
+            "primary": "1",
+            "later": "0"
+          }
+        },
+        "primary_casualty": true,
+        "later_casualty": false
+      },
+      {
+        "report": "20230022",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "SUPPLEMENTAL",
+            "later": "SUPPLEMENTAL FINAL"
+          },
+          "INJURE": {
+            "primary": "3",
+            "later": "4"
+          }
+        },
+        "primary_casualty": true,
+        "later_casualty": true
+      },
+      {
+        "report": "20240009",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "SUPPLEMENTAL",
+            "later": "SUPPLEMENTAL FINAL"
+          }
+        },
+        "primary_casualty": false,
+        "later_casualty": false
+      },
+      {
+        "report": "20240051",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "ORIGINAL",
+            "later": "SUPPLEMENTAL FINAL"
+          },
+          "INJURY_IND": {
+            "primary": "NO",
+            "later": "YES"
+          },
+          "INJURE": {
+            "primary": "0",
+            "later": "2"
+          }
+        },
+        "primary_casualty": true,
+        "later_casualty": true
+      },
+      {
+        "report": "20240074",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "SUPPLEMENTAL",
+            "later": "SUPPLEMENTAL FINAL"
+          }
+        },
+        "primary_casualty": true,
+        "later_casualty": true
+      },
+      {
+        "report": "20250005",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "SUPPLEMENTAL",
+            "later": "SUPPLEMENTAL FINAL"
+          }
+        },
+        "primary_casualty": true,
+        "later_casualty": true
+      },
+      {
+        "report": "20250014",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "ORIGINAL",
+            "later": "SUPPLEMENTAL"
+          },
+          "LOCAL_DATETIME": {
+            "primary": "2/24/2025 12:15",
+            "later": "2/24/2025 11:27"
+          }
+        },
+        "primary_casualty": false,
+        "later_casualty": false
+      },
+      {
+        "report": "20250041",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "ORIGINAL",
+            "later": "SUPPLEMENTAL FINAL"
+          }
+        },
+        "primary_casualty": true,
+        "later_casualty": true
+      },
+      {
+        "report": "20250051",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "ORIGINAL",
+            "later": "SUPPLEMENTAL FINAL"
+          }
+        },
+        "primary_casualty": false,
+        "later_casualty": false
+      },
+      {
+        "report": "20250060",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "ORIGINAL",
+            "later": "SUPPLEMENTAL FINAL"
+          }
+        },
+        "primary_casualty": false,
+        "later_casualty": false
+      },
+      {
+        "report": "20250064",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "ORIGINAL",
+            "later": "SUPPLEMENTAL FINAL"
+          }
+        },
+        "primary_casualty": false,
+        "later_casualty": false
+      },
+      {
+        "report": "20250066",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "SUPPLEMENTAL",
+            "later": "SUPPLEMENTAL FINAL"
+          }
+        },
+        "primary_casualty": false,
+        "later_casualty": false
+      },
+      {
+        "report": "20250067",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "ORIGINAL FINAL",
+            "later": "SUPPLEMENTAL FINAL"
+          },
+          "INJURE": {
+            "primary": "3",
+            "later": "4"
+          }
+        },
+        "primary_casualty": true,
+        "later_casualty": true
+      },
+      {
+        "report": "20250068",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "SUPPLEMENTAL",
+            "later": "SUPPLEMENTAL FINAL"
+          }
+        },
+        "primary_casualty": true,
+        "later_casualty": true
+      },
+      {
+        "report": "20250069",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "SUPPLEMENTAL",
+            "later": "SUPPLEMENTAL FINAL"
+          }
+        },
+        "primary_casualty": false,
+        "later_casualty": false
+      },
+      {
+        "report": "20260002",
+        "changes": {
+          "REPORT_TYPE": {
+            "primary": "ORIGINAL",
+            "later": "SUPPLEMENTAL FINAL"
+          }
+        },
+        "primary_casualty": true,
+        "later_casualty": true
+      }
+    ]
+  }
+}

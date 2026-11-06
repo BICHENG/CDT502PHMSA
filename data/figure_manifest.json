@@ -1,0 +1,69 @@
+{
+  "source_sha256": "e4b9c2dc622f7056462cb92cc82364bee27c3f2b482d1c3b65890069ae5244d2",
+  "palette": {
+    "label": "深红与浅青",
+    "case": "#9A2B2E",
+    "other": "#B8D4D6",
+    "case_reference": {
+      "name": "Lava Falls",
+      "code": "18-1552 TCX",
+      "hex": "#9A2B2E"
+    },
+    "other_reference": {
+      "name": "Alexandrite",
+      "code": "18-4835 TCX",
+      "hex": "#00666C"
+    },
+    "other_white_mix": 0.72
+  },
+  "python_library_versions": {
+    "seaborn": "0.13.2",
+    "matplotlib": "3.11.2"
+  },
+  "interval": "Wilson 95%, report-independence approximation; verified with statsmodels",
+  "figure_contract": "Separate counts from proportions, preserve every category and its interval.",
+  "figures": {
+    "component_A": {
+      "categories": [
+        "MAIN",
+        "SERVICE",
+        "OUTSIDE METER/REGULATOR SET",
+        "SERVICE RISER",
+        "DISTRICT REGULATOR/METERING STATION",
+        "INSIDE METER/REGULATOR SET",
+        "FARM TAP METER/REGULATOR SET",
+        "MAIN VALVE",
+        "SERVICE VALVE",
+        "OTHER"
+      ],
+      "rows": 10,
+      "reports": 1550,
+      "casualty_reports": 369
+    },
+    "material_A": {
+      "categories": [
+        "STEEL",
+        "PLASTIC",
+        "CAST/WROUGHT IRON",
+        "DUCTILE IRON",
+        "COPPER",
+        "OTHER",
+        "UNKNOWN"
+      ],
+      "rows": 7,
+      "reports": 1550,
+      "casualty_reports": 369
+    },
+    "location_A": {
+      "categories": [
+        "PRIVATE PROPERTY",
+        "PUBLIC PROPERTY",
+        "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "OPERATOR-CONTROLLED PROPERTY"
+      ],
+      "rows": 4,
+      "reports": 1550,
+      "casualty_reports": 369
+    }
+  }
+}

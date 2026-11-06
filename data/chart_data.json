@@ -1,0 +1,227 @@
+{
+  "reports": 1550,
+  "casualty_reports": 369,
+  "source_sha256": "e4b9c2dc622f7056462cb92cc82364bee27c3f2b482d1c3b65890069ae5244d2",
+  "dimensions": {
+    "component": [
+      {
+        "category": "MAIN",
+        "label": "主管道",
+        "n": 726,
+        "k": 146,
+        "other": 580,
+        "rate": 20.110192837465565,
+        "low": 17.355308135140312,
+        "high": 23.17972248626699
+      },
+      {
+        "category": "SERVICE",
+        "label": "进户管",
+        "n": 241,
+        "k": 90,
+        "other": 151,
+        "rate": 37.344398340248965,
+        "low": 31.480743717495365,
+        "high": 43.6051750260813
+      },
+      {
+        "category": "OUTSIDE METER/REGULATOR SET",
+        "label": "室外仪表／调压装置",
+        "n": 234,
+        "k": 46,
+        "other": 188,
+        "rate": 19.65811965811966,
+        "low": 15.073823549648639,
+        "high": 25.22253995901445
+      },
+      {
+        "category": "SERVICE RISER",
+        "label": "进户立管",
+        "n": 80,
+        "k": 27,
+        "other": 53,
+        "rate": 33.75,
+        "low": 24.345612608081595,
+        "high": 44.64347660182303
+      },
+      {
+        "category": "DISTRICT REGULATOR/METERING STATION",
+        "label": "区域调压／计量站",
+        "n": 100,
+        "k": 12,
+        "other": 88,
+        "rate": 12.0,
+        "low": 6.999406437019489,
+        "high": 19.81209942671142
+      },
+      {
+        "category": "INSIDE METER/REGULATOR SET",
+        "label": "室内仪表／调压装置",
+        "n": 38,
+        "k": 10,
+        "other": 28,
+        "rate": 26.31578947368421,
+        "low": 14.971621254798137,
+        "high": 42.00884618746636
+      },
+      {
+        "category": "FARM TAP METER/REGULATOR SET",
+        "label": "Farm tap 计量／调压装置",
+        "n": 5,
+        "k": 1,
+        "other": 4,
+        "rate": 20.0,
+        "low": 3.6224108632430196,
+        "high": 62.44653702374748
+      },
+      {
+        "category": "MAIN VALVE",
+        "label": "主管道阀",
+        "n": 2,
+        "k": 1,
+        "other": 1,
+        "rate": 50.0,
+        "low": 9.453120573423067,
+        "high": 90.54687942657694
+      },
+      {
+        "category": "SERVICE VALVE",
+        "label": "进户管阀",
+        "n": 2,
+        "k": 2,
+        "other": 0,
+        "rate": 100.0,
+        "low": 34.238022750665294,
+        "high": 100.0
+      },
+      {
+        "category": "OTHER",
+        "label": "其他部件",
+        "n": 122,
+        "k": 34,
+        "other": 88,
+        "rate": 27.868852459016395,
+        "low": 20.681830021069548,
+        "high": 36.40703361254249
+      }
+    ],
+    "material": [
+      {
+        "category": "STEEL",
+        "label": "钢",
+        "n": 735,
+        "k": 165,
+        "other": 570,
+        "rate": 22.448979591836736,
+        "low": 19.58021693052685,
+        "high": 25.604234325573078
+      },
+      {
+        "category": "PLASTIC",
+        "label": "塑料",
+        "n": 493,
+        "k": 131,
+        "other": 362,
+        "rate": 26.572008113590265,
+        "low": 22.864899547203954,
+        "high": 30.64139589192808
+      },
+      {
+        "category": "CAST/WROUGHT IRON",
+        "label": "铸铁／锻铁",
+        "n": 60,
+        "k": 22,
+        "other": 38,
+        "rate": 36.666666666666664,
+        "low": 25.620916687225424,
+        "high": 49.31699936989696
+      },
+      {
+        "category": "DUCTILE IRON",
+        "label": "球墨铸铁",
+        "n": 4,
+        "k": 0,
+        "other": 4,
+        "rate": 0.0,
+        "low": 0.0,
+        "high": 48.98908364545974
+      },
+      {
+        "category": "COPPER",
+        "label": "铜",
+        "n": 13,
+        "k": 2,
+        "other": 11,
+        "rate": 15.384615384615385,
+        "low": 4.325817835808121,
+        "high": 42.23463101948254
+      },
+      {
+        "category": "OTHER",
+        "label": "其他材料",
+        "n": 201,
+        "k": 39,
+        "other": 162,
+        "rate": 19.402985074626866,
+        "low": 14.531037659579866,
+        "high": 25.42252413004457
+      },
+      {
+        "category": "UNKNOWN",
+        "label": "材料未知",
+        "n": 44,
+        "k": 10,
+        "other": 34,
+        "rate": 22.727272727272727,
+        "low": 12.841947594917153,
+        "high": 36.99235806463634
+      }
+    ],
+    "location": [
+      {
+        "category": "PRIVATE PROPERTY",
+        "label": "私人地点",
+        "n": 638,
+        "k": 179,
+        "other": 459,
+        "rate": 28.0564263322884,
+        "low": 24.709546676797675,
+        "high": 31.665973141684283
+      },
+      {
+        "category": "PUBLIC PROPERTY",
+        "label": "公共地点",
+        "n": 470,
+        "k": 101,
+        "other": 369,
+        "rate": 21.48936170212766,
+        "low": 18.014937006004924,
+        "high": 25.426061030130697
+      },
+      {
+        "category": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "label": "公用设施通行权／地役权区域",
+        "n": 384,
+        "k": 77,
+        "other": 307,
+        "rate": 20.052083333333332,
+        "low": 16.35290423124505,
+        "high": 24.3445135488554
+      },
+      {
+        "category": "OPERATOR-CONTROLLED PROPERTY",
+        "label": "运营商控制的场地",
+        "n": 58,
+        "k": 12,
+        "other": 46,
+        "rate": 20.689655172413794,
+        "low": 12.251483969490556,
+        "high": 32.76921792148341
+      }
+    ]
+  },
+  "colors": {
+    "case": "#9A2B2E",
+    "other": "#B8D4D6"
+  }
+}

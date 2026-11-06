@@ -1,7 +1,5 @@
 # CDT502PHMSA
 
-[打开双语研究报告 / Read the report](https://bicheng.github.io/CDT502PHMSA/)
+[阅读研究网页](https://bicheng.github.io/CDT502PHMSA/)，或在本地打开 [index.html](index.html)。
 
-PHMSA 配气事故中的人员伤亡研究。中英文完整讲述、交互比较与 SVG/PDF/PNG 图表。
-
-[中文主稿](manuscript_zh.md) · [English manuscript](manuscript_en.md) · [方法](methods.md) · [来源](sources.md) · [故事线](storyline.md)
+当前内容为第一章：资料来源、清洗与基础比较。交互图由 Python 核验和导出数据，ECharts 在浏览器中绘制；CSV 和静态图附于页面。

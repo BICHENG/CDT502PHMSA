@@ -1,7 +1,0 @@
-element,label_zh,label_en,relationship
-main,主管道,Distribution main,Supplies the street network
-service,进户管,Service line,Connects the main to a customer
-customer,住户与商铺,Homes and shops,Receives gas
-people,事故中的人员,People in incidents,"Component, property, people and activities"
-materials,管网中的材料,Materials in the network,"Material, mileage and installation age"
-prediction,基本资料的识别价值,Value of basic information,"Earlier reports form rules, later reports evaluate them"

@@ -1,0 +1,7 @@
+﻿stage,reports,casualty_reports,removed
+read_complete_file,1550,369,0
+format_normalization,1550,369,0
+id_and_duplicate_checks,1550,369,0
+core_field_checks,1550,369,0
+label_consistency,1550,369,0
+export_analysis_table,1550,369,0
