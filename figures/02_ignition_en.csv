@@ -1,0 +1,4 @@
+location,standardization,outcome,measure,estimate,ci95_low,ci95_high,valid_draws,undefined_draws,reports,full_location_reports,common_levels
+PUBLIC PROPERTY,cause_group,cas,raw_gap,0.2626262626262626,0.0922305758213842,0.4404738396035307,5000,0,408,408,excavation;operation;integrity;other
+PUBLIC PROPERTY,cause_group,cas,common_composition_gap,0.2321609607178601,0.0746833541000329,0.3941038070519757,4987,13,408,408,excavation;operation;integrity;other
+PUBLIC PROPERTY,IGNITE_IND,cas,common_composition_gap,0.0861136898145476,-0.0284475648436247,0.2457756554675525,4998,2,408,408,NO;YES

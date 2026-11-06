@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="583.2pt" viewBox="0 0 864 583.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-06T19:05:41.557365</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 583.2 
+L 864 583.2 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 34.56 199.746 
+L 376.3584 199.746 
+L 376.3584 121.014 
+L 34.56 121.014 
+z
+" clip-path="url(#p9f67c8f5db)" style="fill: #f3f6f8"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 479.6928 199.746 
+L 829.44 199.746 
+L 829.44 121.014 
+L 479.6928 121.014 
+z
+" clip-path="url(#p9f67c8f5db)" style="fill: #f3f6f8"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 402.205099 160.38 
+Q 428.025541 160.38 452.168932 160.38 
+" clip-path="url(#p9f67c8f5db)" style="fill: none; stroke: #74838d; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 444.968932 156.78 
+L 452.168932 160.38 
+L 444.968932 163.98 
+z
+" clip-path="url(#p9f67c8f5db)" style="fill: #74838d; stroke: #74838d; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="54.432" y="149.8824" transform="rotate(-0 54.432 149.8824)">形成判断 · 1,286 份</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="54.432" y="182.25" transform="rotate(-0 54.432 182.25)">2010–2021 年收到的报告</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="499.5648" y="149.8824" transform="rotate(-0 499.5648 149.8824)">核对结果 · 264 份</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="499.5648" y="182.25" transform="rotate(-0 499.5648 182.25)">2022 年及以后收到，其中 65 份有伤亡</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 216 419.904 
+L 734.4 419.904 
+L 734.4 250.776 
+L 216 250.776 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="216" y="442.148141" transform="rotate(-0 216 442.148141)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="313.811321" y="442.148141" transform="rotate(-0 313.811321 442.148141)">10</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="411.622642" y="442.148141" transform="rotate(-0 411.622642 442.148141)">20</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="509.433962" y="442.148141" transform="rotate(-0 509.433962 442.148141)">30</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="607.245283" y="442.148141" transform="rotate(-0 607.245283 442.148141)">40</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="text_10">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="734.4" y="442.148141" transform="rotate(-0 734.4 442.148141)">53</text>
+     </g>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #26353e" x="475.2" y="460.885719" transform="rotate(-0 475.2 460.885719)">53 份查看名额中，平均命中的伤亡报告数</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="text_12">
+      <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #26353e" x="198" y="289.943935" transform="rotate(-0 198 289.943935)">不区分报告</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="text_13">
+      <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #26353e" x="198" y="341.236406" transform="rotate(-0 198 341.236406)">按部件比例排序</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="text_14">
+      <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #26353e" x="198" y="392.479659" transform="rotate(-0 198 392.479659)">联合四项资料</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_6">
+    <path d="M 216 295.8768 
+L 734.4 295.8768 
+L 734.4 272.301382 
+L 216 272.301382 
+z
+" clip-path="url(#pa3ea733b67)" style="fill: #e9eef1"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 216 295.8768 
+L 343.636364 295.8768 
+L 343.636364 272.301382 
+L 216 272.301382 
+z
+" clip-path="url(#pa3ea733b67)" style="fill: #74838d"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 216 347.127709 
+L 734.4 347.127709 
+L 734.4 323.552291 
+L 216 323.552291 
+z
+" clip-path="url(#pa3ea733b67)" style="fill: #e9eef1"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 216 347.127709 
+L 427.714181 347.127709 
+L 427.714181 323.552291 
+L 216 323.552291 
+z
+" clip-path="url(#pa3ea733b67)" style="fill: #26353e"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 216 398.378618 
+L 734.4 398.378618 
+L 734.4 374.8032 
+L 216 374.8032 
+z
+" clip-path="url(#pa3ea733b67)" style="fill: #e9eef1"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 216 398.378618 
+L 425.316226 398.378618 
+L 425.316226 374.8032 
+L 216 374.8032 
+z
+" clip-path="url(#pa3ea733b67)" style="fill: #26353e"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 216 419.904 
+L 734.4 419.904 
+" style="fill: none; stroke: #dce3e7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="353.417496" y="289.116435" transform="rotate(-0 353.417496 289.116435)">13.05</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="437.495313" y="340.367344" transform="rotate(-0 437.495313 340.367344)">21.65</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="435.097358" y="391.618253" transform="rotate(-0 435.097358 391.618253)">21.40</text>
+   </g>
+  </g>
+  <g id="text_18">
+   <text style="font-weight: 700; font-size: 24px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="34.56" y="46.389" transform="rotate(-0 34.56 46.389)">同样查看 53 份，基本资料增加了伤亡报告的命中数</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 13.5px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="34.56" y="86.644946" transform="rotate(-0 34.56 86.644946)">先从较早报告形成判断，再用后续报告已经记录的伤亡结果核对。</text>
+  </g>
+  <g id="text_20">
+   <text style="font-size: 11.5px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="216" y="236.196" transform="rotate(-0 216 236.196)">深色为平均命中数；整条灰底均代表 53 份名额。</text>
+  </g>
+  <g id="text_21">
+   <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5e6d76" transform="translate(34.56 532.647719)">同分报告等概率入选，所以平均命中数可以带小数。每种办法查看的报告数量相同。</text>
+   <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5e6d76" transform="translate(34.56 551.425922)">联合资料包括部件、材料、公私有等场地类别与地区等级。本图为对已有报告的回顾评价。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9f67c8f5db">
+   <rect x="34.56" y="116.64" width="794.88" height="87.48"/>
+  </clipPath>
+  <clipPath id="pa3ea733b67">
+   <rect x="216" y="250.776" width="518.4" height="169.128"/>
+  </clipPath>
+ </defs>
+</svg>

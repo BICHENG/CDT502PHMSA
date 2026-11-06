@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="583.2pt" viewBox="0 0 864 583.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-06T19:05:46.617208</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 583.2 
+L 864 583.2 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 34.56 199.746 
+L 376.3584 199.746 
+L 376.3584 121.014 
+L 34.56 121.014 
+z
+" clip-path="url(#p73d0769681)" style="fill: #f3f6f8"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 479.6928 199.746 
+L 829.44 199.746 
+L 829.44 121.014 
+L 479.6928 121.014 
+z
+" clip-path="url(#p73d0769681)" style="fill: #f3f6f8"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 402.205099 160.38 
+Q 428.025541 160.38 452.168932 160.38 
+" clip-path="url(#p73d0769681)" style="fill: none; stroke: #74838d; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 444.968932 156.78 
+L 452.168932 160.38 
+L 444.968932 163.98 
+z
+" clip-path="url(#p73d0769681)" style="fill: #74838d; stroke: #74838d; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="54.432" y="149.8824" transform="rotate(-0 54.432 149.8824)">Learn the rules · 1,286 reports</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="54.432" y="182.25" transform="rotate(-0 54.432 182.25)">Reports received in 2010–2021</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="499.5648" y="149.8824" transform="rotate(-0 499.5648 149.8824)">Evaluate results · 264 reports</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="499.5648" y="182.25" transform="rotate(-0 499.5648 182.25)">Received from 2022; 65 casualty reports</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 216 419.904 
+L 734.4 419.904 
+L 734.4 250.776 
+L 216 250.776 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="216" y="441.140328" transform="rotate(-0 216 441.140328)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="313.811321" y="441.140328" transform="rotate(-0 313.811321 441.140328)">10</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="411.622642" y="441.140328" transform="rotate(-0 411.622642 441.140328)">20</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="509.433962" y="441.140328" transform="rotate(-0 509.433962 441.140328)">30</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="607.245283" y="441.140328" transform="rotate(-0 607.245283 441.140328)">40</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="text_10">
+      <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="734.4" y="441.140328" transform="rotate(-0 734.4 441.140328)">53</text>
+     </g>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 14px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #26353e" x="475.2" y="457.858102" transform="rotate(-0 475.2 457.858102)">Expected casualty reports among 53 reviewed reports</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="text_12">
+      <text style="font-size: 14px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #26353e" x="198" y="289.185282" transform="rotate(-0 198 289.185282)">No distinction</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="text_13">
+      <text style="font-size: 14px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #26353e" x="198" y="340.436191" transform="rotate(-0 198 340.436191)">Rank by component</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="text_14">
+      <text style="font-size: 14px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #26353e" x="198" y="391.6871" transform="rotate(-0 198 391.6871)">Combine four descriptors</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_6">
+    <path d="M 216 295.8768 
+L 734.4 295.8768 
+L 734.4 272.301382 
+L 216 272.301382 
+z
+" clip-path="url(#p8535cc68f8)" style="fill: #e9eef1"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 216 295.8768 
+L 343.636364 295.8768 
+L 343.636364 272.301382 
+L 216 272.301382 
+z
+" clip-path="url(#p8535cc68f8)" style="fill: #74838d"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 216 347.127709 
+L 734.4 347.127709 
+L 734.4 323.552291 
+L 216 323.552291 
+z
+" clip-path="url(#p8535cc68f8)" style="fill: #e9eef1"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 216 347.127709 
+L 427.714181 347.127709 
+L 427.714181 323.552291 
+L 216 323.552291 
+z
+" clip-path="url(#p8535cc68f8)" style="fill: #26353e"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 216 398.378618 
+L 734.4 398.378618 
+L 734.4 374.8032 
+L 216 374.8032 
+z
+" clip-path="url(#p8535cc68f8)" style="fill: #e9eef1"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 216 398.378618 
+L 425.316226 398.378618 
+L 425.316226 374.8032 
+L 216 374.8032 
+z
+" clip-path="url(#p8535cc68f8)" style="fill: #26353e"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 216 419.904 
+L 734.4 419.904 
+" style="fill: none; stroke: #dce3e7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="353.417496" y="288.747294" transform="rotate(-0 353.417496 288.747294)">13.05</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="437.495313" y="339.998203" transform="rotate(-0 437.495313 339.998203)">21.65</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="435.097358" y="391.249112" transform="rotate(-0 435.097358 391.249112)">21.40</text>
+   </g>
+  </g>
+  <g id="text_18">
+   <text style="font-weight: 700; font-size: 24px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="34.56" y="43.716656" transform="rotate(-0 34.56 43.716656)">With 53 reports reviewed, basic information increases hits</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 13.5px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="34.56" y="84.1456" transform="rotate(-0 34.56 84.1456)">Rules are learned from earlier reports, then checked against recorded outcomes in later reports.</text>
+  </g>
+  <g id="text_20">
+   <text style="font-size: 11.5px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="216" y="236.196" transform="rotate(-0 216 236.196)">Filled portion: expected hits. Each full track represents 53 review slots.</text>
+  </g>
+  <g id="text_21">
+   <text style="font-size: 11px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #5e6d76" transform="translate(34.56 535.026469)">Equal-score reports have equal selection chances, so expected hit counts may be fractional. Every method reviews 53 reports.</text>
+   <text style="font-size: 11px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; fill: #5e6d76" transform="translate(34.56 551.476625)">The combined model uses component, material, property and class location. This is a retrospective report evaluation.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p73d0769681">
+   <rect x="34.56" y="116.64" width="794.88" height="87.48"/>
+  </clipPath>
+  <clipPath id="p8535cc68f8">
+   <rect x="216" y="250.776" width="518.4" height="169.128"/>
+  </clipPath>
+ </defs>
+</svg>

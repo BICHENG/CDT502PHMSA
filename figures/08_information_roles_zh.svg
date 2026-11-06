@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="504pt" viewBox="0 0 864 504" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-06T19:05:49.214042</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 504 
+L 864 504 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 198.72 342.72 
+L 604.8 342.72 
+L 604.8 171.36 
+L 198.72 171.36 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="213.76" y="364.964141" transform="rotate(-0 213.76 364.964141)">-10</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="288.96" y="364.964141" transform="rotate(-0 288.96 364.964141)">-5</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="364.16" y="364.964141" transform="rotate(-0 364.16 364.964141)">0</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="439.36" y="364.964141" transform="rotate(-0 439.36 364.964141)">5</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="514.56" y="364.964141" transform="rotate(-0 514.56 364.964141)">10</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="589.76" y="364.964141" transform="rotate(-0 589.76 364.964141)">15</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #26353e" x="401.76" y="383.782656" transform="rotate(-0 401.76 383.782656)">加入该类资料后，平均命中数的变化（份）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="text_8">
+      <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #26353e" x="182.72" y="222.101406" transform="rotate(-0 182.72 222.101406)">部件信息</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="text_9">
+      <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #26353e" x="182.72" y="303.640156" transform="rotate(-0 182.72 303.640156)">场地类别</text>
+     </g>
+    </g>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 305.760915 216.24 
+L 572.882323 216.24 
+" clip-path="url(#p7e3275adc4)" style="fill: none; stroke: #26353e; stroke-width: 2"/>
+   </g>
+   <g id="line2d_1">
+    <defs>
+     <path id="mde34b801ba" d="M 0 4 
+L 0 -4 
+" style="stroke: #26353e"/>
+    </defs>
+    <g clip-path="url(#p7e3275adc4)">
+     <use xlink:href="#mde34b801ba" x="305.760915" y="216.24" style="fill: #26353e; stroke: #26353e"/>
+    </g>
+   </g>
+   <g id="line2d_2">
+    <g clip-path="url(#p7e3275adc4)">
+     <use xlink:href="#mde34b801ba" x="572.882323" y="216.24" style="fill: #26353e; stroke: #26353e"/>
+    </g>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 234.566682 297.84 
+L 406.472683 297.84 
+" clip-path="url(#p7e3275adc4)" style="fill: none; stroke: #26353e; stroke-width: 2"/>
+   </g>
+   <g id="line2d_3">
+    <g clip-path="url(#p7e3275adc4)">
+     <use xlink:href="#mde34b801ba" x="234.566682" y="297.84" style="fill: #26353e; stroke: #26353e"/>
+    </g>
+   </g>
+   <g id="line2d_4">
+    <g clip-path="url(#p7e3275adc4)">
+     <use xlink:href="#mde34b801ba" x="406.472683" y="297.84" style="fill: #26353e; stroke: #26353e"/>
+    </g>
+   </g>
+   <g id="line2d_5">
+    <path d="M 364.16 342.72 
+L 364.16 171.36 
+" clip-path="url(#p7e3275adc4)" style="fill: none; stroke: #dce3e7; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_6">
+    <defs>
+     <path id="mc4e03f335a" d="M 0 5 
+C 1.326016 5 2.597899 4.473168 3.535534 3.535534 
+C 4.473168 2.597899 5 1.326016 5 0 
+C 5 -1.326016 4.473168 -2.597899 3.535534 -3.535534 
+C 2.597899 -4.473168 1.326016 -5 0 -5 
+C -1.326016 -5 -2.597899 -4.473168 -3.535534 -3.535534 
+C -4.473168 -2.597899 -5 -1.326016 -5 0 
+C -5 1.326016 -4.473168 2.597899 -3.535534 3.535534 
+C -2.597899 4.473168 -1.326016 5 0 5 
+z
+" style="stroke: #26353e"/>
+    </defs>
+    <g clip-path="url(#p7e3275adc4)">
+     <use xlink:href="#mc4e03f335a" x="455.080955" y="216.24" style="fill: #26353e; stroke: #26353e"/>
+    </g>
+   </g>
+   <g id="line2d_7">
+    <g clip-path="url(#p7e3275adc4)">
+     <use xlink:href="#mc4e03f335a" x="327.097143" y="297.84" style="fill: #26353e; stroke: #26353e"/>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 198.72 342.72 
+L 604.8 342.72 
+" style="fill: none; stroke: #dce3e7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 22px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="622.848" y="219.936531" transform="rotate(-0 622.848 219.936531)">+6.05</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="622.848" y="237.543562" transform="rotate(-0 622.848 237.543562)">[-3.88, 13.88]</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 22px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="622.848" y="301.536531" transform="rotate(-0 622.848 301.536531)">-2.46</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="622.848" y="319.143562" transform="rotate(-0 622.848 319.143562)">[-8.62, 2.81]</text>
+   </g>
+  </g>
+  <g id="text_14">
+   <text style="font-weight: 700; font-size: 24px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="34.56" y="42.77625" transform="rotate(-0 34.56 42.77625)">场景解释与模型增量分别评价</text>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 13.5px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="34.56" y="77.00153" transform="rotate(-0 34.56 77.00153)">四个后续时期，同样查看 152 份。每次去掉一类资料并重新拟合，再与完整模型比较。</text>
+  </g>
+  <g id="text_16">
+   <text style="font-weight: 700; font-size: 13.5px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="34.56" y="126" transform="rotate(-0 34.56 126)">平均命中：完整模型 54.25 份；去掉部件 48.20 份；去掉场地类别 56.71 份。</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5e6d76" transform="translate(34.56 449.462031)">横线为配对的 95% 运营商重抽样区间。完整模型使用部件、材料、公私有等场地类别与地区等级。</text>
+   <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5e6d76" transform="translate(34.56 468.229922)">点差评价这套模型在固定查看数量下的信息增量；两项区间都包含正负变化。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p7e3275adc4">
+   <rect x="198.72" y="171.36" width="406.08" height="171.36"/>
+  </clipPath>
+ </defs>
+</svg>

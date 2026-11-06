@@ -1,0 +1,828 @@
+scope,year,material,main_miles,share_of_total_main,report_rows,rows_with_positive_mileage,rows_all_material_fields_blank,panel,REPORT_NUMBER,OPERATOR_ID,MATERIAL_INVOLVED,occurrence_year,INSTALLATION_YEAR,installation_year_structured,installation_year_recovered,installation_year_source,age_structured,age_recovered,casualty
+nonnegative,1990.0,STEEL,574479.0,0.6573257022028367,1504.0,1381.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1990.0,PLASTIC,239386.0,0.2739083074360042,1504.0,1186.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1990.0,CAST/WROUGHT IRON,58292.0,0.0666983994764086,1504.0,299.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1991.0,STEEL,576224.0,0.6468060650415995,1569.0,1400.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1991.0,PLASTIC,255562.0,0.2868659611438628,1569.0,1204.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1991.0,CAST/WROUGHT IRON,56120.0,0.0629941765183931,1569.0,290.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1992.0,STEEL,568695.0,0.6375618845181079,1545.0,1367.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1992.0,PLASTIC,267283.0,0.2996499937218604,1545.0,1195.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1992.0,CAST/WROUGHT IRON,52917.0,0.05932505515794,1545.0,276.0,1.0,inventory,,,,,,,,,,,
+nonnegative,1993.0,STEEL,581037.0,0.6104933018124508,1570.0,1378.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1993.0,PLASTIC,293547.0,0.3084286840031521,1570.0,1210.0,63.0,inventory,,,,,,,,,,,
+nonnegative,1993.0,CAST/WROUGHT IRON,54190.0,0.0569372209088521,1570.0,286.0,166.0,inventory,,,,,,,,,,,
+nonnegative,1994.0,STEEL,608525.0,0.6069051701010004,1586.0,1410.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1994.0,PLASTIC,333689.0,0.3328007547854775,1586.0,1272.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1994.0,CAST/WROUGHT IRON,58148.0,0.0579932161062125,1586.0,286.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1995.0,STEEL,597346.0,0.5950858638889498,1524.0,1322.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1995.0,PLASTIC,353735.0,0.3523965977218524,1524.0,1224.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1995.0,CAST/WROUGHT IRON,50625.0,0.0504334537426852,1524.0,242.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1996.0,STEEL,572938.0,0.5719251206113972,1484.0,1304.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1996.0,PLASTIC,350699.0,0.3500790100731604,1484.0,1229.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1996.0,CAST/WROUGHT IRON,51542.0,0.051450880490651,1484.0,236.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1997.0,STEEL,603225.0,0.5613682598119047,1617.0,1405.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1997.0,PLASTIC,416896.0,0.3879683070869805,1617.0,1363.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1997.0,CAST/WROUGHT IRON,48699.0,0.0453198605571386,1617.0,234.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1998.0,STEEL,571602.0,0.5592503957592609,1464.0,1293.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1998.0,PLASTIC,400627.0,0.3919699516479044,1464.0,1249.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1998.0,CAST/WROUGHT IRON,47587.0,0.0465587044534413,1464.0,216.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1999.0,STEEL,543832.0,0.5398055901034186,1461.0,1279.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1999.0,PLASTIC,415210.0,0.4121358784823998,1461.0,1259.0,0.0,inventory,,,,,,,,,,,
+nonnegative,1999.0,CAST/WROUGHT IRON,45865.0,0.0455254258485953,1461.0,215.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2000.0,STEEL,554310.0,0.5275113675078654,1446.0,1257.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2000.0,PLASTIC,449425.0,0.4276971303823175,1446.0,1251.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2000.0,CAST/WROUGHT IRON,44750.0,0.0425865196297685,1446.0,209.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2001.0,STEEL,556620.0,0.505337354582281,1440.0,1245.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2001.0,PLASTIC,498234.0,0.452330587335971,1440.0,1258.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2001.0,CAST/WROUGHT IRON,44283.0,0.0402031081760755,1440.0,206.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2002.0,STEEL,558924.0,0.491832620416381,1423.0,1233.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2002.0,PLASTIC,532355.0,0.4684528748841748,1423.0,1215.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2002.0,CAST/WROUGHT IRON,42025.0,0.0369804586544832,1423.0,200.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2003.0,STEEL,557824.0,0.5037408690736461,1428.0,1229.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2003.0,PLASTIC,505768.0,0.4567318936970081,1428.0,1227.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2003.0,CAST/WROUGHT IRON,41091.0,0.0371070732903302,1428.0,200.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2004.0,STEEL,568144.736,0.4955491403077779,1522.0,1325.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2004.0,PLASTIC,534718.114,0.4663936580056536,1522.0,1314.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2004.0,CAST/WROUGHT IRON,40604.678,0.0354163508000435,1522.0,204.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2005.0,STEEL,562553.6869999999,0.4828293888652318,1522.0,1296.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2005.0,PLASTIC,560349.9070000001,0.4809379253921761,1522.0,1326.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2005.0,CAST/WROUGHT IRON,39645.025,0.0340265891676519,1522.0,189.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2006.0,STEEL,563667.995,0.4742989879441581,1518.0,1289.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2006.0,PLASTIC,582938.535,0.4905142027518348,1518.0,1336.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2006.0,CAST/WROUGHT IRON,38704.325,0.0325677922809184,1518.0,187.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2007.0,STEEL,560520.391,0.4658079986026899,1502.0,1283.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2007.0,PLASTIC,602889.2170000001,0.5010176686862279,1502.0,1330.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2007.0,CAST/WROUGHT IRON,37720.456000000006,0.0313467456275659,1502.0,178.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2008.0,STEEL,558198.088,0.4613070399276304,1476.0,1267.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2008.0,PLASTIC,612877.288,0.5064951200014749,1476.0,1314.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2008.0,CAST/WROUGHT IRON,36812.656,0.030422779540646,1476.0,178.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2009.0,STEEL,556187.32,0.4556900833819127,1449.0,1255.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2009.0,PLASTIC,626508.6510000001,0.5133050847216002,1449.0,1294.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2009.0,CAST/WROUGHT IRON,35622.593,0.0291859626976931,1449.0,170.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2010.0,STEEL,556255.612,0.452260130716193,1437.0,1231.0,1.0,inventory,,,,,,,,,,,
+nonnegative,2010.0,PLASTIC,637471.958,0.518292570597899,1437.0,1291.0,1.0,inventory,,,,,,,,,,,
+nonnegative,2010.0,CAST/WROUGHT IRON,34591.51,0.0281244098877882,1437.0,166.0,4.0,inventory,,,,,,,,,,,
+nonnegative,2011.0,STEEL,553939.4979999999,0.4469887753297734,1462.0,1247.0,1.0,inventory,,,,,,,,,,,
+nonnegative,2011.0,PLASTIC,649949.543,0.5244618795024361,1462.0,1308.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2011.0,CAST/WROUGHT IRON,33668.544,0.0271680595155837,1462.0,159.0,5.0,inventory,,,,,,,,,,,
+nonnegative,2012.0,STEEL,551477.237,0.4419637291545985,1477.0,1254.0,2.0,inventory,,,,,,,,,,,
+nonnegative,2012.0,PLASTIC,662131.59,0.5306441083577557,1477.0,1330.0,2.0,inventory,,,,,,,,,,,
+nonnegative,2012.0,CAST/WROUGHT IRON,32406.405999999995,0.0259710738419071,1477.0,151.0,16.0,inventory,,,,,,,,,,,
+nonnegative,2013.0,STEEL,547538.259,0.4361288644951442,1492.0,1270.0,1.0,inventory,,,,,,,,,,,
+nonnegative,2013.0,PLASTIC,675289.2829999999,0.5378859711801985,1492.0,1356.0,1.0,inventory,,,,,,,,,,,
+nonnegative,2013.0,CAST/WROUGHT IRON,30904.209,0.0246160288486628,1492.0,149.0,8.0,inventory,,,,,,,,,,,
+nonnegative,2014.0,STEEL,545103.746,0.4304167275830593,1494.0,1270.0,1.0,inventory,,,,,,,,,,,
+nonnegative,2014.0,PLASTIC,690416.238,0.545156220280619,1494.0,1359.0,1.0,inventory,,,,,,,,,,,
+nonnegative,2014.0,CAST/WROUGHT IRON,29359.105,0.0231821006397329,1494.0,140.0,8.0,inventory,,,,,,,,,,,
+nonnegative,2015.0,STEEL,539517.112,0.4229629319556662,1491.0,1264.0,32.0,inventory,,,,,,,,,,,
+nonnegative,2015.0,PLASTIC,706394.808,0.5537893283910148,1491.0,1357.0,20.0,inventory,,,,,,,,,,,
+nonnegative,2015.0,CAST/WROUGHT IRON,27764.888,0.021766720967139,1491.0,136.0,196.0,inventory,,,,,,,,,,,
+nonnegative,2016.0,STEEL,536057.892,0.4169122170624857,1487.0,1257.0,56.0,inventory,,,,,,,,,,,
+nonnegative,2016.0,PLASTIC,721576.19,0.5611967170747323,1487.0,1367.0,27.0,inventory,,,,,,,,,,,
+nonnegative,2016.0,CAST/WROUGHT IRON,26200.955,0.0203774599744245,1487.0,133.0,281.0,inventory,,,,,,,,,,,
+nonnegative,2017.0,STEEL,531608.417,0.4097998583134027,1499.0,1270.0,68.0,inventory,,,,,,,,,,,
+nonnegative,2017.0,PLASTIC,739242.7080000001,0.56985846594979,1499.0,1379.0,31.0,inventory,,,,,,,,,,,
+nonnegative,2017.0,CAST/WROUGHT IRON,24466.867,0.0188607221205319,1499.0,126.0,348.0,inventory,,,,,,,,,,,
+nonnegative,2018.0,STEEL,527683.614,0.4033546990309509,1490.0,1260.0,76.0,inventory,,,,,,,,,,,
+nonnegative,2018.0,PLASTIC,755833.635,0.5777496974975135,1490.0,1373.0,6.0,inventory,,,,,,,,,,,
+nonnegative,2018.0,CAST/WROUGHT IRON,22852.784,0.0174683798544847,1490.0,118.0,32.0,inventory,,,,,,,,,,,
+nonnegative,2019.0,STEEL,523493.356,0.3967388531498348,1479.0,1253.0,78.0,inventory,,,,,,,,,,,
+nonnegative,2019.0,PLASTIC,772874.8770000001,0.5857371231456465,1479.0,1370.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2019.0,CAST/WROUGHT IRON,21268.158000000003,0.0161184559781299,1479.0,110.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2020.0,STEEL,519252.762,0.3904529254959008,1459.0,1240.0,89.0,inventory,,,,,,,,,,,
+nonnegative,2020.0,PLASTIC,788865.372,0.5931885487396061,1459.0,1368.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2020.0,CAST/WROUGHT IRON,19936.128,0.0149910025912596,1459.0,104.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2021.0,STEEL,515483.597,0.3843163613728339,1444.0,1236.0,79.0,inventory,,,,,,,,,,,
+nonnegative,2021.0,PLASTIC,805751.81,0.6007244567837821,1444.0,1353.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2021.0,CAST/WROUGHT IRON,18318.616,0.0136573576491633,1444.0,99.0,0.0,inventory,,,,,,,,,,,
+nonnegative,2022.0,STEEL,512822.785,0.3780483464710932,1448.0,1227.0,87.0,inventory,,,,,,,,,,,
+nonnegative,2022.0,PLASTIC,824973.9839999999,0.6081634039190947,1448.0,1357.0,1.0,inventory,,,,,,,,,,,
+nonnegative,2022.0,CAST/WROUGHT IRON,17010.091,0.0125396861527375,1448.0,95.0,1.0,inventory,,,,,,,,,,,
+nonnegative,2023.0,STEEL,509040.7590000001,0.3721201057080062,1439.0,1214.0,84.0,inventory,,,,,,,,,,,
+nonnegative,2023.0,PLASTIC,841330.8840000001,0.6150315705652369,1439.0,1353.0,1.0,inventory,,,,,,,,,,,
+nonnegative,2023.0,CAST/WROUGHT IRON,15871.559,0.0116024622948333,1439.0,94.0,1.0,inventory,,,,,,,,,,,
+nonnegative,2024.0,STEEL,506136.601,0.36707245631345,1435.0,1211.0,80.0,inventory,,,,,,,,,,,
+nonnegative,2024.0,PLASTIC,856465.89,0.6211466180668193,1435.0,1353.0,2.0,inventory,,,,,,,,,,,
+nonnegative,2024.0,CAST/WROUGHT IRON,14608.361,0.0105946239501134,1435.0,89.0,2.0,inventory,,,,,,,,,,,
+,,,,,,,,incident_age,20260008.0,6500.0,STEEL,2026.0,1955,1955.0,1955.0,structured_field,71.0,71.0,False
+,,,,,,,,incident_age,20260005.0,22182.0,PLASTIC,2026.0,2023,2023.0,2023.0,structured_field,3.0,3.0,False
+,,,,,,,,incident_age,20260002.0,18484.0,STEEL,2025.0,1963,1963.0,1963.0,structured_field,62.0,62.0,True
+,,,,,,,,incident_age,20250068.0,15348.0,PLASTIC,2025.0,2011,2011.0,2011.0,structured_field,14.0,14.0,True
+,,,,,,,,incident_age,20250067.0,18484.0,PLASTIC,2025.0,1983,1983.0,1983.0,structured_field,42.0,42.0,True
+,,,,,,,,incident_age,20250060.0,3200.0,PLASTIC,2025.0,2009,2009.0,2009.0,structured_field,16.0,16.0,False
+,,,,,,,,incident_age,20250059.0,14200.0,PLASTIC,2025.0,2016,2016.0,2016.0,structured_field,9.0,9.0,False
+,,,,,,,,incident_age,20250058.0,792.0,PLASTIC,2025.0,2002,2002.0,2002.0,structured_field,23.0,23.0,False
+,,,,,,,,incident_age,20250054.0,18440.0,PLASTIC,2025.0,1983,1983.0,1983.0,structured_field,42.0,42.0,False
+,,,,,,,,incident_age,20250053.0,31348.0,STEEL,2025.0,2014,2014.0,2014.0,structured_field,11.0,11.0,False
+,,,,,,,,incident_age,20250052.0,13710.0,PLASTIC,2025.0,2011,2011.0,2011.0,structured_field,14.0,14.0,False
+,,,,,,,,incident_age,20250046.0,31348.0,PLASTIC,2025.0,2023,2023.0,2023.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20250039.0,13710.0,PLASTIC,2025.0,2025,2025.0,2025.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20250037.0,31348.0,STEEL,2025.0,1969,1969.0,1969.0,structured_field,56.0,56.0,False
+,,,,,,,,incident_age,20250035.0,4060.0,PLASTIC,2025.0,2020,2020.0,2020.0,structured_field,5.0,5.0,False
+,,,,,,,,incident_age,20250034.0,12438.0,STEEL,2025.0,1990,1990.0,1990.0,structured_field,35.0,35.0,False
+,,,,,,,,incident_age,20250036.0,18408.0,PLASTIC,2025.0,1982,1982.0,1982.0,structured_field,43.0,43.0,False
+,,,,,,,,incident_age,20250031.0,30769.0,STEEL,2025.0,1929,1929.0,1929.0,structured_field,96.0,96.0,True
+,,,,,,,,incident_age,20250026.0,31348.0,PLASTIC,2025.0,2021,2021.0,2021.0,structured_field,4.0,4.0,False
+,,,,,,,,incident_age,20250032.0,15518.0,PLASTIC,2025.0,2003,2003.0,2003.0,structured_field,22.0,22.0,False
+,,,,,,,,incident_age,20250027.0,12606.0,PLASTIC,2025.0,1989,1989.0,1989.0,structured_field,36.0,36.0,True
+,,,,,,,,incident_age,20250025.0,20010.0,STEEL,2025.0,1969,1969.0,1969.0,structured_field,56.0,56.0,False
+,,,,,,,,incident_age,20250020.0,15350.0,STEEL,2025.0,1972,1972.0,1972.0,structured_field,53.0,53.0,False
+,,,,,,,,incident_age,20250024.0,22182.0,PLASTIC,2025.0,1998,1998.0,1998.0,structured_field,27.0,27.0,False
+,,,,,,,,incident_age,20250008.0,15469.0,CAST/WROUGHT IRON,2025.0,1911,1911.0,1911.0,structured_field,114.0,114.0,False
+,,,,,,,,incident_age,20250016.0,31159.0,STEEL,2025.0,1936,1936.0,1936.0,structured_field,89.0,89.0,False
+,,,,,,,,incident_age,20250012.0,20010.0,STEEL,2025.0,1940,1940.0,1940.0,structured_field,85.0,85.0,False
+,,,,,,,,incident_age,20250007.0,30769.0,STEEL,2025.0,1962,1962.0,1962.0,structured_field,63.0,63.0,False
+,,,,,,,,incident_age,20250003.0,4060.0,PLASTIC,2025.0,2023,2023.0,2023.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20250006.0,21349.0,STEEL,2025.0,1958,1958.0,1958.0,structured_field,67.0,67.0,False
+,,,,,,,,incident_age,20250005.0,7348.0,PLASTIC,2025.0,1980,1980.0,1980.0,structured_field,45.0,45.0,True
+,,,,,,,,incident_age,20240069.0,792.0,STEEL,2024.0,1974,1974.0,1974.0,structured_field,50.0,50.0,True
+,,,,,,,,incident_age,20240068.0,18532.0,STEEL,2024.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20240066.0,792.0,STEEL,2024.0,1977,1977.0,1977.0,structured_field,47.0,47.0,False
+,,,,,,,,incident_age,20240062.0,2596.0,STEEL,2024.0,1968,1968.0,1968.0,structured_field,56.0,56.0,False
+,,,,,,,,incident_age,20240061.0,13730.0,STEEL,2024.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20240059.0,18532.0,STEEL,2024.0,2006,2006.0,2006.0,structured_field,18.0,18.0,False
+,,,,,,,,incident_age,20240058.0,22182.0,PLASTIC,2024.0,2000,2000.0,2000.0,structured_field,24.0,24.0,False
+,,,,,,,,incident_age,20240055.0,2704.0,STEEL,2024.0,1977,1977.0,1977.0,structured_field,47.0,47.0,False
+,,,,,,,,incident_age,20240054.0,13635.0,STEEL,2024.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20240050.0,13730.0,PLASTIC,2024.0,2002,2002.0,2002.0,structured_field,22.0,22.0,False
+,,,,,,,,incident_age,20240048.0,792.0,STEEL,2024.0,1964,1964.0,1964.0,structured_field,60.0,60.0,False
+,,,,,,,,incident_age,20240047.0,2600.0,STEEL,2024.0,1969,1969.0,1969.0,structured_field,55.0,55.0,False
+,,,,,,,,incident_age,20240044.0,22182.0,PLASTIC,2024.0,1997,1997.0,1997.0,structured_field,27.0,27.0,False
+,,,,,,,,incident_age,20240043.0,4499.0,PLASTIC,2024.0,2021,2021.0,2021.0,structured_field,3.0,3.0,False
+,,,,,,,,incident_age,20240039.0,15348.0,STEEL,2024.0,1997,1997.0,1997.0,structured_field,27.0,27.0,False
+,,,,,,,,incident_age,20240031.0,15359.0,STEEL,2024.0,2010,2010.0,2010.0,structured_field,14.0,14.0,False
+,,,,,,,,incident_age,20240028.0,15348.0,STEEL,2024.0,1964,1964.0,1964.0,structured_field,60.0,60.0,False
+,,,,,,,,incident_age,20240026.0,792.0,PLASTIC,2024.0,2011,2011.0,2011.0,structured_field,13.0,13.0,False
+,,,,,,,,incident_age,20240023.0,2596.0,STEEL,2024.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20240022.0,15348.0,PLASTIC,2024.0,2006,2006.0,2006.0,structured_field,18.0,18.0,False
+,,,,,,,,incident_age,20240020.0,15518.0,PLASTIC,2024.0,2023,2023.0,2023.0,structured_field,1.0,1.0,False
+,,,,,,,,incident_age,20250009.0,2364.0,STEEL,2024.0,2004,2004.0,2004.0,structured_field,20.0,20.0,False
+,,,,,,,,incident_age,20240017.0,4499.0,PLASTIC,2024.0,2020,2020.0,2020.0,structured_field,4.0,4.0,False
+,,,,,,,,incident_age,20240015.0,4499.0,PLASTIC,2024.0,1982,1982.0,1982.0,structured_field,42.0,42.0,False
+,,,,,,,,incident_age,20240014.0,30750.0,STEEL,2024.0,1962,1962.0,1962.0,structured_field,62.0,62.0,False
+,,,,,,,,incident_age,20240013.0,31348.0,PLASTIC,2024.0,1974,1974.0,1974.0,structured_field,50.0,50.0,True
+,,,,,,,,incident_age,20240009.0,31632.0,STEEL,2024.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20240008.0,12408.0,CAST/WROUGHT IRON,2024.0,1921,1921.0,1921.0,structured_field,103.0,103.0,False
+,,,,,,,,incident_age,20240007.0,15518.0,STEEL,2024.0,1958,1958.0,1958.0,structured_field,66.0,66.0,False
+,,,,,,,,incident_age,20240003.0,1088.0,PLASTIC,2023.0,2012,2012.0,2012.0,structured_field,11.0,11.0,False
+,,,,,,,,incident_age,20240002.0,15348.0,PLASTIC,2023.0,2015,2015.0,2015.0,structured_field,8.0,8.0,False
+,,,,,,,,incident_age,20230080.0,15938.0,PLASTIC,2023.0,1997,1997.0,1997.0,structured_field,26.0,26.0,False
+,,,,,,,,incident_age,20230077.0,4499.0,PLASTIC,2023.0,2023,2023.0,2023.0,structured_field,0.0,0.0,True
+,,,,,,,,incident_age,20230076.0,2364.0,PLASTIC,2023.0,1975,1975.0,1975.0,structured_field,48.0,48.0,True
+,,,,,,,,incident_age,20230073.0,792.0,STEEL,2023.0,1968,1968.0,1968.0,structured_field,55.0,55.0,False
+,,,,,,,,incident_age,20230068.0,12408.0,CAST/WROUGHT IRON,2023.0,1900,1900.0,1900.0,structured_field,123.0,123.0,False
+,,,,,,,,incident_age,20230070.0,12350.0,PLASTIC,2023.0,2021,2021.0,2021.0,structured_field,2.0,2.0,True
+,,,,,,,,incident_age,20230066.0,18484.0,STEEL,2023.0,1959,1959.0,1959.0,structured_field,64.0,64.0,False
+,,,,,,,,incident_age,20230069.0,22182.0,STEEL,2023.0,1978,1978.0,1978.0,structured_field,45.0,45.0,False
+,,,,,,,,incident_age,20230065.0,13710.0,PLASTIC,2023.0,2018,2018.0,2018.0,structured_field,5.0,5.0,False
+,,,,,,,,incident_age,20230064.0,30769.0,STEEL,2023.0,1962,1962.0,1962.0,structured_field,61.0,61.0,True
+,,,,,,,,incident_age,20230062.0,2600.0,STEEL,2023.0,1955,1955.0,1955.0,structured_field,68.0,68.0,False
+,,,,,,,,incident_age,20230063.0,18484.0,STEEL,2023.0,1980,1980.0,1980.0,structured_field,43.0,43.0,False
+,,,,,,,,incident_age,20230061.0,15462.0,STEEL,2023.0,1969,1969.0,1969.0,structured_field,54.0,54.0,False
+,,,,,,,,incident_age,20230060.0,2188.0,STEEL,2023.0,2010,2010.0,2010.0,structured_field,13.0,13.0,False
+,,,,,,,,incident_age,20230059.0,792.0,PLASTIC,2023.0,2001,2001.0,2001.0,structured_field,22.0,22.0,False
+,,,,,,,,incident_age,20230057.0,6141.0,PLASTIC,2023.0,2017,2017.0,2017.0,structured_field,6.0,6.0,False
+,,,,,,,,incident_age,20230056.0,4499.0,STEEL,2023.0,1925,1925.0,1925.0,structured_field,98.0,98.0,True
+,,,,,,,,incident_age,20230054.0,18484.0,STEEL,2023.0,1964,1964.0,1964.0,structured_field,59.0,59.0,False
+,,,,,,,,incident_age,20230050.0,13480.0,PLASTIC,2023.0,1987,1987.0,1987.0,structured_field,36.0,36.0,False
+,,,,,,,,incident_age,20230049.0,12878.0,STEEL,2023.0,1968,1968.0,1968.0,structured_field,55.0,55.0,False
+,,,,,,,,incident_age,20230046.0,30750.0,STEEL,2023.0,1968,1968.0,1968.0,structured_field,55.0,55.0,False
+,,,,,,,,incident_age,20230044.0,2748.0,PLASTIC,2023.0,2003,2003.0,2003.0,structured_field,20.0,20.0,False
+,,,,,,,,incident_age,20230042.0,18584.0,STEEL,2023.0,1968,1968.0,1968.0,structured_field,55.0,55.0,False
+,,,,,,,,incident_age,20230041.0,18484.0,STEEL,2023.0,1956,1956.0,1956.0,structured_field,67.0,67.0,False
+,,,,,,,,incident_age,20230036.0,32074.0,PLASTIC,2023.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20230039.0,2596.0,STEEL,2023.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20230034.0,4499.0,STEEL,2023.0,1982,1982.0,1982.0,structured_field,41.0,41.0,False
+,,,,,,,,incident_age,20230032.0,15007.0,STEEL,2023.0,1925,1925.0,1925.0,structured_field,98.0,98.0,True
+,,,,,,,,incident_age,20230033.0,15348.0,STEEL,2023.0,2000,2000.0,2000.0,structured_field,23.0,23.0,False
+,,,,,,,,incident_age,20230030.0,18472.0,PLASTIC,2023.0,1981,1981.0,1981.0,structured_field,42.0,42.0,False
+,,,,,,,,incident_age,20230029.0,2748.0,STEEL,2023.0,1969,1969.0,1969.0,structured_field,54.0,54.0,False
+,,,,,,,,incident_age,20230024.0,2748.0,STEEL,2023.0,1950,1950.0,1950.0,structured_field,73.0,73.0,False
+,,,,,,,,incident_age,20230019.0,18532.0,PLASTIC,2023.0,2017,2017.0,2017.0,structured_field,6.0,6.0,True
+,,,,,,,,incident_age,20230012.0,31348.0,PLASTIC,2023.0,2004,2004.0,2004.0,structured_field,19.0,19.0,False
+,,,,,,,,incident_age,20230009.0,15348.0,STEEL,2023.0,1962,1962.0,1962.0,structured_field,61.0,61.0,False
+,,,,,,,,incident_age,20230008.0,13710.0,STEEL,2023.0,1958,1958.0,1958.0,structured_field,65.0,65.0,False
+,,,,,,,,incident_age,20230006.0,15007.0,STEEL,2023.0,1943,1943.0,1943.0,structured_field,80.0,80.0,False
+,,,,,,,,incident_age,20220079.0,18536.0,PLASTIC,2022.0,1999,1999.0,1999.0,structured_field,23.0,23.0,False
+,,,,,,,,incident_age,20220081.0,1088.0,CAST/WROUGHT IRON,2022.0,1904,1904.0,1904.0,structured_field,118.0,118.0,True
+,,,,,,,,incident_age,20220077.0,15007.0,STEEL,2022.0,1961,1961.0,1961.0,structured_field,61.0,61.0,False
+,,,,,,,,incident_age,20230001.0,12642.0,PLASTIC,2022.0,2022,2022.0,2022.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20220078.0,18704.0,STEEL,2022.0,2022,2022.0,2022.0,structured_field,0.0,0.0,True
+,,,,,,,,incident_age,20220075.0,2748.0,STEEL,2022.0,2022,2022.0,2022.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20220072.0,2188.0,PLASTIC,2022.0,2015,2015.0,2015.0,structured_field,7.0,7.0,False
+,,,,,,,,incident_age,20220069.0,2748.0,STEEL,2022.0,1973,1973.0,1973.0,structured_field,49.0,49.0,False
+,,,,,,,,incident_age,20220065.0,2748.0,STEEL,2022.0,1953,1953.0,1953.0,structured_field,69.0,69.0,False
+,,,,,,,,incident_age,20220064.0,2748.0,PLASTIC,2022.0,1991,1991.0,1991.0,structured_field,31.0,31.0,False
+,,,,,,,,incident_age,20220063.0,2748.0,STEEL,2022.0,1944,1944.0,1944.0,structured_field,78.0,78.0,False
+,,,,,,,,incident_age,20220062.0,4060.0,PLASTIC,2022.0,1989,1989.0,1989.0,structured_field,33.0,33.0,False
+,,,,,,,,incident_age,20220059.0,21349.0,STEEL,2022.0,1960,1960.0,1960.0,structured_field,62.0,62.0,False
+,,,,,,,,incident_age,20220070.0,30839.0,STEEL,2022.0,1970,1970.0,1970.0,structured_field,52.0,52.0,False
+,,,,,,,,incident_age,20220061.0,15938.0,STEEL,2022.0,2020,2020.0,2020.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20220058.0,15952.0,CAST/WROUGHT IRON,2022.0,1983,1983.0,1983.0,structured_field,39.0,39.0,False
+,,,,,,,,incident_age,20220054.0,18408.0,STEEL,2022.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20220053.0,180.0,STEEL,2022.0,UNKNOWN,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20220045.0,18484.0,STEEL,2022.0,1953,1953.0,1953.0,structured_field,69.0,69.0,False
+,,,,,,,,incident_age,20220047.0,18508.0,PLASTIC,2022.0,1997,1997.0,1997.0,structured_field,25.0,25.0,False
+,,,,,,,,incident_age,20220039.0,12878.0,PLASTIC,2022.0,1972,1972.0,1972.0,structured_field,50.0,50.0,True
+,,,,,,,,incident_age,20220040.0,12582.0,STEEL,2022.0,1969,1969.0,1969.0,structured_field,53.0,53.0,False
+,,,,,,,,incident_age,20220032.0,15518.0,PLASTIC,2022.0,2014,2014.0,2014.0,structured_field,8.0,8.0,False
+,,,,,,,,incident_age,20220030.0,18472.0,STEEL,2022.0,1966,1966.0,1966.0,structured_field,56.0,56.0,False
+,,,,,,,,incident_age,20220028.0,4473.0,PLASTIC,2022.0,2015,2015.0,2015.0,structured_field,7.0,7.0,False
+,,,,,,,,incident_age,20220029.0,31232.0,STEEL,2022.0,1956,1956.0,1956.0,structured_field,66.0,66.0,False
+,,,,,,,,incident_age,20220025.0,11032.0,PLASTIC,2022.0,2002,2002.0,2002.0,structured_field,20.0,20.0,False
+,,,,,,,,incident_age,20220019.0,15518.0,STEEL,2022.0,1962,1962.0,1962.0,structured_field,60.0,60.0,False
+,,,,,,,,incident_age,20220024.0,2748.0,CAST/WROUGHT IRON,2022.0,1901,1901.0,1901.0,structured_field,121.0,121.0,False
+,,,,,,,,incident_age,20220022.0,31348.0,STEEL,2022.0,1985,1985.0,1985.0,structured_field,37.0,37.0,False
+,,,,,,,,incident_age,20220018.0,13480.0,STEEL,2022.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20220011.0,15350.0,STEEL,2022.0,1973,1973.0,1973.0,structured_field,49.0,49.0,False
+,,,,,,,,incident_age,20220016.0,1088.0,CAST/WROUGHT IRON,2022.0,1920,1920.0,1920.0,structured_field,102.0,102.0,True
+,,,,,,,,incident_age,20220015.0,6243.0,STEEL,2022.0,1940,1940.0,1940.0,structured_field,82.0,82.0,False
+,,,,,,,,incident_age,20220051.0,31348.0,STEEL,2022.0,1955,1955.0,1955.0,structured_field,67.0,67.0,False
+,,,,,,,,incident_age,20220008.0,7348.0,STEEL,2022.0,1947,1947.0,1947.0,structured_field,75.0,75.0,False
+,,,,,,,,incident_age,20220010.0,12672.0,STEEL,2022.0,2006,2006.0,2006.0,structured_field,16.0,16.0,False
+,,,,,,,,incident_age,20220006.0,15931.0,PLASTIC,2021.0,2021,2021.0,2021.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20220005.0,22182.0,STEEL,2021.0,1955,1955.0,1955.0,structured_field,66.0,66.0,False
+,,,,,,,,incident_age,20220004.0,30769.0,STEEL,2021.0,1963,1963.0,1963.0,structured_field,58.0,58.0,False
+,,,,,,,,incident_age,20220003.0,2748.0,PLASTIC,2021.0,2016,2016.0,2016.0,structured_field,5.0,5.0,False
+,,,,,,,,incident_age,20210108.0,2456.0,PLASTIC,2021.0,2021,2021.0,2021.0,structured_field,0.0,0.0,True
+,,,,,,,,incident_age,20210104.0,12684.0,STEEL,2021.0,1967,1967.0,1967.0,structured_field,54.0,54.0,False
+,,,,,,,,incident_age,20210101.0,18408.0,PLASTIC,2021.0,2014,2014.0,2014.0,structured_field,7.0,7.0,False
+,,,,,,,,incident_age,20210102.0,39257.0,PLASTIC,2021.0,2019,2019.0,2019.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20210100.0,22182.0,PLASTIC,2021.0,2006,2006.0,2006.0,structured_field,15.0,15.0,False
+,,,,,,,,incident_age,20210098.0,31232.0,PLASTIC,2021.0,2016,2016.0,2016.0,structured_field,5.0,5.0,False
+,,,,,,,,incident_age,20210095.0,1720.0,PLASTIC,2021.0,1994,1994.0,1994.0,structured_field,27.0,27.0,False
+,,,,,,,,incident_age,20210094.0,15007.0,STEEL,2021.0,1940,1940.0,1940.0,structured_field,81.0,81.0,False
+,,,,,,,,incident_age,20210088.0,15518.0,STEEL,2021.0,1965,1965.0,1965.0,structured_field,56.0,56.0,False
+,,,,,,,,incident_age,20210089.0,13710.0,PLASTIC,2021.0,2009,2009.0,2009.0,structured_field,12.0,12.0,True
+,,,,,,,,incident_age,20210086.0,12408.0,CAST/WROUGHT IRON,2021.0,1913,1913.0,1913.0,structured_field,108.0,108.0,False
+,,,,,,,,incident_age,20210083.0,15007.0,STEEL,2021.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20210081.0,12342.0,STEEL,2021.0,1931,1931.0,1931.0,structured_field,90.0,90.0,False
+,,,,,,,,incident_age,20210078.0,15462.0,CAST/WROUGHT IRON,2021.0,1924,1924.0,1924.0,structured_field,97.0,97.0,False
+,,,,,,,,incident_age,20210077.0,21349.0,STEEL,2021.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20210074.0,792.0,PLASTIC,2021.0,2021,2021.0,2021.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20210068.0,7348.0,PLASTIC,2021.0,2002,2002.0,2002.0,structured_field,19.0,19.0,False
+,,,,,,,,incident_age,20210093.0,22182.0,PLASTIC,2021.0,2001,2001.0,2001.0,structured_field,20.0,20.0,False
+,,,,,,,,incident_age,20210072.0,12878.0,PLASTIC,2021.0,1983,1983.0,1983.0,structured_field,38.0,38.0,True
+,,,,,,,,incident_age,20210069.0,792.0,STEEL,2021.0,1979,1979.0,1979.0,structured_field,42.0,42.0,False
+,,,,,,,,incident_age,20210064.0,766.0,PLASTIC,2021.0,1998,1998.0,1998.0,structured_field,23.0,23.0,True
+,,,,,,,,incident_age,20210066.0,2128.0,STEEL,2021.0,1958,1958.0,1958.0,structured_field,63.0,63.0,False
+,,,,,,,,incident_age,20210057.0,15359.0,STEEL,2021.0,1986,1986.0,1986.0,structured_field,35.0,35.0,False
+,,,,,,,,incident_age,20210060.0,13710.0,PLASTIC,2021.0,2011,2011.0,2011.0,structured_field,10.0,10.0,False
+,,,,,,,,incident_age,20210054.0,1088.0,STEEL,2021.0,1964,1964.0,1964.0,structured_field,57.0,57.0,True
+,,,,,,,,incident_age,20210049.0,603.0,PLASTIC,2021.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20210050.0,2748.0,PLASTIC,2021.0,2018,2018.0,2018.0,structured_field,3.0,3.0,False
+,,,,,,,,incident_age,20210052.0,13420.0,STEEL,2021.0,1969,1969.0,1969.0,structured_field,52.0,52.0,False
+,,,,,,,,incident_age,20210048.0,18484.0,STEEL,2021.0,1930,1930.0,1930.0,structured_field,91.0,91.0,False
+,,,,,,,,incident_age,20210046.0,18484.0,PLASTIC,2021.0,2002,2002.0,2002.0,structured_field,19.0,19.0,False
+,,,,,,,,incident_age,20210061.0,8070.0,STEEL,2021.0,2020,2020.0,2020.0,structured_field,1.0,1.0,False
+,,,,,,,,incident_age,20210042.0,2596.0,STEEL,2021.0,1970,1970.0,1970.0,structured_field,51.0,51.0,False
+,,,,,,,,incident_age,20210044.0,22182.0,PLASTIC,2021.0,2020,2020.0,2020.0,structured_field,1.0,1.0,False
+,,,,,,,,incident_age,20210037.0,13299.0,STEEL,2021.0,1980,1980.0,1980.0,structured_field,41.0,41.0,False
+,,,,,,,,incident_age,20210040.0,12684.0,STEEL,2021.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20210039.0,18484.0,STEEL,2021.0,1945,1945.0,1945.0,structured_field,76.0,76.0,False
+,,,,,,,,incident_age,20210038.0,4499.0,PLASTIC,2021.0,1998,1998.0,1998.0,structured_field,23.0,23.0,True
+,,,,,,,,incident_age,20210036.0,18536.0,STEEL,2021.0,1984,1984.0,1984.0,structured_field,37.0,37.0,False
+,,,,,,,,incident_age,20220009.0,15348.0,PLASTIC,2021.0,2004,2004.0,2004.0,structured_field,17.0,17.0,False
+,,,,,,,,incident_age,20210033.0,2748.0,STEEL,2021.0,1928,1928.0,1928.0,structured_field,93.0,93.0,False
+,,,,,,,,incident_age,20210032.0,18484.0,STEEL,2021.0,1962,1962.0,1962.0,structured_field,59.0,59.0,False
+,,,,,,,,incident_age,20210029.0,21349.0,STEEL,2021.0,1971,1971.0,1971.0,structured_field,50.0,50.0,False
+,,,,,,,,incident_age,20210026.0,22182.0,PLASTIC,2021.0,1988,1988.0,1988.0,structured_field,33.0,33.0,True
+,,,,,,,,incident_age,20210027.0,15518.0,STEEL,2021.0,1959,1959.0,1959.0,structured_field,62.0,62.0,False
+,,,,,,,,incident_age,20210019.0,13480.0,STEEL,2021.0,1955,1955.0,1955.0,structured_field,66.0,66.0,False
+,,,,,,,,incident_age,20210018.0,2596.0,STEEL,2021.0,1965,1965.0,1965.0,structured_field,56.0,56.0,False
+,,,,,,,,incident_age,20210016.0,18484.0,STEEL,2021.0,2006,2006.0,2006.0,structured_field,15.0,15.0,False
+,,,,,,,,incident_age,20210015.0,15350.0,PLASTIC,2021.0,2019,2019.0,2019.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20210017.0,18408.0,STEEL,2021.0,1999,1999.0,1999.0,structured_field,22.0,22.0,False
+,,,,,,,,incident_age,20210013.0,20010.0,PLASTIC,2020.0,2019,2019.0,2019.0,structured_field,1.0,1.0,True
+,,,,,,,,incident_age,20210020.0,21349.0,STEEL,2020.0,1960,1960.0,1960.0,structured_field,60.0,60.0,False
+,,,,,,,,incident_age,20210011.0,792.0,PLASTIC,2020.0,1981,1981.0,1981.0,structured_field,39.0,39.0,True
+,,,,,,,,incident_age,20210008.0,2748.0,STEEL,2020.0,1947,1947.0,1947.0,structured_field,73.0,73.0,False
+,,,,,,,,incident_age,20210004.0,2748.0,PLASTIC,2020.0,2020,2020.0,2020.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20210001.0,15348.0,PLASTIC,2020.0,2014,2014.0,2014.0,structured_field,6.0,6.0,True
+,,,,,,,,incident_age,20200128.0,15518.0,PLASTIC,2020.0,1986,1986.0,1986.0,structured_field,34.0,34.0,False
+,,,,,,,,incident_age,20200125.0,4060.0,STEEL,2020.0,2016,2016.0,2016.0,structured_field,4.0,4.0,False
+,,,,,,,,incident_age,20200124.0,31348.0,PLASTIC,2020.0,2020,2020.0,2020.0,structured_field,0.0,0.0,True
+,,,,,,,,incident_age,20200123.0,180.0,STEEL,2020.0,1959,1959.0,1959.0,structured_field,61.0,61.0,False
+,,,,,,,,incident_age,20200122.0,13061.0,PLASTIC,2020.0,2001,2001.0,2001.0,structured_field,19.0,19.0,False
+,,,,,,,,incident_age,20200119.0,2600.0,PLASTIC,2020.0,1982,1982.0,1982.0,structured_field,38.0,38.0,False
+,,,,,,,,incident_age,20200117.0,2288.0,STEEL,2020.0,1987,1987.0,1987.0,structured_field,33.0,33.0,False
+,,,,,,,,incident_age,20200115.0,8070.0,PLASTIC,2020.0,1984,1984.0,1984.0,structured_field,36.0,36.0,False
+,,,,,,,,incident_age,20200118.0,2600.0,STEEL,2020.0,1959,1959.0,1959.0,structured_field,61.0,61.0,False
+,,,,,,,,incident_age,20200111.0,18532.0,STEEL,2020.0,1927,1927.0,1927.0,structured_field,93.0,93.0,False
+,,,,,,,,incident_age,20200110.0,2364.0,STEEL,2020.0,1967,1967.0,1967.0,structured_field,53.0,53.0,False
+,,,,,,,,incident_age,20200108.0,2596.0,STEEL,2020.0,1970,1970.0,1970.0,structured_field,50.0,50.0,False
+,,,,,,,,incident_age,20200106.0,15359.0,PLASTIC,2020.0,2003,2003.0,2003.0,structured_field,17.0,17.0,False
+,,,,,,,,incident_age,20200101.0,30750.0,PLASTIC,2020.0,1994,1994.0,1994.0,structured_field,26.0,26.0,False
+,,,,,,,,incident_age,20200103.0,31348.0,PLASTIC,2020.0,1980,1980.0,1980.0,structured_field,40.0,40.0,False
+,,,,,,,,incident_age,20200099.0,31348.0,PLASTIC,2020.0,2011,2011.0,2011.0,structured_field,9.0,9.0,False
+,,,,,,,,incident_age,20200098.0,31348.0,STEEL,2020.0,2005,2005.0,2005.0,structured_field,15.0,15.0,False
+,,,,,,,,incident_age,20200105.0,15359.0,PLASTIC,2020.0,2002,2002.0,2002.0,structured_field,18.0,18.0,True
+,,,,,,,,incident_age,20200095.0,18484.0,STEEL,2020.0,1965,1965.0,1965.0,structured_field,55.0,55.0,False
+,,,,,,,,incident_age,20200097.0,15359.0,STEEL,2020.0,1931,1931.0,1931.0,structured_field,89.0,89.0,False
+,,,,,,,,incident_age,20200089.0,15938.0,STEEL,2020.0,2017,2017.0,2017.0,structured_field,3.0,3.0,False
+,,,,,,,,incident_age,20200084.0,31348.0,STEEL,2020.0,1973,1973.0,1973.0,structured_field,47.0,47.0,False
+,,,,,,,,incident_age,20200081.0,18484.0,STEEL,2020.0,1970,1970.0,1970.0,structured_field,50.0,50.0,False
+,,,,,,,,incident_age,20200078.0,2596.0,STEEL,2020.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20200077.0,15518.0,STEEL,2020.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20200076.0,18112.0,STEEL,2020.0,1930,1930.0,1930.0,structured_field,90.0,90.0,False
+,,,,,,,,incident_age,20200075.0,15359.0,STEEL,2020.0,1959,1959.0,1959.0,structured_field,61.0,61.0,False
+,,,,,,,,incident_age,20200070.0,15938.0,PLASTIC,2020.0,2001,2001.0,2001.0,structured_field,19.0,19.0,False
+,,,,,,,,incident_age,20200071.0,30769.0,STEEL,2020.0,1957,1957.0,1957.0,structured_field,63.0,63.0,False
+,,,,,,,,incident_age,20200068.0,22189.0,PLASTIC,2020.0,1997,1997.0,1997.0,structured_field,23.0,23.0,False
+,,,,,,,,incident_age,20200062.0,603.0,PLASTIC,2020.0,1978,1978.0,1978.0,structured_field,42.0,42.0,True
+,,,,,,,,incident_age,20200059.0,792.0,PLASTIC,2020.0,2017,2017.0,2017.0,structured_field,3.0,3.0,False
+,,,,,,,,incident_age,20200058.0,2748.0,STEEL,2020.0,1968,1968.0,1968.0,structured_field,52.0,52.0,False
+,,,,,,,,incident_age,20200049.0,13730.0,STEEL,2020.0,1961,1961.0,1961.0,structured_field,59.0,59.0,False
+,,,,,,,,incident_age,20200056.0,31636.0,STEEL,2020.0,2018,2018.0,2018.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20200053.0,18484.0,STEEL,2020.0,1983,1983.0,1983.0,structured_field,37.0,37.0,False
+,,,,,,,,incident_age,20200054.0,18484.0,STEEL,2020.0,1940,1940.0,1940.0,structured_field,80.0,80.0,False
+,,,,,,,,incident_age,20200045.0,22435.0,PLASTIC,2020.0,UNKNOWN,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20200050.0,31348.0,PLASTIC,2020.0,1977,1977.0,1977.0,structured_field,43.0,43.0,False
+,,,,,,,,incident_age,20200048.0,14210.0,STEEL,2020.0,1968,1968.0,1968.0,structured_field,52.0,52.0,False
+,,,,,,,,incident_age,20200044.0,12876.0,PLASTIC,2020.0,2013,2013.0,2013.0,structured_field,7.0,7.0,False
+,,,,,,,,incident_age,20200047.0,15518.0,STEEL,2020.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20200040.0,30769.0,STEEL,2020.0,1962,1962.0,1962.0,structured_field,58.0,58.0,False
+,,,,,,,,incident_age,20200035.0,22182.0,PLASTIC,2020.0,1995,1995.0,1995.0,structured_field,25.0,25.0,False
+,,,,,,,,incident_age,20200039.0,15348.0,PLASTIC,2020.0,2008,2008.0,2008.0,structured_field,12.0,12.0,True
+,,,,,,,,incident_age,20200028.0,792.0,PLASTIC,2020.0,2011,2011.0,2011.0,structured_field,9.0,9.0,False
+,,,,,,,,incident_age,20200030.0,1800.0,STEEL,2020.0,2017,2017.0,2017.0,structured_field,3.0,3.0,True
+,,,,,,,,incident_age,20200026.0,14210.0,STEEL,2020.0,1976,1976.0,1976.0,structured_field,44.0,44.0,False
+,,,,,,,,incident_age,20200027.0,15518.0,PLASTIC,2020.0,2009,2009.0,2009.0,structured_field,11.0,11.0,False
+,,,,,,,,incident_age,20200024.0,31348.0,PLASTIC,2020.0,2019,2019.0,2019.0,structured_field,1.0,1.0,False
+,,,,,,,,incident_age,20200025.0,8160.0,STEEL,2020.0,1958,1958.0,1958.0,structured_field,62.0,62.0,False
+,,,,,,,,incident_age,20200021.0,18484.0,STEEL,2020.0,1933,1933.0,1933.0,structured_field,87.0,87.0,False
+,,,,,,,,incident_age,20200023.0,2596.0,STEEL,2020.0,1958,1958.0,1958.0,structured_field,62.0,62.0,False
+,,,,,,,,incident_age,20200014.0,15952.0,CAST/WROUGHT IRON,2020.0,1952,1952.0,1952.0,structured_field,68.0,68.0,True
+,,,,,,,,incident_age,20200017.0,792.0,PLASTIC,2020.0,1993,1993.0,1993.0,structured_field,27.0,27.0,False
+,,,,,,,,incident_age,20200018.0,31348.0,PLASTIC,2020.0,2006,2006.0,2006.0,structured_field,14.0,14.0,False
+,,,,,,,,incident_age,20200013.0,22182.0,PLASTIC,2019.0,2019,2019.0,2019.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20200003.0,15469.0,CAST/WROUGHT IRON,2019.0,1928,1928.0,1928.0,structured_field,91.0,91.0,True
+,,,,,,,,incident_age,20200006.0,14210.0,PLASTIC,2019.0,1985,1985.0,1985.0,structured_field,34.0,34.0,False
+,,,,,,,,incident_age,20200032.0,31348.0,PLASTIC,2019.0,2002,2002.0,2002.0,structured_field,17.0,17.0,False
+,,,,,,,,incident_age,20200009.0,15348.0,PLASTIC,2019.0,2002,2002.0,2002.0,structured_field,17.0,17.0,False
+,,,,,,,,incident_age,20200004.0,22476.0,STEEL,2019.0,1968,1968.0,1968.0,structured_field,51.0,51.0,False
+,,,,,,,,incident_age,20190151.0,2748.0,STEEL,2019.0,1959,1959.0,1959.0,structured_field,60.0,60.0,False
+,,,,,,,,incident_age,20190149.0,621.0,STEEL,2019.0,1969,1969.0,1969.0,structured_field,50.0,50.0,False
+,,,,,,,,incident_age,20200012.0,15348.0,STEEL,2019.0,1999,1999.0,1999.0,structured_field,20.0,20.0,False
+,,,,,,,,incident_age,20190140.0,12350.0,STEEL,2019.0,1970,1970.0,1970.0,structured_field,49.0,49.0,False
+,,,,,,,,incident_age,20190145.0,12684.0,PLASTIC,2019.0,1982,1982.0,1982.0,structured_field,37.0,37.0,True
+,,,,,,,,incident_age,20190142.0,4060.0,STEEL,2019.0,2019,2019.0,2019.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20190133.0,13820.0,STEEL,2019.0,1977,1977.0,1977.0,structured_field,42.0,42.0,True
+,,,,,,,,incident_age,20190134.0,2128.0,STEEL,2019.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20200002.0,21349.0,PLASTIC,2019.0,2007,2007.0,2007.0,structured_field,12.0,12.0,False
+,,,,,,,,incident_age,20190132.0,1209.0,STEEL,2019.0,1977,1977.0,1977.0,structured_field,42.0,42.0,False
+,,,,,,,,incident_age,20200007.0,31348.0,PLASTIC,2019.0,1996,1996.0,1996.0,structured_field,23.0,23.0,False
+,,,,,,,,incident_age,20190128.0,22763.0,PLASTIC,2019.0,1991,1991.0,1991.0,structured_field,28.0,28.0,False
+,,,,,,,,incident_age,20190127.0,22189.0,PLASTIC,2019.0,2008,2008.0,2008.0,structured_field,11.0,11.0,True
+,,,,,,,,incident_age,20190123.0,22154.0,STEEL,2019.0,1969,1969.0,1969.0,structured_field,50.0,50.0,False
+,,,,,,,,incident_age,20190131.0,15348.0,PLASTIC,2019.0,2017,2017.0,2017.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20190122.0,18112.0,STEEL,2019.0,1959,1959.0,1959.0,structured_field,60.0,60.0,False
+,,,,,,,,incident_age,20190121.0,1209.0,PLASTIC,2019.0,2018,2018.0,2018.0,structured_field,1.0,1.0,False
+,,,,,,,,incident_age,20200001.0,15755.0,STEEL,2019.0,UNKNOWN,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20190110.0,18532.0,STEEL,2019.0,2019,2019.0,2019.0,structured_field,0.0,0.0,True
+,,,,,,,,incident_age,20190109.0,11032.0,STEEL,2019.0,1964,1964.0,1964.0,structured_field,55.0,55.0,False
+,,,,,,,,incident_age,20190116.0,2196.0,PLASTIC,2019.0,2018,2018.0,2018.0,structured_field,1.0,1.0,False
+,,,,,,,,incident_age,20190117.0,13480.0,STEEL,2019.0,1953,1953.0,1953.0,structured_field,66.0,66.0,False
+,,,,,,,,incident_age,20190101.0,2748.0,STEEL,2019.0,1942,1942.0,1942.0,structured_field,77.0,77.0,False
+,,,,,,,,incident_age,20190099.0,2748.0,STEEL,2019.0,1968,1968.0,1968.0,structured_field,51.0,51.0,False
+,,,,,,,,incident_age,20190096.0,792.0,PLASTIC,2019.0,2017,2017.0,2017.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20190090.0,2432.0,PLASTIC,2019.0,2007,2007.0,2007.0,structured_field,12.0,12.0,False
+,,,,,,,,incident_age,20190075.0,11320.0,PLASTIC,2019.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20190086.0,15007.0,PLASTIC,2019.0,1987,1987.0,1987.0,structured_field,32.0,32.0,False
+,,,,,,,,incident_age,20190083.0,20211.0,STEEL,2019.0,1954,1954.0,1954.0,structured_field,65.0,65.0,True
+,,,,,,,,incident_age,20190087.0,6141.0,PLASTIC,2019.0,1990,1990.0,1990.0,structured_field,29.0,29.0,True
+,,,,,,,,incident_age,20190082.0,792.0,PLASTIC,2019.0,2004,2004.0,2004.0,structured_field,15.0,15.0,False
+,,,,,,,,incident_age,20190080.0,30769.0,STEEL,2019.0,1969,1969.0,1969.0,structured_field,50.0,50.0,False
+,,,,,,,,incident_age,20190076.0,15348.0,PLASTIC,2019.0,2017,2017.0,2017.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20190067.0,4499.0,STEEL,2019.0,1947,1947.0,1947.0,structured_field,72.0,72.0,True
+,,,,,,,,incident_age,20190069.0,30769.0,STEEL,2019.0,1937,1937.0,1937.0,structured_field,82.0,82.0,False
+,,,,,,,,incident_age,20190063.0,15938.0,STEEL,2019.0,1978,1978.0,1978.0,structured_field,41.0,41.0,False
+,,,,,,,,incident_age,20190065.0,18484.0,STEEL,2019.0,1950,1950.0,1950.0,structured_field,69.0,69.0,False
+,,,,,,,,incident_age,20190066.0,14210.0,STEEL,2019.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20190062.0,15359.0,STEEL,2019.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20190061.0,2748.0,PLASTIC,2019.0,2016,2016.0,2016.0,structured_field,3.0,3.0,True
+,,,,,,,,incident_age,20190071.0,15348.0,STEEL,2019.0,2000,2000.0,2000.0,structured_field,19.0,19.0,False
+,,,,,,,,incident_age,20190059.0,12420.0,STEEL,2019.0,1959,1959.0,1959.0,structured_field,60.0,60.0,False
+,,,,,,,,incident_age,20190058.0,18484.0,STEEL,2019.0,1978,1978.0,1978.0,structured_field,41.0,41.0,False
+,,,,,,,,incident_age,20190057.0,8070.0,PLASTIC,2019.0,2019,2019.0,2019.0,structured_field,0.0,0.0,True
+,,,,,,,,incident_age,20190046.0,20010.0,PLASTIC,2019.0,2003,2003.0,2003.0,structured_field,16.0,16.0,False
+,,,,,,,,incident_age,20190040.0,13299.0,STEEL,2019.0,1988,1988.0,1988.0,structured_field,31.0,31.0,False
+,,,,,,,,incident_age,20190043.0,2600.0,STEEL,2019.0,1963,1963.0,1963.0,structured_field,56.0,56.0,False
+,,,,,,,,incident_age,20190041.0,14210.0,PLASTIC,2019.0,1976,1976.0,1976.0,structured_field,43.0,43.0,True
+,,,,,,,,incident_age,20190038.0,12684.0,STEEL,2019.0,1962,1962.0,1962.0,structured_field,57.0,57.0,True
+,,,,,,,,incident_age,20190037.0,2748.0,STEEL,2019.0,1962,1962.0,1962.0,structured_field,57.0,57.0,False
+,,,,,,,,incident_age,20190034.0,1800.0,CAST/WROUGHT IRON,2019.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20190031.0,31348.0,PLASTIC,2019.0,1973,1973.0,1973.0,structured_field,46.0,46.0,False
+,,,,,,,,incident_age,20190032.0,22182.0,PLASTIC,2019.0,2018,2018.0,2018.0,structured_field,1.0,1.0,False
+,,,,,,,,incident_age,20190026.0,180.0,STEEL,2019.0,2010,2010.0,2010.0,structured_field,9.0,9.0,False
+,,,,,,,,incident_age,20190022.0,18536.0,STEEL,2019.0,1986,1986.0,1986.0,structured_field,33.0,33.0,False
+,,,,,,,,incident_age,20190024.0,15007.0,PLASTIC,2019.0,1997,1997.0,1997.0,structured_field,22.0,22.0,False
+,,,,,,,,incident_age,20190068.0,31348.0,STEEL,2019.0,2016,2016.0,2016.0,structured_field,3.0,3.0,False
+,,,,,,,,incident_age,20190020.0,2596.0,STEEL,2019.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20190018.0,31348.0,PLASTIC,2019.0,2005,2005.0,2005.0,structured_field,14.0,14.0,False
+,,,,,,,,incident_age,20190016.0,31348.0,STEEL,2019.0,1930,1930.0,1930.0,structured_field,89.0,89.0,False
+,,,,,,,,incident_age,20190010.0,15938.0,STEEL,2019.0,1959,1959.0,1959.0,structured_field,60.0,60.0,False
+,,,,,,,,incident_age,20190011.0,22189.0,PLASTIC,2019.0,1990,1990.0,1990.0,structured_field,29.0,29.0,False
+,,,,,,,,incident_age,20190012.0,2704.0,STEEL,2019.0,1936,1936.0,1936.0,structured_field,83.0,83.0,False
+,,,,,,,,incident_age,20190005.0,792.0,STEEL,2018.0,2007,2007.0,2007.0,structured_field,11.0,11.0,False
+,,,,,,,,incident_age,20190006.0,13710.0,STEEL,2018.0,1971,1971.0,1971.0,structured_field,47.0,47.0,False
+,,,,,,,,incident_age,20190004.0,11032.0,CAST/WROUGHT IRON,2018.0,1949,1949.0,1949.0,structured_field,69.0,69.0,False
+,,,,,,,,incident_age,20190003.0,31632.0,STEEL,2018.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20180127.0,11032.0,CAST/WROUGHT IRON,2018.0,1957,1957.0,1957.0,structured_field,61.0,61.0,False
+,,,,,,,,incident_age,20180125.0,12408.0,STEEL,2018.0,1995,1995.0,1995.0,structured_field,23.0,23.0,False
+,,,,,,,,incident_age,20180124.0,2704.0,PLASTIC,2018.0,2015,2015.0,2015.0,structured_field,3.0,3.0,False
+,,,,,,,,incident_age,20180123.0,18484.0,PLASTIC,2018.0,1969,1969.0,1969.0,structured_field,49.0,49.0,True
+,,,,,,,,incident_age,20180120.0,15007.0,PLASTIC,2018.0,1990,1990.0,1990.0,structured_field,28.0,28.0,False
+,,,,,,,,incident_age,20180116.0,15938.0,STEEL,2018.0,2005,2005.0,2005.0,structured_field,13.0,13.0,False
+,,,,,,,,incident_age,20180118.0,2748.0,STEEL,2018.0,1963,1963.0,1963.0,structured_field,55.0,55.0,False
+,,,,,,,,incident_age,20180115.0,15931.0,PLASTIC,2018.0,1979,1979.0,1979.0,structured_field,39.0,39.0,True
+,,,,,,,,incident_age,20180114.0,18124.0,PLASTIC,2018.0,2018,2018.0,2018.0,structured_field,0.0,0.0,True
+,,,,,,,,incident_age,20180113.0,13299.0,PLASTIC,2018.0,1996,1996.0,1996.0,structured_field,22.0,22.0,False
+,,,,,,,,incident_age,20180109.0,22189.0,PLASTIC,2018.0,1995,1995.0,1995.0,structured_field,23.0,23.0,False
+,,,,,,,,incident_age,20190014.0,12408.0,PLASTIC,2018.0,1996,1996.0,1996.0,structured_field,22.0,22.0,False
+,,,,,,,,incident_age,20180104.0,15518.0,STEEL,2018.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20180100.0,6720.0,PLASTIC,2018.0,1976,1976.0,1976.0,structured_field,42.0,42.0,False
+,,,,,,,,incident_age,20180099.0,2600.0,PLASTIC,2018.0,2010,2010.0,2010.0,structured_field,8.0,8.0,True
+,,,,,,,,incident_age,20180096.0,18536.0,PLASTIC,2018.0,1998,1998.0,1998.0,structured_field,20.0,20.0,False
+,,,,,,,,incident_age,20180093.0,18684.0,STEEL,2018.0,1966,1966.0,1966.0,structured_field,52.0,52.0,False
+,,,,,,,,incident_age,20190078.0,18532.0,PLASTIC,2018.0,2018,2018.0,2018.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20180088.0,18484.0,PLASTIC,2018.0,2000,2000.0,2000.0,structured_field,18.0,18.0,False
+,,,,,,,,incident_age,20180089.0,22182.0,STEEL,2018.0,1967,1967.0,1967.0,structured_field,51.0,51.0,True
+,,,,,,,,incident_age,20180086.0,15329.0,PLASTIC,2018.0,2012,2012.0,2012.0,structured_field,6.0,6.0,True
+,,,,,,,,incident_age,20180085.0,792.0,PLASTIC,2018.0,1989,1989.0,1989.0,structured_field,29.0,29.0,True
+,,,,,,,,incident_age,20180083.0,31467.0,STEEL,2018.0,1961,1961.0,1961.0,structured_field,57.0,57.0,False
+,,,,,,,,incident_age,20180080.0,4060.0,STEEL,2018.0,1968,1968.0,1968.0,structured_field,50.0,50.0,False
+,,,,,,,,incident_age,20180076.0,31348.0,STEEL,2018.0,2018,2018.0,2018.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20180075.0,6141.0,STEEL,2018.0,1978,1978.0,1978.0,structured_field,40.0,40.0,False
+,,,,,,,,incident_age,20180073.0,22763.0,PLASTIC,2018.0,1991,1991.0,1991.0,structured_field,27.0,27.0,True
+,,,,,,,,incident_age,20180071.0,1800.0,CAST/WROUGHT IRON,2018.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20180070.0,2748.0,PLASTIC,2018.0,2018,2018.0,2018.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20180069.0,14210.0,PLASTIC,2018.0,1970,1970.0,1970.0,structured_field,48.0,48.0,True
+,,,,,,,,incident_age,20180091.0,18536.0,STEEL,2018.0,1955,1955.0,1955.0,structured_field,63.0,63.0,False
+,,,,,,,,incident_age,20180068.0,1088.0,CAST/WROUGHT IRON,2018.0,1903,1903.0,1903.0,structured_field,115.0,115.0,True
+,,,,,,,,incident_age,20180064.0,4483.0,PLASTIC,2018.0,1996,1996.0,1996.0,structured_field,22.0,22.0,False
+,,,,,,,,incident_age,20180066.0,2748.0,STEEL,2018.0,1970,1970.0,1970.0,structured_field,48.0,48.0,False
+,,,,,,,,incident_age,20180063.0,1800.0,PLASTIC,2018.0,1994,1994.0,1994.0,structured_field,24.0,24.0,False
+,,,,,,,,incident_age,20180060.0,2492.0,STEEL,2018.0,UNKNOWN,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20180055.0,792.0,PLASTIC,2018.0,2003,2003.0,2003.0,structured_field,15.0,15.0,False
+,,,,,,,,incident_age,20180056.0,11824.0,STEEL,2018.0,1962,1962.0,1962.0,structured_field,56.0,56.0,False
+,,,,,,,,incident_age,20180053.0,31348.0,PLASTIC,2018.0,1981,1981.0,1981.0,structured_field,37.0,37.0,True
+,,,,,,,,incident_age,20180052.0,18484.0,STEEL,2018.0,1987,1987.0,1987.0,structured_field,31.0,31.0,False
+,,,,,,,,incident_age,20180047.0,14210.0,STEEL,2018.0,1952,1952.0,1952.0,structured_field,66.0,66.0,False
+,,,,,,,,incident_age,20180048.0,15007.0,PLASTIC,2018.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20180045.0,15007.0,STEEL,2018.0,1996,1996.0,1996.0,structured_field,22.0,22.0,False
+,,,,,,,,incident_age,20180038.0,792.0,STEEL,2018.0,1974,1974.0,1974.0,structured_field,44.0,44.0,False
+,,,,,,,,incident_age,20180034.0,31348.0,STEEL,2018.0,1946,1946.0,1946.0,structured_field,72.0,72.0,True
+,,,,,,,,incident_age,20180030.0,31348.0,PLASTIC,2018.0,1996,1996.0,1996.0,structured_field,22.0,22.0,False
+,,,,,,,,incident_age,20180028.0,18484.0,STEEL,2018.0,1925,1925.0,1925.0,structured_field,93.0,93.0,True
+,,,,,,,,incident_age,20180026.0,1800.0,CAST/WROUGHT IRON,2018.0,1927,1927.0,1927.0,structured_field,91.0,91.0,True
+,,,,,,,,incident_age,20180027.0,13480.0,PLASTIC,2018.0,1971,1971.0,1971.0,structured_field,47.0,47.0,False
+,,,,,,,,incident_age,20180023.0,8070.0,STEEL,2018.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20180024.0,18536.0,PLASTIC,2018.0,2005,2005.0,2005.0,structured_field,13.0,13.0,False
+,,,,,,,,incident_age,20180021.0,30769.0,STEEL,2018.0,1929,1929.0,1929.0,structured_field,89.0,89.0,False
+,,,,,,,,incident_age,20180019.0,18484.0,STEEL,2018.0,1939,1939.0,1939.0,structured_field,79.0,79.0,False
+,,,,,,,,incident_age,20180017.0,31348.0,PLASTIC,2018.0,1972,1972.0,1972.0,structured_field,46.0,46.0,False
+,,,,,,,,incident_age,20180015.0,1640.0,CAST/WROUGHT IRON,2017.0,1934,1934.0,1934.0,structured_field,83.0,83.0,False
+,,,,,,,,incident_age,20180007.0,18536.0,PLASTIC,2017.0,1966,1966.0,1966.0,structured_field,51.0,51.0,False
+,,,,,,,,incident_age,20180010.0,25000.0,PLASTIC,2017.0,2010,2010.0,2010.0,structured_field,7.0,7.0,False
+,,,,,,,,incident_age,20180004.0,4483.0,PLASTIC,2017.0,1997,1997.0,1997.0,structured_field,20.0,20.0,False
+,,,,,,,,incident_age,20180003.0,2704.0,CAST/WROUGHT IRON,2017.0,1907,1907.0,1907.0,structured_field,110.0,110.0,False
+,,,,,,,,incident_age,20170110.0,15007.0,PLASTIC,2017.0,1984,1984.0,1984.0,structured_field,33.0,33.0,False
+,,,,,,,,incident_age,20170109.0,12036.0,STEEL,2017.0,1965,1965.0,1965.0,structured_field,52.0,52.0,False
+,,,,,,,,incident_age,20170108.0,2748.0,PLASTIC,2017.0,2010,2010.0,2010.0,structured_field,7.0,7.0,False
+,,,,,,,,incident_age,20170102.0,15469.0,STEEL,2017.0,1953,1953.0,1953.0,structured_field,64.0,64.0,True
+,,,,,,,,incident_age,20170097.0,15938.0,STEEL,2017.0,1970,1970.0,1970.0,structured_field,47.0,47.0,True
+,,,,,,,,incident_age,20170101.0,12876.0,PLASTIC,2017.0,1984,1984.0,1984.0,structured_field,33.0,33.0,False
+,,,,,,,,incident_age,20170098.0,31348.0,STEEL,2017.0,1953,1953.0,1953.0,structured_field,64.0,64.0,False
+,,,,,,,,incident_age,20170100.0,792.0,STEEL,2017.0,1997,1997.0,1997.0,structured_field,20.0,20.0,False
+,,,,,,,,incident_age,20170094.0,18536.0,PLASTIC,2017.0,1984,1984.0,1984.0,structured_field,33.0,33.0,False
+,,,,,,,,incident_age,20170093.0,15518.0,STEEL,2017.0,1980,1980.0,1980.0,structured_field,37.0,37.0,False
+,,,,,,,,incident_age,20170092.0,31348.0,STEEL,2017.0,2017,2017.0,2017.0,structured_field,0.0,0.0,True
+,,,,,,,,incident_age,20170083.0,32061.0,PLASTIC,2017.0,2014,2014.0,2014.0,structured_field,3.0,3.0,True
+,,,,,,,,incident_age,20170099.0,13710.0,STEEL,2017.0,1963,1963.0,1963.0,structured_field,54.0,54.0,False
+,,,,,,,,incident_age,20170078.0,5330.0,PLASTIC,2017.0,1991,1991.0,1991.0,structured_field,26.0,26.0,False
+,,,,,,,,incident_age,20170091.0,15007.0,PLASTIC,2017.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20170089.0,18484.0,STEEL,2017.0,1951,1951.0,1951.0,structured_field,66.0,66.0,False
+,,,,,,,,incident_age,20170088.0,4499.0,STEEL,2017.0,1975,1975.0,1975.0,structured_field,42.0,42.0,False
+,,,,,,,,incident_age,20170087.0,31159.0,STEEL,2017.0,1968,1968.0,1968.0,structured_field,49.0,49.0,True
+,,,,,,,,incident_age,20170077.0,2748.0,STEEL,2017.0,1968,1968.0,1968.0,structured_field,49.0,49.0,False
+,,,,,,,,incident_age,20170074.0,792.0,PLASTIC,2017.0,1991,1991.0,1991.0,structured_field,26.0,26.0,False
+,,,,,,,,incident_age,20170072.0,15007.0,STEEL,2017.0,1946,1946.0,1946.0,structured_field,71.0,71.0,False
+,,,,,,,,incident_age,20170070.0,15007.0,PLASTIC,2017.0,1973,1973.0,1973.0,structured_field,44.0,44.0,False
+,,,,,,,,incident_age,20170068.0,13480.0,STEEL,2017.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20170065.0,15007.0,STEEL,2017.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20170059.0,31470.0,PLASTIC,2017.0,1985,1985.0,1985.0,structured_field,32.0,32.0,False
+,,,,,,,,incident_age,20170056.0,22189.0,PLASTIC,2017.0,1981,1981.0,1981.0,structured_field,36.0,36.0,False
+,,,,,,,,incident_age,20170055.0,30769.0,STEEL,2017.0,1960,1960.0,1960.0,structured_field,57.0,57.0,False
+,,,,,,,,incident_age,20170051.0,15931.0,STEEL,2017.0,1959,1959.0,1959.0,structured_field,58.0,58.0,True
+,,,,,,,,incident_age,20180072.0,31348.0,STEEL,2017.0,1971,1971.0,1971.0,structured_field,46.0,46.0,False
+,,,,,,,,incident_age,20170047.0,15359.0,STEEL,2017.0,1955,1955.0,1955.0,structured_field,62.0,62.0,False
+,,,,,,,,incident_age,20170049.0,18484.0,PLASTIC,2017.0,1983,1983.0,1983.0,structured_field,34.0,34.0,False
+,,,,,,,,incident_age,20170044.0,11032.0,STEEL,2017.0,1964,1964.0,1964.0,structured_field,53.0,53.0,False
+,,,,,,,,incident_age,20170040.0,1800.0,CAST/WROUGHT IRON,2017.0,2000,2000.0,2000.0,structured_field,17.0,17.0,False
+,,,,,,,,incident_age,20170039.0,13480.0,STEEL,2017.0,2005,2005.0,2005.0,structured_field,12.0,12.0,False
+,,,,,,,,incident_age,20170036.0,31348.0,PLASTIC,2017.0,2003,2003.0,2003.0,structured_field,14.0,14.0,False
+,,,,,,,,incident_age,20170033.0,31348.0,PLASTIC,2017.0,2017,2017.0,2017.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20170029.0,1800.0,STEEL,2017.0,2006,2006.0,2006.0,structured_field,11.0,11.0,False
+,,,,,,,,incident_age,20170018.0,8070.0,PLASTIC,2017.0,1983,1983.0,1983.0,structured_field,34.0,34.0,False
+,,,,,,,,incident_age,20170024.0,45.0,STEEL,2017.0,UNKNOWN,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20170020.0,18484.0,PLASTIC,2017.0,1983,1983.0,1983.0,structured_field,34.0,34.0,True
+,,,,,,,,incident_age,20170015.0,2128.0,STEEL,2017.0,1967,1967.0,1967.0,structured_field,50.0,50.0,False
+,,,,,,,,incident_age,20170019.0,12408.0,CAST/WROUGHT IRON,2017.0,1901,1901.0,1901.0,structured_field,116.0,116.0,False
+,,,,,,,,incident_age,20180090.0,2128.0,STEEL,2017.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20170016.0,15007.0,PLASTIC,2017.0,1974,1974.0,1974.0,structured_field,43.0,43.0,True
+,,,,,,,,incident_age,20170013.0,2704.0,STEEL,2016.0,1930,1930.0,1930.0,structured_field,86.0,86.0,False
+,,,,,,,,incident_age,20170012.0,2596.0,PLASTIC,2016.0,1996,1996.0,1996.0,structured_field,20.0,20.0,False
+,,,,,,,,incident_age,20170006.0,1800.0,PLASTIC,2016.0,2016,2016.0,2016.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20170007.0,18484.0,PLASTIC,2016.0,1975,1975.0,1975.0,structured_field,41.0,41.0,False
+,,,,,,,,incident_age,20170005.0,13710.0,STEEL,2016.0,1963,1963.0,1963.0,structured_field,53.0,53.0,True
+,,,,,,,,incident_age,20170003.0,15469.0,CAST/WROUGHT IRON,2016.0,UNKNOWN,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20170002.0,2432.0,STEEL,2016.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20170001.0,15007.0,PLASTIC,2016.0,2016,2016.0,2016.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20160125.0,15007.0,STEEL,2016.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20160124.0,1800.0,CAST/WROUGHT IRON,2016.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20160122.0,31432.0,PLASTIC,2016.0,1974,1974.0,1974.0,structured_field,42.0,42.0,True
+,,,,,,,,incident_age,20160119.0,2604.0,STEEL,2016.0,1987,1987.0,1987.0,structured_field,29.0,29.0,False
+,,,,,,,,incident_age,20160123.0,20211.0,PLASTIC,2016.0,2016,2016.0,2016.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20160120.0,1640.0,STEEL,2016.0,1952,1952.0,1952.0,structured_field,64.0,64.0,False
+,,,,,,,,incident_age,20160121.0,792.0,PLASTIC,2016.0,2009,2009.0,2009.0,structured_field,7.0,7.0,True
+,,,,,,,,incident_age,20160115.0,2596.0,STEEL,2016.0,UNKNOWN,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20160114.0,13710.0,PLASTIC,2016.0,1998,1998.0,1998.0,structured_field,18.0,18.0,True
+,,,,,,,,incident_age,20160109.0,18736.0,STEEL,2016.0,1937,1937.0,1937.0,structured_field,79.0,79.0,True
+,,,,,,,,incident_age,20160108.0,18536.0,STEEL,2016.0,2010,2010.0,2010.0,structured_field,6.0,6.0,False
+,,,,,,,,incident_age,20160106.0,1800.0,STEEL,2016.0,1991,1991.0,1991.0,structured_field,25.0,25.0,False
+,,,,,,,,incident_age,20160104.0,31159.0,STEEL,2016.0,1971,1971.0,1971.0,structured_field,45.0,45.0,False
+,,,,,,,,incident_age,20160105.0,15348.0,PLASTIC,2016.0,2000,2000.0,2000.0,structured_field,16.0,16.0,False
+,,,,,,,,incident_age,20160103.0,13730.0,PLASTIC,2016.0,1979,1979.0,1979.0,structured_field,37.0,37.0,False
+,,,,,,,,incident_age,20160100.0,15931.0,STEEL,2016.0,1969,1969.0,1969.0,structured_field,47.0,47.0,True
+,,,,,,,,incident_age,20160088.0,2604.0,PLASTIC,2016.0,1994,1994.0,1994.0,structured_field,22.0,22.0,False
+,,,,,,,,incident_age,20160094.0,13061.0,PLASTIC,2016.0,1982,1982.0,1982.0,structured_field,34.0,34.0,False
+,,,,,,,,incident_age,20160096.0,6720.0,STEEL,2016.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20160089.0,11032.0,PLASTIC,2016.0,1986,1986.0,1986.0,structured_field,30.0,30.0,False
+,,,,,,,,incident_age,20160083.0,31597.0,STEEL,2016.0,1975,1975.0,1975.0,structured_field,41.0,41.0,False
+,,,,,,,,incident_age,20160082.0,6141.0,PLASTIC,2016.0,2004,2004.0,2004.0,structured_field,12.0,12.0,False
+,,,,,,,,incident_age,20160079.0,1640.0,STEEL,2016.0,1982,1982.0,1982.0,structured_field,34.0,34.0,False
+,,,,,,,,incident_age,20160078.0,18484.0,PLASTIC,2016.0,1982,1982.0,1982.0,structured_field,34.0,34.0,False
+,,,,,,,,incident_age,20160077.0,603.0,CAST/WROUGHT IRON,2016.0,1911,1911.0,1911.0,structured_field,105.0,105.0,True
+,,,,,,,,incident_age,20160075.0,18536.0,PLASTIC,2016.0,1996,1996.0,1996.0,structured_field,20.0,20.0,False
+,,,,,,,,incident_age,20160062.0,2748.0,PLASTIC,2016.0,2014,2014.0,2014.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20160111.0,12878.0,PLASTIC,2016.0,1989,1989.0,1989.0,structured_field,27.0,27.0,False
+,,,,,,,,incident_age,20160060.0,31348.0,PLASTIC,2016.0,1997,1997.0,1997.0,structured_field,19.0,19.0,False
+,,,,,,,,incident_age,20160058.0,792.0,PLASTIC,2016.0,2001,2001.0,2001.0,structured_field,15.0,15.0,True
+,,,,,,,,incident_age,20160056.0,15007.0,PLASTIC,2016.0,2008,2008.0,2008.0,structured_field,8.0,8.0,False
+,,,,,,,,incident_age,20160049.0,792.0,PLASTIC,2016.0,1989,1989.0,1989.0,structured_field,27.0,27.0,False
+,,,,,,,,incident_age,20160054.0,20010.0,STEEL,2016.0,1930,1930.0,1930.0,structured_field,86.0,86.0,False
+,,,,,,,,incident_age,20160047.0,12876.0,PLASTIC,2016.0,1983,1983.0,1983.0,structured_field,33.0,33.0,False
+,,,,,,,,incident_age,20160041.0,603.0,STEEL,2016.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20160044.0,4499.0,PLASTIC,2016.0,1982,1982.0,1982.0,structured_field,34.0,34.0,False
+,,,,,,,,incident_age,20160043.0,15952.0,STEEL,2016.0,2015,2015.0,2015.0,structured_field,1.0,1.0,True
+,,,,,,,,incident_age,20160040.0,31348.0,STEEL,2016.0,1971,1971.0,1971.0,structured_field,45.0,45.0,False
+,,,,,,,,incident_age,20160037.0,15007.0,STEEL,2016.0,1954,1954.0,1954.0,structured_field,62.0,62.0,False
+,,,,,,,,incident_age,20160031.0,4499.0,PLASTIC,2016.0,1987,1987.0,1987.0,structured_field,29.0,29.0,False
+,,,,,,,,incident_age,20160028.0,4499.0,PLASTIC,2016.0,1994,1994.0,1994.0,structured_field,22.0,22.0,False
+,,,,,,,,incident_age,20160029.0,11032.0,CAST/WROUGHT IRON,2016.0,1903,1903.0,1903.0,structured_field,113.0,113.0,False
+,,,,,,,,incident_age,20160024.0,603.0,PLASTIC,2016.0,1985,1985.0,1985.0,structured_field,31.0,31.0,False
+,,,,,,,,incident_age,20160027.0,12408.0,PLASTIC,2016.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20160022.0,2704.0,CAST/WROUGHT IRON,2016.0,1900,1900.0,1900.0,structured_field,116.0,116.0,False
+,,,,,,,,incident_age,20160017.0,5230.0,PLASTIC,2016.0,1996,1996.0,1996.0,structured_field,20.0,20.0,True
+,,,,,,,,incident_age,20160018.0,4483.0,STEEL,2016.0,1969,1969.0,1969.0,structured_field,47.0,47.0,False
+,,,,,,,,incident_age,20160013.0,12408.0,CAST/WROUGHT IRON,2016.0,1931,1931.0,1931.0,structured_field,85.0,85.0,False
+,,,,,,,,incident_age,20160012.0,15462.0,PLASTIC,2016.0,2015,2015.0,2015.0,structured_field,1.0,1.0,False
+,,,,,,,,incident_age,20160087.0,18484.0,PLASTIC,2016.0,1977,1977.0,1977.0,structured_field,39.0,39.0,True
+,,,,,,,,incident_age,20160009.0,14210.0,PLASTIC,2016.0,1983,1983.0,1983.0,structured_field,33.0,33.0,True
+,,,,,,,,incident_age,20160007.0,2704.0,CAST/WROUGHT IRON,2015.0,1907,1907.0,1907.0,structured_field,108.0,108.0,False
+,,,,,,,,incident_age,20160005.0,2704.0,STEEL,2015.0,1968,1968.0,1968.0,structured_field,47.0,47.0,False
+,,,,,,,,incident_age,20160003.0,12408.0,PLASTIC,2015.0,2000,2000.0,2000.0,structured_field,15.0,15.0,False
+,,,,,,,,incident_age,20160002.0,11032.0,PLASTIC,2015.0,1978,1978.0,1978.0,structured_field,37.0,37.0,False
+,,,,,,,,incident_age,20160001.0,1209.0,PLASTIC,2015.0,1990,1990.0,1990.0,structured_field,25.0,25.0,False
+,,,,,,,,incident_age,20160098.0,2596.0,STEEL,2015.0,1967,1967.0,1967.0,structured_field,48.0,48.0,False
+,,,,,,,,incident_age,20150106.0,1800.0,PLASTIC,2015.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20150105.0,15007.0,PLASTIC,2015.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20150093.0,31348.0,STEEL,2015.0,1962,1962.0,1962.0,structured_field,53.0,53.0,False
+,,,,,,,,incident_age,20150087.0,30769.0,CAST/WROUGHT IRON,2015.0,1902,1902.0,1902.0,structured_field,113.0,113.0,False
+,,,,,,,,incident_age,20150084.0,180.0,PLASTIC,2015.0,2013,2013.0,2013.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20150081.0,18484.0,STEEL,2015.0,1980,1980.0,1980.0,structured_field,35.0,35.0,False
+,,,,,,,,incident_age,20150078.0,30769.0,STEEL,2015.0,1959,1959.0,1959.0,structured_field,56.0,56.0,False
+,,,,,,,,incident_age,20150068.0,22435.0,PLASTIC,2015.0,UNKNOWN,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20150074.0,22189.0,PLASTIC,2015.0,1981,1981.0,1981.0,structured_field,34.0,34.0,True
+,,,,,,,,incident_age,20150067.0,12684.0,PLASTIC,2015.0,1993,1993.0,1993.0,structured_field,22.0,22.0,True
+,,,,,,,,incident_age,20150070.0,6243.0,STEEL,2015.0,1977,1977.0,1977.0,structured_field,38.0,38.0,True
+,,,,,,,,incident_age,20150069.0,1800.0,STEEL,2015.0,1972,1972.0,1972.0,structured_field,43.0,43.0,False
+,,,,,,,,incident_age,20150062.0,4499.0,PLASTIC,2015.0,2015,2015.0,2015.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20150066.0,2748.0,PLASTIC,2015.0,1997,1997.0,1997.0,structured_field,18.0,18.0,True
+,,,,,,,,incident_age,20150061.0,603.0,STEEL,2015.0,1975,1975.0,1975.0,structured_field,40.0,40.0,False
+,,,,,,,,incident_age,20150060.0,14180.0,PLASTIC,2015.0,1988,1988.0,1988.0,structured_field,27.0,27.0,False
+,,,,,,,,incident_age,20160034.0,22189.0,STEEL,2015.0,1969,1969.0,1969.0,structured_field,46.0,46.0,False
+,,,,,,,,incident_age,20150058.0,18484.0,PLASTIC,2015.0,2006,2006.0,2006.0,structured_field,9.0,9.0,False
+,,,,,,,,incident_age,20150059.0,2596.0,STEEL,2015.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20150054.0,2704.0,CAST/WROUGHT IRON,2015.0,UNKNOWN,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20150055.0,18484.0,STEEL,2015.0,1948,1948.0,1948.0,structured_field,67.0,67.0,False
+,,,,,,,,incident_age,20150051.0,22763.0,STEEL,2015.0,1963,1963.0,1963.0,structured_field,52.0,52.0,False
+,,,,,,,,incident_age,20150045.0,792.0,PLASTIC,2015.0,1985,1985.0,1985.0,structured_field,30.0,30.0,False
+,,,,,,,,incident_age,20150041.0,30769.0,STEEL,2015.0,1973,1973.0,1973.0,structured_field,42.0,42.0,False
+,,,,,,,,incident_age,20150038.0,2568.0,PLASTIC,2015.0,2015,2015.0,2015.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20150021.0,15826.0,PLASTIC,2015.0,1999,1999.0,1999.0,structured_field,16.0,16.0,False
+,,,,,,,,incident_age,20150035.0,1800.0,PLASTIC,2015.0,2002,2002.0,2002.0,structured_field,13.0,13.0,True
+,,,,,,,,incident_age,20170106.0,31159.0,PLASTIC,2015.0,2013,2013.0,2013.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20150036.0,12408.0,CAST/WROUGHT IRON,2015.0,1923,1923.0,1923.0,structured_field,92.0,92.0,True
+,,,,,,,,incident_age,20150032.0,15007.0,PLASTIC,2015.0,2008,2008.0,2008.0,structured_field,7.0,7.0,False
+,,,,,,,,incident_age,20150030.0,13299.0,STEEL,2015.0,1981,1981.0,1981.0,structured_field,34.0,34.0,True
+,,,,,,,,incident_age,20150029.0,13480.0,CAST/WROUGHT IRON,2015.0,1929,1929.0,1929.0,structured_field,86.0,86.0,False
+,,,,,,,,incident_age,20150014.0,15469.0,CAST/WROUGHT IRON,2015.0,1906,1906.0,1906.0,structured_field,109.0,109.0,False
+,,,,,,,,incident_age,20150025.0,2748.0,CAST/WROUGHT IRON,2015.0,1932,1932.0,1932.0,structured_field,83.0,83.0,True
+,,,,,,,,incident_age,20150019.0,18536.0,PLASTIC,2015.0,1978,1978.0,1978.0,structured_field,37.0,37.0,False
+,,,,,,,,incident_age,20150018.0,18484.0,STEEL,2015.0,1947,1947.0,1947.0,structured_field,68.0,68.0,False
+,,,,,,,,incident_age,20150011.0,2784.0,CAST/WROUGHT IRON,2015.0,1952,1952.0,1952.0,structured_field,63.0,63.0,True
+,,,,,,,,incident_age,20150008.0,4473.0,STEEL,2015.0,1952,1952.0,1952.0,structured_field,63.0,63.0,False
+,,,,,,,,incident_age,20150001.0,15259.0,PLASTIC,2014.0,2014,2014.0,2014.0,structured_field,0.0,0.0,True
+,,,,,,,,incident_age,20140120.0,30769.0,STEEL,2014.0,2002,2002.0,2002.0,structured_field,12.0,12.0,False
+,,,,,,,,incident_age,20140116.0,12342.0,PLASTIC,2014.0,1983,1983.0,1983.0,structured_field,31.0,31.0,True
+,,,,,,,,incident_age,20140113.0,4499.0,STEEL,2014.0,1925,1925.0,1925.0,structured_field,89.0,89.0,False
+,,,,,,,,incident_age,20140109.0,11800.0,PLASTIC,2014.0,1987,1987.0,1987.0,structured_field,27.0,27.0,True
+,,,,,,,,incident_age,20140111.0,15007.0,PLASTIC,2014.0,1988,1988.0,1988.0,structured_field,26.0,26.0,False
+,,,,,,,,incident_age,20140107.0,4499.0,PLASTIC,2014.0,2014,2014.0,2014.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20140097.0,5330.0,STEEL,2014.0,1963,1963.0,1963.0,structured_field,51.0,51.0,False
+,,,,,,,,incident_age,20140096.0,2676.0,PLASTIC,2014.0,2013,2013.0,2013.0,structured_field,1.0,1.0,True
+,,,,,,,,incident_age,20140103.0,1800.0,PLASTIC,2014.0,2000,2000.0,2000.0,structured_field,14.0,14.0,False
+,,,,,,,,incident_age,20140102.0,2748.0,STEEL,2014.0,1950,1950.0,1950.0,structured_field,64.0,64.0,False
+,,,,,,,,incident_age,20140094.0,13062.0,PLASTIC,2014.0,2014,2014.0,2014.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20140093.0,4060.0,STEEL,2014.0,1972,1972.0,1972.0,structured_field,42.0,42.0,False
+,,,,,,,,incident_age,20140092.0,15007.0,STEEL,2014.0,1966,1966.0,1966.0,structured_field,48.0,48.0,False
+,,,,,,,,incident_age,20140089.0,6240.0,PLASTIC,2014.0,1969,1969.0,1969.0,structured_field,45.0,45.0,True
+,,,,,,,,incident_age,20140090.0,15007.0,STEEL,2014.0,1954,1954.0,1954.0,structured_field,60.0,60.0,False
+,,,,,,,,incident_age,20140085.0,30769.0,CAST/WROUGHT IRON,2014.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20140084.0,30769.0,STEEL,2014.0,1963,1963.0,1963.0,structured_field,51.0,51.0,False
+,,,,,,,,incident_age,20140072.0,31588.0,PLASTIC,2014.0,2012,2012.0,2012.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20140069.0,18484.0,STEEL,2014.0,1966,1966.0,1966.0,structured_field,48.0,48.0,False
+,,,,,,,,incident_age,20140088.0,21349.0,PLASTIC,2014.0,2013,2013.0,2013.0,structured_field,1.0,1.0,False
+,,,,,,,,incident_age,20140058.0,15007.0,PLASTIC,2014.0,2005,2005.0,2005.0,structured_field,9.0,9.0,False
+,,,,,,,,incident_age,20140054.0,18472.0,STEEL,2014.0,1979,1979.0,1979.0,structured_field,35.0,35.0,False
+,,,,,,,,incident_age,20140064.0,15007.0,PLASTIC,2014.0,1986,1986.0,1986.0,structured_field,28.0,28.0,False
+,,,,,,,,incident_age,20140070.0,1209.0,PLASTIC,2014.0,1988,1988.0,1988.0,structured_field,26.0,26.0,False
+,,,,,,,,incident_age,20140041.0,2128.0,STEEL,2014.0,1968,1968.0,1968.0,structured_field,46.0,46.0,False
+,,,,,,,,incident_age,20140030.0,2288.0,PLASTIC,2014.0,1989,1989.0,1989.0,structured_field,25.0,25.0,False
+,,,,,,,,incident_age,20140035.0,18536.0,STEEL,2014.0,2007,2007.0,2007.0,structured_field,7.0,7.0,False
+,,,,,,,,incident_age,20140029.0,15952.0,PLASTIC,2014.0,1989,1989.0,1989.0,structured_field,25.0,25.0,True
+,,,,,,,,incident_age,20140028.0,15007.0,PLASTIC,2014.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20140027.0,2748.0,STEEL,2014.0,1955,1955.0,1955.0,structured_field,59.0,59.0,False
+,,,,,,,,incident_age,20140023.0,18484.0,STEEL,2014.0,1959,1959.0,1959.0,structured_field,55.0,55.0,False
+,,,,,,,,incident_age,20140022.0,2812.0,STEEL,2014.0,1984,1984.0,1984.0,structured_field,30.0,30.0,False
+,,,,,,,,incident_age,20140021.0,8070.0,STEEL,2014.0,1941,1941.0,1941.0,structured_field,73.0,73.0,False
+,,,,,,,,incident_age,20140014.0,15469.0,CAST/WROUGHT IRON,2014.0,1939,1939.0,1939.0,structured_field,75.0,75.0,True
+,,,,,,,,incident_age,20140012.0,22777.0,STEEL,2014.0,1958,1958.0,1958.0,structured_field,56.0,56.0,False
+,,,,,,,,incident_age,20140013.0,1800.0,CAST/WROUGHT IRON,2014.0,1926,1926.0,1926.0,structured_field,88.0,88.0,True
+,,,,,,,,incident_age,20140006.0,15931.0,STEEL,2013.0,1961,1961.0,1961.0,structured_field,52.0,52.0,False
+,,,,,,,,incident_age,20140005.0,2652.0,PLASTIC,2013.0,1982,1982.0,1982.0,structured_field,31.0,31.0,False
+,,,,,,,,incident_age,20140004.0,31348.0,PLASTIC,2013.0,1972,1972.0,1972.0,structured_field,41.0,41.0,True
+,,,,,,,,incident_age,20140003.0,180.0,CAST/WROUGHT IRON,2013.0,1951,1951.0,1951.0,structured_field,62.0,62.0,True
+,,,,,,,,incident_age,20130131.0,4499.0,STEEL,2013.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20130133.0,8070.0,STEEL,2013.0,1973,1973.0,1973.0,structured_field,40.0,40.0,False
+,,,,,,,,incident_age,20130132.0,2704.0,CAST/WROUGHT IRON,2013.0,1952,1952.0,1952.0,structured_field,61.0,61.0,False
+,,,,,,,,incident_age,20130119.0,4499.0,STEEL,2013.0,1993,1993.0,1993.0,structured_field,20.0,20.0,False
+,,,,,,,,incident_age,20130110.0,6243.0,STEEL,2013.0,1957,1957.0,1957.0,structured_field,56.0,56.0,False
+,,,,,,,,incident_age,20130108.0,12903.0,STEEL,2013.0,1960,1960.0,1960.0,structured_field,53.0,53.0,False
+,,,,,,,,incident_age,20130109.0,6720.0,PLASTIC,2013.0,1980,1980.0,1980.0,structured_field,33.0,33.0,False
+,,,,,,,,incident_age,20130107.0,2748.0,PLASTIC,2013.0,2013,2013.0,2013.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20130106.0,14210.0,PLASTIC,2013.0,1978,1978.0,1978.0,structured_field,35.0,35.0,True
+,,,,,,,,incident_age,20130102.0,18484.0,STEEL,2013.0,1960,1960.0,1960.0,structured_field,53.0,53.0,False
+,,,,,,,,incident_age,20130103.0,1640.0,PLASTIC,2013.0,2013,2013.0,2013.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20130100.0,13480.0,STEEL,2013.0,1969,1969.0,1969.0,structured_field,44.0,44.0,False
+,,,,,,,,incident_age,20130101.0,2812.0,PLASTIC,2013.0,2013,2013.0,2013.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20130091.0,12408.0,PLASTIC,2013.0,1994,1994.0,1994.0,structured_field,19.0,19.0,False
+,,,,,,,,incident_age,20130098.0,15462.0,PLASTIC,2013.0,1983,1983.0,1983.0,structured_field,30.0,30.0,False
+,,,,,,,,incident_age,20130090.0,2704.0,STEEL,2013.0,1955,1955.0,1955.0,structured_field,58.0,58.0,False
+,,,,,,,,incident_age,20130083.0,4499.0,PLASTIC,2013.0,2013,2013.0,2013.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20130076.0,32013.0,PLASTIC,2013.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20130079.0,11713.0,STEEL,2013.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20130081.0,4060.0,STEEL,2013.0,1948,1948.0,1948.0,structured_field,65.0,65.0,False
+,,,,,,,,incident_age,20130078.0,2704.0,STEEL,2013.0,1971,1971.0,1971.0,structured_field,42.0,42.0,False
+,,,,,,,,incident_age,20130075.0,792.0,STEEL,2013.0,1965,1965.0,1965.0,structured_field,48.0,48.0,False
+,,,,,,,,incident_age,20130080.0,2596.0,STEEL,2013.0,1969,1969.0,1969.0,structured_field,44.0,44.0,False
+,,,,,,,,incident_age,20130071.0,31159.0,PLASTIC,2013.0,2012,2012.0,2012.0,structured_field,1.0,1.0,False
+,,,,,,,,incident_age,20130066.0,2596.0,CAST/WROUGHT IRON,2013.0,UNKNOWN,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20130059.0,15007.0,STEEL,2013.0,1938,1938.0,1938.0,structured_field,75.0,75.0,False
+,,,,,,,,incident_age,20130058.0,15007.0,PLASTIC,2013.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20130034.0,13730.0,STEEL,2013.0,1948,1948.0,1948.0,structured_field,65.0,65.0,False
+,,,,,,,,incident_age,20130045.0,2704.0,STEEL,2013.0,1961,1961.0,1961.0,structured_field,52.0,52.0,True
+,,,,,,,,incident_age,20130046.0,18484.0,STEEL,2013.0,1952,1952.0,1952.0,structured_field,61.0,61.0,False
+,,,,,,,,incident_age,20130067.0,2704.0,STEEL,2013.0,1948,1948.0,1948.0,structured_field,65.0,65.0,False
+,,,,,,,,incident_age,20130043.0,15931.0,STEEL,2013.0,1952,1952.0,1952.0,structured_field,61.0,61.0,True
+,,,,,,,,incident_age,20130047.0,15007.0,STEEL,2013.0,1950,1950.0,1950.0,structured_field,63.0,63.0,False
+,,,,,,,,incident_age,20130038.0,4499.0,PLASTIC,2013.0,1971,1971.0,1971.0,structured_field,42.0,42.0,True
+,,,,,,,,incident_age,20130031.0,30769.0,PLASTIC,2013.0,2000,2000.0,2000.0,structured_field,13.0,13.0,True
+,,,,,,,,incident_age,20130025.0,2196.0,STEEL,2013.0,1931,1931.0,1931.0,structured_field,82.0,82.0,False
+,,,,,,,,incident_age,20130037.0,5200.0,CAST/WROUGHT IRON,2013.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20130026.0,24015.0,STEEL,2013.0,1992,1992.0,1992.0,structured_field,21.0,21.0,False
+,,,,,,,,incident_age,20130013.0,22189.0,PLASTIC,2013.0,2007,2007.0,2007.0,structured_field,6.0,6.0,False
+,,,,,,,,incident_age,20130012.0,31348.0,PLASTIC,2013.0,1998,1998.0,1998.0,structured_field,15.0,15.0,True
+,,,,,,,,incident_age,20130010.0,14210.0,PLASTIC,2013.0,1972,1972.0,1972.0,structured_field,41.0,41.0,False
+,,,,,,,,incident_age,20120104.0,31232.0,STEEL,2012.0,1956,1956.0,1956.0,structured_field,56.0,56.0,False
+,,,,,,,,incident_age,20120099.0,5200.0,STEEL,2012.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20120100.0,13840.0,STEEL,2012.0,1970,1970.0,1970.0,structured_field,42.0,42.0,True
+,,,,,,,,incident_age,20120089.0,12408.0,PLASTIC,2012.0,1994,1994.0,1994.0,structured_field,18.0,18.0,False
+,,,,,,,,incident_age,20120081.0,2812.0,STEEL,2012.0,1956,1956.0,1956.0,structured_field,56.0,56.0,False
+,,,,,,,,incident_age,20130068.0,2704.0,STEEL,2012.0,2007,2007.0,2007.0,structured_field,5.0,5.0,False
+,,,,,,,,incident_age,20120073.0,6141.0,PLASTIC,2012.0,2012,2012.0,2012.0,structured_field,0.0,0.0,True
+,,,,,,,,incident_age,20120070.0,18484.0,PLASTIC,2012.0,2002,2002.0,2002.0,structured_field,10.0,10.0,False
+,,,,,,,,incident_age,20120068.0,18484.0,STEEL,2012.0,1959,1959.0,1959.0,structured_field,53.0,53.0,False
+,,,,,,,,incident_age,20120055.0,13730.0,STEEL,2012.0,1963,1963.0,1963.0,structured_field,49.0,49.0,False
+,,,,,,,,incident_age,20120066.0,11032.0,CAST/WROUGHT IRON,2012.0,1961,1961.0,1961.0,structured_field,51.0,51.0,False
+,,,,,,,,incident_age,20120062.0,31159.0,PLASTIC,2012.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20120061.0,31159.0,PLASTIC,2012.0,2009,2009.0,2009.0,structured_field,3.0,3.0,False
+,,,,,,,,incident_age,20120057.0,1088.0,PLASTIC,2012.0,2001,2001.0,2001.0,structured_field,11.0,11.0,False
+,,,,,,,,incident_age,20120077.0,14330.0,STEEL,2012.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20120069.0,18484.0,PLASTIC,2012.0,1979,1979.0,1979.0,structured_field,33.0,33.0,False
+,,,,,,,,incident_age,20120045.0,4350.0,STEEL,2012.0,1972,1972.0,1972.0,structured_field,40.0,40.0,True
+,,,,,,,,incident_age,20120046.0,13302.0,STEEL,2012.0,1962,1962.0,1962.0,structured_field,50.0,50.0,True
+,,,,,,,,incident_age,20120090.0,12350.0,PLASTIC,2012.0,1974,1974.0,1974.0,structured_field,38.0,38.0,False
+,,,,,,,,incident_age,20120040.0,15007.0,STEEL,2012.0,2011,2011.0,2011.0,structured_field,1.0,1.0,False
+,,,,,,,,incident_age,20120038.0,603.0,PLASTIC,2012.0,1979,1979.0,1979.0,structured_field,33.0,33.0,True
+,,,,,,,,incident_age,20120029.0,12390.0,STEEL,2012.0,UNKNOWN,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20130064.0,2704.0,STEEL,2012.0,1949,1949.0,1949.0,structured_field,63.0,63.0,False
+,,,,,,,,incident_age,20120022.0,1088.0,CAST/WROUGHT IRON,2012.0,1909,1909.0,1909.0,structured_field,103.0,103.0,False
+,,,,,,,,incident_age,20120017.0,31159.0,STEEL,2012.0,1957,1957.0,1957.0,structured_field,55.0,55.0,False
+,,,,,,,,incident_age,20120014.0,2704.0,PLASTIC,2012.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20120015.0,14330.0,PLASTIC,2012.0,1991,1991.0,1991.0,structured_field,21.0,21.0,True
+,,,,,,,,incident_age,20120011.0,18532.0,CAST/WROUGHT IRON,2012.0,1950,1950.0,1950.0,structured_field,62.0,62.0,True
+,,,,,,,,incident_age,20120012.0,15359.0,STEEL,2012.0,1964,1964.0,1964.0,structured_field,48.0,48.0,True
+,,,,,,,,incident_age,20120009.0,4499.0,PLASTIC,2011.0,1978,1978.0,1978.0,structured_field,33.0,33.0,True
+,,,,,,,,incident_age,20120005.0,2600.0,PLASTIC,2011.0,1978,1978.0,1978.0,structured_field,33.0,33.0,False
+,,,,,,,,incident_age,20120001.0,11824.0,PLASTIC,2011.0,2001,2001.0,2001.0,structured_field,10.0,10.0,False
+,,,,,,,,incident_age,20110394.0,14210.0,PLASTIC,2011.0,1986,1986.0,1986.0,structured_field,25.0,25.0,False
+,,,,,,,,incident_age,20110393.0,8070.0,STEEL,2011.0,1946,1946.0,1946.0,structured_field,65.0,65.0,True
+,,,,,,,,incident_age,20110390.0,1088.0,CAST/WROUGHT IRON,2011.0,1900,1900.0,1900.0,structured_field,111.0,111.0,False
+,,,,,,,,incident_age,20110388.0,18536.0,PLASTIC,2011.0,1995,1995.0,1995.0,structured_field,16.0,16.0,False
+,,,,,,,,incident_age,20110387.0,20010.0,PLASTIC,2011.0,1998,1998.0,1998.0,structured_field,13.0,13.0,False
+,,,,,,,,incident_age,20110384.0,2704.0,STEEL,2011.0,1959,1959.0,1959.0,structured_field,52.0,52.0,False
+,,,,,,,,incident_age,20110385.0,2812.0,STEEL,2011.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20110377.0,12408.0,CAST/WROUGHT IRON,2011.0,1928,1928.0,1928.0,structured_field,83.0,83.0,True
+,,,,,,,,incident_age,20110368.0,2704.0,PLASTIC,2011.0,2011,2011.0,2011.0,structured_field,0.0,0.0,True
+,,,,,,,,incident_age,20110372.0,13480.0,STEEL,2011.0,1997,1997.0,1997.0,structured_field,14.0,14.0,False
+,,,,,,,,incident_age,20110364.0,6141.0,STEEL,2011.0,1966,1966.0,1966.0,structured_field,45.0,45.0,False
+,,,,,,,,incident_age,20110369.0,15007.0,PLASTIC,2011.0,1973,1973.0,1973.0,structured_field,38.0,38.0,False
+,,,,,,,,incident_age,20110327.0,13480.0,STEEL,2011.0,1967,1967.0,1967.0,structured_field,44.0,44.0,False
+,,,,,,,,incident_age,20110326.0,2812.0,STEEL,2011.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20110318.0,11032.0,PLASTIC,2011.0,1978,1978.0,1978.0,structured_field,33.0,33.0,False
+,,,,,,,,incident_age,20110285.0,18799.0,STEEL,2011.0,UNKNOWN,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20110278.0,15931.0,STEEL,2011.0,1963,1963.0,1963.0,structured_field,48.0,48.0,False
+,,,,,,,,incident_age,20110280.0,22182.0,STEEL,2011.0,2002,2002.0,2002.0,structured_field,9.0,9.0,False
+,,,,,,,,incident_age,20110269.0,31348.0,PLASTIC,2011.0,1984,1984.0,1984.0,structured_field,27.0,27.0,False
+,,,,,,,,incident_age,20110260.0,12350.0,STEEL,2011.0,1962,1962.0,1962.0,structured_field,49.0,49.0,True
+,,,,,,,,incident_age,20110224.0,22189.0,STEEL,2011.0,1960,1960.0,1960.0,structured_field,51.0,51.0,False
+,,,,,,,,incident_age,20110213.0,2704.0,PLASTIC,2011.0,1993,1993.0,1993.0,structured_field,18.0,18.0,False
+,,,,,,,,incident_age,20110190.0,4350.0,PLASTIC,2011.0,1984,1984.0,1984.0,structured_field,27.0,27.0,False
+,,,,,,,,incident_age,20110287.0,20211.0,PLASTIC,2011.0,,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20110173.0,12350.0,STEEL,2011.0,1949,1949.0,1949.0,structured_field,62.0,62.0,False
+,,,,,,,,incident_age,20110071.0,21349.0,PLASTIC,2011.0,1994,1994.0,1994.0,structured_field,17.0,17.0,False
+,,,,,,,,incident_age,20110070.0,2604.0,STEEL,2011.0,1967,1967.0,1967.0,structured_field,44.0,44.0,False
+,,,,,,,,incident_age,20110161.0,32468.0,PLASTIC,2011.0,1994,1994.0,1994.0,structured_field,17.0,17.0,False
+,,,,,,,,incident_age,20110059.0,13400.0,PLASTIC,2011.0,2010,2010.0,2010.0,structured_field,1.0,1.0,False
+,,,,,,,,incident_age,20110065.0,31636.0,STEEL,2011.0,1986,1986.0,1986.0,structured_field,25.0,25.0,False
+,,,,,,,,incident_age,20110054.0,18484.0,STEEL,2011.0,1959,1959.0,1959.0,structured_field,52.0,52.0,False
+,,,,,,,,incident_age,20110058.0,2596.0,STEEL,2011.0,1966,1966.0,1966.0,structured_field,45.0,45.0,False
+,,,,,,,,incident_age,20110053.0,15938.0,STEEL,2011.0,1982,1982.0,1982.0,structured_field,29.0,29.0,True
+,,,,,,,,incident_age,20110048.0,1088.0,PLASTIC,2011.0,1996,1996.0,1996.0,structured_field,15.0,15.0,False
+,,,,,,,,incident_age,20110047.0,12408.0,CAST/WROUGHT IRON,2011.0,1930,1930.0,1930.0,structured_field,81.0,81.0,False
+,,,,,,,,incident_age,20110046.0,20010.0,CAST/WROUGHT IRON,2011.0,1928,1928.0,1928.0,structured_field,83.0,83.0,True
+,,,,,,,,incident_age,20110030.0,2704.0,STEEL,2011.0,1957,1957.0,1957.0,structured_field,54.0,54.0,False
+,,,,,,,,incident_age,20110026.0,15469.0,CAST/WROUGHT IRON,2011.0,1942,1942.0,1942.0,structured_field,69.0,69.0,True
+,,,,,,,,incident_age,20110020.0,11032.0,STEEL,2011.0,1953,1953.0,1953.0,structured_field,58.0,58.0,False
+,,,,,,,,incident_age,20110013.0,2196.0,STEEL,2010.0,1990,1990.0,1990.0,structured_field,20.0,20.0,False
+,,,,,,,,incident_age,20110010.0,2748.0,STEEL,2010.0,1940,1940.0,1940.0,structured_field,70.0,70.0,True
+,,,,,,,,incident_age,20110012.0,6510.0,STEEL,2010.0,1974,1974.0,1974.0,structured_field,36.0,36.0,True
+,,,,,,,,incident_age,20110003.0,5340.0,STEEL,2010.0,1960,1960.0,1960.0,structured_field,50.0,50.0,False
+,,,,,,,,incident_age,20100098.0,13730.0,PLASTIC,2010.0,2010,2010.0,2010.0,structured_field,0.0,0.0,False
+,,,,,,,,incident_age,20100099.0,30839.0,STEEL,2010.0,1956,1956.0,1956.0,structured_field,54.0,54.0,True
+,,,,,,,,incident_age,20100094.0,3240.0,STEEL,2010.0,1967,1967.0,1967.0,structured_field,43.0,43.0,False
+,,,,,,,,incident_age,20100095.0,13400.0,PLASTIC,2010.0,1998,1998.0,1998.0,structured_field,12.0,12.0,False
+,,,,,,,,incident_age,20110035.0,2012.0,STEEL,2010.0,UNKNOWN,,,unknown_after_narrative_review,,,True
+,,,,,,,,incident_age,20100085.0,6720.0,PLASTIC,2010.0,1978,1978.0,1978.0,structured_field,32.0,32.0,True
+,,,,,,,,incident_age,20100084.0,8070.0,PLASTIC,2010.0,1988,1988.0,1988.0,structured_field,22.0,22.0,False
+,,,,,,,,incident_age,20100076.0,792.0,STEEL,2010.0,1967,1967.0,1967.0,structured_field,43.0,43.0,False
+,,,,,,,,incident_age,20100080.0,15007.0,PLASTIC,2010.0,UNKNOWN,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20100069.0,6141.0,PLASTIC,2010.0,2007,2007.0,2007.0,structured_field,3.0,3.0,False
+,,,,,,,,incident_age,20100061.0,792.0,PLASTIC,2010.0,1988,1988.0,1988.0,structured_field,22.0,22.0,True
+,,,,,,,,incident_age,20100064.0,792.0,CAST/WROUGHT IRON,2010.0,1924,1924.0,1924.0,structured_field,86.0,86.0,False
+,,,,,,,,incident_age,20110038.0,18536.0,PLASTIC,2010.0,1964,1964.0,1964.0,structured_field,46.0,46.0,False
+,,,,,,,,incident_age,20100050.0,12438.0,PLASTIC,2010.0,2009,2009.0,2009.0,structured_field,1.0,1.0,False
+,,,,,,,,incident_age,20100058.0,2604.0,STEEL,2010.0,1992,1992.0,1992.0,structured_field,18.0,18.0,False
+,,,,,,,,incident_age,20100047.0,2748.0,STEEL,2010.0,1959,1959.0,1959.0,structured_field,51.0,51.0,False
+,,,,,,,,incident_age,20100043.0,12208.0,PLASTIC,2010.0,1990,1990.0,1990.0,structured_field,20.0,20.0,True
+,,,,,,,,incident_age,20100038.0,13710.0,STEEL,2010.0,1965,1965.0,1965.0,structured_field,45.0,45.0,False
+,,,,,,,,incident_age,20110006.0,12642.0,CAST/WROUGHT IRON,2010.0,1950,1950.0,1950.0,structured_field,60.0,60.0,True
+,,,,,,,,incident_age,20100102.0,15350.0,STEEL,2010.0,1969,1969.0,1969.0,structured_field,41.0,41.0,False
+,,,,,,,,incident_age,20100027.0,15952.0,PLASTIC,2010.0,1994,1994.0,1994.0,structured_field,16.0,16.0,False
+,,,,,,,,incident_age,20100088.0,14210.0,STEEL,2010.0,2008,2008.0,2008.0,structured_field,2.0,2.0,False
+,,,,,,,,incident_age,20100068.0,31348.0,PLASTIC,2010.0,1977,1977.0,1977.0,structured_field,33.0,33.0,False
+,,,,,,,,incident_age,20100096.0,15329.0,STEEL,2010.0,UNKNOWN,,1954.0,explicit_narrative_year,,56.0,True
+,,,,,,,,incident_age,20100011.0,2432.0,STEEL,2010.0,1968,1968.0,1968.0,structured_field,42.0,42.0,False
+,,,,,,,,incident_age,20100017.0,12350.0,PLASTIC,2010.0,1986,1986.0,1986.0,structured_field,24.0,24.0,False
+,,,,,,,,incident_age,20100009.0,32227.0,PLASTIC,2010.0,2007,2007.0,2007.0,structured_field,3.0,3.0,False
+,,,,,,,,incident_age,20100002.0,13730.0,PLASTIC,2010.0,1990,1990.0,1990.0,structured_field,20.0,20.0,False
+,,,,,,,,incident_age,20100092.0,31432.0,PLASTIC,2010.0,1982,1982.0,1982.0,structured_field,28.0,28.0,False
+,,,,,,,,incident_age,20100006.0,31636.0,PLASTIC,2010.0,1991,1991.0,1991.0,structured_field,19.0,19.0,False
+,,,,,,,,incident_age,20110379.0,1640.0,CAST/WROUGHT IRON,2010.0,1930,1930.0,1930.0,structured_field,80.0,80.0,True
+,,,,,,,,incident_age,20100012.0,15952.0,CAST/WROUGHT IRON,2010.0,1959,1959.0,1959.0,structured_field,51.0,51.0,False
+,,,,,,,,incident_age,20100013.0,13710.0,STEEL,2010.0,1959,1959.0,1959.0,structured_field,51.0,51.0,True
+,,,,,,,,incident_age,20100022.0,15007.0,STEEL,2010.0,,,,unknown_after_narrative_review,,,False
+,,,,,,,,incident_age,20100057.0,4473.0,STEEL,2010.0,1950,1950.0,1950.0,structured_field,60.0,60.0,False

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="576pt" viewBox="0 0 864 576" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-06T19:05:37.581114</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 576 
+L 864 576 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 216 282.24 
+L 596.16 282.24 
+L 596.16 144 
+L 216 144 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="235.008" y="303.476328" transform="rotate(-0 235.008 303.476328)">1</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="311.04" y="303.476328" transform="rotate(-0 311.04 303.476328)">5</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="406.08" y="303.476328" transform="rotate(-0 406.08 303.476328)">10</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="501.12" y="303.476328" transform="rotate(-0 501.12 303.476328)">15</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="596.16" y="303.476328" transform="rotate(-0 596.16 303.476328)">20</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 14px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #26353e" x="406.08" y="320.194102" transform="rotate(-0 406.08 320.194102)">Casualty-report rate ratio (steel = 1)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="text_7">
+      <text style="font-size: 14px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #26353e" x="200" y="186.79801" transform="rotate(-0 200 186.79801)">National totals</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="text_8">
+      <text style="font-size: 14px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #26353e" x="200" y="249.634373" transform="rotate(-0 200 249.634373)">Same state and year</text>
+     </g>
+    </g>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 310.63463 181.701818 
+L 537.551452 181.701818 
+" clip-path="url(#p9e02ff46ce)" style="fill: none; stroke: #a15d43; stroke-width: 2"/>
+   </g>
+   <g id="line2d_1">
+    <defs>
+     <path id="m1cf4a33c16" d="M 0 4 
+L 0 -4 
+" style="stroke: #a15d43"/>
+    </defs>
+    <g clip-path="url(#p9e02ff46ce)">
+     <use xlink:href="#m1cf4a33c16" x="310.63463" y="181.701818" style="fill: #a15d43; stroke: #a15d43"/>
+    </g>
+   </g>
+   <g id="line2d_2">
+    <g clip-path="url(#p9e02ff46ce)">
+     <use xlink:href="#m1cf4a33c16" x="537.551452" y="181.701818" style="fill: #a15d43; stroke: #a15d43"/>
+    </g>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 299.495874 244.538182 
+L 561.701066 244.538182 
+" clip-path="url(#p9e02ff46ce)" style="fill: none; stroke: #a15d43; stroke-width: 2"/>
+   </g>
+   <g id="line2d_3">
+    <g clip-path="url(#p9e02ff46ce)">
+     <use xlink:href="#m1cf4a33c16" x="299.495874" y="244.538182" style="fill: #a15d43; stroke: #a15d43"/>
+    </g>
+   </g>
+   <g id="line2d_4">
+    <g clip-path="url(#p9e02ff46ce)">
+     <use xlink:href="#m1cf4a33c16" x="561.701066" y="244.538182" style="fill: #a15d43; stroke: #a15d43"/>
+    </g>
+   </g>
+   <g id="line2d_5">
+    <path d="M 235.008 282.24 
+L 235.008 144 
+" clip-path="url(#p9e02ff46ce)" style="fill: none; stroke: #dce3e7; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_6">
+    <defs>
+     <path id="mc442152d08" d="M 0 5 
+C 1.326016 5 2.597899 4.473168 3.535534 3.535534 
+C 4.473168 2.597899 5 1.326016 5 0 
+C 5 -1.326016 4.473168 -2.597899 3.535534 -3.535534 
+C 2.597899 -4.473168 1.326016 -5 0 -5 
+C -1.326016 -5 -2.597899 -4.473168 -3.535534 -3.535534 
+C -4.473168 -2.597899 -5 -1.326016 -5 0 
+C -5 1.326016 -4.473168 2.597899 -3.535534 3.535534 
+C -2.597899 4.473168 -1.326016 5 0 5 
+z
+" style="stroke: #a15d43"/>
+    </defs>
+    <g clip-path="url(#p9e02ff46ce)">
+     <use xlink:href="#mc442152d08" x="400.340716" y="181.701818" style="fill: #a15d43; stroke: #a15d43"/>
+    </g>
+   </g>
+   <g id="line2d_7">
+    <g clip-path="url(#p9e02ff46ce)">
+     <use xlink:href="#mc442152d08" x="409.971261" y="244.538182" style="fill: #a15d43; stroke: #a15d43"/>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 216 282.24 
+L 596.16 282.24 
+" style="fill: none; stroke: #dce3e7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="634.176" y="185.140512" transform="rotate(-0 634.176 185.140512)">9.70</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="634.176" y="199.888014" transform="rotate(-0 634.176 199.888014)">[4.98, 16.92]</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="634.176" y="247.976876" transform="rotate(-0 634.176 247.976876)">10.20</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="634.176" y="262.724378" transform="rotate(-0 634.176 262.724378)">[4.39, 18.19]</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_4">
+    <path d="M 34.56 506.88 
+L 829.44 506.88 
+L 829.44 380.16 
+L 34.56 380.16 
+z
+" clip-path="url(#pf4ec6a2683)" style="fill: #f3f6f8"/>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="54.432" y="408.0384" transform="rotate(-0 54.432 408.0384)">The same 693-report scope · concentration of fatalities</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="54.432" y="447.3216" transform="rotate(-0 54.432 447.3216)">5 of the 14 cast / wrought iron-related deaths occurred in one incident</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 13px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="54.432" y="485.3376" transform="rotate(-0 54.432 485.3376)">Allentown, 2011: 35.7% of the cast / wrought iron-related deaths.</text>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="font-weight: 700; font-size: 24px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="34.56" y="43.392656" transform="rotate(-0 34.56 43.392656)">Cast / wrought iron: higher casualty-report rates</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 13.5px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="34.56" y="83.2672" transform="rotate(-0 34.56 83.2672)">Cast / wrought iron relative to steel: the ratio of casualty-report rates per mile-year.</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 11px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="34.56" y="348.48" transform="rotate(-0 34.56 348.48)">95% joint jurisdiction-bootstrap intervals. National: 52 jurisdictions. Matched: 466 state and year combinations in 35 jurisdictions.</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 11px; font-family: 'Arial', 'Microsoft YaHei', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="34.56" y="544.667656" transform="rotate(-0 34.56 544.667656)">Death-rate influence: 0.379 with all reports, 0.244 without that case, per 10,000 mile-years; mileage unchanged.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9e02ff46ce">
+   <rect x="216" y="144" width="380.16" height="138.24"/>
+  </clipPath>
+  <clipPath id="pf4ec6a2683">
+   <rect x="34.56" y="380.16" width="794.88" height="126.72"/>
+  </clipPath>
+ </defs>
+</svg>

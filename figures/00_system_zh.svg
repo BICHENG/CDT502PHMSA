@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="576pt" viewBox="0 0 864 576" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-06T19:04:38.650555</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 576 
+L 864 576 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 34.56 351.36 
+L 829.44 351.36 
+L 829.44 289.92 
+L 34.56 289.92 
+z
+" clip-path="url(#p11e3973ed2)" style="fill: #f3f6f8"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 614.8224 233.6 
+L 797.6448 233.6 
+L 797.6448 146.56 
+L 614.8224 146.56 
+z
+" clip-path="url(#p11e3973ed2)" style="fill: #e7edf0; stroke: #74838d; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 598.9248 146.56 
+L 706.2336 120.96 
+L 813.5424 146.56 
+z
+" clip-path="url(#p11e3973ed2)" style="fill: #d9e3e8; stroke: #74838d; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 678.4128 233.6 
+L 726.1056 233.6 
+L 726.1056 182.4 
+L 678.4128 182.4 
+z
+" clip-path="url(#p11e3973ed2)" style="fill: #ffffff; stroke: #74838d; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 153.792 208 
+C 155.900046 208 157.922036 207.460525 159.41265 206.500387 
+C 160.903264 205.540249 161.7408 204.23784 161.7408 202.88 
+C 161.7408 201.52216 160.903264 200.219751 159.41265 199.259613 
+C 157.922036 198.299475 155.900046 197.76 153.792 197.76 
+C 151.683954 197.76 149.661964 198.299475 148.17135 199.259613 
+C 146.680736 200.219751 145.8432 201.52216 145.8432 202.88 
+C 145.8432 204.23784 146.680736 205.540249 148.17135 206.500387 
+C 149.661964 207.460525 151.683954 208 153.792 208 
+z
+" clip-path="url(#p11e3973ed2)" style="fill: #454c50"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 142.66368 202.368 
+L 145.8432 196.224 
+L 161.7408 196.224 
+L 164.92032 202.368 
+z
+" clip-path="url(#p11e3973ed2)" style="fill: #e8d79e; stroke: #454c50; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 336.6144 208 
+C 338.722446 208 340.744436 207.460525 342.23505 206.500387 
+C 343.725664 205.540249 344.5632 204.23784 344.5632 202.88 
+C 344.5632 201.52216 343.725664 200.219751 342.23505 199.259613 
+C 340.744436 198.299475 338.722446 197.76 336.6144 197.76 
+C 334.506354 197.76 332.484364 198.299475 330.99375 199.259613 
+C 329.503136 200.219751 328.6656 201.52216 328.6656 202.88 
+C 328.6656 204.23784 329.503136 205.540249 330.99375 206.500387 
+C 332.484364 207.460525 334.506354 208 336.6144 208 
+z
+" clip-path="url(#p11e3973ed2)" style="fill: #454c50"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 325.48608 202.368 
+L 328.6656 196.224 
+L 344.5632 196.224 
+L 347.74272 202.368 
+z
+" clip-path="url(#p11e3973ed2)" style="fill: #e8d79e; stroke: #454c50; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 742.0032 252.032 
+C 743.689637 252.032 745.307229 251.60042 746.49972 250.832309 
+C 747.692211 250.064199 748.36224 249.022272 748.36224 247.936 
+C 748.36224 246.849728 747.692211 245.807801 746.49972 245.039691 
+C 745.307229 244.27158 743.689637 243.84 742.0032 243.84 
+C 740.316763 243.84 738.699171 244.27158 737.50668 245.039691 
+C 736.314189 245.807801 735.64416 246.849728 735.64416 247.936 
+C 735.64416 249.022272 736.314189 250.064199 737.50668 250.832309 
+C 738.699171 251.60042 740.316763 252.032 742.0032 252.032 
+z
+" clip-path="url(#p11e3973ed2)" style="fill: #3d6d96"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 50.4576 305.28 
+L 543.2832 305.28 
+" clip-path="url(#p11e3973ed2)" style="fill: none; stroke: #74838d; stroke-width: 11; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 511.488 305.28 
+L 511.488 238.72 
+L 646.6176 238.72 
+L 646.6176 233.6 
+" clip-path="url(#p11e3973ed2)" style="fill: none; stroke: #26353e; stroke-width: 6; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 153.792 209.024 
+L 153.792 226.432 
+" clip-path="url(#p11e3973ed2)" style="fill: none; stroke: #454c50; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 140.27904 218.24 
+L 153.792 213.12 
+L 167.30496 218.24 
+" clip-path="url(#p11e3973ed2)" style="fill: none; stroke: #454c50; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 142.66368 238.72 
+L 153.792 226.432 
+L 164.92032 238.72 
+" clip-path="url(#p11e3973ed2)" style="fill: none; stroke: #454c50; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 336.6144 209.024 
+L 336.6144 226.432 
+" clip-path="url(#p11e3973ed2)" style="fill: none; stroke: #454c50; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 323.10144 218.24 
+L 336.6144 213.12 
+L 350.12736 218.24 
+" clip-path="url(#p11e3973ed2)" style="fill: none; stroke: #454c50; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 325.48608 238.72 
+L 336.6144 226.432 
+L 347.74272 238.72 
+" clip-path="url(#p11e3973ed2)" style="fill: none; stroke: #454c50; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 742.0032 252.8512 
+L 742.0032 266.7776 
+" clip-path="url(#p11e3973ed2)" style="fill: none; stroke: #3d6d96; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 731.192832 260.224 
+L 742.0032 256.128 
+L 752.813568 260.224 
+" clip-path="url(#p11e3973ed2)" style="fill: none; stroke: #3d6d96; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 733.100544 276.608 
+L 742.0032 266.7776 
+L 750.905856 276.608 
+" clip-path="url(#p11e3973ed2)" style="fill: none; stroke: #3d6d96; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #26353e" x="257.1264" y="334.464" transform="rotate(-0 257.1264 334.464)">主管道</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="551.232" y="279.68" transform="rotate(-0 551.232 279.68)">进户管</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #26353e" x="702.2592" y="169.6" transform="rotate(-0 702.2592 169.6)">住户与商铺</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #26353e" x="153.792" y="177.28" transform="rotate(-0 153.792 177.28)">施工与检修人员</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #26353e" x="344.5632" y="177.28" transform="rotate(-0 344.5632 177.28)">应急人员</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #26353e" x="757.9008" y="305.28" transform="rotate(-0 757.9008 305.28)">用户</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_11">
+    <path d="M 34.56 509.76 
+L 287.712 509.76 
+L 287.712 385.92 
+L 34.56 385.92 
+z
+" clip-path="url(#pc231658da3)" style="fill: #f3f6f8"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="49.74912" y="411.9264" transform="rotate(-0 49.74912 411.9264)">01</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="49.74912" y="439.1712" transform="rotate(-0 49.74912 439.1712)">事故中的人员</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #26353e" transform="translate(49.74912 471.961856)">部件与地点</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #26353e" transform="translate(49.74912 494.8992)">涉及谁，现场发生了什么</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_12">
+    <path d="M 304.992 509.76 
+L 558.144 509.76 
+L 558.144 385.92 
+L 304.992 385.92 
+z
+" clip-path="url(#paf26aa8467)" style="fill: #f3f6f8"/>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="320.18112" y="411.9264" transform="rotate(-0 320.18112 411.9264)">02</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="320.18112" y="439.1712" transform="rotate(-0 320.18112 439.1712)">管网中的材料</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #26353e" transform="translate(320.18112 471.844669)">材料与使用规模</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #26353e" transform="translate(320.18112 494.8992)">比较里程、年代和事故后果</text>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g id="patch_13">
+    <path d="M 575.424 509.76 
+L 828.576 509.76 
+L 828.576 385.92 
+L 575.424 385.92 
+z
+" clip-path="url(#p8dce0997c6)" style="fill: #f3f6f8"/>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="590.61312" y="411.9264" transform="rotate(-0 590.61312 411.9264)">03</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="590.61312" y="439.1712" transform="rotate(-0 590.61312 439.1712)">基本资料的识别价值</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #26353e" transform="translate(590.61312 471.920606)">依据较早报告建立判断</text>
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #26353e" transform="translate(590.61312 494.8992)">根据后续报告核对结果</text>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="font-weight: 700; font-size: 24px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="34.56" y="46.065" transform="rotate(-0 34.56 46.065)">配气事故中的人员伤亡，怎样理解与识别</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 13.5px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="34.56" y="85.78553" transform="rotate(-0 34.56 85.78553)">主管道沿街供气，进户管连接用户。我们研究事故记录、在用管网和基本资料的识别表现。</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="34.56" y="550.321094" transform="rotate(-0 34.56 550.321094)">研究对象示意。人物仅表示可能涉及的身份；三个任务并列回答人员伤亡的研究问题。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p11e3973ed2">
+   <rect x="34.56" y="120.96" width="794.88" height="230.4"/>
+  </clipPath>
+  <clipPath id="pc231658da3">
+   <rect x="34.56" y="385.92" width="253.152" height="123.84"/>
+  </clipPath>
+  <clipPath id="paf26aa8467">
+   <rect x="304.992" y="385.92" width="253.152" height="123.84"/>
+  </clipPath>
+  <clipPath id="p8dce0997c6">
+   <rect x="575.424" y="385.92" width="253.152" height="123.84"/>
+  </clipPath>
+ </defs>
+</svg>

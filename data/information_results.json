@@ -1,0 +1,5247 @@
+{
+  "generated_at_utc": "2026-11-05T19:03:53.388527+00:00",
+  "design_commit": "a48bedc",
+  "design_receipt_sha256": "40e98fe3bbb6582d6f3c57220e86ffb8d22b8fa9a20cba8cebb61112a0905eff",
+  "frozen_inputs": {
+    "planning/research_extension_design_20261106.md": "48d40a10f1155b47c352b496966d49da2ef5a62260f51359000796e735d77644",
+    "research/inputs/sources.json": "68ea740e2588e023f5fe48085f16116f4dbf64e076d553fc3d789619025b12cf",
+    "research/results/round2/material_state_year_cells.csv": "45d43ee7e28d289c51b13fc92c203db289912f8a4f400612f7f869130ad1e01a",
+    "research/results/round2/material_state_year_preparation.json": "64f97b3aa0a48ba478feaa594a9ec0733255d5fa995f678071165b5681627dbc",
+    "research/results/story_v14/ablation_predictions.csv": "845ea0ad850d22fc58b826070dd5f2ef94e33a851333ce6e5c6bd4d845b3c2a8"
+  },
+  "metric_fixtures": {
+    "edge_fixture_passed": true,
+    "integer_replication_fixtures_passed": 12
+  },
+  "raw_people_audit": {
+    "FATALITIES": {
+      "raw_missing": {
+        "NUM_EMP_FATALITIES": 1447,
+        "NUM_CONTR_FATALITIES": 1447,
+        "NUM_ER_FATALITIES": 1447,
+        "NUM_WORKER_FATALITIES": 1447,
+        "NUM_GP_FATALITIES": 1447
+      },
+      "total_missing": 0,
+      "positive_despite_no_ids": [],
+      "noninteger_or_negative_ids": [],
+      "sum_mismatch_ids": [],
+      "partly_missing_on_yes_ids": []
+    },
+    "INJURIES": {
+      "raw_missing": {
+        "NUM_EMP_INJURIES": 1232,
+        "NUM_CONTR_INJURIES": 1232,
+        "NUM_ER_INJURIES": 1232,
+        "NUM_WORKER_INJURIES": 1232,
+        "NUM_GP_INJURIES": 1232
+      },
+      "total_missing": 0,
+      "positive_despite_no_ids": [],
+      "noninteger_or_negative_ids": [],
+      "sum_mismatch_ids": [],
+      "partly_missing_on_yes_ids": []
+    }
+  },
+  "source_n": 1550,
+  "source_outcomes": {
+    "cas": 369,
+    "GP_any": 219,
+    "non_GP_any": 168
+  },
+  "test_n": 747,
+  "operators": 150,
+  "windows": [
+    [
+      2017,
+      2018
+    ],
+    [
+      2019,
+      2020
+    ],
+    [
+      2021,
+      2022
+    ],
+    [
+      2023,
+      2024
+    ]
+  ],
+  "validation_modes": [
+    "time",
+    "time_operator"
+  ],
+  "outcomes": [
+    "cas",
+    "GP_any",
+    "non_GP_any"
+  ],
+  "specifications": [
+    "full",
+    "no_location",
+    "part_only",
+    "constant"
+  ],
+  "model": {
+    "kind": "L2 logistic regression",
+    "C": 1,
+    "l1_ratio": 0,
+    "solver": "lbfgs",
+    "tol": 1e-10,
+    "max_iter": 5000,
+    "class_weight": null,
+    "interactions": false,
+    "tuning": "none",
+    "encoding": "one-hot fit on each training partition, drop=None, handle_unknown=ignore",
+    "operator_fold": "int(SHA256(canonical decimal OPERATOR_ID UTF-8).hexdigest(), 16) % 5"
+  },
+  "fit_audit": {
+    "partitions": 24,
+    "converged_logistic_fits": 144,
+    "single_class_fallbacks": 0,
+    "warnings": 0,
+    "max_iterations": 68,
+    "unknown_test_categories": []
+  },
+  "summary": [
+    {
+      "mode": "time",
+      "outcome": "GP_any",
+      "spec": "constant",
+      "test_n": 747,
+      "positive": 93,
+      "review_n": 152,
+      "AP": 0.1285602457033747,
+      "hits20": 18.92643076854989,
+      "recall20": 0.2035100082639773
+    },
+    {
+      "mode": "time",
+      "outcome": "GP_any",
+      "spec": "full",
+      "test_n": 747,
+      "positive": 93,
+      "review_n": 152,
+      "AP": 0.25994783678892136,
+      "hits20": 40.952380952380956,
+      "recall20": 0.4403481822836662
+    },
+    {
+      "mode": "time",
+      "outcome": "GP_any",
+      "spec": "no_location",
+      "test_n": 747,
+      "positive": 93,
+      "review_n": 152,
+      "AP": 0.22050947139917076,
+      "hits20": 31.566666666666666,
+      "recall20": 0.339426523297491
+    },
+    {
+      "mode": "time",
+      "outcome": "GP_any",
+      "spec": "part_only",
+      "test_n": 747,
+      "positive": 93,
+      "review_n": 152,
+      "AP": 0.19921350140303734,
+      "hits20": 30.226984779925957,
+      "recall20": 0.3250213417196339
+    },
+    {
+      "mode": "time",
+      "outcome": "cas",
+      "spec": "constant",
+      "test_n": 747,
+      "positive": 165,
+      "review_n": 152,
+      "AP": 0.22839742927334897,
+      "hits20": 33.57986114732921,
+      "recall20": 0.2035143099838134
+    },
+    {
+      "mode": "time",
+      "outcome": "cas",
+      "spec": "full",
+      "test_n": 747,
+      "positive": 165,
+      "review_n": 152,
+      "AP": 0.3416173583182994,
+      "hits20": 53.833333333333336,
+      "recall20": 0.32626262626262625
+    },
+    {
+      "mode": "time",
+      "outcome": "cas",
+      "spec": "no_location",
+      "test_n": 747,
+      "positive": 165,
+      "review_n": 152,
+      "AP": 0.3254005258895817,
+      "hits20": 55.714285714285715,
+      "recall20": 0.33766233766233766
+    },
+    {
+      "mode": "time",
+      "outcome": "cas",
+      "spec": "part_only",
+      "test_n": 747,
+      "positive": 165,
+      "review_n": 152,
+      "AP": 0.30942322295801805,
+      "hits20": 52.38201117767681,
+      "recall20": 0.3174667344101625
+    },
+    {
+      "mode": "time",
+      "outcome": "non_GP_any",
+      "spec": "constant",
+      "test_n": 747,
+      "positive": 77,
+      "review_n": 152,
+      "AP": 0.10686156933510998,
+      "hits20": 15.671101912745728,
+      "recall20": 0.20352080406163284
+    },
+    {
+      "mode": "time",
+      "outcome": "non_GP_any",
+      "spec": "full",
+      "test_n": 747,
+      "positive": 77,
+      "review_n": 152,
+      "AP": 0.22917106887295224,
+      "hits20": 30.2,
+      "recall20": 0.39220779220779217
+    },
+    {
+      "mode": "time",
+      "outcome": "non_GP_any",
+      "spec": "no_location",
+      "test_n": 747,
+      "positive": 77,
+      "review_n": 152,
+      "AP": 0.18302813105989396,
+      "hits20": 30.390476190476193,
+      "recall20": 0.39468150896722326
+    },
+    {
+      "mode": "time",
+      "outcome": "non_GP_any",
+      "spec": "part_only",
+      "test_n": 747,
+      "positive": 77,
+      "review_n": 152,
+      "AP": 0.1712701055718657,
+      "hits20": 26.553384645672452,
+      "recall20": 0.3448491512424994
+    },
+    {
+      "mode": "time_operator",
+      "outcome": "GP_any",
+      "spec": "constant",
+      "test_n": 747,
+      "positive": 93,
+      "review_n": 152,
+      "AP": 0.13121273993564694,
+      "hits20": 17.85001826763421,
+      "recall20": 0.19193568029714203
+    },
+    {
+      "mode": "time_operator",
+      "outcome": "GP_any",
+      "spec": "full",
+      "test_n": 747,
+      "positive": 93,
+      "review_n": 152,
+      "AP": 0.2411048216555768,
+      "hits20": 37.25,
+      "recall20": 0.40053763440860213
+    },
+    {
+      "mode": "time_operator",
+      "outcome": "GP_any",
+      "spec": "no_location",
+      "test_n": 747,
+      "positive": 93,
+      "review_n": 152,
+      "AP": 0.21352037365727594,
+      "hits20": 29.5,
+      "recall20": 0.3172043010752688
+    },
+    {
+      "mode": "time_operator",
+      "outcome": "GP_any",
+      "spec": "part_only",
+      "test_n": 747,
+      "positive": 93,
+      "review_n": 152,
+      "AP": 0.24338433752578426,
+      "hits20": 32.48051948051948,
+      "recall20": 0.34925289763999445
+    },
+    {
+      "mode": "time_operator",
+      "outcome": "cas",
+      "spec": "constant",
+      "test_n": 747,
+      "positive": 165,
+      "review_n": 152,
+      "AP": 0.21286580221402968,
+      "hits20": 26.17730892500171,
+      "recall20": 0.1586503571212225
+    },
+    {
+      "mode": "time_operator",
+      "outcome": "cas",
+      "spec": "full",
+      "test_n": 747,
+      "positive": 165,
+      "review_n": 152,
+      "AP": 0.3094487063086542,
+      "hits20": 53.0,
+      "recall20": 0.3212121212121212
+    },
+    {
+      "mode": "time_operator",
+      "outcome": "cas",
+      "spec": "no_location",
+      "test_n": 747,
+      "positive": 165,
+      "review_n": 152,
+      "AP": 0.3013298221397913,
+      "hits20": 56.0,
+      "recall20": 0.3393939393939394
+    },
+    {
+      "mode": "time_operator",
+      "outcome": "cas",
+      "spec": "part_only",
+      "test_n": 747,
+      "positive": 165,
+      "review_n": 152,
+      "AP": 0.31815492252032773,
+      "hits20": 51.83333333333333,
+      "recall20": 0.3141414141414141
+    },
+    {
+      "mode": "time_operator",
+      "outcome": "non_GP_any",
+      "spec": "constant",
+      "test_n": 747,
+      "positive": 77,
+      "review_n": 152,
+      "AP": 0.1099776058894382,
+      "hits20": 11.857655029837135,
+      "recall20": 0.15399551986801474
+    },
+    {
+      "mode": "time_operator",
+      "outcome": "non_GP_any",
+      "spec": "full",
+      "test_n": 747,
+      "positive": 77,
+      "review_n": 152,
+      "AP": 0.19840153176106715,
+      "hits20": 27.976190476190474,
+      "recall20": 0.36332714904143476
+    },
+    {
+      "mode": "time_operator",
+      "outcome": "non_GP_any",
+      "spec": "no_location",
+      "test_n": 747,
+      "positive": 77,
+      "review_n": 152,
+      "AP": 0.1860776762375888,
+      "hits20": 30.285714285714285,
+      "recall20": 0.39332096474953615
+    },
+    {
+      "mode": "time_operator",
+      "outcome": "non_GP_any",
+      "spec": "part_only",
+      "test_n": 747,
+      "positive": 77,
+      "review_n": 152,
+      "AP": 0.18562081378008752,
+      "hits20": 25.234343434343437,
+      "recall20": 0.3277187459005641
+    }
+  ],
+  "legacy_diagnostic": {
+    "source": "research/results/story_v14/ablation_predictions.csv",
+    "sha256": "845ea0ad850d22fc58b826070dd5f2ef94e33a851333ce6e5c6bd4d845b3c2a8",
+    "summary": [
+      {
+        "outcome": "GP_any",
+        "legacy_score": "drop_location",
+        "test_n": 747,
+        "positive": 93,
+        "review_n": 152,
+        "AP": 0.17503984905837172,
+        "hits20": 32.04761904761905,
+        "recall20": 0.3445980542754737
+      },
+      {
+        "outcome": "GP_any",
+        "legacy_score": "full",
+        "test_n": 747,
+        "positive": 93,
+        "review_n": 152,
+        "AP": 0.22826600549526968,
+        "hits20": 32.75,
+        "recall20": 0.3521505376344086
+      },
+      {
+        "outcome": "GP_any",
+        "legacy_score": "part_only",
+        "test_n": 747,
+        "positive": 93,
+        "review_n": 152,
+        "AP": 0.16518442662994567,
+        "hits20": 30.120204253950384,
+        "recall20": 0.3238731640209719
+      },
+      {
+        "outcome": "cas",
+        "legacy_score": "drop_location",
+        "test_n": 747,
+        "positive": 165,
+        "review_n": 152,
+        "AP": 0.32660697090316193,
+        "hits20": 56.714285714285715,
+        "recall20": 0.3437229437229437
+      },
+      {
+        "outcome": "cas",
+        "legacy_score": "full",
+        "test_n": 747,
+        "positive": 165,
+        "review_n": 152,
+        "AP": 0.3429364690836032,
+        "hits20": 54.25,
+        "recall20": 0.3287878787878788
+      },
+      {
+        "outcome": "cas",
+        "legacy_score": "part_only",
+        "test_n": 747,
+        "positive": 165,
+        "review_n": 152,
+        "AP": 0.30942322295801805,
+        "hits20": 52.38201117767681,
+        "recall20": 0.3174667344101625
+      },
+      {
+        "outcome": "non_GP_any",
+        "legacy_score": "drop_location",
+        "test_n": 747,
+        "positive": 77,
+        "review_n": 152,
+        "AP": 0.18438135645994438,
+        "hits20": 27.666666666666668,
+        "recall20": 0.3593073593073593
+      },
+      {
+        "outcome": "non_GP_any",
+        "legacy_score": "full",
+        "test_n": 747,
+        "positive": 77,
+        "review_n": 152,
+        "AP": 0.1661669731080035,
+        "hits20": 24.5,
+        "recall20": 0.3181818181818182
+      },
+      {
+        "outcome": "non_GP_any",
+        "legacy_score": "part_only",
+        "test_n": 747,
+        "positive": 77,
+        "review_n": 152,
+        "AP": 0.1770877377876593,
+        "hits20": 25.26180692372643,
+        "recall20": 0.3280754145938497
+      }
+    ],
+    "meaning": "Scores trained for any casualty, rescored against three labels. These are not three outcome-specific trained models; no retraining or prospective inference."
+  },
+  "cluster_uncertainty": {
+    "unit": "operator, shared over outcomes, windows, specifications and validation modes",
+    "operators": [
+      "1088",
+      "11032",
+      "11320",
+      "11713",
+      "11800",
+      "11824",
+      "12036",
+      "1209",
+      "12342",
+      "12350",
+      "12390",
+      "12408",
+      "12420",
+      "12438",
+      "12582",
+      "12606",
+      "12642",
+      "12672",
+      "12684",
+      "12876",
+      "12878",
+      "13061",
+      "13062",
+      "13299",
+      "13302",
+      "13360",
+      "13420",
+      "13480",
+      "13535",
+      "13635",
+      "13710",
+      "13730",
+      "13820",
+      "13840",
+      "14200",
+      "14210",
+      "14330",
+      "15007",
+      "15259",
+      "15329",
+      "15348",
+      "15350",
+      "15359",
+      "15462",
+      "15469",
+      "15518",
+      "15755",
+      "15931",
+      "15938",
+      "15952",
+      "1640",
+      "1720",
+      "17570",
+      "180",
+      "1800",
+      "18104",
+      "18112",
+      "18124",
+      "18192",
+      "18308",
+      "18408",
+      "18440",
+      "18472",
+      "18484",
+      "18496",
+      "18508",
+      "18532",
+      "18536",
+      "18584",
+      "18684",
+      "18704",
+      "20010",
+      "20050",
+      "20170",
+      "20211",
+      "21220",
+      "2128",
+      "21349",
+      "2188",
+      "2196",
+      "22154",
+      "22182",
+      "22189",
+      "22364",
+      "22435",
+      "22476",
+      "22763",
+      "22784",
+      "2288",
+      "2364",
+      "2392",
+      "2412",
+      "2432",
+      "2456",
+      "2492",
+      "25000",
+      "2572",
+      "2585",
+      "2596",
+      "2600",
+      "2652",
+      "2704",
+      "2748",
+      "30750",
+      "30769",
+      "30839",
+      "30967",
+      "31044",
+      "31159",
+      "31191",
+      "31232",
+      "31286",
+      "31348",
+      "31467",
+      "31470",
+      "31588",
+      "31632",
+      "31636",
+      "31840",
+      "32013",
+      "32061",
+      "32074",
+      "32198",
+      "32513",
+      "32601",
+      "35505",
+      "3600",
+      "38967",
+      "39257",
+      "40247",
+      "4060",
+      "4350",
+      "4473",
+      "4483",
+      "4499",
+      "45",
+      "5330",
+      "603",
+      "6141",
+      "621",
+      "6243",
+      "6720",
+      "7210",
+      "7348",
+      "766",
+      "7685",
+      "792",
+      "8070",
+      "8160",
+      "8170"
+    ],
+    "repeats": 5000,
+    "seed": 202611062,
+    "draw_generator": "numpy PCG64 multinomial(G, 1/G), sorted string operator IDs",
+    "weight_matrix_sha256": "6bcae833ad9b72e708df11a20442b11efd5898fec573b6baee5ab4cce839e690",
+    "array_axes": {
+      "window_values": [
+        "draw",
+        "mode",
+        "outcome",
+        "window",
+        "spec",
+        "metric"
+      ],
+      "aggregate_values": [
+        "draw",
+        "mode",
+        "outcome",
+        "spec",
+        "metric"
+      ],
+      "counts": [
+        "draw",
+        "outcome",
+        "window",
+        "n_then_positive"
+      ],
+      "mode": [
+        "time",
+        "time_operator"
+      ],
+      "outcome": [
+        "cas",
+        "GP_any",
+        "non_GP_any"
+      ],
+      "window": [
+        [
+          2017,
+          2018
+        ],
+        [
+          2019,
+          2020
+        ],
+        [
+          2021,
+          2022
+        ],
+        [
+          2023,
+          2024
+        ]
+      ],
+      "spec": [
+        "full",
+        "no_location",
+        "part_only",
+        "constant"
+      ],
+      "metric": [
+        "AP",
+        "hits20",
+        "recall20"
+      ]
+    },
+    "window_draw_status": [
+      {
+        "outcome": "cas",
+        "window": "2017-2018",
+        "empty_draws": 0,
+        "zero_positive_draws": 0,
+        "zero_negative_draws": 0
+      },
+      {
+        "outcome": "cas",
+        "window": "2019-2020",
+        "empty_draws": 0,
+        "zero_positive_draws": 0,
+        "zero_negative_draws": 0
+      },
+      {
+        "outcome": "cas",
+        "window": "2021-2022",
+        "empty_draws": 0,
+        "zero_positive_draws": 0,
+        "zero_negative_draws": 0
+      },
+      {
+        "outcome": "cas",
+        "window": "2023-2024",
+        "empty_draws": 0,
+        "zero_positive_draws": 0,
+        "zero_negative_draws": 0
+      },
+      {
+        "outcome": "GP_any",
+        "window": "2017-2018",
+        "empty_draws": 0,
+        "zero_positive_draws": 0,
+        "zero_negative_draws": 0
+      },
+      {
+        "outcome": "GP_any",
+        "window": "2019-2020",
+        "empty_draws": 0,
+        "zero_positive_draws": 0,
+        "zero_negative_draws": 0
+      },
+      {
+        "outcome": "GP_any",
+        "window": "2021-2022",
+        "empty_draws": 0,
+        "zero_positive_draws": 0,
+        "zero_negative_draws": 0
+      },
+      {
+        "outcome": "GP_any",
+        "window": "2023-2024",
+        "empty_draws": 0,
+        "zero_positive_draws": 0,
+        "zero_negative_draws": 0
+      },
+      {
+        "outcome": "non_GP_any",
+        "window": "2017-2018",
+        "empty_draws": 0,
+        "zero_positive_draws": 0,
+        "zero_negative_draws": 0
+      },
+      {
+        "outcome": "non_GP_any",
+        "window": "2019-2020",
+        "empty_draws": 0,
+        "zero_positive_draws": 0,
+        "zero_negative_draws": 0
+      },
+      {
+        "outcome": "non_GP_any",
+        "window": "2021-2022",
+        "empty_draws": 0,
+        "zero_positive_draws": 0,
+        "zero_negative_draws": 0
+      },
+      {
+        "outcome": "non_GP_any",
+        "window": "2023-2024",
+        "empty_draws": 0,
+        "zero_positive_draws": 0,
+        "zero_negative_draws": 0
+      }
+    ],
+    "absolute_intervals": [
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2017-2018",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2231118005841384,
+            0.43573130294936097
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            6.0,
+            18.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.11538461538461539,
+            0.32259305210918093
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2017-2018",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2076927406710241,
+            0.38484929744783386
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            7.0,
+            19.07749999999999
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.13793103448275862,
+            0.33929413746630716
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2017-2018",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.20665488251580624,
+            0.36012377400069934
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            6.0,
+            18.251116071428555
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1163615221987315,
+            0.34062799043062186
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2017-2018",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19653179190751446,
+            0.32500606796116505
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            7.6,
+            14.553260619095166
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19999999999999998,
+            0.20454545454545456
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2019-2020",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.15739338902366087,
+            0.3755174295597612
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            7.0,
+            22.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.21151315789473685,
+            0.5
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2019-2020",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.14674491715310758,
+            0.3547879109466905
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            7.0,
+            23.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.21151315789473685,
+            0.5347222222222222
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2019-2020",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.13389138860722027,
+            0.31389095470308864
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            5.894483805668016,
+            20.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.17389214046822743,
+            0.46429473304473295
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2019-2020",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.11191335740072202,
+            0.2130491448588501
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            5.4,
+            10.508758988805694
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19999999999999998,
+            0.20370370370370372
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2021-2022",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2596192987978361,
+            0.6013242814667741
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            8.0,
+            20.20124999999998
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2571428571428571,
+            0.5416666666666666
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2021-2022",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.27036292303532744,
+            0.5949622086294573
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            9.0,
+            21.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2870039682539683,
+            0.5555555555555556
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2021-2022",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2421866230811684,
+            0.5295319589182526
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            8.68488247863248,
+            19.909299416180147
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.28562560386473435,
+            0.5453525847275845
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2021-2022",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.15602836879432624,
+            0.31666666666666665
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            4.6356256508156894,
+            9.666666666666666
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19999999999999998,
+            0.20610687022900764
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2023-2024",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.29488568769570805,
+            0.5551669356674275
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            7.0,
+            19.666666666666668
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2291517857142857,
+            0.5
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2023-2024",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2945849686064888,
+            0.5413118463650671
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            7.0,
+            19.5
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.23474657012195121,
+            0.480147832491582
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2023-2024",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.27659009807122226,
+            0.5362770462458767
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            8.0,
+            20.09090909090909
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2666652097902098,
+            0.5008537629928003
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2023-2024",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19753086419753085,
+            0.34862536214389184
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            4.8,
+            10.576864406779652
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19999999999999998,
+            0.20689655172413793
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "four_windows",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2930260558139258,
+            0.4221508710824891
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            37.5,
+            68.50138888888887
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.25478896698147746,
+            0.3842756172236336
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "four_windows",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.28073294888204603,
+            0.40597491413956355
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            39.6663768115942,
+            71.2603896103896
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2684960798816568,
+            0.401123944119558
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "four_windows",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2681328180587546,
+            0.37043823064379067
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            38.353503902279186,
+            67.27153802811621
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2584593806576565,
+            0.37963585895346946
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "four_windows",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1940129868446452,
+            0.26693087883374095
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            26.128644701797572,
+            41.030533837923095
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.20067533145296132,
+            0.20397347218980952
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2017-2018",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.15233515582714444,
+            0.3757314945029618
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            6.0,
+            19.333333333333332
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2037003968253968,
+            0.5720216049382716
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2017-2018",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1272483140413764,
+            0.2603917948191179
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.5,
+            13.333333333333334
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.12301339285714287,
+            0.39285714285714285
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2017-2018",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.12463862270123832,
+            0.2705872693512699
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.0,
+            13.195243902439023
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1003274987519612,
+            0.42150596877869584
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2017-2018",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10869565217391304,
+            0.19767908220370592
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            4.0,
+            9.2
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19999999999999998,
+            0.20454545454545456
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2019-2020",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.09706218414793696,
+            0.3234749691353335
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            5.0,
+            16.376151315789457
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.29411764705882354,
+            0.6358819169960473
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2019-2020",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.09609127982554976,
+            0.30348098961934356
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.0,
+            14.430357142857117
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.16666666666666666,
+            0.5889166666666663
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2019-2020",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.07778383473531279,
+            0.3002471674762307
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.642694805194805,
+            12.931976744186022
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.14285714285714285,
+            0.5329093099605432
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2019-2020",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.0523747461069736,
+            0.13333333333333333
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.6121425980454913,
+            6.46709418511639
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19999999999999998,
+            0.20370370370370372
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2021-2022",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.13014964156690373,
+            0.5970722419080462
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.0,
+            13.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2727272727272727,
+            0.7708333333333334
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2021-2022",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10919543058335071,
+            0.4278714903784949
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.0,
+            12.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.16173844537815127,
+            0.75
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2021-2022",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.08641032639145439,
+            0.3347974200814409
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.499342105263158,
+            11.333823529411758
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.21324595920383965,
+            0.6900119047619047
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2021-2022",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.05333333333333334,
+            0.15173103448275851
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            1.6097560975609757,
+            4.520654813951228
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19999999999999998,
+            0.20610687022900764
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2023-2024",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.22936697129767977,
+            0.55691657715827
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            5.0,
+            16.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.25,
+            0.6389166666666662
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2023-2024",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2233757983152626,
+            0.498495044323559
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            4.0,
+            13.700357142857136
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.18938131313131312,
+            0.5667045454545449
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2023-2024",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.20544172025297974,
+            0.42825540611832513
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.6666666666666665,
+            13.588344226579519
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.17096394984326022,
+            0.5694546568627449
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2023-2024",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10777577077250458,
+            0.25225662555759637
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.698002719700833,
+            7.390960264900659
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19999999999999998,
+            0.20689655172413793
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "four_windows",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.21277112198092432,
+            0.37342588406792615
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            28.04642857142857,
+            53.66749999999999
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.34174959871589083,
+            0.5270524874433797
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "four_windows",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.17979693804961383,
+            0.31043075165686185
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            19.68876547987616,
+            44.250892857142844
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.23420245650508809,
+            0.44484746979809064
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "four_windows",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.15940291844261165,
+            0.27767499611681307
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            18.7574057100154,
+            42.1721274530199
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.218390291998758,
+            0.4374730003996611
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "four_windows",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10217681388573985,
+            0.15836836971010862
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            13.928172763685716,
+            23.99500942703664
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.20065174566821373,
+            0.20401218674856542
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2017-2018",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10029373418878243,
+            0.32754888058345655
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.0951298701298704,
+            13.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1678030303030303,
+            0.4969341709015616
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2017-2018",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.09304010192903585,
+            0.300033002234673
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.0,
+            12.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.12,
+            0.45679894179894165
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2017-2018",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.08470324528797687,
+            0.2246468728136814
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.2296434207930558,
+            9.677006802721086
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1071901030927835,
+            0.385123106060606
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2017-2018",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.0684931506849315,
+            0.16972477064220184
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.0150753768844223,
+            6.862421932204849
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19999999999999998,
+            0.20454545454545456
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2019-2020",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.09266100403318211,
+            0.31980782562284066
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.2141917293233084,
+            13.12074999999999
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.23198149920255184,
+            0.6666666666666666
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2019-2020",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.08686275112641385,
+            0.22513620312988258
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.8,
+            14.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.24629064039408866,
+            0.7142857142857143
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2019-2020",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.07768000261152808,
+            0.21338647448141412
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.3588926174496647,
+            12.084064569536414
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.23920269268774702,
+            0.6018032874060182
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2019-2020",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.044894913189156255,
+            0.10504201680672269
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.2,
+            5.251655629139073
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19999999999999998,
+            0.20370370370370372
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2021-2022",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.17911656884414634,
+            0.5914849175027912
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.9410845588235297,
+            15.084249999999987
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.26297488304784833,
+            0.6550115546218486
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2021-2022",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.11807253085243913,
+            0.35892261168617945
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.5785361842105265,
+            13.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2187434348739496,
+            0.5906294899425286
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2021-2022",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10164630285849278,
+            0.36868264902683734
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.0424893617021276,
+            11.654464285714276
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2069113692290117,
+            0.5154200607888455
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2021-2022",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.07801418439716312,
+            0.19607843137254902
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.2564102564102564,
+            6.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19999999999999998,
+            0.20610687022900764
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2023-2024",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.11038993772504532,
+            0.39494977447741847
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            1.4,
+            9.20124999999998
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10714285714285714,
+            0.6428571428571429
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2023-2024",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.11321713817058571,
+            0.451342930926433
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.0,
+            10.047899159663862
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.18517740429505136,
+            0.6666666666666666
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2023-2024",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10336193498020607,
+            0.3727210555295123
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.580414746543779,
+            10.643762677484785
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.23602165949992038,
+            0.6750071839080458
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2023-2024",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.05833131067961165,
+            0.16101837106131267
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            1.4411764705882353,
+            4.824152508574619
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19999999999999998,
+            0.20689655172413793
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "four_windows",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.17402886349114752,
+            0.330317693278051
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            19.65668650793651,
+            41.318513225904525
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.293441822645627,
+            0.486129026811643
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "four_windows",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1413791426949872,
+            0.2684275234473804
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            19.036770518484072,
+            40.37562499999999
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.28123493457300275,
+            0.474817993931356
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "four_windows",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1280169682163916,
+            0.23690324250995856
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            17.878498779586923,
+            35.782914391173456
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2735766490548892,
+            0.41447616446791763
+          ]
+        }
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "four_windows",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.08168315466113117,
+            0.13652594651454703
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            11.555985456116815,
+            19.967724537436684
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.20063680265234318,
+            0.20398927782771387
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2017-2018",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.20064179846950372,
+            0.4037468645618926
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            5.0,
+            17.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10416666666666667,
+            0.3125
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2017-2018",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19052159463538496,
+            0.38031822990506553
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            6.0,
+            18.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.11402511961722488,
+            0.32704974271012
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2017-2018",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2008667596997051,
+            0.3735584894784891
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            6.0,
+            18.334090909090897
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.12121212121212122,
+            0.3409132141443461
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2017-2018",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.16120123771695918,
+            0.2918824822032801
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.4704901960784316,
+            11.152157738095234
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.07288909346090579,
+            0.20307812499999997
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2019-2020",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.14412692812068645,
+            0.3259621937598122
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            6.0,
+            21.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19230769230769232,
+            0.475
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2019-2020",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.13328354125040412,
+            0.31519005306567055
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            6.747916666666668,
+            22.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2,
+            0.5
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2019-2020",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1406814676348107,
+            0.33917299090540487
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            7.0,
+            21.5
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.21052631578947367,
+            0.5
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2019-2020",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.09824833540514398,
+            0.19273293511737605
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            1.8664912280701755,
+            10.027132601351349
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.052457064793130365,
+            0.24368094974535853
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2021-2022",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.24809087515408443,
+            0.5796742164838488
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            8.0,
+            20.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.25,
+            0.5555555555555556
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2021-2022",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.25849596752937026,
+            0.5878306727271405
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            9.0,
+            21.2
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.29118663594470046,
+            0.5652173913043478
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2021-2022",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2632589778399537,
+            0.5685883491029867
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            8.0,
+            19.142857142857142
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.25531828403390416,
+            0.529172794117647
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2021-2022",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.14908874580117523,
+            0.3503547741457443
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            1.3329268292682928,
+            10.941176470588236
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.04080601937744795,
+            0.2972725613707012
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2023-2024",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.272248517899132,
+            0.5128937759514789
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            7.0,
+            20.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.22857142857142856,
+            0.5
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2023-2024",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.26664335617120205,
+            0.5046999731842536
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            7.0,
+            20.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2222222222222222,
+            0.5
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2023-2024",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2767371180801325,
+            0.5570753368925746
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            7.0,
+            20.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2413793103448276,
+            0.5092636268343814
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2023-2024",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19845403752205806,
+            0.37916929423982826
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.5787593984962407,
+            12.593906249999998
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.11598632501930854,
+            0.31538690476190473
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "four_windows",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.26833343749818134,
+            0.3898209069651878
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            36.0,
+            67.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.24496473085878648,
+            0.37423484251293826
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "four_windows",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2604711166825449,
+            0.38266717205759593
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            38.24791666666667,
+            70.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2615331010452962,
+            0.3892915764790764
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "four_windows",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2766062633767976,
+            0.3904583921474706
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            37.9880294117647,
+            68.50059523809523
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.25646626166319414,
+            0.38638209869653106
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "four_windows",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.18236340422867248,
+            0.2647973366902557
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            17.96392857142857,
+            35.28327420039035
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.11849369379574809,
+            0.2030637427021317
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2017-2018",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1379036136202161,
+            0.327761727096852
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            4.0,
+            17.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.13333333333333333,
+            0.5001262626262608
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2017-2018",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.11882011540463186,
+            0.25328428007618886
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.0,
+            12.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.08823529411764706,
+            0.38235294117647056
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2017-2018",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.13475647375804695,
+            0.3112128054121251
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            4.0,
+            14.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.132515664160401,
+            0.4375
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2017-2018",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10767002972565878,
+            0.21258794676009715
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.4440476190476192,
+            9.701602282704124
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.09135656601822015,
+            0.2967872711421096
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2019-2020",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.08738300913361373,
+            0.29934057920109225
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            4.0,
+            15.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.20833333333333334,
+            0.5833333333333334
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2019-2020",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.09549374750993805,
+            0.317875885592287
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.0,
+            13.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.15384615384615385,
+            0.55
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2019-2020",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10035563081238508,
+            0.39308199713128933
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.427579365079365,
+            15.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19047017797017796,
+            0.6111111111111112
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2019-2020",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.04890802991102445,
+            0.12204647278443259
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.0,
+            4.641687914329421
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.0,
+            0.2152867538881882
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2021-2022",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10259231701924018,
+            0.47982355333983095
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.0,
+            12.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.21428571428571427,
+            0.7142857142857143
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2021-2022",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.09552049236335437,
+            0.39795481990656484
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.0,
+            11.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1111111111111111,
+            0.6668181818181795
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2021-2022",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.08521127878208622,
+            0.39874071985698517
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            1.9972222222222231,
+            11.333333333333334
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.13333333333333333,
+            0.7058823529411765
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2021-2022",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.054848029158080625,
+            0.2195648456281735
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.5818181818181818,
+            7.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.04847808441558442,
+            0.42017522918258204
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2023-2024",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.22631405855178516,
+            0.5919706225068672
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            5.0,
+            16.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.25403065796210955,
+            0.6363636363636364
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2023-2024",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.20854945875103936,
+            0.5225562033893182
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.7130952380952387,
+            14.756249999999909
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.16,
+            0.6
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2023-2024",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2381482830838264,
+            0.4991924701071231
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            4.0,
+            14.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.18277126099706748,
+            0.5714285714285714
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2023-2024",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.111191140428991,
+            0.31276806982822
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.0,
+            10.774283154121862
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10768518518518518,
+            0.41881578947368403
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "four_windows",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.19047834127789745,
+            0.34234461823557255
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            24.0,
+            48.72742424242424
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.29174120795107034,
+            0.4805009262117936
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "four_windows",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1709562853417622,
+            0.3064182436026627
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            18.0,
+            40.7520833333333
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.21556153441517267,
+            0.4166666666666667
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "four_windows",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.18687181727572486,
+            0.3354025203607178
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            20.0,
+            44.80031249999999
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.23900432390555557,
+            0.45966186650992685
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "four_windows",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10496288407385873,
+            0.1802005763549042
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            10.581973718449127,
+            24.73753285720082
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1243587909051435,
+            0.2553853049814587
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2017-2018",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1012975729932142,
+            0.31675392294298527
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.0,
+            13.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.13793103448275862,
+            0.48866003787878753
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2017-2018",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.08500199275500564,
+            0.2538516798279568
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.0,
+            12.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10344827586206896,
+            0.47368421052631576
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2017-2018",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.07546552605741755,
+            0.20362714362268466
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            1.2305555555555556,
+            8.833333333333334
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.062008326155612976,
+            0.35486093745658603
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2017-2018",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.053693529482907454,
+            0.1542061317827352
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.0,
+            3.5526455767077265
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.0,
+            0.1421300236406619
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2019-2020",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.0946627311265556,
+            0.29463331715078334
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.0,
+            13.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1875,
+            0.6666666666666666
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2019-2020",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.09420868941903154,
+            0.25027292374479765
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.121875000000001,
+            14.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.21052631578947367,
+            0.714301874595992
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2019-2020",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.09937215819955758,
+            0.31238922169332733
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            4.0,
+            13.909577922077917
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2850235507246377,
+            0.6881899641577057
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2019-2020",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.04613499593672913,
+            0.1114126190726798
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.0,
+            4.579733520336606
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.0,
+            0.22739983350631368
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2021-2022",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1345546877326081,
+            0.5170131097677306
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.0,
+            14.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.18747916666666667,
+            0.6333854166666659
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2021-2022",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.11672652135970245,
+            0.35732575985673826
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.0,
+            13.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.18518518518518517,
+            0.6274509803921569
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2021-2022",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.11123262242098315,
+            0.4372828917747238
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            2.0,
+            11.400135135135134
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.12794547252278066,
+            0.5143417945690666
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2021-2022",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10014514525878163,
+            0.262003073416903
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            3.0,
+            10.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.1738328766554573,
+            0.5210875402792692
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2023-2024",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10305376308692299,
+            0.3803413353779139
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            1.0,
+            9.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.09995535714285715,
+            0.5883731617647039
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2023-2024",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10959388161574786,
+            0.47576818518518654
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            1.0,
+            9.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.09090909090909091,
+            0.5885294117647016
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2023-2024",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.10834881977815464,
+            0.4075959802572942
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            1.8565476190476193,
+            10.058823529411764
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.15384615384615385,
+            0.6428571428571429
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2023-2024",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.060739254041040545,
+            0.1946854329983243
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.0,
+            6.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.0,
+            0.3714285714285714
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "four_windows",
+        "spec": "full",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.15137751945569033,
+            0.3062855670112476
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            17.0,
+            39.0
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.25297046703296705,
+            0.4615442212825933
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "four_windows",
+        "spec": "no_location",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.14420115527208638,
+            0.2687684583241878
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            18.0,
+            37.5
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.2530570876999449,
+            0.46569511033253413
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "four_windows",
+        "spec": "part_only",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.14339056642575204,
+            0.27339624778291316
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            16.54227761485826,
+            34.788710056390975
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.24667349315695958,
+            0.4193395672813776
+          ]
+        }
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "four_windows",
+        "spec": "constant",
+        "AP": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.08742722416348281,
+            0.15243280916498103
+          ]
+        },
+        "hits20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            6.584602099892061,
+            17.774034062851435
+          ]
+        },
+        "recall20": {
+          "valid": 5000,
+          "undefined": 0,
+          "percentile95": [
+            0.09120793441971475,
+            0.22627530271252652
+          ]
+        }
+      }
+    ],
+    "comparisons": [
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2017-2018",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.035098643427125265,
+        "AP_ci_low": -0.014664536698457617,
+        "AP_ci_high": 0.0936004060374473,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -1.2142857142857135,
+        "hits20_ci_low": -5.0,
+        "hits20_ci_high": 1.7333333333333343,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.02248677248677247,
+        "recall20_ci_low": -0.08621221796509151,
+        "recall20_ci_high": 0.03316751700680267,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2019-2020",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.013358229611804578,
+        "AP_ci_low": -0.0186641962191723,
+        "AP_ci_high": 0.06381538253776232,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -0.6666666666666661,
+        "hits20_ci_low": -5.728690476190477,
+        "hits20_ci_high": 3.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.01709401709401709,
+        "recall20_ci_low": -0.1395348837209302,
+        "recall20_ci_high": 0.08719298245614013,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2021-2022",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.007014731291383858,
+        "AP_ci_low": -0.054733185599573436,
+        "AP_ci_high": 0.05882074818517584,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -0.5,
+        "hits20_ci_low": -3.546498716302953,
+        "hits20_ci_high": 1.6007407407407297,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.014285714285714235,
+        "recall20_ci_low": -0.11404135338345855,
+        "recall20_ci_high": 0.048786465805834484,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "2023-2024",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.009395725384557074,
+        "AP_ci_low": -0.019388812275478663,
+        "AP_ci_high": 0.045844262284490254,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 0.5,
+        "hits20_ci_low": -3.0,
+        "hits20_ci_high": 3.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.013513513513513487,
+        "recall20_ci_low": -0.07317073170731703,
+        "recall20_ci_high": 0.08261244377811086,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "cas",
+        "scope": "four_windows",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.016216832428717742,
+        "AP_ci_low": -0.007549752444625483,
+        "AP_ci_high": 0.04110313247392737,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -1.8809523809523796,
+        "hits20_ci_low": -9.125080128205129,
+        "hits20_ci_high": 3.6666666666666576,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.01139971139971141,
+        "recall20_ci_low": -0.05450996204933586,
+        "recall20_ci_high": 0.022022896815864574,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2017-2018",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.048477331543360314,
+        "AP_ci_low": -0.010799355750738468,
+        "AP_ci_high": 0.1517438844752456,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 4.21904761904762,
+        "hits20_ci_low": -0.8751030219780219,
+        "hits20_ci_high": 9.889166666666663,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.13184523809523813,
+        "recall20_ci_low": -0.02916748430141288,
+        "recall20_ci_high": 0.3055576923076923,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2019-2020",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.0049117245857585035,
+        "AP_ci_low": -0.08247839808474496,
+        "AP_ci_high": 0.11348181901928087,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 1.833333333333334,
+        "hits20_ci_low": -3.0,
+        "hits20_ci_high": 7.4,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.08333333333333337,
+        "recall20_ci_low": -0.15001121463077988,
+        "recall20_ci_high": 0.33333333333333337,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2021-2022",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.07801540896812037,
+        "AP_ci_low": -0.05073163788319785,
+        "AP_ci_high": 0.28532277746680645,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 1.0,
+        "hits20_ci_low": -3.0,
+        "hits20_ci_high": 6.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.06666666666666665,
+        "recall20_ci_low": -0.24177489177489175,
+        "recall20_ci_high": 0.375,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "2023-2024",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.02634899646176314,
+        "AP_ci_low": -0.09916292643065443,
+        "AP_ci_high": 0.1483400762495017,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 2.333333333333334,
+        "hits20_ci_low": -2.0,
+        "hits20_ci_high": 6.182272727272721,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.09722222222222227,
+        "recall20_ci_low": -0.09090909090909094,
+        "recall20_ci_high": 0.26666666666666666,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "GP_any",
+        "scope": "four_windows",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.039438365389750596,
+        "AP_ci_low": -0.013036513113442841,
+        "AP_ci_high": 0.11210123616787313,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 9.38571428571429,
+        "hits20_ci_low": -0.3235572638146175,
+        "hits20_ci_high": 18.890375258799146,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.10092165898617517,
+        "recall20_ci_low": -0.0036339018246187827,
+        "recall20_ci_high": 0.19942675324675327,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2017-2018",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.017527840276077428,
+        "AP_ci_low": -0.039853701220641004,
+        "AP_ci_high": 0.08005844502416133,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 1.0,
+        "hits20_ci_low": -2.0,
+        "hits20_ci_high": 4.312544642857143,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.04166666666666663,
+        "recall20_ci_low": -0.08844671201814054,
+        "recall20_ci_high": 0.17857142857142855,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2019-2020",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.027054556700477683,
+        "AP_ci_low": -0.04467263221084134,
+        "AP_ci_high": 0.1459009795842712,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -1.333333333333334,
+        "hits20_ci_low": -5.0,
+        "hits20_ci_high": 4.964718670076727,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.07407407407407418,
+        "recall20_ci_low": -0.2833611111111111,
+        "recall20_ci_high": 0.26087194889397397,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2021-2022",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.16231023038795475,
+        "AP_ci_low": 0.023835831022850407,
+        "AP_ci_high": 0.29183466374455286,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 1.0,
+        "hits20_ci_low": -2.030492424242425,
+        "hits20_ci_high": 4.846190476190476,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.04999999999999999,
+        "recall20_ci_low": -0.11859923245614032,
+        "recall20_ci_high": 0.2179534313725489,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "2023-2024",
+        "comparison": "full-minus-no_location",
+        "delta_AP": -0.022320876112276733,
+        "AP_ci_low": -0.19129205651653616,
+        "AP_ci_high": 0.14770875859327706,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -0.8571428571428568,
+        "hits20_ci_low": -4.208894230769231,
+        "hits20_ci_high": 1.8411165223665193,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.05714285714285716,
+        "recall20_ci_low": -0.2751410820061402,
+        "recall20_ci_high": 0.1453192640692637,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "outcome": "non_GP_any",
+        "scope": "four_windows",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.04614293781305828,
+        "AP_ci_low": -0.00908128356682818,
+        "AP_ci_high": 0.10506186048849513,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -0.19047619047619335,
+        "hits20_ci_low": -5.584180394875538,
+        "hits20_ci_high": 7.797541350600478,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.0024737167594310883,
+        "recall20_ci_low": -0.07369852352490702,
+        "recall20_ci_high": 0.10212341662999198,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2017-2018",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.014994368177277284,
+        "AP_ci_low": -0.022695267788794358,
+        "AP_ci_high": 0.06320220210590749,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -1.0,
+        "hits20_ci_low": -4.0,
+        "hits20_ci_high": 2.4000000000000004,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.018518518518518517,
+        "recall20_ci_low": -0.07500469924812031,
+        "recall20_ci_high": 0.046511627906976744,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2019-2020",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.011212499606069626,
+        "AP_ci_low": -0.016843828895634395,
+        "AP_ci_high": 0.045036644753804,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 0.0,
+        "hits20_ci_low": -4.0,
+        "hits20_ci_high": 2.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.0,
+        "recall20_ci_low": -0.09526098901098902,
+        "recall20_ci_high": 0.05714285714285716,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2021-2022",
+        "comparison": "full-minus-no_location",
+        "delta_AP": -0.0029314259250415864,
+        "AP_ci_low": -0.06467759252799062,
+        "AP_ci_high": 0.045223055165005084,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -2.0,
+        "hits20_ci_low": -5.0,
+        "hits20_ci_high": 2.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.057142857142857106,
+        "recall20_ci_low": -0.12500000000000006,
+        "recall20_ci_high": 0.06451612903225806,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "2023-2024",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.00920009481714612,
+        "AP_ci_low": -0.011351267079166285,
+        "AP_ci_high": 0.030950576704327586,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 0.0,
+        "hits20_ci_low": -2.0,
+        "hits20_ci_high": 2.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.0,
+        "recall20_ci_low": -0.0625,
+        "recall20_ci_high": 0.04878048780487804,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "cas",
+        "scope": "four_windows",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.008118884168862861,
+        "AP_ci_low": -0.011511349680601348,
+        "AP_ci_high": 0.02779648218695713,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -3.0,
+        "hits20_ci_low": -8.0,
+        "hits20_ci_high": 3.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.018181818181818188,
+        "recall20_ci_low": -0.048917211256335046,
+        "recall20_ci_high": 0.018404907975460127,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2017-2018",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.03359215009514757,
+        "AP_ci_low": -0.01740193693186091,
+        "AP_ci_high": 0.10777215876988427,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 4.0,
+        "hits20_ci_low": -1.3333333333333335,
+        "hits20_ci_high": 7.6260416666666515,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.125,
+        "recall20_ci_low": -0.044449404761904766,
+        "recall20_ci_high": 0.23813775510204024,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2019-2020",
+        "comparison": "full-minus-no_location",
+        "delta_AP": -0.01639111710275401,
+        "AP_ci_low": -0.08715341725109217,
+        "AP_ci_high": 0.03977920590069075,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 2.0,
+        "hits20_ci_low": -2.0,
+        "hits20_ci_high": 5.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.09090909090909094,
+        "recall20_ci_low": -0.125,
+        "recall20_ci_high": 0.23529411764705882,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2021-2022",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.03061798409661809,
+        "AP_ci_low": -0.07194953819949076,
+        "AP_ci_high": 0.18991603229756193,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 1.5,
+        "hits20_ci_low": -2.75,
+        "hits20_ci_high": 6.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.10000000000000003,
+        "recall20_ci_low": -0.2,
+        "recall20_ci_high": 0.3846153846153846,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "2023-2024",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.06251877490419172,
+        "AP_ci_low": -0.05571035664580132,
+        "AP_ci_high": 0.1521460606932137,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 0.25,
+        "hits20_ci_low": -2.571428571428571,
+        "hits20_ci_high": 7.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.01041666666666663,
+        "recall20_ci_low": -0.11764705882352938,
+        "recall20_ci_high": 0.2857142857142857,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "GP_any",
+        "scope": "four_windows",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.02758444799830087,
+        "AP_ci_low": -0.0222165571919838,
+        "AP_ci_high": 0.07742615228277148,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": 7.75,
+        "hits20_ci_low": -1.0,
+        "hits20_ci_high": 15.7278409090909,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": 0.08333333333333331,
+        "recall20_ci_low": -0.012506648936170222,
+        "recall20_ci_high": 0.1621636636636636,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2017-2018",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.035982304302114604,
+        "AP_ci_low": -0.011261847425153928,
+        "AP_ci_high": 0.10721355567382271,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -1.0,
+        "hits20_ci_low": -3.0,
+        "hits20_ci_high": 5.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.04166666666666663,
+        "recall20_ci_low": -0.15000000000000002,
+        "recall20_ci_high": 0.21428571428571425,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2019-2020",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.008145707418881737,
+        "AP_ci_low": -0.04799662387999358,
+        "AP_ci_high": 0.09116797831407669,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -0.8571428571428577,
+        "hits20_ci_low": -4.5,
+        "hits20_ci_high": 3.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.04761904761904767,
+        "recall20_ci_low": -0.25911306042884996,
+        "recall20_ci_high": 0.17628676470588228,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2021-2022",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.07201411692516704,
+        "AP_ci_low": -0.019770703750957165,
+        "AP_ci_high": 0.2231445912745167,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -0.2857142857142865,
+        "hits20_ci_low": -4.0,
+        "hits20_ci_high": 5.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.01428571428571429,
+        "recall20_ci_low": -0.23529411764705882,
+        "recall20_ci_high": 0.23809523809523808,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "2023-2024",
+        "comparison": "full-minus-no_location",
+        "delta_AP": -0.06684670655225011,
+        "AP_ci_low": -0.2131877402691969,
+        "AP_ci_high": 0.1006013999898772,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -0.16666666666666696,
+        "hits20_ci_low": -3.0,
+        "hits20_ci_high": 2.5999999999999996,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.011111111111111127,
+        "recall20_ci_low": -0.2,
+        "recall20_ci_high": 0.19051339285714233,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "outcome": "non_GP_any",
+        "scope": "four_windows",
+        "comparison": "full-minus-no_location",
+        "delta_AP": 0.012323855523478339,
+        "AP_ci_low": -0.02927424495584283,
+        "AP_ci_high": 0.07889542776017458,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_hits20": -2.30952380952381,
+        "hits20_ci_low": -8.0,
+        "hits20_ci_high": 9.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_recall20": -0.02999381570810139,
+        "recall20_ci_low": -0.11268865515071856,
+        "recall20_ci_high": 0.11140033240568945,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      }
+    ],
+    "increment_contrasts": [
+      {
+        "mode": "time",
+        "scope": "2017-2018",
+        "comparison": "GP_location_increment-minus-non_GP_location_increment",
+        "delta_delta_AP": 0.030949491267282886,
+        "AP_ci_low": -0.060021236391805344,
+        "AP_ci_high": 0.14607254041973128,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_delta_hits20": 3.21904761904762,
+        "hits20_ci_low": -2.937267356063609,
+        "hits20_ci_high": 9.599714076246334,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_delta_recall20": 0.0901785714285715,
+        "recall20_ci_low": -0.13127008110936683,
+        "recall20_ci_high": 0.320888774650216,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "scope": "2019-2020",
+        "comparison": "GP_location_increment-minus-non_GP_location_increment",
+        "delta_delta_AP": -0.02214283211471918,
+        "AP_ci_low": -0.16031685395210565,
+        "AP_ci_high": 0.08413840160585347,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_delta_hits20": 3.166666666666668,
+        "hits20_ci_low": -4.170421455938698,
+        "hits20_ci_high": 9.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_delta_recall20": 0.15740740740740755,
+        "recall20_ci_low": -0.21382483196627924,
+        "recall20_ci_high": 0.46429093567251456,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "scope": "2021-2022",
+        "comparison": "GP_location_increment-minus-non_GP_location_increment",
+        "delta_delta_AP": -0.08429482141983438,
+        "AP_ci_low": -0.2587662965651081,
+        "AP_ci_high": 0.14635253906784296,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_delta_hits20": 0.0,
+        "hits20_ci_low": -4.981325944170772,
+        "hits20_ci_high": 5.111123330074943,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_delta_recall20": 0.016666666666666663,
+        "recall20_ci_low": -0.32174383001633244,
+        "recall20_ci_high": 0.333010002139495,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "scope": "2023-2024",
+        "comparison": "GP_location_increment-minus-non_GP_location_increment",
+        "delta_delta_AP": 0.048669872574039874,
+        "AP_ci_low": -0.14365383299938025,
+        "AP_ci_high": 0.2519610413838427,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_delta_hits20": 3.1904761904761907,
+        "hits20_ci_low": -2.000859434682964,
+        "hits20_ci_high": 8.4,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_delta_recall20": 0.15436507936507943,
+        "recall20_ci_low": -0.13085620136360393,
+        "recall20_ci_high": 0.43022672753311847,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time",
+        "scope": "four_windows",
+        "comparison": "GP_location_increment-minus-non_GP_location_increment",
+        "delta_delta_AP": -0.0067045724233076864,
+        "AP_ci_low": -0.08531224606725242,
+        "AP_ci_high": 0.08455506855678578,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_delta_hits20": 9.576190476190483,
+        "hits20_ci_low": -2.9148312546362334,
+        "hits20_ci_high": 19.732285149561374,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_delta_recall20": 0.10339537574560625,
+        "recall20_ci_low": -0.04472387023209608,
+        "recall20_ci_high": 0.21787675672707524,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "scope": "2017-2018",
+        "comparison": "GP_location_increment-minus-non_GP_location_increment",
+        "delta_delta_AP": -0.0023901542069670323,
+        "AP_ci_low": -0.09025149658127964,
+        "AP_ci_high": 0.08061406671046312,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_delta_hits20": 5.0,
+        "hits20_ci_low": -3.0,
+        "hits20_ci_high": 8.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_delta_recall20": 0.16666666666666663,
+        "recall20_ci_low": -0.13349303966437834,
+        "recall20_ci_high": 0.2733713450292392,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "scope": "2019-2020",
+        "comparison": "GP_location_increment-minus-non_GP_location_increment",
+        "delta_delta_AP": -0.024536824521635747,
+        "AP_ci_low": -0.12636222854826304,
+        "AP_ci_high": 0.048432772726204124,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_delta_hits20": 2.8571428571428577,
+        "hits20_ci_low": -3.0,
+        "hits20_ci_high": 7.117887700534755,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_delta_recall20": 0.1385281385281386,
+        "recall20_ci_low": -0.1726304945054945,
+        "recall20_ci_high": 0.3666746031746031,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "scope": "2021-2022",
+        "comparison": "GP_location_increment-minus-non_GP_location_increment",
+        "delta_delta_AP": -0.041396132828548954,
+        "AP_ci_low": -0.22036623702684657,
+        "AP_ci_high": 0.11358475608378937,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_delta_hits20": 1.7857142857142865,
+        "hits20_ci_low": -4.501388888888888,
+        "hits20_ci_high": 7.0,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_delta_recall20": 0.11428571428571432,
+        "recall20_ci_low": -0.26831475641583297,
+        "recall20_ci_high": 0.41666666666666674,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "scope": "2023-2024",
+        "comparison": "GP_location_increment-minus-non_GP_location_increment",
+        "delta_delta_AP": 0.12936548145644183,
+        "AP_ci_low": -0.07742806689154848,
+        "AP_ci_high": 0.28673041602642785,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_delta_hits20": 0.41666666666666696,
+        "hits20_ci_low": -3.25,
+        "hits20_ci_high": 7.502499999999964,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_delta_recall20": 0.021527777777777757,
+        "recall20_ci_low": -0.19999999999999996,
+        "recall20_ci_high": 0.3712551264524942,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      },
+      {
+        "mode": "time_operator",
+        "scope": "four_windows",
+        "comparison": "GP_location_increment-minus-non_GP_location_increment",
+        "delta_delta_AP": 0.015260592474822532,
+        "AP_ci_low": -0.06599561328148412,
+        "AP_ci_high": 0.07879680681031191,
+        "AP_valid": 5000,
+        "AP_undefined": 0,
+        "delta_delta_hits20": 10.05952380952381,
+        "hits20_ci_low": -2.9343371212121245,
+        "hits20_ci_high": 16.5952876984127,
+        "hits20_valid": 5000,
+        "hits20_undefined": 0,
+        "delta_delta_recall20": 0.1133271490414347,
+        "recall20_ci_low": -0.04151003925120771,
+        "recall20_ci_high": 0.19376656996429256,
+        "recall20_valid": 5000,
+        "recall20_undefined": 0
+      }
+    ],
+    "zero_rule": "Zero positives: AP/recall undefined, hits zero. Empty window: all three undefined. Aggregate AP requires all four windows; aggregate recall uses all-window positive denominator.",
+    "scope": "Fixed scores; no refitting. Joint operator composition sensitivity. Percentile 95% intervals are pointwise exploratory and not multiplicity-adjusted. Training, feature-collection, snapshot and deployment uncertainty are not covered."
+  },
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1"
+  },
+  "saved_prediction_check": {
+    "saved_model_predictions_reconstructed_without_encoder": 144,
+    "max_absolute_prediction_error": 1.1102230246251565e-16
+  },
+  "input_artifact_sha256": {
+    "research/inputs/data/incident_primary.zip": "89c21d2ea6f5cb8ff6daad6ac60160608671a7b49c218bf9f917bfb88a2ce5a1",
+    "research/results/analysis_primary.csv": "7029c16bb14363348be6d99d2cef2a4e578c7f9fc0f72ba1cecdb52c2d67c30c",
+    "research/analysis/study_common.py": "4643ff49f725348b3cd6e9df6bc6031eb9c36717f523b500273731c64eacdec2",
+    "research/analysis/location_research.py": "f8ce72d7ae729b33ef0622c7df13acbb3478504c75e54ccf396a3fb28ddde56b"
+  },
+  "script_sha256": "76d5c25a53f470b72cbca5506c333f820d21fc41f42c8845cc4a8493112388ac",
+  "interpretation": "Registered exploratory fixed-method information comparison in previously seen, reported incidents. Not causal location importance, not prospective field performance, and not an intervention recommendation.",
+  "output_sha256": {
+    "bootstrap_draws.npz": "3cdcd62b70e98e575db66e5784b3a05016079e983232cbecee996f2d4580be77",
+    "findings.md": "f5e74f072922a7ce7950233824f83551dc82869908ca6f1f7cba9a7489462020",
+    "information_comparisons.csv": "832cfc139db677e4d64bcf64a9445baadadcfc48e3a6fa49b689abd40f602b7c",
+    "information_increment_contrasts.csv": "f6759a2cade8c1909227a4454346180b615d80e06d512ccb506ae2a9469f9fd3",
+    "information_predictions.csv": "cf1b160008dd9a78257dd24f37642e474bb9bf10e1d3a6b625374c300e815ed8",
+    "information_summary.csv": "f2465e60921225c0980260ae1ead744c6ec5e7942e5075ee0452532818f9bec3",
+    "information_window_metrics.csv": "ac62067829b1a5b429e4780e6e9fb4c59ee032732c9063b580976da5dee1b341",
+    "legacy_score_diagnostic.csv": "bc679ec5372895358037adf699283d2c8bf277a8c4b7e0729bb42f3daec7cafe",
+    "legacy_score_summary.csv": "67132f7d5aff70c74d821f19a3cc027c7958f4aa4e01dd9ba489f27e817572a9",
+    "training_audit.json": "041df06e073a49e4d484a1beec3ebb7277e00c72de3df72d5e5348f156ff8a2f",
+    "training_membership.csv": "567450e34eccd87aef23157b80fec60a0a9842bf0f74c01314bb22371e579d5b"
+  }
+}

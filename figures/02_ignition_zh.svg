@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="482.4pt" viewBox="0 0 864 482.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-06T19:04:59.104201</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 482.4 
+L 864 482.4 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 233.28 347.328 
+L 630.72 347.328 
+L 630.72 135.072 
+L 233.28 135.072 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 303.006316 347.328 
+L 303.006316 135.072 
+" clip-path="url(#pb81d73ebe9)" style="fill: none; stroke: #dce3e7; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="233.28" y="369.572141" transform="rotate(-0 233.28 369.572141)">-10</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="303.006316" y="369.572141" transform="rotate(-0 303.006316 369.572141)">0</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="372.732632" y="369.572141" transform="rotate(-0 372.732632 369.572141)">10</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="442.458947" y="369.572141" transform="rotate(-0 442.458947 369.572141)">20</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="512.185263" y="369.572141" transform="rotate(-0 512.185263 369.572141)">30</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #5e6d76" x="581.911579" y="369.572141" transform="rotate(-0 581.911579 369.572141)">40</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #26353e" x="432" y="388.390656" transform="rotate(-0 432 388.390656)">进户管 − 主管道（百分点）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="text_8">
+      <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #26353e" x="215.28" y="178.564385" transform="rotate(-0 215.28 178.564385)">原报告构成</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="text_9">
+      <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #26353e" x="215.28" y="247.006719" transform="rotate(-0 215.28 247.006719)">相同原因构成</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="text_10">
+      <text style="font-size: 14px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #26353e" x="215.28" y="315.511396" transform="rotate(-0 215.28 315.511396)">相同点燃构成</text>
+     </g>
+    </g>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 367.315298 172.730323 
+L 610.132496 172.730323 
+" clip-path="url(#pb81d73ebe9)" style="fill: none; stroke: #26353e; stroke-width: 2"/>
+   </g>
+   <g id="line2d_2">
+    <defs>
+     <path id="m62c133cc81" d="M 0 4 
+L 0 -4 
+" style="stroke: #26353e"/>
+    </defs>
+    <g clip-path="url(#pb81d73ebe9)">
+     <use xlink:href="#m62c133cc81" x="367.315298" y="172.730323" style="fill: #26353e; stroke: #26353e"/>
+    </g>
+   </g>
+   <g id="line2d_3">
+    <g clip-path="url(#pb81d73ebe9)">
+     <use xlink:href="#m62c133cc81" x="610.132496" y="172.730323" style="fill: #26353e; stroke: #26353e"/>
+    </g>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 355.080267 241.2 
+L 577.800381 241.2 
+" clip-path="url(#pb81d73ebe9)" style="fill: none; stroke: #26353e; stroke-width: 2"/>
+   </g>
+   <g id="line2d_4">
+    <g clip-path="url(#pb81d73ebe9)">
+     <use xlink:href="#m62c133cc81" x="355.080267" y="241.2" style="fill: #26353e; stroke: #26353e"/>
+    </g>
+   </g>
+   <g id="line2d_5">
+    <g clip-path="url(#pb81d73ebe9)">
+     <use xlink:href="#m62c133cc81" x="577.800381" y="241.2" style="fill: #26353e; stroke: #26353e"/>
+    </g>
+   </g>
+   <g id="LineCollection_3">
+    <path d="M 283.170877 309.669677 
+L 474.376625 309.669677 
+" clip-path="url(#pb81d73ebe9)" style="fill: none; stroke: #a15d43; stroke-width: 2"/>
+   </g>
+   <g id="line2d_6">
+    <defs>
+     <path id="m80fd6041cb" d="M 0 4 
+L 0 -4 
+" style="stroke: #a15d43"/>
+    </defs>
+    <g clip-path="url(#pb81d73ebe9)">
+     <use xlink:href="#m80fd6041cb" x="283.170877" y="309.669677" style="fill: #a15d43; stroke: #a15d43"/>
+    </g>
+   </g>
+   <g id="line2d_7">
+    <g clip-path="url(#pb81d73ebe9)">
+     <use xlink:href="#m80fd6041cb" x="474.376625" y="309.669677" style="fill: #a15d43; stroke: #a15d43"/>
+    </g>
+   </g>
+   <g id="line2d_8">
+    <defs>
+     <path id="mda4800cf78" d="M 0 4.5 
+C 1.193414 4.5 2.338109 4.025852 3.181981 3.181981 
+C 4.025852 2.338109 4.5 1.193414 4.5 0 
+C 4.5 -1.193414 4.025852 -2.338109 3.181981 -3.181981 
+C 2.338109 -4.025852 1.193414 -4.5 0 -4.5 
+C -1.193414 -4.5 -2.338109 -4.025852 -3.181981 -3.181981 
+C -4.025852 -2.338109 -4.5 -1.193414 -4.5 0 
+C -4.5 1.193414 -4.025852 2.338109 -3.181981 3.181981 
+C -2.338109 4.025852 -1.193414 4.5 0 4.5 
+z
+" style="stroke: #26353e"/>
+    </defs>
+    <g clip-path="url(#pb81d73ebe9)">
+     <use xlink:href="#mda4800cf78" x="486.125933" y="172.730323" style="fill: #26353e; stroke: #26353e"/>
+    </g>
+   </g>
+   <g id="line2d_9">
+    <g clip-path="url(#pb81d73ebe9)">
+     <use xlink:href="#mda4800cf78" x="464.8836" y="241.2" style="fill: #26353e; stroke: #26353e"/>
+    </g>
+   </g>
+   <g id="line2d_10">
+    <defs>
+     <path id="m48df08859f" d="M 0 4.5 
+C 1.193414 4.5 2.338109 4.025852 3.181981 3.181981 
+C 4.025852 2.338109 4.5 1.193414 4.5 0 
+C 4.5 -1.193414 4.025852 -2.338109 3.181981 -3.181981 
+C 2.338109 -4.025852 1.193414 -4.5 0 -4.5 
+C -1.193414 -4.5 -2.338109 -4.025852 -3.181981 -3.181981 
+C -4.025852 -2.338109 -4.5 -1.193414 -4.5 0 
+C -4.5 1.193414 -4.025852 2.338109 -3.181981 3.181981 
+C -2.338109 4.025852 -1.193414 4.5 0 4.5 
+z
+" style="stroke: #a15d43"/>
+    </defs>
+    <g clip-path="url(#pb81d73ebe9)">
+     <use xlink:href="#m48df08859f" x="363.050219" y="309.669677" style="fill: #a15d43; stroke: #a15d43"/>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 233.28 347.328 
+L 630.72 347.328 
+" style="fill: none; stroke: #dce3e7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="657.216" y="172.838686" transform="rotate(-0 657.216 172.838686)">26.3</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="657.216" y="190.460517" transform="rotate(-0 657.216 190.460517)">[9.2, 44.0]</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="657.216" y="241.308363" transform="rotate(-0 657.216 241.308363)">23.2</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="657.216" y="258.930195" transform="rotate(-0 657.216 258.930195)">[7.5, 39.4]</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="657.216" y="309.778041" transform="rotate(-0 657.216 309.778041)">8.6</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="657.216" y="327.399872" transform="rotate(-0 657.216 327.399872)">[-2.8, 24.6]</text>
+   </g>
+  </g>
+  <g id="text_17">
+   <text style="font-weight: 700; font-size: 24px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #26353e" x="34.56" y="41.853" transform="rotate(-0 34.56 41.853)">按相同点燃构成计算，部件伤亡差值缩小</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 13.5px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5e6d76" x="34.56" y="74.36633" transform="rotate(-0 34.56 74.36633)">公有场地：进户管 45 份、主管道 363 份。记录点燃的比例分别为 73.3% 与 36.1%。</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5e6d76" transform="translate(34.56 431.570031)">共同构成 = 两组报告合在一起的原因／点燃比例。横线为按运营商重抽样的 95% 区间。</text>
+   <text style="font-size: 11px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #5e6d76" transform="translate(34.56 450.343078)">本图比较已报告事故的组成；点燃构成是解释部件差异的一项重要线索。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb81d73ebe9">
+   <rect x="233.28" y="135.072" width="397.44" height="212.256"/>
+  </clipPath>
+ </defs>
+</svg>

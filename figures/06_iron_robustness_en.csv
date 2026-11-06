@@ -1,0 +1,4 @@
+comparison,rate_ratio,low,high,jurisdictions,fatalities,allentown_fatalities,full_death_rate,without_case_death_rate
+national,9.69805954873245,4.978673700173632,16.916637859370127,52.0,,,,
+same_state_year,10.20471701465007,4.392670126951832,18.18713519900508,35.0,,,,
+death_concentration,,,,,14.0,5.0,0.3791693245646383,0.24375170864869602
