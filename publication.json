@@ -1,8 +1,10 @@
 {
-  "source_report_sha256": "7c5e102ac89b6670e17dc9bbadd3cf3402f1efb0cbf00de9d6ec7f77748a9322",
+  "source_report_sha256": "4c6d84ce4b699ea566a6057fc74a18549bfcb74acf3e5fdb3f636710446f0600",
   "files": {
     ".gitattributes": "49daf4f6233bb756eca88bab17a617419ad3947c5bde268f38a9c9fe24503003",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "annotations.css": "0b6ffa6f610cb035984808a96b0764b7fbdb96ca0bada819989787a1ba5e25ac",
+    "annotations.js": "f77c2876380cb1d72e979425e4d5fa9dee99bf01f9815d00a72ea34ad670a233",
     "budget_curve.csv": "ce7fd4c259a3116e281218f8721a577e5eab07572bd3077ce5ffc45b32c6b95e",
     "data/ablation_results.json": "9f9d83af19b500cef55c8d019ddbc70c22254aab76a279a8939c753b78156a58",
     "data/all_category_cells.csv": "40a22940474979133917dc69035bb476dbd940d91a90cb06179dc6909150d6cb",
@@ -87,15 +89,15 @@
     "figures/08_information_roles_zh.pdf": "2d1ce807c20dcdec09eefcf7a11a002aabf7dc394fe8def799f6cf123d49a3eb",
     "figures/08_information_roles_zh.png": "5f8c4c1cdcef07fcc3df79cd3002f2a2bcef018790496ec8f8360a18a8656bde",
     "figures/08_information_roles_zh.svg": "f1b4e71468f0a3f891f4335e67556d62f5ebaf6921896dd020ad66a0375de47b",
-    "index.html": "3e5818f568dd1729039d69edd271318e3bac01c95f4a0939694b115343b64d00",
-    "manuscript_en.md": "cf9ab7e88abff3abc5de7a104284a16cf1623ffa833e0c20ff3d2ec94a7da245",
-    "manuscript_zh.md": "c853a01f3279e41a7f75f546d5ee7bc2a56624610a67eb7b206b99e644676ba1",
+    "index.html": "b4d6ea7b17fb6981b589f8d7986e60b34bac9389d8253078b2322b25b46fe85c",
+    "manuscript_en.md": "378570b84847ee0fbc4e0499e9ccb2f9c05ad3672239465edd551c99b02e76fa",
+    "manuscript_zh.md": "311144c5ccb59638644dbc1216f41781220b4ca35efd39a00feae7deee1aabbc",
     "methods.html": "48b8aa74067511307eafbb7e687f8765f80d24498432ebf85e3940626459fafd",
     "methods.md": "5e6b82f8e5c4618969874b20ac35520bacc031c2a8e87f6b3935ead027cb0084",
     "README.md": "283ce3b502c929f48fad4b07519f93392254003f54cd55130b9a318564cdda60",
-    "site.css": "0d2364065c4efd0986e76cb894545b999cbced48068b396d67ba9cc1fa0cc9b8",
+    "site.css": "f3aabc591d20d377732e81a9b375dde976fb45cdcf851a1619c336c2643e2f21",
     "sources.html": "5c11dc10321542d594a41817798e6b81cb9e431dbbbd2d129a6627e2dd8c4510",
     "sources.md": "fd316848288e01a02a9dd0bc0eb57d395a419f7e0182bb8cdccbbcf148d61360",
-    "storyline.md": "3614c41a52460a98cb865da583051995335e1fbb352faba79882b458bc04268d"
+    "storyline.md": "ed26f6f33329bf0dc2a11341b7648be22227eba292ab90ceff78ff0f7ff6cc66"
   }
 }

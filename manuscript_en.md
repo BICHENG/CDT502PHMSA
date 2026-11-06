@@ -12,9 +12,9 @@ We analyse 1,550 US gas distribution incident reports from the Pipeline and Haza
 
 Annual network records provide a second kind of evidence. Material inventories cover 1990–2024, and installation-decade inventories cover 2004–2024. They describe the amount and age structure of infrastructure in use. Together, the two sources support an investigation of people and accident settings, a comparison of materials relative to network size, and a test of how much the basic information helps identify casualty reports. Each comparison contributes to the same practical aim: a more specific basis for accident review and attention to existing networks. [PHMSA annual distribution data](https://www.phmsa.dot.gov/data-and-statistics/pipeline/gas-distribution-gas-gathering-gas-transmission-hazardous-liquids)
 
-## 1. Service lines, incident locations and the people affected
+## 1. Components, incident locations and people affected
 
-### The component difference varies by property type
+### 1.1 Component and property-type differences
 
 We began with a specific expectation: because service lines connect customers, their higher casualty proportion would mainly involve the general public and would appear across different locations. The first comparison establishes the overall difference. Among 241 service-line reports, 90 involved casualties, a proportion of 37.3%. Among 726 main reports, 146 involved casualties, or 20.1%.
 
@@ -30,7 +30,7 @@ On public property, the casualty proportion was 44.4% for service lines and 18.2
 
 Reports from the same operator can share operating practices and infrastructure. We therefore keep an operator's reports together when resampling, then recalculate the comparison. The interval describes the uncertainty in the estimated group difference, while the underlying counts show exactly which recorded incidents contribute to it.
 
-### Workers and responders in public-property service-line incidents
+### 1.2 Personnel in public-property service-line casualty reports
 
 PHMSA distinguishes the general public from four other recorded groups: operator employees, contractors working for the operator, external emergency responders, and other workers in the right-of-way. We combine the latter four as workers and responders. The public category follows PHMSA's reporting definition and can include spontaneous helpers and some affected workers outside the right-of-way. These are recorded identities; the narrative establishes what a person was doing. [PHMSA incident reporting instructions, personnel categories](https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2023-12/Current_GD_Incident_Instructions_PHMSA%20F%207100.1_2023-09%20and%20Beyond.pdf)
 
@@ -38,7 +38,7 @@ Among the 20 service-line casualty reports on public property, 13 involved only 
 
 This revises the initial explanation. Service lines connect customers, but the public-property casualty reports mainly involved workers and responders. Accident review in this group needs to examine maintenance, construction and response activities. On private property, both mains and service lines warrant attention to public casualties.
 
-### Incident accounts explain the activities behind the categories
+### 1.3 On-site activities and incident composition
 
 To interpret the personnel difference, we first examined how causes relate to the people harmed across all reports. Incorrect operation and non-excavation vehicle or equipment strikes each produced 59 casualty reports. Worker or responder casualties appeared in 57 operation reports; public casualties appeared in 57 vehicle-strike reports. These distinct activity patterns guided our reading of the public-property service-line accounts.
 
@@ -50,8 +50,6 @@ In report 20110152, an operator employee was repairing a service-line leak. Gas 
 
 Report 20190049 describes telecommunications drilling that damaged a service line. An operator responder arrived, and a nearby building exploded approximately three minutes later. The incident caused two deaths and five inpatient injuries involving the public, operator staff, emergency responders and other workers. Construction, response and building occupancy were distinct parts of the same event.
 
-### Ignition helps explain the component comparison
-
 The public-property reports differed in their recorded ignition status. Ignition appeared in 33/45 service-line reports, or 73.3%, compared with 131/363 main reports, or 36.1%. Nineteen of the 20 service-line casualty reports recorded ignition. This gives a specific reason to examine accident composition alongside the component label.
 
 We compared casualty proportions within ignition and non-ignition groups, then weighted them using the same combined ignition mix for both components. The service-minus-main difference became 8.6 percentage points, with a 95% interval from −2.8 to 24.6. Using a common cause mix instead gave 23.2 percentage points, with an interval of 7.5–39.4. The larger change under the ignition comparison shows that the original component difference is closely related to the mix of incidents with and without recorded ignition.
@@ -62,7 +60,7 @@ Figure 3. The original public-property difference is compared with descriptive c
 
 The combined evidence identifies a concrete review focus: the work being undertaken, control of escaping gas, ignition sequence, and the activities and positions of affected people. The component comparison locates a recurring pattern; the personnel records and incident accounts explain what accident review should examine within it.
 
-### The overall component pattern also appears in recent reports
+### 1.4 Component differences across reporting periods
 
 We checked whether the overall service-line difference also appears among reports reaching the regulator more recently. This comparison uses the year PHMSA received each report, which can follow the incident date. It tests the persistence of the overall component relationship across receipt periods.
 
@@ -70,7 +68,9 @@ Reports received in 2010–2021 had casualty proportions of 36.2% for service li
 
 ## 2. Materials, network size and construction age
 
-### Material comparisons need the amount of pipe in use
+### 2.1 Material casualty proportions and network-adjusted rates
+
+#### 2.1.1 Material categories and recent reports
 
 Existing-network inspection raises a second part of the research question: which materials deserve attention relative to their use? Across all reported incidents, casualty proportions were 36.7% for cast/wrought iron, 26.6% for plastic and 22.4% for steel. The original forms distinguish cast/wrought iron from ductile iron, so the analysis preserves those categories and their corresponding mileage records.
 
@@ -86,6 +86,8 @@ Existing-network inspection raises a second part of the research question: which
 
 Recent steel and plastic casualty proportions were both about 24%. Recent cast/wrought iron had seven reports, with both casualty reports from one operator. The complete period and matched network records therefore provide the basis for the material attention priorities, alongside this explicit recent-period comparison.
 
+#### 2.1.2 Network size and comparison denominators
+
 Network records explain why counts alone give an incomplete picture of material exposure. In the archived series, steel main mileage changed from 574,000 miles in 1990 to 506,000 in 2024, plastic from 239,000 to 856,000, and cast/wrought iron from 58,300 to 14,600. In 2024, plastic accounted for approximately 62.1% of main mileage, steel 36.7%, and cast/wrought iron 1.1%. A small number of reports involving a relatively uncommon material can therefore represent a substantial rate per unit of network.
 
 For the rate comparison, we use 693 main and main-valve reports from 2010–2024 whose years, components and materials correspond to annual main-mileage records. This subset gives the material comparison a compatible denominator. The full incident proportions above and the mileage rates answer related questions about consequences and network exposure.
@@ -100,9 +102,9 @@ One mile used for one year contributes one mile-year. PHMSA also uses incident r
 
 Figure 4. Comparing the same amount of network over the same duration gives meaning to material-specific report counts. Cast/wrought iron has the highest casualty-report rate among these three material groups.
 
-Cast/wrought iron had 22 casualty reports among 53 matched reports, giving 0.596 casualty reports per 10,000 mile-years. This was 9.70 times the steel rate, with a state-resampling 95% interval of 4.98–16.92. Its remaining stock is geographically concentrated: New Jersey, New York, Massachusetts and Pennsylvania held 58.8% of the recorded cast/wrought-iron main mileage in 2024. This concentration motivates a comparison within the same states and years, where both materials have recorded mileage. That comparison gave a ratio of 10.20, with an interval of 4.39–18.19. The elevated rate remains visible when geography and period are considered, supporting attention to the cast/wrought-iron network still in use.
+Cast/wrought iron had 22 casualty reports among 53 matched reports, giving 0.596 casualty reports per 10,000 mile-years. This was 9.70 times the steel rate, with a state-resampling 95% interval of 4.98–16.92.
 
-### Steel and plastic reveal why two measures are needed
+### 2.2 Incident frequency and consequences for steel and plastic
 
 Plastic's incident-report rate was about 0.61 times that of steel. Within the matched records, plastic had 70 casualty reports among 293 incidents, or 23.9%; steel had 49 among 347, or 14.1%. Thus, plastic combined lower report frequency with a higher casualty proportion. The relationship between these measures is simple:
 
@@ -114,7 +116,7 @@ Figure 5. Steel: 0.435 × 14.1% ≈ 0.061. Plastic: 0.263 × 23.9% ≈ 0.063. Bo
 
 For plastic, fewer incident reports per unit of network combine with a higher casualty proportion within those reports. The resulting casualty-report rates were 0.063 for plastic and 0.061 for steel. Their ratio was 1.02, with a 95% interval of 0.71–1.38. The point estimates are close, with the interval showing the precision of that comparison. Reporting both incident frequency and consequences explains how these different material impressions can arise from the same records.
 
-### The remaining network has a construction history
+### 2.3 Existing materials and construction age
 
 The material comparison also concerns infrastructure built in different periods. Installation-decade records show that mains installed before 1970 declined from about 404,000 miles in 2010 to 320,000 in 2024. Their share fell from 32.9% to 23.2%; a further 5.9% of 2024 mileage had an unknown installation decade. These are inventories of surviving older infrastructure and its net change.
 
@@ -128,7 +130,11 @@ Within the broad group aged at least 60 years, casualty proportions were 19/42, 
 
 Material mileage, installation decades and incident ages therefore provide complementary evidence for investigating the remaining material and age combinations.
 
-### People affected and the concentration of severe outcomes
+### 2.4 Geographic composition and severe incidents
+
+The geographic comparison uses the 2010–2024 main and main-valve reports matched to annual main-mileage records for cast/wrought iron and steel.
+
+The remaining cast/wrought-iron stock is geographically concentrated: New Jersey, New York, Massachusetts and Pennsylvania held 58.8% of the recorded cast/wrought-iron main mileage in 2024. This concentration motivates a comparison within the same states and years, where both materials have recorded mileage. The cast/wrought-iron-to-steel casualty-report rate ratio in the same states and years was 10.20, with an interval of 4.39–18.19. The elevated rate remains visible when geography and period are considered, supporting attention to the cast/wrought-iron network still in use.
 
 A casualty report may involve one person or many. The 693 compatible reports recorded 36 deaths and 209 inpatient injuries. Cast/wrought iron accounted for 14 deaths and 29 inpatient injuries; steel for seven and 79; plastic for 15 and 101. Counting people makes the consequences of material-related incidents more concrete.
 
@@ -140,9 +146,11 @@ Severe outcomes are concentrated. The 2011 Allentown incident accounted for five
 
 This chapter therefore produces two practical judgements. Existing cast/wrought iron and older infrastructure are investigation priorities supported by mileage, age and casualty evidence. Steel and plastic require separate reporting of incident frequency and consequences, because those measures describe different aspects of their observed performance.
 
-## 3. What the basic information can identify
+## 3. The identification value of basic information
 
-### Testing earlier judgements on later reports
+### 3.1 Identification results on later reports
+
+#### 3.1.1 Evaluation records and comparison methods
 
 The previous chapters establish group differences and their meaning. We now assess how much the basic fields help identify individual casualty reports by applying judgements from earlier records to later reports.
 
@@ -150,7 +158,7 @@ Reports received in 2010–2021 supplied 1,286 training examples. We evaluate th
 
 For each later report, the model calculates a score from the basic features and their relationship with casualties in the earlier records. Higher scores receive priority when reports are selected for review. We then use the recorded casualty outcomes of the later reports to check the selection.
 
-### Selecting the same number of reports makes the comparison clear
+#### 3.1.2 Identification at the same review size
 
 Selecting 53 of the 264 reports gives each method approximately the same 20% selection allowance. The constant reference has 13.05 expected casualty-report hits. The component rule has 21.65 and logistic regression 21.40. Equally scored reports at the selection boundary have equal chances of selection, so expected hit counts can have fractional values.
 
@@ -160,7 +168,7 @@ Figure 8. Each method receives 53 selection places from the same 264 reports. Ex
 
 Component information increases expected hits substantially above the undifferentiated reference. Combining the other basic fields through logistic regression gives a similar number of hits in this period. We retain the transparent component rule as the reference and evaluate joint information by its measured additional contribution.
 
-### Flagging reports with thresholds selected during training
+#### 3.1.3 Flagged reports and identification metrics
 
 We now switch from selecting exactly 53 reports to flagging reports using score thresholds selected on the earlier data. Each method can therefore flag a different number of reports; the constant reference flags them all. This comparison shows how the chosen thresholds balance the number selected and the casualty reports found.
 
@@ -174,7 +182,7 @@ Precision is the proportion of flagged reports that involve casualties. Recall i
 
 At these thresholds, logistic regression flagged fewer reports and achieved higher precision, finding about half the casualty reports. The component rule found more casualty reports while flagging almost the entire set. Reading this table with Figure 8 distinguishes the consequences of a chosen threshold from the information available when the selection count is held equal.
 
-### Location explains incident settings; its ranking contribution is tested separately
+### 3.2 Results across periods and additional information
 
 We checked information gains across four receipt-year windows: 2017–2018, 2019–2020, 2021–2022 and 2023–2024. Models used earlier reports for each evaluation. Across 747 reports, the 20% allowances totalled 152 places. We then kept the same logistic-regression specification and removed one type of information at a time.
 
@@ -188,7 +196,7 @@ Location helps us understand who was harmed in different settings. Its additiona
 
 A supplementary random forest found 56.00 casualty reports across these windows, compared with 52.38 for the component rule. Its 3.62 additional expected hits corresponded to a recall difference of 2.19 percentage points, with a 95% interval of −4.81 to 7.57. This modest observed increment reinforces the decision to present additional model complexity through measured gains.
 
-### Conclusions
+## Overall judgements and management uses
 
 The initial question has three specific answers. Accident review should interpret service-line differences through location, recorded personnel and actual activities. Public-property service-line reports direct attention towards work, gas control, ignition and response sequences. Existing cast/wrought iron and older infrastructure merit focused investigation; steel and plastic should be compared using both incident frequency and consequences. For identification, component information provides a measured ranking signal, with joint models evaluated by the additional casualty reports they identify under the same conditions.
 
