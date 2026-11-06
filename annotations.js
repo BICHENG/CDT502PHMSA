@@ -41,8 +41,10 @@ for(const article of document.querySelectorAll('article')){
   link.textContent=target.matches('figure')?(context.lang==='zh'?'图表批注':'Figure feedback'):(context.lang==='zh'?'本节批注':'Section feedback');
   link.href=reviewUrl(context,target.matches('figure')?target.querySelector('figcaption').textContent:'');
   link.target='_blank';link.rel='noopener noreferrer';
-  if(target.matches('figure'))target.querySelector('.figure-exports').append(link);
-  else target.querySelector('.analysis-context').append(link);
+  if(target.matches('figure')){
+   const exports=target.querySelector('.figure-exports'),actions=document.createElement('div');actions.className='figure-actions';
+   exports.replaceWith(actions);actions.append(exports,link);
+  }else target.querySelector('.analysis-context').append(link);
  }
  article.addEventListener('pointerup',updateSelectionReview);
  article.addEventListener('keyup',updateSelectionReview);
