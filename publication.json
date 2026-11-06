@@ -1,11 +1,12 @@
 {
   "source_report_sha256": "7c5e102ac89b6670e17dc9bbadd3cf3402f1efb0cbf00de9d6ec7f77748a9322",
   "files": {
-    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    ".gitattributes": "49daf4f6233bb756eca88bab17a617419ad3947c5bde268f38a9c9fe24503003",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "budget_curve.csv": "ce7fd4c259a3116e281218f8721a577e5eab07572bd3077ce5ffc45b32c6b95e",
     "data/ablation_results.json": "9f9d83af19b500cef55c8d019ddbc70c22254aab76a279a8939c753b78156a58",
     "data/all_category_cells.csv": "40a22940474979133917dc69035bb476dbd940d91a90cb06179dc6909150d6cb",
+    "data/association_tests.csv": "112f67a299cdc5e63058bd1619d269b70234f5a697123feb298f70bf461eb725",
     "data/core_part_location.csv": "7bea33fd2956af25d94ab0fccc0282d3d67d8c64f3e641a2092a280f945f2ee6",
     "data/four_window_model_table.csv": "ade94ce0844582ad69d950779adadc367667e6e809ce959b24561a284ec76e42",
     "data/information_results.json": "50593d4206850c8a8a037e44326ea6cabe47ab1d1d565bf0ea2879c6b5c6e4bf",
@@ -86,14 +87,14 @@
     "figures/08_information_roles_zh.pdf": "2d1ce807c20dcdec09eefcf7a11a002aabf7dc394fe8def799f6cf123d49a3eb",
     "figures/08_information_roles_zh.png": "5f8c4c1cdcef07fcc3df79cd3002f2a2bcef018790496ec8f8360a18a8656bde",
     "figures/08_information_roles_zh.svg": "f1b4e71468f0a3f891f4335e67556d62f5ebaf6921896dd020ad66a0375de47b",
-    "index.html": "00f1d75dca0298863e64ac63080343b01f959a3b54dcf14516edc7087933193b",
+    "index.html": "3e5818f568dd1729039d69edd271318e3bac01c95f4a0939694b115343b64d00",
     "manuscript_en.md": "cf9ab7e88abff3abc5de7a104284a16cf1623ffa833e0c20ff3d2ec94a7da245",
     "manuscript_zh.md": "c853a01f3279e41a7f75f546d5ee7bc2a56624610a67eb7b206b99e644676ba1",
-    "methods.html": "1625e02d1d70ddfe696704178c981669f31e72758174779d51e81118967f588e",
-    "methods.md": "2282bbcb164221386ea93012d8e68bb6c7cd8e2fe56372b6b8f09204c4cf4ff1",
+    "methods.html": "48b8aa74067511307eafbb7e687f8765f80d24498432ebf85e3940626459fafd",
+    "methods.md": "5e6b82f8e5c4618969874b20ac35520bacc031c2a8e87f6b3935ead027cb0084",
     "README.md": "283ce3b502c929f48fad4b07519f93392254003f54cd55130b9a318564cdda60",
     "site.css": "0d2364065c4efd0986e76cb894545b999cbced48068b396d67ba9cc1fa0cc9b8",
-    "sources.html": "56f2278bec2a7fb5c83936d631e545b68d185cdf2b078527776d38975588b5c2",
+    "sources.html": "5c11dc10321542d594a41817798e6b81cb9e431dbbbd2d129a6627e2dd8c4510",
     "sources.md": "fd316848288e01a02a9dd0bc0eb57d395a419f7e0182bb8cdccbbcf148d61360",
     "storyline.md": "3614c41a52460a98cb865da583051995335e1fbb352faba79882b458bc04268d"
   }
