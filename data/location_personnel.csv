@@ -1,0 +1,33 @@
+﻿location_raw,location_zh,part_raw,part_zh,personnel_category,personnel_category_zh,reports,group_reports,group_casualty_reports,share_of_all_reports
+PUBLIC PROPERTY,公共地点,MAIN,主管道,public_only,仅一般公众伤亡,16,363,66,0.0440771349862259
+PUBLIC PROPERTY,公共地点,MAIN,主管道,nonpublic_only,仅工作人员等其他人员伤亡,49,363,66,0.1349862258953168
+PUBLIC PROPERTY,公共地点,MAIN,主管道,both,两类人员均有伤亡,1,363,66,0.0027548209366391185
+PUBLIC PROPERTY,公共地点,MAIN,主管道,none,无死亡或住院伤害,297,363,66,0.8181818181818182
+PUBLIC PROPERTY,公共地点,SERVICE,进户管,public_only,仅一般公众伤亡,6,45,20,0.13333333333333333
+PUBLIC PROPERTY,公共地点,SERVICE,进户管,nonpublic_only,仅工作人员等其他人员伤亡,13,45,20,0.28888888888888886
+PUBLIC PROPERTY,公共地点,SERVICE,进户管,both,两类人员均有伤亡,1,45,20,0.022222222222222223
+PUBLIC PROPERTY,公共地点,SERVICE,进户管,none,无死亡或住院伤害,25,45,20,0.5555555555555556
+PRIVATE PROPERTY,私人地点,MAIN,主管道,public_only,仅一般公众伤亡,25,91,33,0.27472527472527475
+PRIVATE PROPERTY,私人地点,MAIN,主管道,nonpublic_only,仅工作人员等其他人员伤亡,4,91,33,0.04395604395604396
+PRIVATE PROPERTY,私人地点,MAIN,主管道,both,两类人员均有伤亡,4,91,33,0.04395604395604396
+PRIVATE PROPERTY,私人地点,MAIN,主管道,none,无死亡或住院伤害,58,91,33,0.6373626373626373
+PRIVATE PROPERTY,私人地点,SERVICE,进户管,public_only,仅一般公众伤亡,38,162,57,0.2345679012345679
+PRIVATE PROPERTY,私人地点,SERVICE,进户管,nonpublic_only,仅工作人员等其他人员伤亡,14,162,57,0.08641975308641975
+PRIVATE PROPERTY,私人地点,SERVICE,进户管,both,两类人员均有伤亡,5,162,57,0.030864197530864196
+PRIVATE PROPERTY,私人地点,SERVICE,进户管,none,无死亡或住院伤害,105,162,57,0.6481481481481481
+UTILITY RIGHT-OF-WAY / EASEMENT,公用事业通行权／地役权区域,MAIN,主管道,public_only,仅一般公众伤亡,12,266,45,0.045112781954887216
+UTILITY RIGHT-OF-WAY / EASEMENT,公用事业通行权／地役权区域,MAIN,主管道,nonpublic_only,仅工作人员等其他人员伤亡,32,266,45,0.12030075187969924
+UTILITY RIGHT-OF-WAY / EASEMENT,公用事业通行权／地役权区域,MAIN,主管道,both,两类人员均有伤亡,1,266,45,0.0037593984962406013
+UTILITY RIGHT-OF-WAY / EASEMENT,公用事业通行权／地役权区域,MAIN,主管道,none,无死亡或住院伤害,221,266,45,0.8308270676691729
+UTILITY RIGHT-OF-WAY / EASEMENT,公用事业通行权／地役权区域,SERVICE,进户管,public_only,仅一般公众伤亡,0,32,12,0.0
+UTILITY RIGHT-OF-WAY / EASEMENT,公用事业通行权／地役权区域,SERVICE,进户管,nonpublic_only,仅工作人员等其他人员伤亡,11,32,12,0.34375
+UTILITY RIGHT-OF-WAY / EASEMENT,公用事业通行权／地役权区域,SERVICE,进户管,both,两类人员均有伤亡,1,32,12,0.03125
+UTILITY RIGHT-OF-WAY / EASEMENT,公用事业通行权／地役权区域,SERVICE,进户管,none,无死亡或住院伤害,20,32,12,0.625
+OPERATOR-CONTROLLED PROPERTY,运营商控制场地,MAIN,主管道,public_only,仅一般公众伤亡,0,6,2,0.0
+OPERATOR-CONTROLLED PROPERTY,运营商控制场地,MAIN,主管道,nonpublic_only,仅工作人员等其他人员伤亡,2,6,2,0.3333333333333333
+OPERATOR-CONTROLLED PROPERTY,运营商控制场地,MAIN,主管道,both,两类人员均有伤亡,0,6,2,0.0
+OPERATOR-CONTROLLED PROPERTY,运营商控制场地,MAIN,主管道,none,无死亡或住院伤害,4,6,2,0.6666666666666666
+OPERATOR-CONTROLLED PROPERTY,运营商控制场地,SERVICE,进户管,public_only,仅一般公众伤亡,0,2,1,0.0
+OPERATOR-CONTROLLED PROPERTY,运营商控制场地,SERVICE,进户管,nonpublic_only,仅工作人员等其他人员伤亡,1,2,1,0.5
+OPERATOR-CONTROLLED PROPERTY,运营商控制场地,SERVICE,进户管,both,两类人员均有伤亡,0,2,1,0.0
+OPERATOR-CONTROLLED PROPERTY,运营商控制场地,SERVICE,进户管,none,无死亡或住院伤害,1,2,1,0.5

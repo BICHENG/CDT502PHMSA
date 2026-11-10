@@ -1,0 +1,440 @@
+{
+  "reports": 1550,
+  "casualty_reports": 369,
+  "colors": {
+    "case": "#9A2B2E",
+    "other": "#B8D4D6"
+  },
+  "tables": {
+    "periods": [
+      {
+        "period": "2010–2021年",
+        "part": "SERVICE",
+        "label": "2010–2021年 · 进户管",
+        "n": 210,
+        "k": 76,
+        "other": 134,
+        "rate": 36.19047619047619,
+        "low": 29.992942543192346,
+        "high": 42.884159811111665,
+        "operators": 91,
+        "casualty_operators": 54
+      },
+      {
+        "period": "2010–2021年",
+        "part": "MAIN",
+        "label": "2010–2021年 · 主管道",
+        "n": 584,
+        "k": 126,
+        "other": 458,
+        "rate": 21.575342465753426,
+        "low": 18.43066824404441,
+        "high": 25.091518730306433,
+        "operators": 134,
+        "casualty_operators": 69
+      },
+      {
+        "period": "2022年起",
+        "part": "SERVICE",
+        "label": "2022年起 · 进户管",
+        "n": 31,
+        "k": 14,
+        "other": 17,
+        "rate": 45.16129032258065,
+        "low": 29.16173598052002,
+        "high": 62.22783236264549,
+        "operators": 24,
+        "casualty_operators": 13
+      },
+      {
+        "period": "2022年起",
+        "part": "MAIN",
+        "label": "2022年起 · 主管道",
+        "n": 142,
+        "k": 20,
+        "other": 122,
+        "rate": 14.084507042253522,
+        "low": 9.306156574865001,
+        "high": 20.754883115224317,
+        "operators": 61,
+        "casualty_operators": 16
+      }
+    ],
+    "locations": [
+      {
+        "place": "PUBLIC PROPERTY",
+        "part": "SERVICE",
+        "label": "公共地点 · 进户管",
+        "n": 45,
+        "k": 20,
+        "other": 25,
+        "rate": 44.44444444444444,
+        "low": 30.938930034997576,
+        "high": 58.82386550647895,
+        "operators": 28,
+        "casualty_operators": 15
+      },
+      {
+        "place": "PUBLIC PROPERTY",
+        "part": "MAIN",
+        "label": "公共地点 · 主管道",
+        "n": 363,
+        "k": 66,
+        "other": 297,
+        "rate": 18.181818181818183,
+        "low": 14.554103570075638,
+        "high": 22.475914590192104,
+        "operators": 100,
+        "casualty_operators": 45
+      },
+      {
+        "place": "PRIVATE PROPERTY",
+        "part": "SERVICE",
+        "label": "私人地点 · 进户管",
+        "n": 162,
+        "k": 57,
+        "other": 105,
+        "rate": 35.18518518518518,
+        "low": 28.252188974881577,
+        "high": 42.804505568611894,
+        "operators": 77,
+        "casualty_operators": 41
+      },
+      {
+        "place": "PRIVATE PROPERTY",
+        "part": "MAIN",
+        "label": "私人地点 · 主管道",
+        "n": 91,
+        "k": 33,
+        "other": 58,
+        "rate": 36.26373626373626,
+        "low": 27.128512248894452,
+        "high": 46.51170763926159,
+        "operators": 46,
+        "casualty_operators": 23
+      },
+      {
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "part": "SERVICE",
+        "label": "公用设施通行权／地役权区域 · 进户管",
+        "n": 32,
+        "k": 12,
+        "other": 20,
+        "rate": 37.5,
+        "low": 22.933887309454207,
+        "high": 54.74559264692256,
+        "operators": 25,
+        "casualty_operators": 11
+      },
+      {
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "part": "MAIN",
+        "label": "公用设施通行权／地役权区域 · 主管道",
+        "n": 266,
+        "k": 45,
+        "other": 221,
+        "rate": 16.917293233082706,
+        "low": 12.890372468378745,
+        "high": 21.886143798178523,
+        "operators": 91,
+        "casualty_operators": 34
+      },
+      {
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "part": "SERVICE",
+        "label": "运营商控制的场地 · 进户管",
+        "n": 2,
+        "k": 1,
+        "other": 1,
+        "rate": 50.0,
+        "low": 9.453120573423067,
+        "high": 90.54687942657694,
+        "operators": 2,
+        "casualty_operators": 1
+      },
+      {
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "part": "MAIN",
+        "label": "运营商控制的场地 · 主管道",
+        "n": 6,
+        "k": 2,
+        "other": 4,
+        "rate": 33.333333333333336,
+        "low": 9.677141110578042,
+        "high": 70.0006684861608,
+        "operators": 5,
+        "casualty_operators": 2
+      }
+    ],
+    "ignition": [
+      {
+        "place": "PUBLIC PROPERTY",
+        "part": "SERVICE",
+        "ignition": "YES",
+        "label": "着火 · 进户管",
+        "n": 33,
+        "k": 19,
+        "other": 14,
+        "rate": 57.57575757575758,
+        "low": 40.807263337312435,
+        "high": 72.7644033665898,
+        "operators": 23,
+        "casualty_operators": 15
+      },
+      {
+        "place": "PUBLIC PROPERTY",
+        "part": "MAIN",
+        "ignition": "YES",
+        "label": "着火 · 主管道",
+        "n": 131,
+        "k": 51,
+        "other": 80,
+        "rate": 38.93129770992366,
+        "low": 31.01068055190727,
+        "high": 47.48258090222543,
+        "operators": 70,
+        "casualty_operators": 37
+      },
+      {
+        "place": "PUBLIC PROPERTY",
+        "part": "SERVICE",
+        "ignition": "NO",
+        "label": "未着火 · 进户管",
+        "n": 12,
+        "k": 1,
+        "other": 11,
+        "rate": 8.333333333333334,
+        "low": 1.4865094404917096,
+        "high": 35.387991114111706,
+        "operators": 10,
+        "casualty_operators": 1
+      },
+      {
+        "place": "PUBLIC PROPERTY",
+        "part": "MAIN",
+        "ignition": "NO",
+        "label": "未着火 · 主管道",
+        "n": 232,
+        "k": 15,
+        "other": 217,
+        "rate": 6.4655172413793105,
+        "low": 3.956987189081703,
+        "high": 10.39225360594881,
+        "operators": 74,
+        "casualty_operators": 13
+      }
+    ],
+    "causes": [
+      {
+        "category": "EXCAVATION DAMAGE",
+        "label": "挖掘损伤",
+        "n": 534,
+        "k": 79,
+        "other": 455,
+        "rate": 14.794007490636703,
+        "low": 12.03440691938707,
+        "high": 18.056516003430772,
+        "operators": 126,
+        "casualty_operators": 51
+      },
+      {
+        "category": "OTHER OUTSIDE FORCE DAMAGE",
+        "label": "其他外力损伤",
+        "n": 471,
+        "k": 117,
+        "other": 354,
+        "rate": 24.840764331210192,
+        "low": 21.1525765217808,
+        "high": 28.936027664423154,
+        "operators": 132,
+        "casualty_operators": 72
+      },
+      {
+        "category": "OTHER INCIDENT CAUSE",
+        "label": "其他事故原因",
+        "n": 123,
+        "k": 39,
+        "other": 84,
+        "rate": 31.70731707317073,
+        "low": 24.14427051264536,
+        "high": 40.37837025608548,
+        "operators": 63,
+        "casualty_operators": 30
+      },
+      {
+        "category": "INCORRECT OPERATION",
+        "label": "操作失误",
+        "n": 112,
+        "k": 59,
+        "other": 53,
+        "rate": 52.67857142857143,
+        "low": 43.49725864921189,
+        "high": 61.68223413435806,
+        "operators": 76,
+        "casualty_operators": 49
+      },
+      {
+        "category": "NATURAL FORCE DAMAGE",
+        "label": "自然力损伤",
+        "n": 111,
+        "k": 16,
+        "other": 95,
+        "rate": 14.414414414414415,
+        "low": 9.071519935089277,
+        "high": 22.13799202056657,
+        "operators": 64,
+        "casualty_operators": 16
+      },
+      {
+        "category": "PIPE, WELD, OR JOINT FAILURE",
+        "label": "管体、焊缝或接头失效",
+        "n": 102,
+        "k": 39,
+        "other": 63,
+        "rate": 38.23529411764706,
+        "low": 29.394330949641134,
+        "high": 47.93024463027563,
+        "operators": 50,
+        "casualty_operators": 24
+      },
+      {
+        "category": "EQUIPMENT FAILURE",
+        "label": "设备失效",
+        "n": 61,
+        "k": 7,
+        "other": 54,
+        "rate": 11.475409836065573,
+        "low": 5.671202660732205,
+        "high": 21.84430847240108,
+        "operators": 30,
+        "casualty_operators": 7
+      },
+      {
+        "category": "CORROSION FAILURE",
+        "label": "腐蚀失效",
+        "n": 36,
+        "k": 13,
+        "other": 23,
+        "rate": 36.111111111111114,
+        "low": 22.47559294651537,
+        "high": 52.42492451444196,
+        "operators": 22,
+        "casualty_operators": 10
+      }
+    ],
+    "materials": [
+      {
+        "period": "2010–2021年",
+        "category": "CAST/WROUGHT IRON",
+        "label": "铸铁／锻铁",
+        "n": 53,
+        "k": 20,
+        "other": 33,
+        "rate": 37.735849056603776,
+        "low": 25.93626547287611,
+        "high": 51.19310405824662,
+        "operators": 24,
+        "casualty_operators": 15
+      },
+      {
+        "period": "2010–2021年",
+        "category": "PLASTIC",
+        "label": "塑料",
+        "n": 405,
+        "k": 110,
+        "other": 295,
+        "rate": 27.160493827160494,
+        "low": 23.058309477631617,
+        "high": 31.691876441958396,
+        "operators": 117,
+        "casualty_operators": 64
+      },
+      {
+        "period": "2010–2021年",
+        "category": "STEEL",
+        "label": "钢",
+        "n": 609,
+        "k": 135,
+        "other": 474,
+        "rate": 22.167487684729064,
+        "low": 19.048712037241096,
+        "high": 25.6351870167906,
+        "operators": 150,
+        "casualty_operators": 76
+      },
+      {
+        "period": "2022年起",
+        "category": "CAST/WROUGHT IRON",
+        "label": "铸铁／锻铁",
+        "n": 7,
+        "k": 2,
+        "other": 5,
+        "rate": 28.571428571428573,
+        "low": 8.221892400405661,
+        "high": 64.10655481673807,
+        "operators": 5,
+        "casualty_operators": 1
+      },
+      {
+        "period": "2022年起",
+        "category": "PLASTIC",
+        "label": "塑料",
+        "n": 88,
+        "k": 21,
+        "other": 67,
+        "rate": 23.863636363636363,
+        "low": 16.171042608327628,
+        "high": 33.74264496733719,
+        "operators": 52,
+        "casualty_operators": 20
+      },
+      {
+        "period": "2022年起",
+        "category": "STEEL",
+        "label": "钢",
+        "n": 126,
+        "k": 30,
+        "other": 96,
+        "rate": 23.80952380952381,
+        "low": 17.217521538203123,
+        "high": 31.951256601340596,
+        "operators": 61,
+        "casualty_operators": 24
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "contrast": "earlier_SERVICE_minus_MAIN",
+      "difference": 0.1461513372472276,
+      "valid": 5000,
+      "unavailable": 0,
+      "low": 0.0703434855656089,
+      "high": 0.2266505968051369
+    },
+    {
+      "contrast": "later_SERVICE_minus_MAIN",
+      "difference": 0.3107678328032712,
+      "valid": 5000,
+      "unavailable": 0,
+      "low": 0.1276644258062677,
+      "high": 0.4854639765882663
+    },
+    {
+      "contrast": "overall_SERVICE_minus_MAIN",
+      "difference": 0.1723420550278339,
+      "valid": 5000,
+      "unavailable": 0,
+      "low": 0.0999578672558256,
+      "high": 0.2451617753987301
+    },
+    {
+      "contrast": "later_minus_earlier_difference",
+      "difference": 0.1646164955560436,
+      "valid": 5000,
+      "unavailable": 0,
+      "low": -0.0349852456769077,
+      "high": 0.3549291706779044
+    }
+  ]
+}

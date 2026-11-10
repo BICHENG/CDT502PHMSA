@@ -1,0 +1,5 @@
+﻿report_number,method,method_zh,probability,threshold,classified_casualty,actual_casualty
+20220002,constant,常数方法,0.2363919129082426,0.2363919129082426,True,0
+20220002,part_only,部件比例规则,0.17733990147783252,0.13636363636363635,True,0
+20220002,logistic_proposal,原方案逻辑回归,0.20083130583721612,0.2355718759384179,False,0
+20220002,forest,随机森林,0.21761058955762527,0.23374704777365912,False,0

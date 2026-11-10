@@ -1,0 +1,3 @@
+comparator,total_rate_difference,natural_rate_difference,other_rate_difference,natural_fraction_of_observed_rate_difference,unit,scope,interpretation
+STEEL,0.5343986719784634,0.24249785481090658,0.2919008171675567,0.4537770535864644,casualty reports per 10000 reported mile-years,"same 693 matched reports, occurrence 2010–2024",additive attributed-cause composition; not a causal effect decomposition
+PLASTIC,0.5329363396759638,0.24285312050077915,0.29008321917518465,0.4556887988693712,casualty reports per 10000 reported mile-years,"same 693 matched reports, occurrence 2010–2024",additive attributed-cause composition; not a causal effect decomposition

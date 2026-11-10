@@ -1,0 +1,45 @@
+{
+  "source_sha256": "89c21d2ea6f5cb8ff6daad6ac60160608671a7b49c218bf9f917bfb88a2ce5a1",
+  "reports": 1550,
+  "casualty_reports": 369,
+  "operators": 222,
+  "part_comparison_reports": 967,
+  "part_comparison_operators": 174,
+  "received_periods": {
+    "2010–2021年": {
+      "n": 1286,
+      "k": 304,
+      "other": 982,
+      "rate": 23.63919129082426,
+      "low": 21.39774113945355,
+      "high": 26.037659129049416,
+      "operators": 210,
+      "casualty_operators": 125
+    },
+    "2022年起": {
+      "n": 264,
+      "k": 65,
+      "other": 199,
+      "rate": 24.62121212121212,
+      "low": 19.813105387763173,
+      "high": 30.157298525804954,
+      "operators": 93,
+      "casualty_operators": 44
+    }
+  },
+  "checks": {
+    "report_ids_and_outcomes_match_sweep": true,
+    "received_years_match_sweep": true,
+    "all_eight_causes_match_sweep": true,
+    "material_periods_match_existing_analysis": true,
+    "part_period_differences_match_sweep": true,
+    "cause_and_ignition_complete": true,
+    "original_categories_preserved": true
+  },
+  "intervals": {
+    "descriptive_proportions": "Wilson 95%; independent-report approximation",
+    "period_differences": "Previously verified 5,000 paired operator resamples; identical estimates retained"
+  },
+  "scope": "Received-year periods. Public-place ignition comparison is exploratory and descriptive. No causal attribution.",
+  "script_sha256": "8305568c17419b97f8842f824139b5eb925cb24cd91b0c5f4cb65182726aee95"
+}

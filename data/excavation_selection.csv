@@ -1,0 +1,7 @@
+﻿MATERIAL_INVOLVED,filter,reports,ignited
+PLASTIC,正常压力>1至60 psig,186,98
+PLASTIC,正常压力>60 psig,7,2
+PLASTIC,正常压力≤1 psig,2,0
+STEEL,正常压力>1至60 psig,101,16
+STEEL,正常压力>60 psig,93,3
+STEEL,正常压力≤1 psig,2,1

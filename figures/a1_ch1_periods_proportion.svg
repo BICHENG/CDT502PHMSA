@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="518.740157pt" height="317.480315pt" viewBox="0 0 518.740157 317.480315" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-11T02:10:16.887330</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 317.480315 
+L 518.740157 317.480315 
+L 518.740157 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 62.248819 231.76063 
+L 243.701137 231.76063 
+L 243.701137 69.845669 
+L 62.248819 69.845669 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 62.248819 119.549797 
+L 243.701137 119.549797 
+L 243.701137 95.450826 
+L 62.248819 95.450826 
+z
+" clip-path="url(#p61de924df6)" style="fill: #cbdde0"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 62.248819 194.859081 
+L 243.701137 194.859081 
+L 243.701137 170.76011 
+L 62.248819 170.76011 
+z
+" clip-path="url(#p61de924df6)" style="fill: #cbdde0"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mff7e41c4ed" d="M 0 0 
+L 0 3.5 
+" style="stroke: #657d89; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mff7e41c4ed" x="62.248819" y="231.76063" style="fill: #657d89; stroke: #657d89; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #657d89" x="62.248819" y="244.444712" transform="rotate(-0 62.248819 244.444712)">0%</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mff7e41c4ed" x="152.974978" y="231.76063" style="fill: #657d89; stroke: #657d89; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #657d89" x="152.974978" y="244.444712" transform="rotate(-0 152.974978 244.444712)">50%</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mff7e41c4ed" x="243.701137" y="231.76063" style="fill: #657d89; stroke: #657d89; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #657d89" x="243.701137" y="244.444712" transform="rotate(-0 243.701137 244.444712)">100%</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 8.5px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #657d89" x="56.248819" y="111.075624" transform="rotate(-0 56.248819 111.075624)">进户管</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 8.5px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #657d89" x="56.248819" y="186.372955" transform="rotate(-0 56.248819 186.372955)">主管道</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_5">
+    <path d="M 62.248819 119.549797 
+L 127.917277 119.549797 
+L 127.917277 95.450826 
+L 62.248819 95.450826 
+z
+" clip-path="url(#p61de924df6)" style="fill: #9a2b2e"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 62.248819 194.859081 
+L 101.397778 194.859081 
+L 101.397778 170.76011 
+L 62.248819 170.76011 
+z
+" clip-path="url(#p61de924df6)" style="fill: #9a2b2e"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 62.248819 231.76063 
+L 243.701137 231.76063 
+" style="fill: none; stroke: #91a3ad; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #9a2b2e" x="132.453585" y="110.29328" transform="rotate(-0 132.453585 110.29328)">36.2%</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7.5px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #657d89" x="62.248819" y="129.340004" transform="rotate(-0 62.248819 129.340004)">76份伤亡／210份报告</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #9a2b2e" x="105.934086" y="185.602564" transform="rotate(-0 105.934086 185.602564)">21.6%</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 7.5px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #657d89" x="62.248819" y="204.649288" transform="rotate(-0 62.248819 204.649288)">126份伤亡／584份报告</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #203f4c" x="62.248819" y="66.080205" transform="rotate(-0 62.248819 66.080205)">进户管高14.6个百分点</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #203f4c" x="62.248819" y="53.845669" transform="rotate(-0 62.248819 53.845669)">2010至2021年收件</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_8">
+    <path d="M 321.725634 231.76063 
+L 503.177953 231.76063 
+L 503.177953 69.845669 
+L 321.725634 69.845669 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 321.725634 119.549797 
+L 503.177953 119.549797 
+L 503.177953 95.450826 
+L 321.725634 95.450826 
+z
+" clip-path="url(#pe753d628fb)" style="fill: #cbdde0"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 321.725634 194.859081 
+L 503.177953 194.859081 
+L 503.177953 170.76011 
+L 321.725634 170.76011 
+z
+" clip-path="url(#pe753d628fb)" style="fill: #cbdde0"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_4">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mff7e41c4ed" x="321.725634" y="231.76063" style="fill: #657d89; stroke: #657d89; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #657d89" x="321.725634" y="244.444712" transform="rotate(-0 321.725634 244.444712)">0%</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#mff7e41c4ed" x="412.451794" y="231.76063" style="fill: #657d89; stroke: #657d89; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #657d89" x="412.451794" y="244.444712" transform="rotate(-0 412.451794 244.444712)">50%</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mff7e41c4ed" x="503.177953" y="231.76063" style="fill: #657d89; stroke: #657d89; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #657d89" x="503.177953" y="244.444712" transform="rotate(-0 503.177953 244.444712)">100%</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_3">
+     <g id="line2d_9"/>
+     <g id="text_15">
+      <text style="font-size: 8.5px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #657d89" x="315.725634" y="111.075624" transform="rotate(-0 315.725634 111.075624)">进户管</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10"/>
+     <g id="text_16">
+      <text style="font-size: 8.5px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #657d89" x="315.725634" y="186.372955" transform="rotate(-0 315.725634 186.372955)">主管道</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_11">
+    <path d="M 321.725634 119.549797 
+L 403.671843 119.549797 
+L 403.671843 95.450826 
+L 321.725634 95.450826 
+z
+" clip-path="url(#pe753d628fb)" style="fill: #9a2b2e"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 321.725634 194.859081 
+L 347.282299 194.859081 
+L 347.282299 170.76011 
+L 321.725634 170.76011 
+z
+" clip-path="url(#pe753d628fb)" style="fill: #9a2b2e"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 321.725634 231.76063 
+L 503.177953 231.76063 
+" style="fill: none; stroke: #91a3ad; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #9a2b2e" x="408.208151" y="110.29328" transform="rotate(-0 408.208151 110.29328)">45.2%</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 7.5px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #657d89" x="321.725634" y="129.340004" transform="rotate(-0 321.725634 129.340004)">14份伤亡／31份报告</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #9a2b2e" x="351.818607" y="185.602564" transform="rotate(-0 351.818607 185.602564)">14.1%</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 7.5px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #657d89" x="321.725634" y="204.649288" transform="rotate(-0 321.725634 204.649288)">20份伤亡／142份报告</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 8px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #203f4c" x="321.725634" y="66.080205" transform="rotate(-0 321.725634 66.080205)">进户管高31.1个百分点</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 9px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #203f4c" x="321.725634" y="53.845669" transform="rotate(-0 321.725634 53.845669)">2022年起收件</text>
+   </g>
+  </g>
+  <g id="text_23">
+   <text style="font-size: 8px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #203f4c" x="62.248819" y="22.223622" transform="rotate(-0 62.248819 22.223622)">每条长度代表本组全部报告；深红部分为记录死亡或住院伤害的报告。</text>
+  </g>
+  <g id="text_24">
+   <text style="font-size: 7.3px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #657d89" x="62.248819" y="276.207874" transform="rotate(-0 62.248819 276.207874)">两期均为进户管比例较高；差距变化的95%区间为−3.5至35.5个百分点。</text>
+  </g>
+  <g id="text_25">
+   <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #657d89" x="62.248819" y="293.669291" transform="rotate(-0 62.248819 293.669291)">仅比较主管道与进户管，共967份；按收件年分期，2022年起资料截至2026-02-18。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p61de924df6">
+   <rect x="62.248819" y="69.845669" width="181.452318" height="161.914961"/>
+  </clipPath>
+  <clipPath id="pe753d628fb">
+   <rect x="321.725634" y="69.845669" width="181.452318" height="161.914961"/>
+  </clipPath>
+ </defs>
+</svg>

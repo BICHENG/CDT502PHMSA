@@ -35,7 +35,7 @@ function openReview(context, source) {
 }
 
 function reviewBody() {
-  const file = zh ? 'index.html' : 'en.html';
+  const file = document.documentElement.dataset.page || 'index.html';
   const published = `https://bicheng.github.io/CDT502PHMSA/${file}#${reviewContext.anchor}`;
   return [
     `### ${zh ? '位置' : 'Location'}\n${reviewContext.label}\n${published}`,

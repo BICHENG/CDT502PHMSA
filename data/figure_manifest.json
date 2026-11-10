@@ -64,6 +64,15 @@
       "rows": 4,
       "reports": 1550,
       "casualty_reports": 369
+    },
+    "proportion_example": {
+      "category": "SERVICE",
+      "reports": 241,
+      "casualty_reports": 90,
+      "proportion": 0.3734439834024896,
+      "wilson95_low": 0.3148074371749536,
+      "wilson95_high": 0.436051750260813,
+      "source": "summary.csv"
     }
   }
 }

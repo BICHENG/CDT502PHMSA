@@ -223,5 +223,683 @@
   "colors": {
     "case": "#9A2B2E",
     "other": "#B8D4D6"
+  },
+  "joint": {
+    "cells": [
+      {
+        "part": "MAIN",
+        "place": "PRIVATE PROPERTY",
+        "n": 91,
+        "k": 33
+      },
+      {
+        "part": "MAIN",
+        "place": "PUBLIC PROPERTY",
+        "n": 363,
+        "k": 66
+      },
+      {
+        "part": "MAIN",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 266,
+        "k": 45
+      },
+      {
+        "part": "MAIN",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 6,
+        "k": 2
+      },
+      {
+        "part": "SERVICE",
+        "place": "PRIVATE PROPERTY",
+        "n": 162,
+        "k": 57
+      },
+      {
+        "part": "SERVICE",
+        "place": "PUBLIC PROPERTY",
+        "n": 45,
+        "k": 20
+      },
+      {
+        "part": "SERVICE",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 32,
+        "k": 12
+      },
+      {
+        "part": "SERVICE",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 2,
+        "k": 1
+      },
+      {
+        "part": "OUTSIDE METER/REGULATOR SET",
+        "place": "PRIVATE PROPERTY",
+        "n": 206,
+        "k": 33
+      },
+      {
+        "part": "OUTSIDE METER/REGULATOR SET",
+        "place": "PUBLIC PROPERTY",
+        "n": 13,
+        "k": 3
+      },
+      {
+        "part": "OUTSIDE METER/REGULATOR SET",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 10,
+        "k": 7
+      },
+      {
+        "part": "OUTSIDE METER/REGULATOR SET",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 5,
+        "k": 3
+      },
+      {
+        "part": "SERVICE RISER",
+        "place": "PRIVATE PROPERTY",
+        "n": 72,
+        "k": 23
+      },
+      {
+        "part": "SERVICE RISER",
+        "place": "PUBLIC PROPERTY",
+        "n": 5,
+        "k": 2
+      },
+      {
+        "part": "SERVICE RISER",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 3,
+        "k": 2
+      },
+      {
+        "part": "DISTRICT REGULATOR/METERING STATION",
+        "place": "PRIVATE PROPERTY",
+        "n": 5,
+        "k": 1
+      },
+      {
+        "part": "DISTRICT REGULATOR/METERING STATION",
+        "place": "PUBLIC PROPERTY",
+        "n": 11,
+        "k": 3
+      },
+      {
+        "part": "DISTRICT REGULATOR/METERING STATION",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 49,
+        "k": 5
+      },
+      {
+        "part": "DISTRICT REGULATOR/METERING STATION",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 35,
+        "k": 3
+      },
+      {
+        "part": "INSIDE METER/REGULATOR SET",
+        "place": "PRIVATE PROPERTY",
+        "n": 35,
+        "k": 9
+      },
+      {
+        "part": "INSIDE METER/REGULATOR SET",
+        "place": "PUBLIC PROPERTY",
+        "n": 2,
+        "k": 1
+      },
+      {
+        "part": "INSIDE METER/REGULATOR SET",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 1,
+        "k": 0
+      },
+      {
+        "part": "FARM TAP METER/REGULATOR SET",
+        "place": "PUBLIC PROPERTY",
+        "n": 2,
+        "k": 1
+      },
+      {
+        "part": "FARM TAP METER/REGULATOR SET",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 3,
+        "k": 0
+      },
+      {
+        "part": "MAIN VALVE",
+        "place": "PRIVATE PROPERTY",
+        "n": 1,
+        "k": 1
+      },
+      {
+        "part": "MAIN VALVE",
+        "place": "PUBLIC PROPERTY",
+        "n": 1,
+        "k": 0
+      },
+      {
+        "part": "SERVICE VALVE",
+        "place": "PRIVATE PROPERTY",
+        "n": 1,
+        "k": 1
+      },
+      {
+        "part": "SERVICE VALVE",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 1,
+        "k": 1
+      },
+      {
+        "part": "OTHER",
+        "place": "PRIVATE PROPERTY",
+        "n": 65,
+        "k": 21
+      },
+      {
+        "part": "OTHER",
+        "place": "PUBLIC PROPERTY",
+        "n": 28,
+        "k": 5
+      },
+      {
+        "part": "OTHER",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 19,
+        "k": 5
+      },
+      {
+        "part": "OTHER",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 10,
+        "k": 3
+      }
+    ],
+    "selections": [
+      {
+        "part": null,
+        "place": null,
+        "n": 1550,
+        "k": 369,
+        "low": 21.752582972047772,
+        "high": 25.989833386421857
+      },
+      {
+        "part": null,
+        "place": "PRIVATE PROPERTY",
+        "n": 638,
+        "k": 179,
+        "low": 24.709546676797675,
+        "high": 31.665973141684283
+      },
+      {
+        "part": null,
+        "place": "PUBLIC PROPERTY",
+        "n": 470,
+        "k": 101,
+        "low": 18.014937006004924,
+        "high": 25.426061030130697
+      },
+      {
+        "part": null,
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 384,
+        "k": 77,
+        "low": 16.35290423124505,
+        "high": 24.3445135488554
+      },
+      {
+        "part": null,
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 58,
+        "k": 12,
+        "low": 12.251483969490556,
+        "high": 32.76921792148341
+      },
+      {
+        "part": "__others__",
+        "place": null,
+        "n": 583,
+        "k": 133,
+        "low": 19.591251050539892,
+        "high": 26.390752225602625
+      },
+      {
+        "part": "__others__",
+        "place": "PRIVATE PROPERTY",
+        "n": 385,
+        "k": 89,
+        "low": 19.183790475520542,
+        "high": 27.581145386050338
+      },
+      {
+        "part": "__others__",
+        "place": "PUBLIC PROPERTY",
+        "n": 62,
+        "k": 15,
+        "low": 15.245896205333748,
+        "high": 36.15250751602741
+      },
+      {
+        "part": "__others__",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 86,
+        "k": 20,
+        "low": 15.589108936015672,
+        "high": 33.20958533740775
+      },
+      {
+        "part": "__others__",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 50,
+        "k": 9,
+        "low": 9.770192670234175,
+        "high": 30.796053674300783
+      },
+      {
+        "part": "MAIN",
+        "place": null,
+        "n": 726,
+        "k": 146,
+        "low": 17.355308135140312,
+        "high": 23.17972248626699
+      },
+      {
+        "part": "MAIN",
+        "place": "PRIVATE PROPERTY",
+        "n": 91,
+        "k": 33,
+        "low": 27.128512248894452,
+        "high": 46.51170763926159
+      },
+      {
+        "part": "MAIN",
+        "place": "PUBLIC PROPERTY",
+        "n": 363,
+        "k": 66,
+        "low": 14.554103570075638,
+        "high": 22.475914590192104
+      },
+      {
+        "part": "MAIN",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 266,
+        "k": 45,
+        "low": 12.890372468378745,
+        "high": 21.886143798178523
+      },
+      {
+        "part": "MAIN",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 6,
+        "k": 2,
+        "low": 9.677141110578042,
+        "high": 70.0006684861608
+      },
+      {
+        "part": "SERVICE",
+        "place": null,
+        "n": 241,
+        "k": 90,
+        "low": 31.480743717495365,
+        "high": 43.6051750260813
+      },
+      {
+        "part": "SERVICE",
+        "place": "PRIVATE PROPERTY",
+        "n": 162,
+        "k": 57,
+        "low": 28.252188974881577,
+        "high": 42.804505568611894
+      },
+      {
+        "part": "SERVICE",
+        "place": "PUBLIC PROPERTY",
+        "n": 45,
+        "k": 20,
+        "low": 30.938930034997576,
+        "high": 58.82386550647895
+      },
+      {
+        "part": "SERVICE",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 32,
+        "k": 12,
+        "low": 22.933887309454207,
+        "high": 54.74559264692256
+      },
+      {
+        "part": "SERVICE",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 2,
+        "k": 1,
+        "low": 9.453120573423067,
+        "high": 90.54687942657694
+      },
+      {
+        "part": "OUTSIDE METER/REGULATOR SET",
+        "place": null,
+        "n": 234,
+        "k": 46,
+        "low": 15.073823549648639,
+        "high": 25.22253995901445
+      },
+      {
+        "part": "OUTSIDE METER/REGULATOR SET",
+        "place": "PRIVATE PROPERTY",
+        "n": 206,
+        "k": 33,
+        "low": 11.63997852431284,
+        "high": 21.642986249760927
+      },
+      {
+        "part": "OUTSIDE METER/REGULATOR SET",
+        "place": "PUBLIC PROPERTY",
+        "n": 13,
+        "k": 3,
+        "low": 8.179528718498563,
+        "high": 50.2563759467275
+      },
+      {
+        "part": "OUTSIDE METER/REGULATOR SET",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 10,
+        "k": 7,
+        "low": 39.677814746114535,
+        "high": 89.2208732593699
+      },
+      {
+        "part": "OUTSIDE METER/REGULATOR SET",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 5,
+        "k": 3,
+        "low": 23.07242812760129,
+        "high": 88.23792257673522
+      },
+      {
+        "part": "SERVICE RISER",
+        "place": null,
+        "n": 80,
+        "k": 27,
+        "low": 24.345612608081595,
+        "high": 44.64347660182303
+      },
+      {
+        "part": "SERVICE RISER",
+        "place": "PRIVATE PROPERTY",
+        "n": 72,
+        "k": 23,
+        "low": 22.325610278261976,
+        "high": 43.392348732165665
+      },
+      {
+        "part": "SERVICE RISER",
+        "place": "PUBLIC PROPERTY",
+        "n": 5,
+        "k": 2,
+        "low": 11.762077423264788,
+        "high": 76.92757187239872
+      },
+      {
+        "part": "SERVICE RISER",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 3,
+        "k": 2,
+        "low": 20.76596008020477,
+        "high": 93.85080552796038
+      },
+      {
+        "part": "SERVICE RISER",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 0,
+        "k": 0,
+        "low": null,
+        "high": null
+      },
+      {
+        "part": "DISTRICT REGULATOR/METERING STATION",
+        "place": null,
+        "n": 100,
+        "k": 12,
+        "low": 6.999406437019489,
+        "high": 19.81209942671142
+      },
+      {
+        "part": "DISTRICT REGULATOR/METERING STATION",
+        "place": "PRIVATE PROPERTY",
+        "n": 5,
+        "k": 1,
+        "low": 3.6224108632430196,
+        "high": 62.44653702374748
+      },
+      {
+        "part": "DISTRICT REGULATOR/METERING STATION",
+        "place": "PUBLIC PROPERTY",
+        "n": 11,
+        "k": 3,
+        "low": 9.746059290024888,
+        "high": 56.56453011761292
+      },
+      {
+        "part": "DISTRICT REGULATOR/METERING STATION",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 49,
+        "k": 5,
+        "low": 4.437954674476263,
+        "high": 21.756361549195898
+      },
+      {
+        "part": "DISTRICT REGULATOR/METERING STATION",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 35,
+        "k": 3,
+        "low": 2.958236826696979,
+        "high": 22.379273965896495
+      },
+      {
+        "part": "INSIDE METER/REGULATOR SET",
+        "place": null,
+        "n": 38,
+        "k": 10,
+        "low": 14.971621254798137,
+        "high": 42.00884618746636
+      },
+      {
+        "part": "INSIDE METER/REGULATOR SET",
+        "place": "PRIVATE PROPERTY",
+        "n": 35,
+        "k": 9,
+        "low": 14.163027069060446,
+        "high": 42.06930684383918
+      },
+      {
+        "part": "INSIDE METER/REGULATOR SET",
+        "place": "PUBLIC PROPERTY",
+        "n": 2,
+        "k": 1,
+        "low": 9.453120573423067,
+        "high": 90.54687942657694
+      },
+      {
+        "part": "INSIDE METER/REGULATOR SET",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 1,
+        "k": 0,
+        "low": 0.0,
+        "high": 79.34506856227627
+      },
+      {
+        "part": "INSIDE METER/REGULATOR SET",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 0,
+        "k": 0,
+        "low": null,
+        "high": null
+      },
+      {
+        "part": "FARM TAP METER/REGULATOR SET",
+        "place": null,
+        "n": 5,
+        "k": 1,
+        "low": 3.6224108632430196,
+        "high": 62.44653702374748
+      },
+      {
+        "part": "FARM TAP METER/REGULATOR SET",
+        "place": "PRIVATE PROPERTY",
+        "n": 0,
+        "k": 0,
+        "low": null,
+        "high": null
+      },
+      {
+        "part": "FARM TAP METER/REGULATOR SET",
+        "place": "PUBLIC PROPERTY",
+        "n": 2,
+        "k": 1,
+        "low": 9.453120573423067,
+        "high": 90.54687942657694
+      },
+      {
+        "part": "FARM TAP METER/REGULATOR SET",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 3,
+        "k": 0,
+        "low": 0.0,
+        "high": 56.14970317550455
+      },
+      {
+        "part": "FARM TAP METER/REGULATOR SET",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 0,
+        "k": 0,
+        "low": null,
+        "high": null
+      },
+      {
+        "part": "MAIN VALVE",
+        "place": null,
+        "n": 2,
+        "k": 1,
+        "low": 9.453120573423067,
+        "high": 90.54687942657694
+      },
+      {
+        "part": "MAIN VALVE",
+        "place": "PRIVATE PROPERTY",
+        "n": 1,
+        "k": 1,
+        "low": 20.65493143772374,
+        "high": 100.0
+      },
+      {
+        "part": "MAIN VALVE",
+        "place": "PUBLIC PROPERTY",
+        "n": 1,
+        "k": 0,
+        "low": 0.0,
+        "high": 79.34506856227627
+      },
+      {
+        "part": "MAIN VALVE",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 0,
+        "k": 0,
+        "low": null,
+        "high": null
+      },
+      {
+        "part": "MAIN VALVE",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 0,
+        "k": 0,
+        "low": null,
+        "high": null
+      },
+      {
+        "part": "SERVICE VALVE",
+        "place": null,
+        "n": 2,
+        "k": 2,
+        "low": 34.238022750665294,
+        "high": 100.0
+      },
+      {
+        "part": "SERVICE VALVE",
+        "place": "PRIVATE PROPERTY",
+        "n": 1,
+        "k": 1,
+        "low": 20.65493143772374,
+        "high": 100.0
+      },
+      {
+        "part": "SERVICE VALVE",
+        "place": "PUBLIC PROPERTY",
+        "n": 0,
+        "k": 0,
+        "low": null,
+        "high": null
+      },
+      {
+        "part": "SERVICE VALVE",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 1,
+        "k": 1,
+        "low": 20.65493143772374,
+        "high": 100.0
+      },
+      {
+        "part": "SERVICE VALVE",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 0,
+        "k": 0,
+        "low": null,
+        "high": null
+      },
+      {
+        "part": "OTHER",
+        "place": null,
+        "n": 122,
+        "k": 34,
+        "low": 20.681830021069548,
+        "high": 36.40703361254249
+      },
+      {
+        "part": "OTHER",
+        "place": "PRIVATE PROPERTY",
+        "n": 65,
+        "k": 21,
+        "low": 22.203889060305592,
+        "high": 44.38601127881089
+      },
+      {
+        "part": "OTHER",
+        "place": "PUBLIC PROPERTY",
+        "n": 28,
+        "k": 5,
+        "low": 7.878501945604271,
+        "high": 35.59142478934295
+      },
+      {
+        "part": "OTHER",
+        "place": "UTILITY RIGHT-OF-WAY / EASEMENT",
+        "n": 19,
+        "k": 5,
+        "low": 11.806412346782508,
+        "high": 48.791550897815114
+      },
+      {
+        "part": "OTHER",
+        "place": "OPERATOR-CONTROLLED PROPERTY",
+        "n": 10,
+        "k": 3,
+        "low": 10.779126740630105,
+        "high": 60.322185253885465
+      }
+    ]
   }
 }
