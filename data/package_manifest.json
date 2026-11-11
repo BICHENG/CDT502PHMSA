@@ -2,7 +2,7 @@
   "build": "2026-11-11",
   "cohort_sha256": "89c21d2ea6f5cb8ff6daad6ac60160608671a7b49c218bf9f917bfb88a2ce5a1",
   "checks": {
-    "local_links_checked": 341,
+    "local_links_checked": 340,
     "all_21_categories_present": true,
     "remote_runtime_dependencies": 0,
     "machine_local_paths": 0
@@ -1159,6 +1159,11 @@
       "sha256": "1a018c7306ee79342153dcbbfeb14d36ec2a9d356944246e45f65d74d71fd986"
     },
     {
+      "file": "data/p323_models_input_paired_intervals.csv",
+      "bytes": 8897,
+      "sha256": "b12677d843e39dc6a3bf2f351c8526863d4a1a13890b62de8fce98063b5f989c"
+    },
+    {
       "file": "data/paired_ablation_intervals.csv",
       "bytes": 2325,
       "sha256": "d1f8e45678bd7ee8493fb415086b62113c2b972cf2c18abd0bd56dc5fca204f1"
@@ -2150,8 +2155,8 @@
     },
     {
       "file": "supplement.html",
-      "bytes": 62815,
-      "sha256": "17bf31bd29de36b132938a0f1955f2644ee56bb3e6d407d9c28629f4dab9584f"
+      "bytes": 62930,
+      "sha256": "63e909c08f080ad203503a303b06d2babd748a539273b0a617ef6eb68dcf2ce2"
     }
   ]
 }

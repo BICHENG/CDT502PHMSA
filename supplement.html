@@ -1,23 +1,13 @@
 <!doctype html>
-<html lang="zh-CN" data-version="2026-11-11 · 89c21d2ea6f5 · 37dfe068" data-page="supplement.html">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="color-scheme" content="light"/><title>因素的关联、预测价值与信息取舍 · CDT502</title><meta name="description" content="以经验参照、逻辑回归和随机森林判别事故伤亡，比较概率、排序、漏判与错选，并用真实报告说明用途。"/><link rel="stylesheet" href="assets/site.css"/><script src="assets/echarts-6.1.0.min.js" defer></script><script src="data/evidence_charts.js" defer></script><script src="assets/evidence-charts.js" defer></script><script src="assets/usa-geo.js" defer></script><script src="assets/plotly.min.js" defer></script><script src="assets/plotly-geo-assets.js" defer></script><script src="data/material_net_map_data.js" defer></script><script src="assets/integrated-material-map.js" defer></script><script src="data/material_cause_data.js" defer></script><script src="assets/material-cause.js" defer></script><script src="data/excavation_visual_data.js" defer></script><script src="assets/excavation-charts.js" defer></script><script src="assets/cluster-compare.js" defer></script><script src="assets/cumulative.js" defer></script><script src="data/research_revision.js" defer></script><script src="assets/research-revision.js" defer></script><script src="assets/site.js" defer></script></head>
+<html lang="zh-CN" data-version="2026-11-11 · 89c21d2ea6f5 · 9e09bda9" data-page="supplement.html">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="color-scheme" content="light"/><title>因素的关联、预测价值与信息取舍 · CDT502</title><meta name="description" content="检验设施与场地的共同伤亡关联，比较补充资料的识别收益，再根据实际漏判与误报说明评分和信息采集的用途。"/><link rel="stylesheet" href="assets/site.css"/><script src="assets/echarts-6.1.0.min.js" defer></script><script src="data/evidence_charts.js" defer></script><script src="assets/evidence-charts.js" defer></script><script src="assets/usa-geo.js" defer></script><script src="assets/plotly.min.js" defer></script><script src="assets/plotly-geo-assets.js" defer></script><script src="data/material_net_map_data.js" defer></script><script src="assets/integrated-material-map.js" defer></script><script src="data/material_cause_data.js" defer></script><script src="assets/material-cause.js" defer></script><script src="data/excavation_visual_data.js" defer></script><script src="assets/excavation-charts.js" defer></script><script src="assets/cluster-compare.js" defer></script><script src="assets/cumulative.js" defer></script><script src="data/research_revision.js" defer></script><script src="assets/research-revision.js" defer></script><script src="assets/site.js" defer></script></head>
 <body><a class="skip-link" href="#main">跳到正文</a><header class="site-header"><div class="header-inner"><a class="brand" href="index.html">CDT502 · PHMSA</a><div class="header-actions"><button id="print-page" type="button" class="text-button js-only">打印 / PDF</button></div></div></header>
-<main class="page" id="main"><nav class="chapter-switch" aria-label="研究章节"><a href="index.html">第一章 · 数据：管网背景与基础比较</a><a href="chapter2.html">第二章 · 聚类和统计：事故背后的因素研究</a><a href="supplement.html" aria-current="page">第三章 · 机器学习：形成判别工具和预测工具</a></nav><header class="masthead"><p class="eyebrow">第三章 · 机器学习：形成判别工具和预测工具</p><h1>因素的关联、预测价值与信息取舍</h1><div class="meta"><span>研究对象：美国已报告的燃气配气事故</span><span>报告中的事故发生于 2010–2026 年</span></div></header><nav class="chapter-nav" aria-label="章节导航"><a href="#overview">部件经验提供基本识别信息，森林改善整批排序</a><a href="#section-2">管径与正常运行压力进入简化评分</a><a href="#section-3">聚类保留设施画像，钢塑开挖采用共同模型</a><a href="#section-4">两字段模型识别8份伤亡，漏判7份</a><a href="#section-5">评分优先核实规格与运行资料，复盘保留人员和作业记录</a><a href="#methods">资料与计算</a></nav>
+<main class="page" id="main"><nav class="chapter-switch" aria-label="研究章节"><a href="index.html">第一章 · 数据：管网背景与基础比较</a><a href="chapter2.html">第二章 · 聚类和统计：事故背后的因素研究</a><a href="supplement.html" aria-current="page">第三章 · 机器学习：形成判别工具和预测工具</a></nav><header class="masthead"><p class="eyebrow">第三章 · 机器学习：形成判别工具和预测工具</p><h1>因素的关联、预测价值与信息取舍</h1><div class="meta"><span>研究对象：美国已报告的燃气配气事故</span><span>报告中的事故发生于 2010–2026 年</span></div></header><nav class="chapter-nav" aria-label="章节导航"><a href="#overview">主管道的伤亡关联同时涉及规格、材料和场地</a><a href="#section-2">补充物理资料增加判断信息，简化评分保留管径与压力</a><a href="#section-3">模型识别8份伤亡报告、漏判7份，评分用于历史比较</a><a href="#methods">资料与计算</a></nav>
 <article><section class="article-section" id="overview">
-<h2>3.1 部件经验提供基本识别信息，森林改善整批排序</h2>
-<p id="paragraph-1">第二章从场地、作业过程和设施条件提出了人员伤害的相关因素。本章继续检验哪些信息能够识别伤亡报告，并据此决定评分需要哪些输入、事故复盘还应保留哪些资料。研究结局为整宗事故是否记录死亡或需住院至少一晚的伤害。以下分数反映已报告事故中的历史关联；在用管段未来发生事故、发现损伤后的新增伤害及保护等级，不属于本章已经验证的输出。</p>
-<p id="paragraph-2">先用覆盖各类配气部件的1,550份报告建立基本参照。2010至2021年收到的1,286份用于学习，2022年起收到的264份用于评价，其中65份记录伤亡。常数方法对全部报告采用相同的早期伤亡比例；部件比例规则采用各部件的历史伤亡比例。原方案无惩罚逻辑回归与随机森林则共同使用部件、材料、地点和地区等级，检验合用类别后增加了多少识别信息。近期报告此前已参与探索，本章各项后期比较均为回顾评价。</p>
-<p id="paragraph-3">我们按分数从高到低排列报告，检查伤亡记录是否更集中在前面。平均精确率AP在逐组纳入报告时计算已选报告中的伤亡比例，再按新增伤亡报告数加权汇总，数值越高，整批排序越有利于识别伤亡。图 15还显示同样选取若干份时的伤亡期望数，同一横轴位置的曲线越高，识别越多；同分报告均分入选机会，因此期望数可以是小数。</p>
-<figure class="figure" data-review="true" id="figure-model_comparison"><div class="figure-top"><span class="figure-kicker">图 15</span><h3>同选前53份时结果接近，森林改善整批排序</h3></div><img alt="四方法累计选取曲线从0到264份报告。前53份的伤亡期望数依次为13.05、21.65、21.40、22.00，AP依次0.246、0.322、0.336、0.382。" src="figures/a1_ch3_model_comparison.png"/><figcaption>共同评价2022年起收到的264份报告，其中65份记录伤亡。横轴为按分数从高到低选取的报告数，纵轴为其中实际伤亡报告的期望份数；同分报告均分入选机会，因此可出现小数。竖线表示53个名额，约占20%，作为相同选取数量的比较示例。AP概括全部排序。四种方法依次为常数参照、部件比例规则、原方案无惩罚逻辑回归和随机森林。训练为2010至2021年收到的1,286份报告。来源：保存的逐份预测。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch3_model_comparison.png">下载 PNG</a><a download="" href="figures/a1_ch3_model_comparison.pdf">下载 PDF</a><a download="" href="figures/a1_ch3_model_comparison.svg">下载 SVG</a><a download="" href="data/a1_9a04aa_cumulative_source.csv">图中数据 1</a><a download="" href="data/a1_4247ea_later_predictions.csv">图中数据 2</a></div></figure>
-<p id="paragraph-4">同取前53份时，部件规则、原方案回归和森林均识别约21至22份伤亡报告，高于常数参照的13.05份。森林在部件规则之上只多约0.35份，前端的大部分识别增加已由部件经验提供。考察全部排序，森林的AP为0.382，高于部件规则的0.322，差值95%区间为0.017至0.115；原方案回归为0.336，相对部件规则的增量区间跨零。部件经验因此保留为基本参照，森林的额外价值主要见于整批排序。</p>
-<p id="paragraph-5">排序成绩与固定门槛的分类结果还需分别理解。按早期确定的各自门槛，原方案回归识别33份伤亡、误报47份；森林识别34份、误报76份。森林仅多识别1份，却多出29份误报。完整错漏及决策树的实际计算见章末，这项比较提供广范围的类别参照；下面转向第二章涉及的主管道设施，检验具体规格和运行资料的价值。</p>
-</section><section class="article-section" id="section-2"><h2>3.2 管径与正常运行压力进入简化评分</h2>
-<p id="paragraph-6">第二章发现，同种材料的设施仍有不同管径和运行压力，单看材料难以概括事故条件。为确定值得核实的物理资料，我们在同一批693份主管道及主管道阀报告中比较输入，保留规格缺失的报告。范围限定为2010至2024年发生的钢、塑料及铸铁／锻铁事故。候选从部件、材料、地点、地区等级四项类别，扩展到管龄、管径和正常运行压力，合计七个字段；各组合均采用同一种L2逻辑回归，限制系数过大。</p>
-<p id="paragraph-7">输入选择同时考虑排序和概率误差。Brier分数将每份预测概率与实际结果相减，伤亡记1、其余记0，平方后取平均，越低表示概率误差越小。我们先在244份早期验证报告中找到AP最高的候选，再在AP下降不超过0.03、Brier增加不超过0.01的组合中，选择采集字段最少者。这是本研究预先采用的简化规则，用于明确成绩与采集项目之间的取舍。</p>
-<p id="paragraph-8">图 16列出三项物理资料的全部七种组合，实心点表示采用该资料，右侧圆点越靠右表示早期排序越好。管径加正常压力的AP为0.4272，高于四项类别的0.3218，并与三项物理资料合用接近；仅用管径为0.3958，未通过简化规则。全部候选中的最高AP为0.4316，来自完整模型删除材料后的组合。管径加正常压力满足两项容差，且字段最少，因此进入主评分。</p>
-<figure class="figure" data-review="true" id="figure-p322_input_choice"><div class="figure-top"><span class="figure-kicker">图 16</span><h3>管径与正常压力合用，按早期规则进入简化评分</h3></div><img alt="左侧实心点表示采用的信息，右侧为相同244份早期验证报告的平均精确率AP。浅色行是选定的两字段组合；灰虚线为全部候选中的最高AP，简化要求AP至少0.402，同时满足Brier误差要求。全部候选另含类别输入与逐项删除方案，选择只用早期排序、概率误差和字段数，后期评价用于检查简化代价。" src="figures/p322_input_choice.png"/><figcaption>左侧实心点表示采用的信息，右侧为相同244份早期验证报告的平均精确率AP。浅色行是选定的两字段组合；灰虚线为全部候选中的最高AP，简化要求AP至少0.402，同时满足Brier误差要求。全部候选另含类别输入与逐项删除方案，选择只用早期排序、概率误差和字段数，后期评价用于检查简化代价。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/p322_input_choice.png">下载 PNG</a><a download="" href="figures/p322_input_choice.pdf">下载 PDF</a><a download="" href="figures/p322_input_choice.svg">下载 SVG</a><a download="" href="data/p322_models_figure1_input_choice.csv">图中数据</a></div></figure>
-<p id="paragraph-9">选定输入后，模型用合并的581份早期报告重新拟合，再评价后期112份，其中15份伤亡。两字段原概率的AP为0.3028，完整七字段为0.3233，两者差值为−0.0205，95%区间为−0.0985至0.0898。后期结果仍有较大不确定性，本章保留依据早期规则作出的简化决定，不将它解释为已经证明两项信息统计非劣。全部16种方案的共同评价见章末。</p>
-<p id="paragraph-10">评分取舍之外，还要检验第二章提出的因素在合并考虑其他条件后是否仍有关联。下表使用完整七字段模型。伤亡优势是伤亡概率与其余概率之比，例如伤亡概率若为20%、其余为80%，伤亡优势就是20／80。条件优势比再比较两组的伤亡优势，小于1表示对比组较低，大于1表示较高，并非直接比较两组伤亡概率的倍数。</p>
+<h2>3.1 主管道的伤亡关联同时涉及规格、材料和场地</h2>
+<p id="paragraph-1">企业比较不同材料的伤亡记录时，需要共同考虑规格、压力和场地，避免不同设施条件都被解释为材料差异。第二章显示，材料往往同时伴随管龄、管径和运行压力的差别，同为钢管也有不同组合。本节先检验这些设施记录在主管道范围内的共同关联；整起点燃、最终归因及事后整理的人员经过继续用于事故解释和时序核对。</p>
+<p id="paragraph-2">研究范围为2010至2024年发生的钢、塑料及铸铁／锻铁主管道和主管道阀事故，共693份报告。完整模型使用部件、材料、场地、地区等级、管龄、管径和正常运行压力七项资料，采用L2逻辑回归限制系数过大。模型由截至2021年收到的581份早期报告拟合，其中126份记录伤亡，且这581份均为主管道。这里的伤亡指整起已报告事故中至少一人死亡或因伤住院至少一晚。</p>
+<p id="paragraph-3">下表在模型中固定其余输入，分别比较一项条件。伤亡优势是伤亡概率除以其余概率，例如20%与80%对应20／80。条件优势比再比较两种条件下的伤亡优势，1表示相同；例如4英寸相对2英寸为0.530，表示前者的伤亡优势约为后者的53%。</p>
 
 <div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表7．固定其余模型条件时的伤亡关联。581份早期三材料主管道报告、126份伤亡；完整七字段L2逻辑回归C＝0.2。条件优势比按表列单位或参照类别比较，区间为133家运营商整组重抽并重拟合1,000次的95%探索区间。反映已报告事故中的条件关联，不是干预效应；与最终两字段评分模型分别解释。</caption>
 <thead>
@@ -60,19 +50,29 @@
 </tr>
 </tbody>
 </table></div>
-<p id="paragraph-11">表中较小管径、较低正常运行压力对应较高的伤亡优势。这一方向来自已经发生并上报的事故，说明尺寸和运行压力值得保留为事故比较资料，并不意味着企业调低运行压力会增加伤害。管龄的区间跨1，删去管龄后的早期预测也基本不变，因此本轮评分采用管径与正常压力。铁相对钢、私人相对公共场地仍有条件关联，材料和场地继续用于解释事故情境。关联是否存在与是否值得增加一个评分字段，由两项比较分别回答。</p>
-</section><section class="article-section" id="section-3"><h2>3.3 聚类保留设施画像，钢塑开挖采用共同模型</h2>
-<p id="paragraph-12">第二章的物理聚类用管龄、管径和压力描述三类设施。若这些组别能够替代原始量，评分就可以使用较简单的类别。我们在物理资料完整的621份报告中进行同样本比较，其中后期100份、13份伤亡。仅用组别时AP为0.2516，直接用三个物理量为0.3332；四项类别加组别为0.3292，加原物理量为0.3441。早期验证也出现同向差别。计算组别仍需采集三项物理量，因此本轮评分保留原始量，三组继续承担设施画像的用途。</p>
-<p id="paragraph-13">钢管与塑料管的开挖伤亡差异，则提出另一项选择：两种材料是否需要各自拟合模型。我们在391份钢塑开挖报告中比较三种结构，共同模型使用材料、管径和正常压力；交互模型允许管径和压力的系数随材料改变；独立模型分别在钢管和塑料管中拟合。</p>
-<p id="paragraph-14">同一后期70份报告只有4份伤亡。共同、交互、独立模型的AP分别为0.2101、0.2128和0.2079，独立模型未形成稳定增益。钢管早期仅5份伤亡，后期1份，拆分后用于学习和评价伤亡的资料更少。因此，钢塑开挖专题保留含材料的共同模型，材料差别在共同结构中表达；主评分仍采用上一节选定的管径与正常压力。两项比较分别确定了聚类和材料分组的用途。</p>
-</section><section class="article-section" id="section-4"><h2>3.4 两字段模型识别8份伤亡，漏判7份</h2>
-<p id="paragraph-15">确定输入后，历史事故判别模型需要给出可复算的分数，并说明实际错漏。管径以英寸、正常运行压力以psig输入，模型经变换和标准化后计算原概率，再按早期选定的sigmoid校准调整概率量值。校准在早期验证中使Brier由0.1294降至0.1277，达到预定改善门槛，因此作为最终规格保留。分类门槛也由早期报告确定，为29.1%。</p>
-<p id="paragraph-16">图 17每点是一份后期报告，横向位置为模型概率，上下两行分别是实际有伤亡和其余报告，虚线右侧判为伤亡。在112份中，模型识别8份伤亡、漏判7份，另有21份误报、76份正确判为其余。即15份伤亡中识别了53.3%，29份被标记报告中27.6%实际有伤亡。这个结果给出了模型的识别能力及伴随的误报数量。</p>
+<p id="paragraph-4">在这些主管道事故中，较小管径、较低正常运行压力对应较高的伤亡优势；铁相对钢、私人相对公共场地也保留了条件关联。管龄和塑料相对钢的区间均包含1。这些历史关联支持复盘时联合保留规格、压力、材料和场地；调压、换材或改变管径后的伤害变化需要相应的干预证据。</p>
+<p id="paragraph-5">第二章的部件与人员构成、损伤后的作业伤害分别由分组比较和时序原案支持。评分是否需要全部七项设施记录，接着由相同报告上的输入比较决定。</p>
+</section><section class="article-section" id="section-2"><h2>3.2 补充物理资料增加判断信息，简化评分保留管径与压力</h2>
+<h3>管径与正常运行压力共同满足早期简化规则</h3>
+<p id="paragraph-6">输入比较沿用同一693份主管道及阀报告，检验在部件、材料、地点和地区等级之外，增加管龄、管径和正常压力能提供多少额外判别信息。各组合都采用同一种L2逻辑回归，先用337份最早报告拟合，在244份早期验证报告中选择输入，随后用合并的581份重新拟合，评价后期112份报告。</p>
+<p id="paragraph-7">为评估判别能力，我们按分数由高到低排列评价报告，检查伤亡记录是否集中在前面。平均精确率AP概括这一集中程度，越高越好。概率误差另用Brier分数衡量：伤亡记1、其余记0，预测概率与实际结果的差平方后取平均，越低越好。本章各项后期报告此前已参与探索，结果均属回顾评价。</p>
+<p id="paragraph-8">在同一112份后期报告中，四项类别的AP为0.2890，加入三个物理量后为0.3233。固定比较分数最高的23份报告，伤亡期望数由5.06份增至7份；23份是约前五分之一的同量检验，同分报告均分入选机会，因此期望数可以是小数。新增资料在本批报告中多识别约2份伤亡，增益大小仍不精确，AP差值区间见章末。</p>
+<p id="paragraph-9">评分输入的简化依据早期验证结果。图 15列出三项物理资料的全部七种非空组合，实心点表示采用该项，右侧圆点越靠右表示早期AP越高。管径加正常压力的AP为0.4272，加入管龄后的成绩基本不变；仅管径为0.3958。全部候选的最高AP为0.4316，来自完整模型删去材料后的组合。为减少评分所需资料项目，本研究采用的简化规则允许AP较最高项减少不超过0.03、Brier较该项增加不超过0.01，再优先选资料项目最少者。管径加正常压力通过，单独管径未通过，最终保留两项输入。</p>
+<figure class="figure" data-review="true" id="figure-p322_input_choice"><div class="figure-top"><span class="figure-kicker">图 15</span><h3>管径与正常压力合用，按早期规则进入简化评分</h3></div><img alt="左侧实心点表示采用的信息，右侧为相同244份早期验证报告的平均精确率AP。浅色行是选定的两字段组合；灰虚线为全部候选中的最高AP，简化要求AP至少0.402，同时满足Brier误差要求。全部候选另含类别输入与逐项删除方案，选择只用早期排序、概率误差和字段数，后期评价用于检查简化代价。" src="figures/p322_input_choice.png"/><figcaption>左侧实心点表示采用的信息，右侧为相同244份早期验证报告的平均精确率AP。浅色行是选定的两字段组合；灰虚线为全部候选中的最高AP，简化要求AP至少0.402，同时满足Brier误差要求。全部候选另含类别输入与逐项删除方案，选择只用早期排序、概率误差和字段数，后期评价用于检查简化代价。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/p322_input_choice.png">下载 PNG</a><a download="" href="figures/p322_input_choice.pdf">下载 PDF</a><a download="" href="figures/p322_input_choice.svg">下载 SVG</a><a download="" href="data/p322_models_figure1_input_choice.csv">图中数据</a></div></figure>
+<p id="paragraph-10">管径与压力评分在同一112份后期报告中的AP为0.3028，前23份同样识别7份伤亡。观察AP略低于七项资料模型，差距仍有较大不确定性；简化方案沿用早期研究选择。全部16种方案及差值区间保留在章末。</p>
+<h3>聚类用于描述设施，钢塑开挖保留含材料的共同模型</h3>
+<p id="paragraph-11">第二章的物理聚类将相近设施归为三组，还需检验组别能否替代原始测量。比较限于693份中的621份完整物理资料，其中后期100份、13份伤亡。仅用组别的AP为0.2516，直接用三个物理量为0.3332；加上四项类别后，组别的AP也低于原始量，早期验证方向相同。差值区间较宽，组别没有显示替代原始量的优势，而且计算组别仍需管龄、管径和压力。因此，本轮评分保留原始量，三组继续用于描述设施组合。</p>
+<p id="paragraph-12">钢塑开挖专题另在391份报告中比较两种材料是否需要各自建模，范围由最终填报的开挖原因限定。共同模型使用材料、管径和正常压力；交互模型允许规格与压力的系数因材料而异；独立模型按材料分别拟合。同一后期70份报告只有4份伤亡，三种结构的AP依次为0.2101、0.2128和0.2079。钢管早期仅5份伤亡、后期1份，拆分没有形成稳定增益。因此，开挖专题保留含材料的共同模型，与693份范围内的管径与压力评分各用于对应专题。</p>
+<h3>各类部件的经验参照与联合模型</h3>
+<p id="paragraph-13">涵盖进户管等各类部件的事故比较，还需保留简单的部件经验参照。这项比较使用全部1,550份报告，2010至2021年收到的1,286份用于学习，2022年起收到的264份用于评价，其中65份记录伤亡。常数方法采用全部早期报告的伤亡比例，部件规则采用各部件的历史伤亡比例。逻辑回归与随机森林共同使用部件、材料、地点和地区等级；这里的逻辑回归采用无惩罚形式，主管道的输入比较采用前述L2回归，两项研究分别评价。</p>
+<p id="paragraph-14">图 16在同一横轴位置比较选取相同报告数时的伤亡期望数，曲线越高表示识别越多。森林的AP为0.382，高于部件规则的0.322，逻辑回归为0.336。运营商配对重抽样支持森林在本批报告中的排序增量，逻辑回归的增量仍不确定。部件经验因此保留为各类部件事故比较的基本参照，森林提供整批排序的额外信息。它们的固定门槛分类结果、完整决策树和叶节点比例保留在章末。</p>
+<figure class="figure" data-review="true" id="figure-model_comparison"><div class="figure-top"><span class="figure-kicker">图 16</span><h3>同选前53份时结果接近，森林改善整批排序</h3></div><img alt="四方法累计选取曲线从0到264份报告。前53份的伤亡期望数依次为13.05、21.65、21.40、22.00，AP依次0.246、0.322、0.336、0.382。" src="figures/a1_ch3_model_comparison.png"/><figcaption>共同评价2022年起收到的264份报告，其中65份记录伤亡。横轴为按分数从高到低选取的报告数，纵轴为其中实际伤亡报告的期望份数；同分报告均分入选机会，因此可出现小数。竖线表示53个名额，约占20%，作为相同选取数量的比较示例。AP概括全部排序。四种方法依次为常数参照、部件比例规则、原方案无惩罚逻辑回归和随机森林。训练为2010至2021年收到的1,286份报告。来源：保存的逐份预测。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch3_model_comparison.png">下载 PNG</a><a download="" href="figures/a1_ch3_model_comparison.pdf">下载 PDF</a><a download="" href="figures/a1_ch3_model_comparison.svg">下载 SVG</a><a download="" href="data/a1_9a04aa_cumulative_source.csv">图中数据 1</a><a download="" href="data/a1_4247ea_later_predictions.csv">图中数据 2</a></div></figure>
+</section><section class="article-section" id="section-3"><h2>3.3 模型识别8份伤亡报告、漏判7份，评分用于历史比较</h2>
+<p id="paragraph-15">评分能为人员伤亡判断提供多少依据，需要检查实际漏判和误报。后期112份报告中有15份实际伤亡；按早期确定的29.1%门槛，简化模型识别8份、漏判7份，另有21份误报、76份正确判为其余。即伤亡报告中识别了53.3%，29份被标记报告中27.6%实际有伤亡。图 17每点代表一份报告，两行区分真实结局，虚线右侧为模型判为伤亡的报告。</p>
 <figure class="figure" data-review="true" id="figure-p322_model_errors"><div class="figure-top"><span class="figure-kicker">图 17</span><h3>两字段模型识别8份伤亡，同时漏判7份</h3></div><img alt="112份后期报告中的每一点均来自实际预测。横轴为校准后的概率分数，上行为15份伤亡报告，下行为97份其余报告。早期确定的29.1%门槛产生8份正确识别、7份漏判、21份误报和76份正确判为其余。点的上下微移仅用于分开重叠记录，横向位置保持实际概率。" src="figures/p322_model_errors.png"/><figcaption>112份后期报告中的每一点均来自实际预测。横轴为校准后的概率分数，上行为15份伤亡报告，下行为97份其余报告。早期确定的29.1%门槛产生8份正确识别、7份漏判、21份误报和76份正确判为其余。点的上下微移仅用于分开重叠记录，横向位置保持实际概率。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/p322_model_errors.png">下载 PNG</a><a download="" href="figures/p322_model_errors.pdf">下载 PDF</a><a download="" href="figures/p322_model_errors.svg">下载 SVG</a><a download="" href="data/p322_models_figure3_probability_and_errors.csv">图中数据</a></div></figure>
-<p id="paragraph-17">一份管径12英寸、正常压力10 psig的铸铁主管道报告，可以说明低分处的漏判。两项资料均完整，原概率为12.70%，校准后为9.83%，低于29.1%门槛，但原案实际记录伤亡。该例用于核对计算和错误，模型公式与报告来源保留在章末。</p>
-<p id="paragraph-18">早期胜出的校准在后期没有稳定改善概率误差。校准后的Brier为0.1117，原概率为0.1093；校准后的平均概率为16.8%，实际伤亡比例为13.4%。模型按早期选定的规格交付，同时保留原概率供核对。<a href="data/predict_historical_incident.py">两字段计算工具</a>与<a href="data/final_model.json">冻结参数</a>提供同一计算。两份后期阀门报告缺少管径，其分数依赖训练中位数填补，应同时显示规格尚未核实；正常运行压力始终指原运行资料中的压力。</p>
-</section><section class="article-section" id="section-5"><h2>3.5 评分优先核实规格与运行资料，复盘保留人员和作业记录</h2>
-<p id="paragraph-19">本章确定了两字段的历史事故判别模型，也明确了其余信息的用途。先用部件和材料确认事故属于三材料主管道及阀的研究范围，再以管径和正常运行压力评分。企业整理同类事故资料时，应核实这两项数值、单位与来源。管龄、材料和场地等资料继续服务因素比较与事故复盘；其中有条件关联的因素，不因未进入简化评分而停止记录。</p>
+<p id="paragraph-16">一份管径12英寸、正常压力10 psig的铸铁主管道报告说明了低分处的漏判。两项资料均完整，原概率为12.70%，校准后为9.83%，低于29.1%门槛，实际却记录伤亡。综合输入比较与这些错漏，本轮保留可复算的研究候选，用于同类历史资料的比较，并据此确定优先核实的设施资料。现场保护等级规则尚未得到验证；在用管段将来发生事故和发现损伤后的新增伤害，也需要另有相应结局与时点资料。</p>
+<p id="paragraph-17">保存的候选模型沿用早期选定的概率校准，调整原分数的概率量值。sigmoid校准使早期验证Brier由0.1294降至0.1277，因此按研究选择规则采用；后期Brier却为0.1117，高于原概率的0.1093，校准未显示稳定改善。早期确定的规格与原概率一同保留供核对，<a href="data/predict_historical_incident.py">管径与压力计算工具</a>和<a href="data/final_model.json">模型参数</a>提供相同计算，公式及完整错误记录见章末。</p>
+<p id="paragraph-18">企业整理同类事故资料时，先以部件和材料确认是否属于三材料主管道及阀的范围，再核实进入评分的管径、正常运行压力及单位。正常运行压力取自原运行资料。后期两份阀门报告缺少管径，分数依赖训练中位数填补，记录中应同时显示规格尚未核实。未进入简化评分的管龄、材料和场地仍服务因素比较与事故复盘。月份未显示稳定的额外伤亡判别收益，继续作为铁管自然因素的复盘线索，既有季节实验见章末说明。</p>
 
 <div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表8．事故资料的采集与使用决定。基于同样本输入比较、条件关联、聚类与钢塑专题的本轮采用决定。主评分限定为历史事故伤亡判别；现场过程按确认时间和来源保留，未知状态不补成否定状态。完整逐字段依据见information_decisions.csv。</caption>
 <thead>
@@ -84,13 +84,13 @@
 </thead>
 <tbody>
 <tr>
-<td>历史事故评分</td>
-<td>管径、正常运行压力</td>
-<td>确认涉事部件及适用范围，核对规格、单位和原运行资料；缺失时注明分数依赖填补</td>
+<td>历史事故比较与评分复核</td>
+<td>部件、材料，管径、正常运行压力</td>
+<td>部件和材料确认适用范围；管径和压力进入研究候选评分，核对规格、单位和原运行资料；缺失时注明分数依赖填补</td>
 </tr>
 <tr>
 <td>因素解释与复盘</td>
-<td>管龄及安装维修历史，材料、部件、场地、地区等级、月份，物理聚类画像</td>
+<td>管龄及安装维修历史，场地、地区等级、月份，物理聚类画像</td>
 <td>核对设施组合、季节和地面记录；场地类型与实际人员位置分别记录</td>
 </tr>
 <tr>
@@ -100,10 +100,10 @@
 </tr>
 </tbody>
 </table></div>
-<p id="paragraph-20">最终事故归因用于解释事故经过；当前活动、点燃状态和人员位置则应按当时已确认的情况记录。第二章已经指出停气、旁通和维修等具体保护任务，后续记录应说明任务进行时谁在场、燃气处于什么状态、措施何时执行、伤害何时发生。这样既能保留本轮可计算的历史判别，也能为下一步评价具体保护任务准备相应证据。</p>
+<p id="paragraph-19">最终事故归因用于解释事故经过；当前活动、点燃状态和人员位置应按当时已确认的情况记录。第二章的主管道案例涉及停气、旁通和维修阶段，后续复盘应记录各阶段谁在场、燃气处于什么状态、措施何时执行、伤害何时发生。这些记录对应具体保护任务，也为比较措施执行后的人员后果提供资料。</p>
 </section><details class="technical" id="methods"><summary>资料与计算说明</summary>
 <h3>各项比较分别使用共同的评价报告</h3>
-<p id="paragraph-21">分析单位为事故报告，伤亡指至少一人死亡或因伤住院至少一晚。按收件年份，最早拟合期截至2017年，早期验证期为2018至2021年，合并重拟合期截至2021年，后期为2022年起。输入、校准和门槛依据早期资料确定；后期数据此前已被研究，因此所有后期结果均按探索性回顾评价报告。</p>
+<p id="paragraph-20">分析单位为事故报告，伤亡指至少一人死亡或因伤住院至少一晚。按收件年份，最早拟合期截至2017年，早期验证期为2018至2021年，合并重拟合期截至2021年，后期为2022年起。输入、校准和门槛依据早期资料确定；后期数据此前已被研究，因此所有后期结果均按探索性回顾评价报告。</p>
 
 <div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表9．各比较范围及报告数量。按收到年分为截至2017年拟合、2018至2021年验证、截至2021年合并重拟合与2022年起评价。后三项事故发生范围为2010至2024年；各成绩只在相同评价集内比较。621份完整物理记录是693份主实验的子集。</caption>
 <thead>
@@ -151,11 +151,14 @@
 </tr>
 </tbody>
 </table></div>
-<p id="paragraph-22">后三项都从2010至2024年发生的相应主管道事故中取样。693份主实验保留缺失，621份是物理资料完整的子集；各方法只在相应的共同评价集内比较，不跨264、112、100或70份的范围排列成绩。<a href="data/p322_models_split_counts.csv">主实验与聚类分期</a> · <a href="data/p322_source_prediction_split_counts.csv">钢塑专题分期</a></p>
-<p id="paragraph-23">当前保存的1,550份报告中，1,011份标为补充报告，其中850份属于较早收件时期；原表缺少逐字段修订时间。输入何时可得尚未逐案核实。693份主实验早期581份均为主管道，后期另有两份主管道阀报告，不能据这一范围估计进户管等部件的差异。</p>
+<p id="paragraph-21">后三项都从2010至2024年发生的相应主管道事故中取样。693份主实验保留缺失，621份是物理资料完整的子集；各方法只在相应的共同评价集内比较，不跨264、112、100或70份的范围排列成绩。<a href="data/p322_models_split_counts.csv">主实验与聚类分期</a> · <a href="data/p322_source_prediction_split_counts.csv">钢塑专题分期</a></p>
+<p id="paragraph-22">当前保存的1,550份报告中，1,011份标为补充报告，其中850份属于较早收件时期；原表缺少逐字段修订时间。输入何时可得尚未逐案核实。693份主实验早期581份均为主管道，后期另有两份主管道阀报告，不能据这一范围估计进户管等部件的差异。</p>
 <h3>广范围四方法的计算与完整错漏</h3>
+<p id="paragraph-23">平均精确率AP在逐组纳入报告时计算已选报告中的伤亡比例，再按新增伤亡报告数加权汇总；本章将它用于比较整批排序的判别能力。</p>
 <p id="paragraph-24">常数参照为早期304／1,286＝23.64%。部件比例规则直接使用各部件早期的伤亡比例。原方案逻辑回归为无惩罚的类别主效应模型，不含交互项，部件、材料、地点和地区等级分别采用七、五、四、四类分析分类。少量部件归入其他类，铜和球墨铸铁归入其他材料。</p>
 <p id="paragraph-25">原方案回归计算z＝截距＋部件项＋材料项＋地点项＋地区等级项，再计算p＝1／[1＋exp(−z)]。参照类别为主管道、钢、公共地点和3级地区，参照项系数为0。它与本章物理输入比较的L2模型分别命名。</p>
+<p id="paragraph-26">森林相对部件规则的AP差值95%区间为0.017至0.115，原方案回归相对部件规则的增量区间跨零。</p>
+<p id="paragraph-27">固定门槛分类与整批排序分别评价。按早期确定的各自门槛，原方案回归识别33份伤亡、误报47份；森林识别34份、误报76份。原方案回归少识别1份，同时少出29份误报。</p>
 
 <div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表10．四种方法在同一264份后期报告中的结果。早期1,286份学习，后期264份中65份伤亡。原方案回归为无惩罚GLM，森林与其共用四类输入；各方法按各自早期门槛分类。同分报告均分前53份入选机会，期望数可为小数。</caption>
 <thead>
@@ -208,30 +211,30 @@
 </tr>
 </tbody>
 </table></div>
-<p id="paragraph-26">图 S5保留各门槛对应的矩阵和精确率、召回率曲线。精确率为模型判为伤亡的报告中实际伤亡的比例，召回率为实际伤亡报告中识别出的比例。早期以两者调和平均F1最大值选择门槛，部件规则、原方案回归和森林分别为13.64%、23.56%和23.37%。常数分数与门槛均为23.64%，全部判为伤亡；具体分类使用未四舍五入的分数与门槛。</p>
+<p id="paragraph-28">图 S5保留各门槛对应的矩阵和精确率、召回率曲线。精确率为模型判为伤亡的报告中实际伤亡的比例，召回率为实际伤亡报告中识别出的比例。早期以两者调和平均F1最大值选择门槛，部件规则、原方案回归和森林分别为13.64%、23.56%和23.37%。常数分数与门槛均为23.64%，全部判为伤亡；具体分类使用未四舍五入的分数与门槛。</p>
 <figure class="figure" data-review="true" id="figure-classification_decisions"><div class="figure-top"><span class="figure-kicker">图 S5</span><h3>固定门槛下，森林比原方案回归少漏判1份、多误报29份</h3></div><img alt="PR曲线与三方法分类矩阵。原方案回归识别33份、漏判32份、误报47份；森林识别34份、漏判31份、误报76份；部件规则识别62份并误报187份。" src="figures/a1_ch3_classification_decisions.png"/><figcaption>上方PR曲线横轴为65份实际伤亡报告中的识别比例，即召回率；纵轴为判为伤亡的报告中实际伤亡的比例，即精确率。圆点是早期确定的门槛。下方矩阵按实际结果分行、模型判断分列，给出对应份数；“错选”即误报。部件规则、原方案回归和森林的矩阵均覆盖264份，实际伤亡65份、其余199份。常数方法全部判为伤亡，完整计数另列本章表格。来源：保存分数、既定门槛和实际记录。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch3_classification_decisions.png">下载 PNG</a><a download="" href="figures/a1_ch3_classification_decisions.pdf">下载 PDF</a><a download="" href="figures/a1_ch3_classification_decisions.svg">下载 SVG</a><a download="" href="data/a1_49a7ed_classification_counts.csv">图中数据 1</a><a download="" href="data/a1_26308b_precision_recall_source.csv">图中数据 2</a><a download="" href="data/a1_efdf49_model_metrics.csv">图中数据 3</a></div></figure>
-<p id="paragraph-27">固定选取53份仅作同量比较，未据此确定企业实际工作量。同分组只选一部分时，期望伤亡份数等于已完整选中的伤亡份数，加剩余名额乘以同分组伤亡比例。例如部件规则为17＋12×12／31＝21.65份。<a href="data/p322_models_proposal_four_method_reference.csv">四方法指标</a> · <a href="data/p322_models_proposal_four_method_predictions.csv">逐份预测</a> · <a href="data/p322_source_analysis_recompute_cumulative_hits.py">累计曲线复算</a></p>
+<p id="paragraph-29">固定选取53份仅作同量比较，未据此确定企业实际工作量。同分组只选一部分时，期望伤亡份数等于已完整选中的伤亡份数，加剩余名额乘以同分组伤亡比例。例如部件规则为17＋12×12／31＝21.65份。<a href="data/p322_models_proposal_four_method_reference.csv">四方法指标</a> · <a href="data/p322_models_proposal_four_method_predictions.csv">逐份预测</a> · <a href="data/p322_source_analysis_recompute_cumulative_hits.py">累计曲线复算</a></p>
 <h3>完整决策树与叶节点比例</h3>
-<p id="paragraph-28">决策树按条件逐层划分训练记录，终点称为叶节点。图 S6是原随机森林的第一棵完整树，保留4个问题和5个叶节点。从左向右沿“是”或“否”进入终点，叶节点饼图的深红份额表示该组训练记录中的伤亡比例，也就是这棵树对同条件报告给出的概率。</p>
+<p id="paragraph-30">决策树按条件逐层划分训练记录，终点称为叶节点。图 S6是原随机森林的第一棵完整树，保留4个问题和5个叶节点。从左向右沿“是”或“否”进入终点，叶节点饼图的深红份额表示该组训练记录中的伤亡比例，也就是这棵树对同条件报告给出的概率。</p>
 <figure class="figure" data-review="true" id="figure-forest_tree"><div class="figure-top"><span class="figure-kicker">图 S6</span><h3>第一棵树按部件和材料分组，叶节点给出伤亡比例</h3></div><img alt="完整决策树先判断是否进户管，再在其余部件中依次判断其他材料、铸铁锻铁、塑料。五个叶节点均有构成饼图和训练条数；钢制室外装置沿四次否进入19.1%的叶节点。" src="figures/a1_ch3_forest_tree.png"/><figcaption>森林中的第一棵完整树，共4个分支条件和5个叶节点。沿“是”或“否”从左向右到达终点，饼图深红份额表示该组训练记录中的伤亡比例。该树有1,286条抽样记录，来自830份不同报告，同一报告可重复出现；叶节点比例按包含重复的记录计算。20220002号钢制室外装置报告沿四次“否”进入107／560＝19.11%的终点。材料分支只比较进户管以外的部件。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch3_forest_tree.png">下载 PNG</a><a download="" href="figures/a1_ch3_forest_tree.pdf">下载 PDF</a><a download="" href="figures/a1_ch3_forest_tree.svg">下载 SVG</a><a download="" href="data/a1_a8e757_tree_nodes.csv">图中数据 1</a><a download="" href="data/a1_7aad74_tree_endpoint_source.csv">图中数据 2</a></div></figure>
-<p id="paragraph-29">这棵树先分出进户管，再在其余部件中按材料细分，材料分数因此只适用于进户管以外的部件。钢制室外表具／调压装置依次回答四次“否”，进入右下方叶节点；560条训练记录中107条有伤亡，概率为107／560＝19.11%。图中按抽样出现次数计条，同一原始报告可重复出现。</p>
-<p id="paragraph-30">每棵树从1,286份早期报告中有放回抽取1,286次，第一棵实际包含830份不同报告。不同树的抽样及候选条件不同；森林使用250棵树，最大深度4，叶节点最小样本数25，拟合种子20261107。对同一报告，各树分别给分后取算术平均。图 S7显示钢制室外装置的250个逐树分数，平均为21.76%；柱形合计为树数，表示树间差异，不是概率的置信区间。</p>
+<p id="paragraph-31">这棵树先分出进户管，再在其余部件中按材料细分，材料分数因此只适用于进户管以外的部件。钢制室外表具／调压装置依次回答四次“否”，进入右下方叶节点；560条训练记录中107条有伤亡，概率为107／560＝19.11%。图中按抽样出现次数计条，同一原始报告可重复出现。</p>
+<p id="paragraph-32">每棵树从1,286份早期报告中有放回抽取1,286次，第一棵实际包含830份不同报告。不同树的抽样及候选条件不同；森林使用250棵树，最大深度4，叶节点最小样本数25，拟合种子20261107。对同一报告，各树分别给分后取算术平均。图 S7显示钢制室外装置的250个逐树分数，平均为21.76%；柱形合计为树数，表示树间差异，不是概率的置信区间。</p>
 <figure class="figure" data-review="true" id="figure-forest_ensemble"><div class="figure-top"><span class="figure-kicker">图 S7</span><h3>250棵树对同一事故给分，平均后得到森林概率</h3></div><img alt="250个逐树概率的直方图，三条竖线分别标出第一树19.11%、森林平均21.76%、早期门槛23.37%。" src="figures/a1_ch3_forest_ensemble.png"/><figcaption>横轴为各树对20220002号报告给出的伤亡概率，纵轴为相应区间内的树数，柱形合计250棵。第一树分数为19.11%，森林平均为21.76%，早期验证资料确定的分类门槛为23.37%。柱形表示树间分数差异，不是置信区间。输入为钢制室外表具／调压装置、私人地点、3级地区。来源：随机森林的逐树预测概率与既定门槛。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch3_forest_ensemble.png">下载 PNG</a><a download="" href="figures/a1_ch3_forest_ensemble.pdf">下载 PDF</a><a download="" href="data/a1_bb56ef_tree_probabilities.csv">图中数据 1</a><a download="" href="data/a1_9a0c6b_case.json">图中数据 2</a></div></figure>
-<p id="paragraph-31">同案报告编号为20220002，按后期报告编号升序选取。其私人地点、3级地区与钢制室外装置输入，使原方案回归得到20.08%，森林得到21.76%。图 S8同时列出常数、部件规则及各自门槛。原案中的车辆碰撞、8名居民疏散和10:35阀门止漏用于解释具体核对事项；本章模型以整批报告评价识别能力。</p>
+<p id="paragraph-33">同案报告编号为20220002，按后期报告编号升序选取。其私人地点、3级地区与钢制室外装置输入，使原方案回归得到20.08%，森林得到21.76%。图 S8同时列出常数、部件规则及各自门槛。原案中的车辆碰撞、8名居民疏散和10:35阀门止漏用于解释具体核对事项；本章模型以整批报告评价识别能力。</p>
 <figure class="figure" data-review="true" id="figure-tool_case"><div class="figure-top"><span class="figure-kicker">图 S8</span><h3>同一宗室外装置事故的输入、分类与保护核对</h3></div><img alt="上方列四项输入，中部将常数、部件规则、原方案回归、森林的概率与各自门槛对照，下方对应除雪碰撞、8名居民疏散、10:35阀门止漏和核对事项。" src="figures/a1_ch3_tool_case.png"/><figcaption>输入为钢制室外表具／调压装置、私人地点、3级地区。各横条显示预测概率，短竖线为该方法的早期门槛；达到门槛即判为伤亡。森林21.76%低于23.37%，判为其余，指未记录死亡或住院至少一晚的伤害，与该案记录相符。四种方法对同一事故评分，用各自门槛分类。原案中的车辆碰撞、居民疏散和阀门止漏分别提供具体核对依据。报告20220002发生于2021年12月、2022年1月收件。来源：PHMSA原案、模型预测与既定门槛。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch3_tool_case.png">下载 PNG</a><a download="" href="figures/a1_ch3_tool_case.pdf">下载 PDF</a><a download="" href="figures/a1_ch3_tool_case.svg">下载 SVG</a><a download="" href="data/a1_27773d_case_outputs.csv">图中数据 1</a><a download="" href="data/a1_25a39a_case_20220002_source.csv">图中数据 2</a></div></figure>
-<p id="paragraph-32">该案发生于2021年12月、2022年1月收件，按收件年进入后期评价。其无惩罚回归分数20.08%与旧固定L2回归的21.66%分别记录。<a href="data/a1_a8e757_tree_nodes.csv">完整树节点</a> · <a href="data/a1_bb56ef_tree_probabilities.csv">逐树分数</a> · <a href="data/a1_25a39a_case_20220002_source.csv">原案与分数</a> · <a href="figures/forest_baobab_original.png">原流树PNG</a> · <a href="figures/forest_baobab_original.pdf">原流树PDF</a></p>
+<p id="paragraph-34">该案发生于2021年12月、2022年1月收件，按收件年进入后期评价。其无惩罚回归分数20.08%与旧固定L2回归的21.66%分别记录。<a href="data/a1_a8e757_tree_nodes.csv">完整树节点</a> · <a href="data/a1_bb56ef_tree_probabilities.csv">逐树分数</a> · <a href="data/a1_25a39a_case_20220002_source.csv">原案与分数</a> · <a href="figures/forest_baobab_original.png">原流树PNG</a> · <a href="figures/forest_baobab_original.pdf">原流树PDF</a></p>
 <h3>原四类资料消融与概率核对</h3>
-<p id="paragraph-33">原四类资料消融使用1,286份早期及264份后期报告，固定L2逻辑回归C＝0.05。图 S9保留部件、材料、地点、地区等级的全部15种非空组合；实心方块表示采用该项，圆点为AP，右列为前53份伤亡期望数。这里的仅部件回归与历史部件比例规则分别计算，也与本章693份范围、C＝0.2的物理输入实验分开。</p>
+<p id="paragraph-35">原四类资料消融使用1,286份早期及264份后期报告，固定L2逻辑回归C＝0.05。图 S9保留部件、材料、地点、地区等级的全部15种非空组合；实心方块表示采用该项，圆点为AP，右列为前53份伤亡期望数。这里的仅部件回归与历史部件比例规则分别计算，也与本章693份范围、C＝0.2的物理输入实验分开。</p>
 <figure class="figure" data-review="true" id="figure-ablation_matrix"><div class="figure-top"><span class="figure-kicker">图 S9</span><h3>15种输入组合使用同一种L2回归，比较总体排序与前53份</h3></div><img alt="15行输入矩阵，每行四个采用或省略方块，接AP圆点和前53份伤亡期望数。仅部件回归AP0.3333、21.65份；四项回归AP0.3354、21.44份。" src="figures/a1_ch3_ablation_matrix.png"/><figcaption>四项资料共有15种非空组合，实心方块表示采用，空心方块表示省略。各行固定L2逻辑回归、C＝0.05、类别处理、1,286份训练报告与264份评价报告，改变输入后分别拟合。中间圆点表示AP，虚线为四项合用的0.3354；右列表示同选53份时的伤亡期望份数，同分报告均分入选机会。仅部件回归与四项回归突出显示；仅部件回归与历史部件比例规则分别计算。来源：保存的全部15组消融结果。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch3_ablation_matrix.png">下载 PNG</a><a download="" href="figures/a1_ch3_ablation_matrix.pdf">下载 PDF</a><a download="" href="figures/a1_ch3_ablation_matrix.svg">下载 SVG</a><a download="" href="data/a1_e810e8_feature_subsets.csv">图中数据 1</a><a download="" href="data/a1_cf24c4_ablation_matrix.csv">图中数据 2</a></div></figure>
-<p id="paragraph-34">四项回归相对仅部件回归的AP增加0.0022，95%区间为−0.0379至0.0447。两者前53份伤亡期望数分别为21.44和21.65份。图 S10进一步显示，加入材料、地点、地区等级后，私人地点伤亡报告平均多入选2.73份，公共地点少入选2.77份，通行权区域少0.16份，运营商场地为0。区间跨零未证明两者等效；场地变化来自三项资料共同加入。</p>
+<p id="paragraph-36">四项回归相对仅部件回归的AP增加0.0022，95%区间为−0.0379至0.0447。两者前53份伤亡期望数分别为21.44和21.65份。图 S10进一步显示，加入材料、地点、地区等级后，私人地点伤亡报告平均多入选2.73份，公共地点少入选2.77份，通行权区域少0.16份，运营商场地为0。区间跨零未证明两者等效；场地变化来自三项资料共同加入。</p>
 <figure class="figure" data-review="true" id="figure-ablation_summary"><div class="figure-top"><span class="figure-kicker">图 S10</span><h3>增加资料后整体识别表现接近，入选报告的场地构成改变</h3></div><img alt="左侧仅部件与四项L2回归的AP点几乎重合，为0.3333和0.3354。右侧私人地点伤亡报告平均多入选2.73份、公共地点少入选2.77份，其余地点变化小。" src="figures/a1_ch3_ablation_summary.png"/><figcaption>两种L2逻辑回归分别使用仅部件与四项合用，C均固定为0.05，训练与评价报告相同。左图比较AP，四项减仅部件为0.0022，按93家运营商共同重抽样1,200次所得95%区间为−0.0379至0.0447。右图为共同选取前53份时各场地伤亡报告平均入选数的变化，按四项回归减仅部件回归计算；这是名额内入选变化，门槛分类的错漏另行评价。变化来自材料、地点与地区等级共同加入。来源：固定算法消融与逐份入选计数。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch3_ablation_summary.png">下载 PNG</a><a download="" href="figures/a1_ch3_ablation_summary.pdf">下载 PDF</a><a download="" href="figures/a1_ch3_ablation_summary.svg">下载 SVG</a><a download="" href="data/a1_d36090_ablation_main_source.csv">图中数据 1</a><a download="" href="data/a1_11cfcc_ablation_location_source.csv">图中数据 2</a><a download="" href="data/a1_e31e1e_paired_full_vs_part_regularized.json">图中数据 3</a></div></figure>
-<p id="paragraph-35">两份公共地点钢制进户管伤亡报告20240034、20250022均为4级地区，分数从仅部件回归的约32.2%降至四项回归的约25.6%，退出前53份。原案分别记载误切仍有燃气的管线，以及公园建筑内泄漏和点火。图 S11再逐项删除输入，四条AP差值区间均跨零，各项独立增益方向仍不确定。</p>
+<p id="paragraph-37">两份公共地点钢制进户管伤亡报告20240034、20250022均为4级地区，分数从仅部件回归的约32.2%降至四项回归的约25.6%，退出前53份。原案分别记载误切仍有燃气的管线，以及公园建筑内泄漏和点火。图 S11再逐项删除输入，四条AP差值区间均跨零，各项独立增益方向仍不确定。</p>
 <figure class="figure" data-review="true" id="figure-feature_ablation"><div class="figure-top"><span class="figure-kicker">图 S11</span><h3>从完整输入中删去一项，AP差值区间均跨零</h3></div><img alt="部件、材料、地点、地区等级四行AP差值点和95%区间，全部区间均跨越零线。" src="figures/a1_ch3_feature_ablation.png"/><figcaption>圆点为完整四项输入AP减删除该项后的AP，正值表示保留该项时排序较好。完整AP为0.3354，各组合固定L2回归C＝0.05，分别拟合。横线为近期93家运营商共同重抽样1,200次的95%区间，逐份预测固定。训练1,286份，评价264份，其中65份伤亡。四条区间均跨零，尚不能确定各项资料独立增益的方向。来源：保存的配对消融结果。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch3_feature_ablation.png">下载 PNG</a><a download="" href="figures/a1_ch3_feature_ablation.pdf">下载 PDF</a><a download="" href="figures/a1_ch3_feature_ablation.svg">下载 SVG</a><a download="" href="data/a1_15ad1c_paired_ablation_intervals.csv">图中数据</a></div></figure>
-<p id="paragraph-36">图 S12核对原广范围模型在各分数段的概率量值。空心点为组内平均预测概率，红点为实际伤亡比例，预期份数为概率之和。森林30%至40%组有28份报告，预期伤亡9.22份、实际12份；其他组偏差方向不同。各方法分数组成员可以不同，不能用某一格的绝对差排列整体可靠性。该图未训练新的校准器，与本章两字段模型的校准实验分开。</p>
+<p id="paragraph-38">图 S12核对原广范围模型在各分数段的概率量值。空心点为组内平均预测概率，红点为实际伤亡比例，预期份数为概率之和。森林30%至40%组有28份报告，预期伤亡9.22份、实际12份；其他组偏差方向不同。各方法分数组成员可以不同，不能用某一格的绝对差排列整体可靠性。该图未训练新的校准器，与本章两字段模型的校准实验分开。</p>
 <figure class="figure" data-review="true" id="figure-probability_reliability"><div class="figure-top"><span class="figure-kicker">图 S12</span><h3>预测概率与实际伤亡比例在各分数范围内的对照</h3></div><img alt="三列按分数范围比较平均预测与实际伤亡比例，30%至40%范围均观察到实际高于预测，其他范围偏差方向不同。空组保留无报告提示。" src="figures/a1_ch3_probability_reliability.png"/><figcaption>空心点为分数组内平均预测概率，红点为实际伤亡比例；同一行列出组内报告数和预期、实际伤亡份数。预期份数为组内概率之和。三种方法分别是部件比例规则、原方案无惩罚逻辑回归与随机森林，组内成员可以不同。所有264份报告、65份伤亡均保留，50%至100%范围为空；空组没有可计算的观察比例。此图检查保存分数的可靠性，没有训练新的概率校准器。来源：保存预测及完整分组核对。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch3_probability_reliability.png">下载 PNG</a><a download="" href="figures/a1_ch3_probability_reliability.pdf">下载 PDF</a><a download="" href="figures/a1_ch3_probability_reliability.svg">下载 SVG</a><a download="" href="data/a1_acacbd_bins_full.csv">图中数据 1</a><a download="" href="data/a1_22d631_calibration_all_bins.csv">图中数据 2</a></div></figure>
-<p id="paragraph-37"><a href="data/a1_e810e8_feature_subsets.csv">15种类别组合</a> · <a href="data/a1_15ad1c_paired_ablation_intervals.csv">逐项消融区间</a> · <a href="data/a1_e31e1e_paired_full_vs_part_regularized.json">四项对仅部件区间</a> · <a href="data/a1_changes_by_original_category.csv">场地入选变化</a> · <a href="data/a1_changed_reports_with_original_categories.csv">逐份变化</a></p>
+<p id="paragraph-39"><a href="data/a1_e810e8_feature_subsets.csv">15种类别组合</a> · <a href="data/a1_15ad1c_paired_ablation_intervals.csv">逐项消融区间</a> · <a href="data/a1_e31e1e_paired_full_vs_part_regularized.json">四项对仅部件区间</a> · <a href="data/a1_changes_by_original_category.csv">场地入选变化</a> · <a href="data/a1_changed_reports_with_original_categories.csv">逐份变化</a></p>
 <h3>物理输入的预处理与16种方案</h3>
-<p id="paragraph-38">物理输入比较固定L2逻辑回归C＝0.2，不重新扫描算法。管龄为事故年减安装年；管径须大于0，正常压力须非负，无效值记为缺失。管径和压力先作log(1＋数值)变换，再以训练中位数填补并标准化，每个数值输入另设缺失标记。类别采用训练期拟合的独热编码。每次拟合和合并重拟合都重新估计预处理，后期沿用早期所得规则。</p>
+<p id="paragraph-40">物理输入比较固定L2逻辑回归C＝0.2，不重新扫描算法。管龄为事故年减安装年；管径须大于0，正常压力须非负，无效值记为缺失。管径和压力先作log(1＋数值)变换，再以训练中位数填补并标准化，每个数值输入另设缺失标记。类别采用训练期拟合的独热编码。每次拟合和合并重拟合都重新估计预处理，后期沿用早期所得规则。</p>
 
 <div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表11．16种输入方案的早期选择与后期评价。相同337份拟合、244份验证；合并581份后评价112份，其中15份伤亡。除常数外均为L2回归C＝0.2，预处理只在相应训练报告拟合。两字段行是早期规则选定的原概率，后期指标不参与重新选择；最终校准另表报告。</caption>
 <thead>
@@ -375,11 +378,12 @@
 </tr>
 </tbody>
 </table></div>
-<p id="paragraph-39">常数为参照，不参与最简组合选择。选择先找早期验证AP最高项，再保留AP下降不超过0.03、Brier增加不超过0.01的候选，取采集字段最少者；同字段数依次按较低Brier、较高AP及固定名称顺序决定。容差为本研究的简化规则，不是现场伤害容忍标准或统计非劣界值。</p>
-<p id="paragraph-40">两字段原概率与三个物理量的后期AP差为−0.0115，95%区间为−0.0275至0.0008；与完整七字段的差为−0.0205，区间为−0.0985至0.0898。两字段原概率、三物理量、完整七字段在前23份分别识别7、8、7份伤亡，四类别为5.06份。23份为112份中约前五分之一的同量比较，不能与全库的前53份直接比较。<a href="data/p322_models_input_selection_early_only.csv">早期选择</a> · <a href="data/p322_models_input_later_metrics.csv">全部后期表现</a> · <a href="data/p322_models_selected_input_comparisons_intervals.csv">两字段配对比较</a></p>
+<p id="paragraph-41">常数为参照，不参与最简组合选择。选择先找早期验证AP最高项，再保留AP下降不超过0.03、Brier增加不超过0.01的候选，取采集字段最少者；同字段数依次按较低Brier、较高AP及固定名称顺序决定。容差为本研究的简化规则，不是现场伤害容忍标准或统计非劣界值。</p>
+<p id="paragraph-42">两字段原概率与三个物理量的后期AP差为−0.0115，95%区间为−0.0275至0.0008；与完整七字段的差为−0.0205，区间为−0.0985至0.0898。两字段原概率、三物理量、完整七字段在前23份分别识别7、8、7份伤亡，四类别为5.06份。23份为112份中约前五分之一的同量比较，不能与全库的前53份直接比较。<a href="data/p322_models_input_selection_early_only.csv">早期选择</a> · <a href="data/p322_models_input_later_metrics.csv">全部后期表现</a> · <a href="data/p322_models_selected_input_comparisons_intervals.csv">两字段配对比较</a></p>
+<p id="paragraph-43">完整七字段相对四类别的后期AP增加0.0344，95%区间为−0.1215至0.1979，按原结果表“四类别减七字段”的差值与端点反向计算。区间覆盖负值和正值，正文据此报告本批后期记录的观察增量及有限精度。<a href="data/p323_models_input_paired_intervals.csv">物理输入配对区间</a></p>
 <h3>条件关联与聚类表示的计算</h3>
-<p id="paragraph-41">条件关联使用完整七字段模型的581份早期报告，其中126份伤亡，来自133家运营商。每次按运营商有放回重抽样并重新拟合预处理与模型，共1,000次。连续量按原单位比较管龄增加10年、管径2至4英寸、压力20至40 psig；类别采用两类别系数之差。表中区间取重抽结果的2.5%和97.5%分位数。L2系数经过收缩，优势比描述已报告事故中的条件关联，不是换材或调压的干预效应。地区等级4对3的优势比为0.826，区间0.492至1.390。<a href="data/p322_models_conditional_associations.csv">完整条件关联</a></p>
-<p id="paragraph-42">聚类比较复用第二章的三组结构。早期验证只用299份最早完整记录重新拟合缩放和K-means，随机种子20261109，重复初始化50次；合并重拟合采用原521份早期完整记录的尺度和三组中心。全部621份标签与原记录一致。早期较小管径、较年轻组278份，较大管径、较高压力组192份，高龄、低压力组51份；后期分别44、49、7份。组名描述相对设施特征。</p>
+<p id="paragraph-44">条件关联使用完整七字段模型的581份早期报告，其中126份伤亡，来自133家运营商。每次按运营商有放回重抽样并重新拟合预处理与模型，共1,000次。连续量按原单位比较管龄增加10年、管径2至4英寸、压力20至40 psig；类别采用两类别系数之差。表中区间取重抽结果的2.5%和97.5%分位数。L2系数经过收缩，优势比描述已报告事故中的条件关联，不是换材或调压的干预效应。地区等级4对3的优势比为0.826，区间0.492至1.390。<a href="data/p322_models_conditional_associations.csv">完整条件关联</a></p>
+<p id="paragraph-45">聚类比较复用第二章的三组结构。早期验证只用299份最早完整记录重新拟合缩放和K-means，随机种子20261109，重复初始化50次；合并重拟合采用原521份早期完整记录的尺度和三组中心。全部621份标签与原记录一致。早期较小管径、较年轻组278份，较大管径、较高压力组192份，高龄、低压力组51份；后期分别44、49、7份。组名描述相对设施特征。</p>
 
 <div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表12．同一完整资料范围内的聚类与原始量比较。621份完整记录，早期299份拟合、222份验证、合并521份重拟合，后期100份中13份伤亡。组别沿用三组物理结构；公平比较采用共同样本。AP越高、Brier越低越好，不与112份主实验排行。</caption>
 <thead>
@@ -429,9 +433,9 @@
 </tr>
 </tbody>
 </table></div>
-<p id="paragraph-43">后期组别相对三个物理量的AP差为−0.0816，95%区间为−0.2508至0.0492；四类别加组别相对四类别加物理量为−0.0149，区间为−0.1726至0.1227。区间较宽，本轮没有采用组别替代连续输入。计算组别仍需要管龄、管径和压力三项测量。<a href="data/p322_models_cluster_metrics.csv">聚类成绩</a> · <a href="data/p322_models_cluster_paired_intervals.csv">配对区间</a> · <a href="data/p322_models_cluster_profile_checked.csv">三组画像与计数</a></p>
+<p id="paragraph-46">后期组别相对三个物理量的AP差为−0.0816，95%区间为−0.2508至0.0492；四类别加组别相对四类别加物理量为−0.0149，区间为−0.1726至0.1227。区间较宽，本轮没有采用组别替代连续输入。计算组别仍需要管龄、管径和压力三项测量。<a href="data/p322_models_cluster_metrics.csv">聚类成绩</a> · <a href="data/p322_models_cluster_paired_intervals.csv">配对区间</a> · <a href="data/p322_models_cluster_profile_checked.csv">三组画像与计数</a></p>
 <h3>钢塑开挖专题的共同与独立模型</h3>
-<p id="paragraph-44">开挖范围由最终填报原因限定，共391份，作为回顾性专题。共同模型使用材料、管径、正常压力；交互模型增加材料与管径、材料与压力两项交互；各材料独立模型使用相同管径和压力。均为固定L2逻辑回归C＝0.2，沿用已冻结的拟合结果。钢管合并早期155份中5份伤亡，后期41份中1份；塑料早期166份中32份，后期29份中3份。</p>
+<p id="paragraph-47">开挖范围由最终填报原因限定，共391份，作为回顾性专题。共同模型使用材料、管径、正常压力；交互模型增加材料与管径、材料与压力两项交互；各材料独立模型使用相同管径和压力。均为固定L2逻辑回归C＝0.2，沿用已冻结的拟合结果。钢管合并早期155份中5份伤亡，后期41份中1份；塑料早期166份中32份，后期29份中3份。</p>
 
 <div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表13．同一70份后期钢塑开挖报告的模型结构比较。391份钢塑开挖报告，早期321份学习，后期70份中4份伤亡。共同模型含材料、管径、正常压力；交互仅增加材料与两物理量的关系，独立模型分别按材料拟合。前14份为同量比较，三种结构均识别2份伤亡。</caption>
 <thead>
@@ -469,9 +473,9 @@
 </tr>
 </tbody>
 </table></div>
-<p id="paragraph-45">交互模型相对共同模型的AP差为0.0027，95%区间为−0.0054至0.0162；独立模型相对共同模型为−0.0022，区间为−0.0158至0.0089。独立模型的Brier比共同模型高0.00344，区间为0.00082至0.00672。三种结构前14份均识别2份伤亡，材料经验参照为1.45份。保留缺失后的后期钢管有41份、1份伤亡；只保留完整物理资料会剩36份且无伤亡，不能据此评价其伤亡识别能力。<a href="data/p322_models_steel_plastic_metrics.csv">结构比较指标</a> · <a href="data/p322_models_steel_plastic_intervals.csv">配对区间</a></p>
+<p id="paragraph-48">交互模型相对共同模型的AP差为0.0027，95%区间为−0.0054至0.0162；独立模型相对共同模型为−0.0022，区间为−0.0158至0.0089。独立模型的Brier比共同模型高0.00344，区间为0.00082至0.00672。三种结构前14份均识别2份伤亡，材料经验参照为1.45份。保留缺失后的后期钢管有41份、1份伤亡；只保留完整物理资料会剩36份且无伤亡，不能据此评价其伤亡识别能力。<a href="data/p322_models_steel_plastic_metrics.csv">结构比较指标</a> · <a href="data/p322_models_steel_plastic_intervals.csv">配对区间</a></p>
 <h3>两字段模型的校准、公式与实际错误</h3>
-<p id="paragraph-46">输入选定后，使用滚动时间窗产生校准训练分数。分别用截至2013、2015、2017、2019年的报告拟合，评价随后两年，每条分数均来自未使用该条结局的模型。最早两个窗用于拟合截距调整及sigmoid，再在244份早期验证报告中与原概率比较。sigmoid是原分数logit的一元L2逻辑回归，C＝1；只有斜率为正且验证Brier至少改善0.001时才采用。方法确定后，以四个滚动窗重估校准参数。</p>
+<p id="paragraph-49">输入选定后，使用滚动时间窗产生校准训练分数。分别用截至2013、2015、2017、2019年的报告拟合，评价随后两年，每条分数均来自未使用该条结局的模型。最早两个窗用于拟合截距调整及sigmoid，再在244份早期验证报告中与原概率比较。sigmoid是原分数logit的一元L2逻辑回归，C＝1；只有斜率为正且验证Brier至少改善0.001时才采用。方法确定后，以四个滚动窗重估校准参数。</p>
 
 <div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表14．两字段概率处理的早期选择与后期结果。三种处理使用相同两字段分数，早期244份选择校准，后期112份评价。sigmoid在早期达到Brier至少改善0.001的预设规则，之后冻结；后期实际伤亡比例13.4%，后期表现没有用于回改校准选择。</caption>
 <thead>
@@ -503,8 +507,8 @@
 </tr>
 </tbody>
 </table></div>
-<p id="paragraph-47">sigmoid相对原概率的后期Brier增加0.00245，运营商配对95%区间为−0.00133至0.00743，未显示稳定改善。校准为正斜率的单调变换，原概率与校准概率的AP均为0.3028，前23份均识别7份。实际后期伤亡比例为15／112＝13.4%。</p>
-<p id="paragraph-48">设管径d以英寸计、正常压力p以psig计，sigmoid(x)＝1／[1＋exp(−x)]，冻结公式如下。</p>
+<p id="paragraph-50">sigmoid相对原概率的后期Brier增加0.00245，运营商配对95%区间为−0.00133至0.00743，未显示稳定改善。校准为正斜率的单调变换，原概率与校准概率的AP均为0.3028，前23份均识别7份。实际后期伤亡比例为15／112＝13.4%。</p>
+<p id="paragraph-51">设管径d以英寸计、正常压力p以psig计，sigmoid(x)＝1／[1＋exp(−x)]，冻结公式如下。</p>
 <pre><code class="language-text">zd = (log(1+d) - 1.7662066594046535) / 0.573874227355626
 zp = (log(1+p) - 3.6568916650882035) / 1.2604217148490748
 eta = -1.5143388539745959 - 0.7182455436745352*zd - 0.5866972415142216*zp
@@ -512,14 +516,14 @@ eta = -1.5143388539745959 - 0.7182455436745352*zd - 0.5866972415142216*zp
 最终概率 = sigmoid(0.3256189758120481 + 1.3183921995906618*eta)
 标记条件 = 最终概率 &gt;= 0.29138102310974945
 </code></pre>
-<p id="paragraph-49">缺失时，变换后的管径和压力分别以训练中位数1.6094379124341003、3.871201010907891填补。训练中两项均无缺失，缺失标记系数为0；后期两份主管道阀缺管径，其分数依赖填补。</p>
-<p id="paragraph-50">分类门槛取早期验证F1最大值，同分时取较高门槛。原概率门槛为0.2860451313019893，最终概率门槛为0.29138102310974945。后期两套分数均产生正确识别8、误报21、漏判7、正确判为其余76份；召回率8／15＝53.3%，精确率8／29＝27.6%。漏判分别为钢4份、塑料2份、铁1份。</p>
-<p id="paragraph-51">计算示例20220016是在管径与压力均已观测的漏判报告中，按报告编号升序选取第一份。其管径12英寸、正常压力10 psig，原概率0.12697323042482372、最终概率0.09830265228463318，实际伤亡。管龄102年保留为复盘资料，该例不改变早期冻结的输入选择。<a href="data/final_model.json">最终系数与校准参数</a> · <a href="data/p322_models_selection_frozen.json">早期选择记录</a> · <a href="data/p322_models_raw_calibrated_later_all_records.csv">112份分数与分类</a> · <a href="data/p322_models_worked_case.csv">计算示例</a> · <a href="data/p322_models_worked_case_selection.json">示例选取规则</a></p>
+<p id="paragraph-52">缺失时，变换后的管径和压力分别以训练中位数1.6094379124341003、3.871201010907891填补。训练中两项均无缺失，缺失标记系数为0；后期两份主管道阀缺管径，其分数依赖填补。</p>
+<p id="paragraph-53">分类门槛取早期验证F1最大值，同分时取较高门槛。原概率门槛为0.2860451313019893，最终概率门槛为0.29138102310974945。后期两套分数均产生正确识别8、误报21、漏判7、正确判为其余76份；召回率8／15＝53.3%，精确率8／29＝27.6%。漏判分别为钢4份、塑料2份、铁1份。</p>
+<p id="paragraph-54">计算示例20220016是在管径与压力均已观测的漏判报告中，按报告编号升序选取第一份。其管径12英寸、正常压力10 psig，原概率0.12697323042482372、最终概率0.09830265228463318，实际伤亡。管龄102年保留为复盘资料，该例不改变早期冻结的输入选择。<a href="data/final_model.json">最终系数与校准参数</a> · <a href="data/p322_models_selection_frozen.json">早期选择记录</a> · <a href="data/p322_models_raw_calibrated_later_all_records.csv">112份分数与分类</a> · <a href="data/p322_models_worked_case.csv">计算示例</a> · <a href="data/p322_models_worked_case_selection.json">示例选取规则</a></p>
 <h3>差值区间、补充信息与复算入口</h3>
-<p id="paragraph-52">原四方法的AP差值按后期93家运营商配对重抽1,200次。物理输入及校准比较按后期53家、聚类比较按47家运营商配对重抽2,000次，随机种子20261111，各方法共享每次抽样，本次均无单类抽样跳过。钢塑专题按37家运营商重抽2,000次，其中27次因只含单一结局跳过，保留1,973次。预测比较均固定已训练分数，区间不含训练、选参及模型选择的不确定性；多项区间未作多重比较校正，作探索性说明。条件关联的1,000次重抽则每次重新拟合，二者分开解释。</p>
-<p id="paragraph-53">月份保留为铁管自然因素的复盘线索，本轮沿用其未形成稳定额外伤亡判别收益的决定。主成分用于描述输入压缩，计算时仍需原始物理量，本轮主评分不采用主成分。最终事故归因与完整伤亡结果用于确定研究范围和评价标签；当时已确认的活动、点燃、人员位置及措施执行，需要各自的时间和来源记录。<a href="data/p322_models_information_decisions.csv">完整信息取舍</a></p>
-<p id="paragraph-54"><a href="data/p322_models_method.md">分析方法</a> · <a href="data/p322_reproducibility.zip">计算复核包 ZIP</a> · <a href="data/p322_reproducibility_README.md">运行说明</a> · <a href="data/p322_models_verification.json">预测复算记录</a></p>
-<p id="paragraph-55">复核包保存计算代码、分析表、参数和逐份预测，解压后可重新计算50组保存分数。完整重新拟合所需的官方原始附件及取得方式见运行说明。</p>
+<p id="paragraph-55">原四方法的AP差值按后期93家运营商配对重抽1,200次。物理输入及校准比较按后期53家、聚类比较按47家运营商配对重抽2,000次，随机种子20261111，各方法共享每次抽样，本次均无单类抽样跳过。钢塑专题按37家运营商重抽2,000次，其中27次因只含单一结局跳过，保留1,973次。预测比较均固定已训练分数，区间不含训练、选参及模型选择的不确定性；多项区间未作多重比较校正，作探索性说明。条件关联的1,000次重抽则每次重新拟合，二者分开解释。</p>
+<p id="paragraph-56">月份保留为铁管自然因素的复盘线索，本轮沿用其未形成稳定额外伤亡判别收益的决定。主成分用于描述输入压缩，计算时仍需原始物理量，本轮主评分不采用主成分。最终事故归因与完整伤亡结果用于确定研究范围和评价标签；当时已确认的活动、点燃、人员位置及措施执行，需要各自的时间和来源记录。<a href="data/p322_models_information_decisions.csv">完整信息取舍</a></p>
+<p id="paragraph-57"><a href="data/p322_models_method.md">分析方法</a> · <a href="data/p322_reproducibility.zip">计算复核包 ZIP</a> · <a href="data/p322_reproducibility_README.md">运行说明</a> · <a href="data/p322_models_verification.json">预测复算记录</a></p>
+<p id="paragraph-58">复核包保存计算代码、分析表、参数和逐份预测，解压后可重新计算50组保存分数。完整重新拟合所需的官方原始附件及取得方式见运行说明。</p>
 </details></article>
 <nav class="continue-reading" aria-label="顺序阅读"><a href="chapter2.html">← 回到第二章的因素研究</a></nav>
 <aside class="review-guide"><p>选中文字，或点击章节、图表旁的“批注”，即可填写意见。确认后可通过自己的 GitHub 账号提交。</p><button id="general-review" class="text-button js-only" type="button">写一条批注</button><noscript><p class="noscript">JavaScript 未启用时显示 Matplotlib 静态图。悬停与批注需要 JavaScript。</p></noscript></aside>
