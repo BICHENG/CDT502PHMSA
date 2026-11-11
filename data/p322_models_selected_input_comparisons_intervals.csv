@@ -1,0 +1,19 @@
+﻿left,right,metric,difference_left_minus_right,ci_lower,ci_upper,valid_draws,single_class_skipped,operators,scope
+selected_raw,physical3,AP,-0.011462088805253845,-0.027481012662840008,0.0008144510643620302,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_raw,physical3,Brier,0.000177973494415673,-0.0007832967049206177,0.001174716001413069,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_raw,physical3,budget20_recall,-0.06666666666666665,-0.15384615384615385,0.0,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_raw,categorical4,AP,0.013831332441999689,-0.1883641306895423,0.25607091664390763,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_raw,categorical4,Brier,-0.006989438075551607,-0.023039150719203483,0.011045920217892087,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_raw,categorical4,budget20_recall,0.1294117647058824,-0.23533281733746128,0.48551242236024844,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_raw,full7,AP,-0.020527143241783175,-0.09853923600418155,0.08977715780087356,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_raw,full7,Brier,-0.0007173662969161693,-0.007989845863871234,0.00691604996689095,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_raw,full7,budget20_recall,0.0,-0.16666666666666669,0.23076923076923078,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_sigmoid,physical3,AP,-0.011462088805253845,-0.027481012662840008,0.0008144510643620302,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_sigmoid,physical3,Brier,0.002624005574085639,-0.0009736039644826847,0.007442092930059155,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_sigmoid,physical3,budget20_recall,-0.06666666666666665,-0.15384615384615385,0.0,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_sigmoid,categorical4,AP,0.013831332441999689,-0.1883641306895423,0.25607091664390763,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_sigmoid,categorical4,Brier,-0.004543405995881641,-0.023965781886982764,0.01755806940580702,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_sigmoid,categorical4,budget20_recall,0.1294117647058824,-0.23533281733746128,0.48551242236024844,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_sigmoid,full7,AP,-0.020527143241783175,-0.09853923600418155,0.08977715780087356,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_sigmoid,full7,Brier,0.0017286657827537966,-0.006386677972520014,0.011761712640719965,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals
+selected_sigmoid,full7,budget20_recall,0.0,-0.16666666666666669,0.23076923076923078,2000,0,53,fixed fitted predictions; operator-paired exploratory percentile intervals

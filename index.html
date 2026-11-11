@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="zh-CN" data-version="2026-11-11 · 89c21d2ea6f5 · 5588da64" data-page="index.html">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="color-scheme" content="light"/><title>管网背景与基础比较 · CDT502</title><meta name="description" content="介绍美国配气管网与数据来源，比较伤亡比例、时期变化及按管网规模归一化后的事故频率。"/><link rel="stylesheet" href="assets/site.css"/><script src="assets/echarts-6.1.0.min.js" defer></script><script src="data/chart_data.js" defer></script><script src="assets/charts.js" defer></script><script src="data/evidence_charts.js" defer></script><script src="assets/evidence-charts.js" defer></script><script src="data/chapter2/chart_data.js" defer></script><script src="assets/chapter2-charts.js" defer></script><script src="assets/usa-geo.js" defer></script><script src="assets/plotly.min.js" defer></script><script src="assets/plotly-geo-assets.js" defer></script><script src="data/material_map_data.js" defer></script><script src="data/material_map_frames.js" defer></script><script src="data/material_map_plotly.js" defer></script><script src="assets/material-map.js" defer></script><script src="data/material_cause_data.js" defer></script><script src="assets/material-cause.js" defer></script><script src="data/excavation_visual_data.js" defer></script><script src="assets/excavation-charts.js" defer></script><script src="assets/cluster-compare.js" defer></script><script src="assets/cumulative.js" defer></script><script src="data/research_revision.js" defer></script><script src="assets/research-revision.js" defer></script><script src="assets/site.js" defer></script></head>
+<html lang="zh-CN" data-version="2026-11-11 · 89c21d2ea6f5 · 839a796b" data-page="index.html">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="color-scheme" content="light"/><title>管网背景与基础比较 · CDT502</title><meta name="description" content="介绍美国配气管网与数据来源，比较伤亡比例、时期变化及按管网规模归一化后的事故频率。"/><link rel="stylesheet" href="assets/site.css"/><script src="assets/echarts-6.1.0.min.js" defer></script><script src="data/chart_data.js" defer></script><script src="assets/charts.js" defer></script><script src="data/evidence_charts.js" defer></script><script src="assets/evidence-charts.js" defer></script><script src="data/chapter2/chart_data.js" defer></script><script src="assets/chapter2-charts.js" defer></script><script src="assets/usa-geo.js" defer></script><script src="assets/plotly.min.js" defer></script><script src="assets/plotly-geo-assets.js" defer></script><script src="data/material_net_map_data.js" defer></script><script src="assets/integrated-material-map.js" defer></script><script src="data/material_cause_data.js" defer></script><script src="assets/material-cause.js" defer></script><script src="data/excavation_visual_data.js" defer></script><script src="assets/excavation-charts.js" defer></script><script src="assets/cluster-compare.js" defer></script><script src="assets/cumulative.js" defer></script><script src="data/research_revision.js" defer></script><script src="assets/research-revision.js" defer></script><script src="assets/site.js" defer></script></head>
 <body><a class="skip-link" href="#main">跳到正文</a><header class="site-header"><div class="header-inner"><a class="brand" href="index.html">CDT502 · PHMSA</a><div class="header-actions"><button id="print-page" type="button" class="text-button js-only">打印 / PDF</button></div></div></header>
 <main class="page" id="main"><nav class="chapter-switch" aria-label="研究章节"><a href="index.html" aria-current="page">第一章 · 数据：管网背景与基础比较</a><a href="chapter2.html">第二章 · 聚类和统计：事故背后的因素研究</a><a href="supplement.html">第三章 · 机器学习：形成判别工具和预测工具</a></nav><header class="masthead"><p class="eyebrow">第一章 · 数据：管网背景与基础比较</p><h1>管网背景与基础比较</h1><div class="meta"><span>研究对象：美国已报告的燃气配气事故</span><span>管网趋势：1990–2024 年；事故报告：2010–2026 年</span></div></header><nav class="chapter-nav" aria-label="章节导航"><a href="#overview">研究背景与目的</a><a href="#section-2">数据来源与清洗</a><a href="#section-3">管网的材料变迁与地区分布</a><a href="#section-4">部件、地点与材料的伤亡差异</a><a href="#section-5">近年来的部件与材料比较</a><a href="#section-6">管网规模与事故频率</a><a href="#methods">资料与计算</a></nav>
 <article><section class="article-section" id="overview">
 <h2>1.1 研究背景与目的</h2>
 <p id="paragraph-1">美国的燃气配气系统向家庭、商户等用户供气。主管道沿道路和街区输送燃气，进户管从主管道分支，连接用户。两类管道处在不同的供气环节，图 1说明它们与道路、用户的关系。比较事故后果时，需要同时考虑涉事部件及其所在场地。</p>
 <figure class="figure" data-review="true" id="figure-context"><div class="figure-top"><span class="figure-kicker">图 1</span><h3>主管道沿街区供气，进户管连接用户</h3></div><img alt="地下主管道沿道路延伸，进户管从主管道转向房屋用户。" src="figures/a1_ch1_context.png"/><figcaption>主管道沿道路延伸，进户管从主管道分支连接用户。箭头表示供气方向。示意图用于区分部件在配气系统中的位置，长度、管径和埋深未按比例绘制。 <a href="https://www.phmsa.dot.gov/data-and-statistics/pipeline-replacement/cast-and-wrought-iron-inventory">PHMSA管网说明</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch1_context.png">下载 PNG</a><a download="" href="figures/a1_ch1_context.pdf">下载 PDF</a></div></figure>
-<p id="paragraph-2">我们希望帮助燃气企业结合管网特征、维修历史和事故经验，明确不同设施及作业情境中的检查与人员保护重点。本章结合美国已报告的配气事故与年度管网资料，比较不同部件、地点和材料所涉及事故的人员后果，核对近年表现，并按管道长度和观察年数比较事故频率。第二章结合受伤人员、事故经过和设施条件解释差异；第三章检验基本事故线索能形成怎样的伤亡概率与分类判断。</p>
+<p id="paragraph-2">我们希望帮助燃气企业结合管网特征、维修历史和事故经验，明确不同设施及作业情境中的检查与人员保护重点。本章交代资料、管网背景与基础差异；第二章结合受伤人员、事故经过和设施条件，提出有依据的因素判断；第三章检验这些因素的关联与预测价值，确定企业判断人员风险时值得收集哪些信息。</p>
 </section><section class="article-section" id="section-2"><h2>1.2 数据来源与清洗</h2>
-<p id="paragraph-3">事故报告说明发生了什么、是否有人伤亡；年度管网资料说明每种材料每年有多长的主管道在用。材料的在用长度不同，报告份数需要结合管网规模理解，才能比较同样长度、同样观察时间内记录到多少事故。两类资料均来自美国管道与危险品安全管理局（PHMSA）的公开<a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">事故附件</a>和<a href="https://datahub.transportation.gov/api/views/aemm-7pyq/files/f93e30a2-bf0b-4ec3-9394-f5e4a47f4fa6?content=true">年度管网附件</a>。</p>
+<p id="paragraph-3">事故报告说明发生了什么、是否有人伤亡；年度管网资料说明每种材料每年有多长的主管道在用。前者用于比较事故后果，后者用于检查报告数量的差别与管网规模有何关系。两类资料均来自美国管道与危险品安全管理局（PHMSA）的公开<a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">事故附件</a>和<a href="https://datahub.transportation.gov/api/views/aemm-7pyq/files/f93e30a2-bf0b-4ec3-9394-f5e4a47f4fa6?content=true">年度管网附件</a>。</p>
 <p id="paragraph-4">一行事故记录是一份报告。依据<a href="https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2023-12/Current_GD_Incident_Instructions_PHMSA%20F%207100.1_2023-09%20and%20Beyond.pdf">PHMSA填报定义</a>，本研究中的伤亡报告指至少一人死亡，或因伤入院并至少住一晚的报告；多人伤亡仍计一份。年度记录则按运营商、填报地区和年份列出在用主管道长度。</p>
-<div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表1．事故报告与年度管网资料的用途、范围和采用数量。事故报告以份为单位；每条年度记录对应一家运营商在一个填报地区、一个年份的管网情况。后三行年度资料按用途选取，记录范围有重叠。来源：PHMSA原始资料及本研究计算。</caption>
+<div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表1．事故报告与年度管网资料的用途、范围和采用数量。不同用途的年度记录可重叠。来源：PHMSA资料及本研究整理。</caption>
 <thead>
 <tr>
 <th>分析用途</th>
@@ -31,9 +31,9 @@
 <td>去重并保留非负里程后，共52,083条</td>
 </tr>
 <tr>
-<td>绘制材料州级分布</td>
-<td>2004至2024年，州信息可对应的年度记录</td>
-<td>31,022条，是长期资料的子集</td>
+<td>比较材料州级分布与变化</td>
+<td>2010与2024年，州信息可对应的年度记录</td>
+<td>两年共2,872条，汇总为52个州或地区、三种材料的156组端点对照</td>
 </tr>
 <tr>
 <td>按管网规模比较事故频率</td>
@@ -43,7 +43,7 @@
 </tbody>
 </table></div>
 <p id="paragraph-5">计算伤亡比例需要先确认每份报告的人员后果，以及记录是否重复。人数空白、材料未知和两种日期各有不同含义，下表分别说明处理理由、办法及变化。</p>
-<div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表2．清洗发现的问题、处理理由与前后变化。事故资料清洗后仍为1,550份、伤亡369份；仅排除年度资料中两条负里程记录。人员空白在条件支持时用于核对求和，原始空白保留。 来源：PHMSA原始资料及本研究计算。</caption>
+<div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表2．清洗发现的问题、处理理由与前后变化。事故资料保留1,550份，其中369份伤亡；年度记录排除负里程。来源：PHMSA资料与逐份核对。</caption>
 <thead>
 <tr>
 <th>发现的问题</th>
@@ -84,32 +84,31 @@
 <td>文本格式统一，各类别报告计数不变</td>
 </tr>
 <tr>
-<td>两条年报的塑料里程为−0.5英里</td>
+<td>2010至2024年有两条年报的塑料里程为−0.5英里</td>
 <td>负长度没有实际含义，会低估用于比较的管网长度</td>
 <td>排除这两条年度记录，不将负数改成零</td>
-<td>年报由22,035条减为22,033条，事故报告仍为1,550份</td>
+<td>该时期年报由22,035条减为22,033条，事故报告仍为1,550份</td>
 </tr>
 </tbody>
 </table></div>
-<p id="paragraph-6">逐类<a href="data/before_after_groups.csv">清洗前后计数</a>核对显示，清洗前后的事故报告数相同；排除的两条负里程均属于年度资料。事故日期覆盖至2026年2月，年度里程覆盖至2024年，分期比较和里程比较分别采用相应时期的记录。</p>
+<p id="paragraph-6">逐类<a href="data/p322_source_audit_before_after_groups.csv">清洗前后计数</a>核对显示，清洗前后的事故报告数相同；排除的两条负里程均属于年度资料。事故日期覆盖至2026年2月，年度里程覆盖至2024年，分期比较和里程比较分别采用相应时期的记录。</p>
 </section><section class="article-section" id="section-3"><h2>1.3 管网的材料变迁与地区分布</h2>
-<p id="paragraph-7">铁、钢和塑料的在用长度相差很大，而且差距随时间改变。因此，比较材料的事故表现，需要同时考虑报告份数和相应的在用里程。1990至2024年的年报显示，塑料在用长度增加，铁管总体减少，钢与塑料构成主管网的主体（图 2）。铁管沿用原表“铸铁／锻铁”类别，与球墨铸铁分列。</p>
+<p id="paragraph-7">比较材料的事故表现，首先需要了解各类管网有多大规模、分布在哪里。1990至2024年的年报显示，塑料在用长度增加，铁管总体减少，钢与塑料构成主管网的主体（图 2）。铁管沿用原表“铸铁／锻铁”类别，与球墨铸铁分列。</p>
 <figure class="figure" data-review="true" id="figure-network_history"><div class="figure-top"><span class="figure-kicker">图 2</span><h3>塑料在用长度增加，铁管规模总体缩小</h3></div><img alt="塑料层总体增厚，铁管层变薄；钢为灰色拉丝表面，塑料为平滑暖黄色高光表面。" src="figures/a1_ch1_network_history_surfaces.png"/><figcaption>1990至2024年年末在用主管道长度。三层厚度分别表示铸铁／锻铁、钢和塑料的实际里程，采用52,083条去重且里程非负的年度记录；虚线标出后文事故报告率比较的起点2010年。纹理用于辨认材料类别，实际设施外观以现场记录为准。 <a href="https://datahub.transportation.gov/api/views/aemm-7pyq/files/f93e30a2-bf0b-4ec3-9394-f5e4a47f4fa6?content=true">PHMSA年度管网资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch1_network_history_surfaces.png">下载 PNG</a><a download="" href="figures/a1_ch1_network_history_surfaces.pdf">下载 PDF</a><a download="" href="figures/a1_ch1_network_history_surfaces.svg">下载 SVG</a><a download="" href="data/a1_b45198_history_values_and_boundaries.csv">图中数据</a></div></figure>
-<p id="paragraph-8">塑料扩展与铁、钢缩减同时发生，三类主管道的合计规模仍在扩大。以2010年为共同起点，比较至2024年的全国净变化，塑料增加的长度超过铁和钢减少的总长度（图 3）。</p>
-<figure class="figure" data-review="true" id="figure-material_net_change"><div class="figure-top"><span class="figure-kicker">图 3</span><h3>铁管减少与塑料增加同时出现，主管网总规模仍在扩大</h3></div><img alt="全国塑料增加超过铁钢减少；新泽西、纽约、马萨诸塞、宾夕法尼亚和密歇根五州均为铁钢减少、塑料增加。" src="figures/a1_ch1_material_net_change.png"/><figcaption>左图为52个州或地区三种材料的全国年末在用长度，相对2010年的净变化；每个折点均对应实际年报。右图在同一2010至2024年范围内，分别显示2024年现存铁管里程最多五州的三种材料净变化。向左为减少、向右为增加。全国铁管减少约2.00万英里、钢减少5.01万英里、塑料增加21.90万英里，三类合计净增14.89万英里。35个铁管减少的地区均记录塑料增加。净变化合并新增和退役；逐段换材须由设施更换记录确认。 <a href="https://datahub.transportation.gov/api/views/aemm-7pyq/files/f93e30a2-bf0b-4ec3-9394-f5e4a47f4fa6?content=true">PHMSA年度管网资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch1_material_net_change.png">下载 PNG</a><a download="" href="figures/a1_ch1_material_net_change.pdf">下载 PDF</a><a download="" href="figures/a1_ch1_material_net_change.svg">下载 SVG</a><a download="" href="data/a1_aad6dc_national_net_changes_2010_2024.csv">图中数据 1</a><a download="" href="data/a1_2ff10c_state_net_changes_2010_2024.csv">图中数据 2</a><a download="" href="data/a1_cfb7f0_top_five_state_net_changes.csv">图中数据 3</a></div></figure>
-<p id="paragraph-9">在2024年现存铁管最多的五州，2010至2024年都记录了铁、钢减少和塑料增加。全部52个州或地区的核算中，35个铁管减少的地区都记录了塑料增加。年报中的净变化合并了新增与退役；确认某段铁管是否改为塑料，需要对应的设施更换记录。</p>
-<p id="paragraph-10">铁管的在用规模较小，现存管网还集中于少数州，钢与塑料的分布则广得多。2024年，约三分之二的铁管里程位于新泽西、纽约、马萨诸塞、宾夕法尼亚和密歇根五州。图 4按实际年末记录同步播放三种材料的州级分布。企业参考全国铁管事故经验时，应先核对当地是否仍有铁管及其维修记录。</p>
-<figure class="figure" data-review="true" id="figure-material_map"><div class="figure-top"><span class="figure-kicker">图 4</span><h3>铁管仍集中在少数州，钢与塑料分布广泛</h3></div><div id="material-map"></div><figcaption>三幅地图同步显示2004至2024年21个实际年末的在用主管道里程，覆盖50州、华盛顿特区及波多黎各；三种材料和各年共用里程色阶。悬停查看该州里程及材料份额。较深色表示里程较多，年份之间不插值。2024年铁管里程的67.3%集中在新泽西、纽约、马萨诸塞、宾夕法尼亚和密歇根五州。阿拉斯加、夏威夷和波多黎各移位显示。 <a href="https://datahub.transportation.gov/api/views/aemm-7pyq/files/f93e30a2-bf0b-4ec3-9394-f5e4a47f4fa6?content=true">PHMSA年度管网资料</a></figcaption><div class="figure-actions"><a download="" href="data/a1_7e86bf_material_map.csv">图中数据</a></div></figure>
+<p id="paragraph-8">2010至2024年，塑料主管道增加的在用长度超过铁、钢减少的总长度，三类主管道合计净增14.89万英里。图 3显示各州的材料净变化，同图可查2024年现存规模。塑料在全部52个州或地区增加，铁管在35个地区减少，钢管在45个地区减少。</p>
+<figure class="figure" data-review="true" id="figure-material_map"><div class="figure-top"><span class="figure-kicker">图 3</span><h3>各州铁、钢、塑料主管道的分布与变化，2010至2024年</h3></div><div id="material-map"></div><figcaption>三幅地图同时显示2010至2024年的年末在用主管道净变化，单位为英里。蓝色表示减少，棕色表示增加，三种材料共用同一分档。各栏列出2024年全国在用里程；悬停或点击可查询同州三材料的两年存量与净变化。范围含50州、华盛顿特区和波多黎各；阿拉斯加、夏威夷和波多黎各移位显示。净变化包含新增、退役及申报修订，逐段换材需要设施记录。 <a href="https://datahub.transportation.gov/api/views/aemm-7pyq/files/f93e30a2-bf0b-4ec3-9394-f5e4a47f4fa6?content=true">PHMSA年度管网资料</a></figcaption><div class="figure-actions"><a download="" href="data/material_net_map.csv">图中数据</a></div></figure>
+<p id="paragraph-9">净变化是两个年末在用长度的差值，可能包含新增、退役以及申报修订或类别调整。年报没有逐段连接退役设施与新增设施，因此铺设规模的变化不能当作逐段替换记录。2024年现存铁管的67.3%位于新泽西、纽约、马萨诸塞、宾夕法尼亚和密歇根五州，五州变化明细列于章末附录。企业参考全国铁管事故经验时，应先核对当地仍在使用的材料及其维修记录。</p>
 </section><section class="article-section" id="section-4"><h2>1.4 部件、地点与材料的伤亡差异</h2>
-<p id="paragraph-11">企业安排人员保护，既要关注伤亡报告的数量，也要比较同类事故中伴随伤亡的比例。虽然主管道的伤亡报告更多，但进户管事故伴随伤亡的比例更高；私人地点的比例也高于公共地点（图 5）。流带表示报告份数，类别旁的等长条以该类全部报告为100%，用于比较组内伤亡比例。</p>
-<figure class="figure" data-review="true" id="figure-joint"><div class="figure-top"><span class="figure-kicker">图 5</span><h3>进户管与私人地点的组内伤亡比例较高</h3></div><p aria-live="polite" id="joint-status"></p><div aria-label="1550份事故报告的部件、伤亡结果与地点构成" id="joint-chart" role="img" style="height:470px"></div><figcaption>流带宽度表示报告份数；深红为伤亡报告，浅青为其余报告。类别旁每条等长条代表该类全部报告的100%，深红长度直接显示组内伤亡比例。中间共369份伤亡报告、1,181份其余报告，左右分别按部件和地点汇总，不能据流带追踪部件与地点的实际组合。全体1,550份美国配气事故报告，发生于2010至2026年；伤亡指至少一人死亡或因伤住院至少一晚。其余8类部件完整计数仍在来源表中。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><button class="text-button" id="joint-download" type="button">导出当前图 PNG</button><a download="" href="data/chart_data.json">下载计数</a><a download="" href="data/a1_051fed_sankey_marginal_counts.csv">图中数据</a><a download="" href="figures/a1_ch1_joint_marginals.png">静态图 PNG</a><a download="" href="figures/a1_ch1_joint_marginals.pdf">静态图 PDF</a><a download="" href="figures/a1_ch1_joint_marginals.svg">静态图 SVG</a></div></figure>
-<p id="paragraph-13">部件与地点共同描述一宗事故，分别统计的伤亡比例还需要结合两者的实际组合理解。同一报告中的部件与地点记录显示，约三分之二的进户管报告来自私人地点，主管道约为八分之一（图 6）。反过来看全部私人地点报告，最多的部件是室外表／调压器组，进户管约占四分之一。进户管的地点组成与私人地点的部件组成，分别按全部进户管报告和全部私人地点报告计算。</p>
-<figure class="figure" data-review="true" id="figure-joint_composition"><div class="figure-top"><span class="figure-kicker">图 6</span><h3>进户管多见于私人地点，材料组成还随部件改变</h3></div><img alt="进户管报告67.2%在私人地点；整体和同部件内公共私人地点的塑料构成方向不同。" src="figures/a1_ch1_joint_composition.png"/><figcaption>同一批事故报告中的部件、地点和材料组成。a：上方分别以726份主管道报告、241份进户管报告为100%，比较私人地点的份额；下方以638份私人地点报告为100%，列出数量最多的两类部件。室外表组指室外表／调压器，其他地点包括公共地点、通行权／地役权区域和运营商控制地点。b：分别在全部部件、主管道、进户管范围内比较公共和私人地点的材料组成，各条以相应地点、部件的全部报告为100%；报告数依次为470／638、363／91、45／162。其余材料包括球墨铸铁、铜、其他和未知。图中比例描述事故报告中的材料组成；当地在用管网的材料组成由年度里程资料统计。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch1_joint_composition.png">下载 PNG</a><a download="" href="figures/a1_ch1_joint_composition.pdf">下载 PDF</a><a download="" href="figures/a1_ch1_joint_composition.svg">下载 SVG</a><a download="" href="data/a1_b0b8da_composition_figure_data.csv">图中数据 1</a><a download="" href="data/a1_7f048e_composition_figure_raw.csv">图中数据 2</a><a download="" href="data/a1_7d054b_composition_material_mapping.csv">图中数据 3</a><a download="" href="data/a1_962d42_part_location_raw.csv">图中数据 4</a><a download="" href="data/a1_d95996_part_location_material_raw.csv">图中数据 5</a></div></figure>
+<p id="paragraph-10">企业安排人员保护，既要关注伤亡报告的数量，也要比较同类事故中伴随伤亡的比例。虽然主管道的伤亡报告更多，但进户管事故伴随伤亡的比例更高；私人地点的比例也高于公共地点（图 4）。流带表示报告份数，类别旁的等长条以该类全部报告为100%，用于比较组内伤亡比例。</p>
+<figure class="figure" data-review="true" id="figure-joint"><div class="figure-top"><span class="figure-kicker">图 4</span><h3>进户管与私人地点的组内伤亡比例较高</h3></div><p aria-live="polite" id="joint-status"></p><div aria-label="1550份事故报告的部件、伤亡结果与地点构成" id="joint-chart" role="img" style="height:470px"></div><figcaption>流带宽度表示报告份数；深红为伤亡报告，浅青为其余报告。类别旁每条等长条代表该类全部报告的100%，深红长度直接显示组内伤亡比例。中间共369份伤亡报告、1,181份其余报告，左右分别按部件和地点汇总，不能据流带追踪部件与地点的实际组合。全体1,550份美国配气事故报告，发生于2010至2026年；伤亡指至少一人死亡或因伤住院至少一晚。其余8类部件完整计数仍在来源表中。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><button class="text-button" id="joint-download" type="button">导出当前图 PNG</button><a download="" href="data/chart_data.json">下载计数</a><a download="" href="data/a1_051fed_sankey_marginal_counts.csv">图中数据</a><a download="" href="figures/a1_ch1_joint_marginals.png">静态图 PNG</a><a download="" href="figures/a1_ch1_joint_marginals.pdf">静态图 PDF</a><a download="" href="figures/a1_ch1_joint_marginals.svg">静态图 SVG</a></div></figure>
+<p id="paragraph-12">按部件比较历史伤亡比例，为判断同类事故提供了经验起点。第三章仅用早期资料形成部件参照，再检验增加其他信息能否改善伤亡判断。</p>
+<p id="paragraph-13">同一部件分布在不同场地，部件与地点的伤亡差异需要结合实际组合理解。约三分之二的进户管报告来自私人地点，主管道约为八分之一（图 5）。在全部私人地点报告中，最多的部件是室外表／调压器组，进户管约占四分之一。进户管的地点组成按进户管报告计算，私人地点的部件组成按私人地点报告计算。</p>
+<figure class="figure" data-review="true" id="figure-joint_composition"><div class="figure-top"><span class="figure-kicker">图 5</span><h3>进户管多见于私人地点，材料组成还随部件改变</h3></div><img alt="进户管报告67.2%在私人地点；整体和同部件内公共私人地点的塑料构成方向不同。" src="figures/a1_ch1_joint_composition.png"/><figcaption>同一批事故报告中的部件、地点和材料组成。a：上方分别以726份主管道报告、241份进户管报告为100%，比较私人地点的份额；下方以638份私人地点报告为100%，列出数量最多的两类部件。室外表组指室外表／调压器，其他地点包括公共地点、通行权／地役权区域和运营商控制地点。b：分别在全部部件、主管道、进户管范围内比较公共和私人地点的材料组成，各条以相应地点、部件的全部报告为100%；报告数依次为470／638、363／91、45／162。其余材料包括球墨铸铁、铜、其他和未知。图中比例描述事故报告中的材料组成；当地在用管网的材料组成由年度里程资料统计。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch1_joint_composition.png">下载 PNG</a><a download="" href="figures/a1_ch1_joint_composition.pdf">下载 PDF</a><a download="" href="figures/a1_ch1_joint_composition.svg">下载 SVG</a><a download="" href="data/a1_b0b8da_composition_figure_data.csv">图中数据 1</a><a download="" href="data/a1_7f048e_composition_figure_raw.csv">图中数据 2</a><a download="" href="data/a1_7d054b_composition_material_mapping.csv">图中数据 3</a><a download="" href="data/a1_962d42_part_location_raw.csv">图中数据 4</a><a download="" href="data/a1_d95996_part_location_material_raw.csv">图中数据 5</a></div></figure>
 <p id="paragraph-14">地点之间的材料比较也受部件构成影响。全部部件合计时，公共地点报告中的塑料占比较高；分别限定主管道和进户管后，私人地点的塑料占比均较高。因此，解释地点与材料的关系，应在相同部件内复查。这里的公共、私人指报告中的场地类别，私人地点不等于住宅。</p>
-<p id="paragraph-15">设施检查还需关注不同材料的事故后果。虽然钢的报告数最多，但铁管的观察伤亡比例较高（图 7）。铁管报告较少，图中的估计区间也较宽，说明该比例的估计较不精确。</p>
-<figure class="figure" data-chart-kind="material" data-chart-mode="bubble" data-review="true" id="figure-material"><div class="figure-top"><span class="figure-kicker">图 7</span><h3>铁管事故中的伤亡比例较高，报告较少的材料估计范围较宽</h3></div><div aria-label="钢，165 份伤亡报告／735 份全部报告，22.4%；塑料，131 份伤亡报告／493 份全部报告，26.6%；铸铁／锻铁，22 份伤亡报告／60 份全部报告，36.7%；球墨铸铁，0 份伤亡报告／4 份全部报告，0.0%；铜，2 份伤亡报告／13 份全部报告，15.4%；其他材料，39 份伤亡报告／201 份全部报告，19.4%；材料未知，10 份伤亡报告／44 份全部报告，22.7%" class="echart" data-key="material" role="img" style="height:476px"></div><img alt="钢，165 份伤亡报告／735 份全部报告，22.4%；塑料，131 份伤亡报告／493 份全部报告，26.6%；铸铁／锻铁，22 份伤亡报告／60 份全部报告，36.7%；球墨铸铁，0 份伤亡报告／4 份全部报告，0.0%；铜，2 份伤亡报告／13 份全部报告，15.4%；其他材料，39 份伤亡报告／201 份全部报告，19.4%；材料未知，10 份伤亡报告／44 份全部报告，22.7%" class="chart-fallback" src="figures/material_A.png"/><figcaption>全部1,550份事故报告，7类材料完整保留。左侧气泡面积表示各类报告总数；右侧圆点表示该类报告中的伤亡比例，横线表示比例估计的精度。铁管指铸铁／锻铁，球墨铸铁沿用原始分类另列。铁管有22份伤亡报告、共60份，钢为165／735，塑料为131／493；下表直接比较材料间的比例差。区间采用Wilson方法，按独立报告近似计算。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><button class="text-button chart-download" data-download-chart="material" hidden="" type="button">导出当前图 PNG</button><a download="" href="figures/material_A.pdf">下载数量与区间图 PDF</a><a download="" href="data/summary.csv">下载数据 CSV</a><a download="" href="data/a1_6e7ae4_summary.csv">图中数据 1</a><a download="" href="data/a1_23af84_material_contrasts.csv">图中数据 2</a><a download="" href="figures/a1_ch1_material.png">静态图 PNG</a><a download="" href="figures/a1_ch1_material.pdf">静态图 PDF</a></div></figure>
+<p id="paragraph-15">设施检查还需关注不同材料的事故后果。虽然钢的报告数最多，但铁管的观察伤亡比例较高（图 6）。铁管报告较少，图中的估计区间也较宽，说明该比例的估计较不精确。</p>
+<figure class="figure" data-chart-kind="material" data-chart-mode="bubble" data-review="true" id="figure-material"><div class="figure-top"><span class="figure-kicker">图 6</span><h3>铁管事故中的伤亡比例较高，报告较少的材料估计范围较宽</h3></div><div aria-label="钢，165 份伤亡报告／735 份全部报告，22.4%；塑料，131 份伤亡报告／493 份全部报告，26.6%；铸铁／锻铁，22 份伤亡报告／60 份全部报告，36.7%；球墨铸铁，0 份伤亡报告／4 份全部报告，0.0%；铜，2 份伤亡报告／13 份全部报告，15.4%；其他材料，39 份伤亡报告／201 份全部报告，19.4%；材料未知，10 份伤亡报告／44 份全部报告，22.7%" class="echart" data-key="material" role="img" style="height:476px"></div><img alt="钢，165 份伤亡报告／735 份全部报告，22.4%；塑料，131 份伤亡报告／493 份全部报告，26.6%；铸铁／锻铁，22 份伤亡报告／60 份全部报告，36.7%；球墨铸铁，0 份伤亡报告／4 份全部报告，0.0%；铜，2 份伤亡报告／13 份全部报告，15.4%；其他材料，39 份伤亡报告／201 份全部报告，19.4%；材料未知，10 份伤亡报告／44 份全部报告，22.7%" class="chart-fallback" src="figures/material_A.png"/><figcaption>全部1,550份事故报告，7类材料完整保留。左侧气泡面积表示各类报告总数；右侧圆点表示该类报告中的伤亡比例，横线表示比例估计的精度。铁管指铸铁／锻铁，球墨铸铁沿用原始分类另列。铁管有22份伤亡报告、共60份，钢为165／735，塑料为131／493；下表直接比较材料间的比例差。区间采用Wilson方法，按独立报告近似计算。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><button class="text-button chart-download" data-download-chart="material" hidden="" type="button">导出当前图 PNG</button><a download="" href="figures/material_A.pdf">下载数量与区间图 PDF</a><a download="" href="data/summary.csv">下载数据 CSV</a><a download="" href="data/a1_6e7ae4_summary.csv">图中数据 1</a><a download="" href="data/a1_23af84_material_contrasts.csv">图中数据 2</a><a download="" href="figures/a1_ch1_material.png">静态图 PNG</a><a download="" href="figures/a1_ch1_material.pdf">静态图 PDF</a></div></figure>
 <p id="paragraph-16">铁管分别与钢、塑料直接比较时，证据的明确程度不同。由于同一运营商的报告可能相关，下表的差值区间以运营商为单位重复抽样估计；区间跨过零表示差值可能为正，也可能为负。</p>
-<div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表3．铁管与钢、塑料的全期伤亡比例直接比较。使用全库1,550份报告中的三种材料。222家运营商共同有放回重抽5,000次，每对比报告边际95%百分位区间，未作同时覆盖校正；未生成p值。 来源：PHMSA原始资料及本研究计算。</caption>
+<div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表3．铁管与钢、塑料的全期伤亡比例直接比较。按222家运营商共同重抽样5,000次；各对比为边际95%区间。来源：已保存的材料直接比较。</caption>
 <thead>
 <tr>
 <th>全期材料直接比较</th>
@@ -133,25 +132,25 @@
 </tr>
 </tbody>
 </table></div>
-<p id="paragraph-17">部件、地点和材料的总体检验也得到关联证据，完整计数和检验过程见资料说明。进户管与私人地点的较高伤亡比例，引出第二章对受伤人员的比较；铁管与钢管的伤亡比例差，则需结合近年记录和各材料的在用长度评价。</p>
+<p id="paragraph-17">部件、地点和材料的总体检验也得到关联证据，完整计数和检验过程见资料说明。这些结果说明哪些事故类别的人员后果值得关注；近期记录与在用长度的比较，则用于判断历史差异能否用于当前设施评估。</p>
 </section><section class="article-section" id="section-5"><h2>1.5 近年来的部件与材料比较</h2>
-<p id="paragraph-18">企业参考历史事故安排近期工作，需要确认涵盖十余年的总体差异在近年是否仍然出现。本节按PHMSA收件年比较2010至2021年与2022年起的报告；后一期资料截至2026年2月18日。两图均从左至右排列早期与近期，便于对照同一部件或材料的变化。</p>
-<p id="paragraph-19">进户管的伤亡比例在两个时期都高于主管道（图 8）。虽然近期观察到的差距更大，但差距变化的95%区间仍包含缩小与扩大，尚不能确认差距随时间扩大。</p>
-<figure class="figure" data-review="true" id="figure-periods"><div class="figure-top"><span class="figure-kicker">图 8</span><h3>两个时期均观察到进户管的伤亡比例较高</h3></div><img alt="左右两个时期的进户管红色比例条都长于主管道；近期组样本较少。" src="figures/a1_ch1_periods_proportion.png"/><figcaption>左为2010至2021年收件，右为2022年起至2026年2月18日收件；只比较主管道与进户管，共967份报告。每条全长为本组全部报告的100%，深红为伤亡报告，浅青为其余；条下列伤亡／全部份数。早期进户管76／210、主管道126／584，近期14／31、20／142。两期部件比例差分别为14.6和31.1个百分点，差距变化的运营商整组重抽样95%区间为−3.5至35.5个百分点。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch1_periods_proportion.png">下载 PNG</a><a download="" href="figures/a1_ch1_periods_proportion.pdf">下载 PDF</a><a download="" href="figures/a1_ch1_periods_proportion.svg">下载 SVG</a><a download="" href="data/a1_00e609_periods_source.csv">图中数据</a></div></figure>
-<p id="paragraph-20">近期钢与塑料的观察伤亡比例接近，都约为24%（图 9）。铁管近期只有7份报告，其中2份伴随伤亡，且来自同一家运营商。铁管的估计范围很宽，近期材料排序的依据较弱。</p>
-<figure class="figure" data-review="true" id="figure-materials"><div class="figure-top"><span class="figure-kicker">图 9</span><h3>近年来钢管与塑料管的伤亡比例接近，铁管仅有7份报告</h3></div><img alt="钢塑的近期端点几乎重合，铁管近期区间很宽，7个符号中2个为深红伤亡。" src="figures/a1_ch1_materials_period_paths.png"/><figcaption>连线由2010至2021年收件的观察比例连接至2022年起的观察比例，覆盖三种材料全部涉事部件，共1,288份报告；数字为伤亡／全部份数。近期钢30／126、塑料21／88，比例接近。铁管仅2／7，图下7个符号各对应一份实际报告，2份伤亡来自同一家运营商。灰竖线为近期铁管Wilson 95%区间8.2%至64.1%，按独立报告近似计算；其他材料及早期区间保存于CSV。后期资料截至2026年2月18日，连线不表示同一批设施的追踪。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch1_materials_period_paths.png">下载 PNG</a><a download="" href="figures/a1_ch1_materials_period_paths.pdf">下载 PDF</a><a download="" href="figures/a1_ch1_materials_period_paths.svg">下载 SVG</a><a download="" href="data/a1_e06351_materials_source.csv">图中数据 1</a><a download="" href="data/a1_dbe980_recent_iron_seven_reports.csv">图中数据 2</a></div></figure>
-<p id="paragraph-21">两期的部件差异支持继续研究进户管事故涉及的受伤人员与任务。材料判断主要依据全期结果；下一节限定主管道及其阀门，并结合在用长度比较事故频率。逐年报告数与比例保留于资料说明，用于检查各时期内部的变化。</p>
+<p id="paragraph-18">企业参考历史事故安排近期工作，需要确认涵盖十余年的总体差异在近年是否仍然出现。本节按PHMSA收件年比较2010至2021年与2022年起的报告；后一期资料截至2026年2月18日。两图均从左至右排列早期与近期。</p>
+<p id="paragraph-19">进户管的伤亡比例在两个时期都高于主管道（图 7）。虽然近期观察到的差距更大，但差距变化的95%区间仍包含缩小与扩大，尚不能确认差距随时间扩大。</p>
+<figure class="figure" data-review="true" id="figure-periods"><div class="figure-top"><span class="figure-kicker">图 7</span><h3>两个时期均观察到进户管的伤亡比例较高</h3></div><img alt="左右两个时期的进户管红色比例条都长于主管道；近期组样本较少。" src="figures/a1_ch1_periods_proportion.png"/><figcaption>左为2010至2021年收件，右为2022年起至2026年2月18日收件；只比较主管道与进户管，共967份报告。每条全长为本组全部报告的100%，深红为伤亡报告，浅青为其余；条下列伤亡／全部份数。早期进户管76／210、主管道126／584，近期14／31、20／142。两期部件比例差分别为14.6和31.1个百分点，差距变化的运营商整组重抽样95%区间为−3.5至35.5个百分点。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch1_periods_proportion.png">下载 PNG</a><a download="" href="figures/a1_ch1_periods_proportion.pdf">下载 PDF</a><a download="" href="figures/a1_ch1_periods_proportion.svg">下载 SVG</a><a download="" href="data/a1_00e609_periods_source.csv">图中数据</a></div></figure>
+<p id="paragraph-20">近期钢与塑料的观察伤亡比例接近，都约为24%（图 8）。铁管近期只有7份报告，其中2份伴随伤亡，这2份来自同一家运营商。铁管的估计范围很宽，近期材料排序的依据较弱。</p>
+<figure class="figure" data-review="true" id="figure-materials"><div class="figure-top"><span class="figure-kicker">图 8</span><h3>近年来钢管与塑料管的伤亡比例接近，铁管仅有7份报告</h3></div><img alt="钢塑的近期端点几乎重合，铁管近期区间很宽，7个符号中2个为深红伤亡。" src="figures/a1_ch1_materials_period_paths.png"/><figcaption>连线由2010至2021年收件的观察比例连接至2022年起的观察比例，覆盖三种材料全部涉事部件，共1,288份报告；数字为伤亡／全部份数。近期钢30／126、塑料21／88，比例接近。铁管仅2／7，图下7个符号各对应一份实际报告，2份伤亡来自同一家运营商。灰竖线为近期铁管Wilson 95%区间8.2%至64.1%，按独立报告近似计算；其他材料及早期区间保存于CSV。后期资料截至2026年2月18日，连线不表示同一批设施的追踪。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch1_materials_period_paths.png">下载 PNG</a><a download="" href="figures/a1_ch1_materials_period_paths.pdf">下载 PDF</a><a download="" href="figures/a1_ch1_materials_period_paths.svg">下载 SVG</a><a download="" href="data/a1_e06351_materials_source.csv">图中数据 1</a><a download="" href="data/a1_dbe980_recent_iron_seven_reports.csv">图中数据 2</a></div></figure>
+<p id="paragraph-21">两期均出现的部件差异，使进户管涉及的受伤人员与任务成为第二章的比较重点。近期铁管报告较少，材料判断主要依据全期结果。下一节限定主管道及其阀门，结合在用长度比较事故频率；逐年报告数与比例保留于资料说明。</p>
 <details class="calculation">
 <summary>分期依据与差距变化的计算</summary>
-<p id="paragraph-22">2010至2021年收件1,286份，2022年起264份，与第三章评价范围一致。2021年财产损失事故的上报门槛提高，2022年是其后第一个完整年份，这是分期的背景；本研究没有估计上报规则调整本身的效果。<a href="https://www.govinfo.gov/content/pkg/FR-2021-01-11/pdf/2021-00208.pdf">规则原文</a>。</p>
-<p id="paragraph-23">进户管减主管道的伤亡比例差，早期为14.6个百分点，近期为31.1个百分点；差距变化的运营商整组重抽样95%区间为−3.5至35.5个百分点。近期铁管2／7的Wilson 95%区间为8.2%至64.1%，按独立报告近似计算。<a href="data/chapter2/all_period_categories.csv">各期计数</a>；<a href="data/chapter2/period_differences.csv">比例差及变化区间</a>。</p>
+<p id="paragraph-22">全库按收件年划分，2010至2021年1,286份，2022年起264份。2021年财产损失事故的上报门槛提高，2022年是其后第一个完整年份，这是分期的背景；本研究没有估计上报规则调整本身的效果。<a href="https://www.govinfo.gov/content/pkg/FR-2021-01-11/pdf/2021-00208.pdf">规则原文</a>。</p>
+<p id="paragraph-23">进户管减主管道的伤亡比例差，早期为14.6个百分点，近期为31.1个百分点；差距变化的运营商整组重抽样95%区间为−3.5至35.5个百分点。近期铁管2／7的Wilson 95%区间为8.2%至64.1%，按独立报告近似计算。<a href="data/p322_source_chapter2_all_period_categories.csv">各期计数</a>；<a href="data/p322_source_chapter2_period_differences.csv">比例差及变化区间</a>。</p>
 </details>
 </section><section class="article-section" id="section-6"><h2>1.6 管网规模与事故频率</h2>
 <p id="paragraph-24">铁管的在用长度远小于钢和塑料，事故份数需要换算到同样长度、同样观察年数后比较。本节采用2010至2024年发生的铁、钢、塑料主管道及主管道阀事故，共693份，其中141份伴随伤亡；每份均有对应州、年份和材料的有效年度里程。</p>
-<p id="paragraph-25">计算先逐年累计每种材料的“在用长度×1年”，覆盖2010至2024年这15年。1万英里运行1年，与1千英里运行10年，累计值都为1万英里·年。报告数除以相应材料的累计值，并统一换算为每万英里·年的报告数，就能比较同样长度和时间内的事故记录。图 10列出原始报告数、伤亡报告数及这15年的累计值，右侧同时显示换算后的全部事故报告率与伤亡报告率。</p>
-<figure class="figure" data-review="true" id="figure-material_consequences"><div class="figure-top"><span class="figure-kicker">图 10</span><h3>虽然铁管报告数少，但归一化后的事故报告率更高</h3></div><img alt="同一行并列原始N/K/E和共同单位的全部与伤亡报告率；铁管原始报告最少而单位率最高，钢塑深红终点接近。" src="figures/a1_ch1_material_rates_integrated.png"/><figcaption>2010至2024年三种材料的主管道及主管道阀事故，共693份，其中141份伴随伤亡。左侧列出全部事故报告数N、伤亡报告数K，以及15个年末主管道长度乘以1年后相加的累计值E；E以万英里·年显示，计算使用未舍入值。右侧整条表示每万英里·年的全部事故报告数R，深红部分表示其中的伤亡报告数H，两者从共同零点开始。图下以铁管53÷36.92≈1.435演示换算。红点与横线表示H及按52个州或辖区共同重抽样5,000次得到的95%区间。钢与塑料的H分别为0.061和0.063，塑料相对钢的率比为1.02，区间为0.71至1.38。各年年末里程近似该年的在用规模；全部事故报告率的区间附于CSV。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a> <a href="https://datahub.transportation.gov/api/views/aemm-7pyq/files/f93e30a2-bf0b-4ec3-9394-f5e4a47f4fa6?content=true">PHMSA年度管网资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch1_material_rates_integrated.png">下载 PNG</a><a download="" href="figures/a1_ch1_material_rates_integrated.pdf">下载 PDF</a><a download="" href="figures/a1_ch1_material_rates_integrated.svg">下载 SVG</a><a download="" href="data/a1_38f7f3_N_K_E_R_H_source.csv">图中数据 1</a><a download="" href="data/a1_f51168_rate_ratio_intervals.csv">图中数据 2</a></div></figure>
-<p id="paragraph-26">虽然铁管的原始报告数最少，但统一长度和观察年数后，其全部事故报告率约为钢管的3.30倍。铁管事故中的伤亡比例也较高；其全部事故报告率乘以伤亡比例后，得到的伤亡报告率约为钢管的9.70倍，95%区间为4.76至16.79倍。企业评估现存铁管时，应结合当地泄漏、维修和安装年代记录选择现场检查对象。</p>
-<p id="paragraph-27">虽然塑料的全部事故报告率低于钢，但事故中的伤亡比例较高，两项相乘后的伤亡报告率与钢接近。塑料相对钢的伤亡报告率比为1.02，95%区间为0.71至1.38，尚不能确认谁更低。两种材料的伤亡报告率观察值接近，事故频率和事故内伤亡比例却不同，因此还需分别研究相关的损伤与受伤过程。</p>
+<p id="paragraph-25">计算先逐年累计每种材料的“在用长度×1年”，覆盖2010至2024年这15年。1万英里运行1年，与1千英里运行10年，累计值都为1万英里·年。报告数除以相应材料的累计值，统一换算为每万英里·年的报告数。图 9列出原始报告数、伤亡报告数和15年累计值，旁边是统一单位后的两种报告率。</p>
+<figure class="figure" data-review="true" id="figure-material_consequences"><div class="figure-top"><span class="figure-kicker">图 9</span><h3>虽然铁管报告数少，但归一化后的事故报告率更高</h3></div><img alt="同一行并列原始N/K/E和共同单位的全部与伤亡报告率；铁管原始报告最少而单位率最高，钢塑深红终点接近。" src="figures/a1_ch1_material_rates_integrated.png"/><figcaption>2010至2024年三种材料的主管道及主管道阀事故，共693份，其中141份伴随伤亡。左侧列出全部事故报告数N、伤亡报告数K，以及15个年末主管道长度乘以1年后相加的累计值E；E以万英里·年显示，计算使用未舍入值。右侧整条表示每万英里·年的全部事故报告数R，深红部分表示其中的伤亡报告数H，两者从共同零点开始。图下以铁管53÷36.92≈1.435演示换算。红点与横线表示H及按52个州或辖区共同重抽样5,000次得到的95%区间。钢与塑料的H分别为0.061和0.063，塑料相对钢的率比为1.02，区间为0.71至1.38。各年年末里程近似该年的在用规模；全部事故报告率的区间附于CSV。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a> <a href="https://datahub.transportation.gov/api/views/aemm-7pyq/files/f93e30a2-bf0b-4ec3-9394-f5e4a47f4fa6?content=true">PHMSA年度管网资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch1_material_rates_integrated.png">下载 PNG</a><a download="" href="figures/a1_ch1_material_rates_integrated.pdf">下载 PDF</a><a download="" href="figures/a1_ch1_material_rates_integrated.svg">下载 SVG</a><a download="" href="data/a1_38f7f3_N_K_E_R_H_source.csv">图中数据 1</a><a download="" href="data/a1_f51168_rate_ratio_intervals.csv">图中数据 2</a></div></figure>
+<p id="paragraph-26">虽然铁管的原始报告数最少，但统一长度和观察年数后，其全部事故报告率约为钢管的3.30倍。铁管事故中的伤亡比例也较高，两项相乘后的伤亡报告率约为钢管的9.70倍，95%区间为4.76至16.79倍。这一结果支持企业复核现存铁管，具体检查对象仍需结合当地泄漏、维修和安装年代记录确定。</p>
+<p id="paragraph-27">虽然塑料的全部事故报告率低于钢，但事故中的伤亡比例较高，两项相乘后的伤亡报告率与钢接近。塑料相对钢的伤亡报告率比为1.02，95%区间为0.71至1.38，尚不能确认谁更低。相近的伤亡报告率包含不同的事故频率和事故内伤亡比例，因此还需分别研究相关的损伤与受伤过程。</p>
 <details class="calculation">
 <summary>报告数、累计管网规模与报告率的完整计算</summary>
 <p id="paragraph-28">每种材料使用自己的报告数及长度。<i>N</i>为全部事故报告数，<i>K</i>为伤亡报告数，单位均为份；<i>L<sub>y</sub></i>为第<i>y</i>年年末主管道长度，单位为英里，年末值近似该年的在用长度。<i>E</i>是15个年度“在用长度×1年”的合计，单位为英里·年。</p>
@@ -161,10 +160,10 @@
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>H</mi><mo>=</mo><mfrac><mi>K</mi><mi>E</mi></mfrac><mo>×</mo><mn>10,000</mn><mo>=</mo><mi>R</mi><mo>×</mo><mfrac><mi>K</mi><mi>N</mi></mfrac></mrow></math>
 </div>
 <p id="paragraph-29"><i>R</i>是全部事故报告率，<i>H</i>是伤亡报告率，单位均为份／万英里·年。<i>K</i>／<i>N</i>为事故中的伤亡比例，计算乘积时取0至1的小数。乘10,000仅用于换算单位。</p>
-<p id="paragraph-30">例如铁管15年累计369,228.181英里·年，有53份事故报告，其中22份伴随伤亡。计算得到全部事故报告率1.435、伤亡报告率0.596份／万英里·年。钢和塑料的伤亡报告率分别为0.061和0.063。<a href="data/rate_summary.csv">原始报告数、里程与计算值</a>；<a href="data/rate_ratios.csv">率比及区间</a>。</p>
+<p id="paragraph-30">例如铁管15年累计369,228.181英里·年，有53份事故报告，其中22份伴随伤亡。计算得到全部事故报告率1.435、伤亡报告率0.596份／万英里·年。钢和塑料的伤亡报告率分别为0.061和0.063。<a href="data/p322_source_comparisons_rate_summary.csv">原始报告数、里程与计算值</a>；<a href="data/p322_source_comparisons_rate_ratios.csv">率比及区间</a>。</p>
 <p id="paragraph-31">按长度和时间比较报告率，参考<a href="https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/docs/Pipeline%20Safety%20Update%20Oct%202012.pdf#page=46">PHMSA统计示例</a>。进户管尚未建立按年份、材料对应的长度记录，本节不计算其每英里报告率。</p>
 </details>
-<p id="paragraph-32">本章的比较为人员保护和设施检查分别指出了后续研究方向。进户管在两个时期均表现出较高伤亡比例，第二章将结合人员身份和实际任务解释这项差异。材料比较则引出不同的事故过程与设施条件：钢塑之间的差异需要结合开挖、运行和维修中的伤害理解，现存铁管的评估还需考虑当地地面环境与运行条件。</p>
+<p id="paragraph-32">本章为第二章确定了需要解释的差异。进户管在两个时期均有较高的伤亡比例，需要结合场地与人员身份判断差别涉及谁。钢与塑料的伤亡报告率接近，但事故频率和事故内伤亡比例不同，需要查明损伤与受伤过程。铁管在用规模小、分布集中，单位长度和时间内的报告率仍较高，需要结合设施条件与当地环境解释。第二章据此形成因素判断，第三章再检验这些因素是否有助于人员风险判断，以及哪些信息值得采集。</p>
 <p id="paragraph-33"><a href="chapter2.html">继续阅读：事故背后的因素研究</a></p>
 </section><details class="technical" id="methods"><summary>资料与计算说明</summary>
 <p id="paragraph-34">研究计划的部件初步试算约为进户管37%、主管道20%。本次逐份核对得到90／241＝37.3%、146／726＝20.1%，与初步试算的方向一致；正文采用本次完整计数。</p>
@@ -173,13 +172,13 @@
 <p id="paragraph-37">数据清洗、计数、比例和区间均由 Python 计算，Wilson 区间采用 statsmodels。DOT 目录标注公开访问，许可名称未单列。</p>
 <ul>
 <li><a href="data/a1_6e7ae4_summary.csv">全部 21 类结果</a></li>
-<li><a href="data/analysis_ready.csv">逐份报告分析表</a></li>
-<li><a href="data/official_field_dictionary.pdf">官方字段说明</a></li>
-<li><a href="data/before_after_groups.csv">清洗前后计数</a></li>
+<li><a href="data/p322_source_audit_analysis_ready.csv">逐份报告分析表</a></li>
+<li><a href="data/p322_source_audit_official_field_dictionary.pdf">官方字段说明</a></li>
+<li><a href="data/p322_source_audit_before_after_groups.csv">清洗前后计数</a></li>
 </ul>
 <h3>资料整理</h3>
 <p id="paragraph-38">PHMSA的上报条件包括死亡、住院伤害、达到标准的财产损失或燃气释放等情形，因此同时包含有伤亡和因其他条件上报的事故。事故发生日期覆盖2010年1月3日至2026年2月10日。<a href="https://datahub.transportation.gov/api/views/27nc-rsge">官方数据目录</a>；<a href="https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2023-12/Current_GD_Incident_Instructions_PHMSA%20F%207100.1_2023-09%20and%20Beyond.pdf">PHMSA上报条件与伤害定义</a>。</p>
-<p id="paragraph-39">清洗的具体问题、理由与变化见1.2。原始人员分项保留，派生伤亡标记逐份与总人数核对。州级地图采用2004至2024年的实际年末记录；更早的州名存在跨州或缺失情况，不能精确分州。两个负里程年度记录的运营商、州与年份见后文事故与里程匹配说明。</p>
+<p id="paragraph-39">清洗的具体问题、理由与变化见1.2。原始人员分项保留，派生伤亡标记逐份与总人数核对。州级地图采用2010与2024年两个年末的实际记录，两年均覆盖50州、华盛顿特区与波多黎各；不在年份之间插值。两个负里程年度记录的运营商、州与年份见后文事故与里程匹配说明。</p>
 <h3>比例及区间的计算</h3>
 <details class="calculation">
 <summary>比例估计：Wilson方法、计算公式与统计假定</summary>
@@ -194,45 +193,97 @@
 <p id="paragraph-44">按发生年，2019年139份报告中23份伴随伤亡，为16.5%；2025年60份中19份伴随伤亡，为31.7%。伤亡报告减少4份，但全部报告降幅更大，所以伤亡比例上升。年度图同时保留数量和比例，避免将构成变化直接解释为事故增加。</p>
 <ul>
 <li><a href="data/a1_e9f89d_annual_counts_both_dates.csv">两种日期的逐年报告数与伤亡比例</a></li>
-<li><a href="data/annual_cross_year_records.csv">跨年报告明细</a></li>
+<li><a href="data/p322_source_annual_context_cross_year_records.csv">跨年报告明细</a></li>
 </ul>
 <h3>年度里程与材料趋势</h3>
-<p id="paragraph-45">图 2使用1990至2024年材料年报的去重、非负里程汇总，共52,083条有效年度记录。1990至2009年为历史表单，2010至2024年为当前事故率比较范围。三种主要材料之外的球墨铸铁、铜、修复铸铁及其他材料仍保留在来源表中，图 2展示主分析使用的三类材料。材料记录与安装年代记录分别汇总，图中趋势描述在用规模。<a href="data/annual_material_trends_1990_2024.csv">材料年度里程</a></p>
-<p id="paragraph-46">1990至2024年，塑料在用长度由23.9万英里增至85.6万，钢由57.4万降至50.6万，铁管由5.83万降至1.46万；塑料在2006年超过钢。2010至2024年，铁管由3.46万英里降至1.46万，仍使用铁管的州或地区从35个减至26个；塑料由63.75万英里增至85.65万。2024年，铁管里程的67.3%位于新泽西、纽约、马萨诸塞、宾夕法尼亚和密歇根五州。管道更新的行业背景见<a href="https://www.phmsa.dot.gov/data-and-statistics/pipeline-replacement/pipeline-replacement-background">PHMSA说明</a>。</p>
+<p id="paragraph-45">图 2使用1990至2024年材料年报的去重、非负里程汇总，共52,083条有效年度记录。1990至2009年为历史表单，2010至2024年为当前事故率比较范围。三种主要材料之外的球墨铸铁、铜、修复铸铁及其他材料仍保留在来源表中，图 2展示主分析使用的三类材料。材料记录与安装年代记录分别汇总，图中趋势描述在用规模。<a href="data/p322_source_data_extent_annual_material_trends_1990_2024.csv">材料年度里程</a></p>
+<p id="paragraph-46">1990至2024年，塑料在用长度由23.9万英里增至85.6万，钢由57.4万降至50.6万，铁管由5.83万降至1.46万；塑料在2006年超过钢。2010至2024年，铁管由3.46万英里降至1.46万，仍使用铁管的州或地区从35个减至26个；塑料由63.75万英里增至85.65万。管道更新的行业背景见<a href="https://www.phmsa.dot.gov/data-and-statistics/pipeline-replacement/pipeline-replacement-background">PHMSA说明</a>。</p>
+<p id="paragraph-47">图 3另取2010与2024年的2,872条年度记录，按州和原始材料类别汇总。每个地区分别计算2024年减2010年的在用长度，共156组材料端点对照，单位为英里。塑料全国净增218,993.932英里，铁管净减19,983.149英里，钢管净减50,119.011英里，三类合计净增148,891.772英里。各州两年存量与净变化见<a href="data/material_net_map.csv">地图完整数据</a>，五州明细见本章最后的附录。</p>
 <h3>管网规模与报告率的计算</h3>
-<p id="paragraph-47">1.6说明逐年累计“在用长度×1年”的方法，并给出全部事故报告率和伤亡报告率的公式。PHMSA的统计示例采用“每千英里每年”；American Gas Foundation委托的配气研究在主管道材料比较中采用“每十万英里·年”。正文统一为每万英里·年，换算单位不改变材料间的率比。<a href="https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/docs/Pipeline%20Safety%20Update%20Oct%202012.pdf#page=46">PHMSA统计示例，第46页</a>；<a href="https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/docs/AGF%20Study%20Safety%20Perf%20and%20Integrrity%20of%20NG%20Dist-%20Apndx%20A.pdf#page=17">AGF配气研究，附录A第16至19页</a>。</p>
-<p id="paragraph-48">本研究以PHMSA年报的年末里程近似该年的在用长度；年内新增和退役的具体时点未单独计入。<a href="https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2024-01/Current_2024_GD_Annual_Instructions_PHMSA%20F%207100.1-1%20%28rev%206-2023%29%20CY%202024%20and%20Beyond.pdf#page=1">年报填写说明，第1页</a>。</p>
+<p id="paragraph-48">1.6说明逐年累计“在用长度×1年”的方法，并给出全部事故报告率和伤亡报告率的公式。PHMSA的统计示例采用“每千英里每年”；American Gas Foundation委托的配气研究在主管道材料比较中采用“每十万英里·年”。正文统一为每万英里·年，换算单位不改变材料间的率比。<a href="https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/docs/Pipeline%20Safety%20Update%20Oct%202012.pdf#page=46">PHMSA统计示例，第46页</a>；<a href="https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/docs/AGF%20Study%20Safety%20Perf%20and%20Integrrity%20of%20NG%20Dist-%20Apndx%20A.pdf#page=17">AGF配气研究，附录A第16至19页</a>。</p>
+<p id="paragraph-49">本研究以PHMSA年报的年末里程近似该年的在用长度；年内新增和退役的具体时点未单独计入。<a href="https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2024-01/Current_2024_GD_Annual_Instructions_PHMSA%20F%207100.1-1%20%28rev%206-2023%29%20CY%202024%20and%20Beyond.pdf#page=1">年报填写说明，第1页</a>。</p>
 <h3>事故与里程的匹配</h3>
-<p id="paragraph-49">年度资料覆盖 2010 至 2024 年。事故按发生年匹配，统计单位为已收录的报告份数；伤亡报告指至少一人死亡或因伤住院至少一晚。693 份中，691 份涉及主管道，2 份涉及钢制主管道阀。</p>
-<p id="paragraph-50">年度资料有 22,035 条记录，其中两条申报的塑料里程为 −0.5 英里，均来自堪萨斯州同一家运营商，分别为 2022 和 2023 年。负长度没有实际含义，排除两条后采用 22,033 条年报。693 份事故均有对应州、年份和材料的有效里程。<a href="data/annual_record_exposure.csv">年度记录与排除明细</a></p>
-<p id="paragraph-51">材料按原表类别对应。事故中的铸铁／锻铁对应年度主管道铸铁里程；年度表另列的修复铸铁累计 326.052 英里·年，保持单独分类。早期事故表及 2010 至 2014 年报只有铸铁总类，修复状态缺少独立记录，全期结果因此沿用原表的铁管类别。<a href="data/official_field_dictionary.pdf">事故字段说明</a></p>
-<p id="paragraph-52">铁管的53份属于2010至2024年主管道及主管道阀范围，前文60份材料报告覆盖更多部件及更长时期。进户管仅比较事故中的伤亡比例，本研究尚未建立按年份、材料对应的进户管长度记录，未计算其每英里报告率。</p>
-<p id="paragraph-53">2010至2024年，新泽西、纽约、马萨诸塞、宾夕法尼亚和密歇根五州占全国铁管累计里程的63.2%；53份铁管主管道及主管道阀事故中，34份来自五州，占64.2%。两项份额接近，事故集中与在用铁管的铺设集中相对应。</p>
-<p id="paragraph-54">按州重抽样时，每轮从 52 个州或辖区中有放回地抽取 52 个，抽中的辖区可重复出现。重新汇总事故数和里程，计算全国报告率与材料率比。5,000 轮结果的 2.5% 和 97.5% 分位数构成相应的 95% 区间。</p>
-<p id="paragraph-55">同州同年比较采用条件 Poisson 模型。模型比较一个州、一年内两种材料的伤亡报告数，并按各自里程调整观察规模。铁管与钢管共有 466 个州年组合，其中 59 个组合记录了伤亡报告并提供率比信息。铁管相对钢管的调整率比为 10.20，95% 区间为 4.41 至 17.82，与全国汇总率比 9.70 接近。这项模型属于课程方法之外的敏感性分析，用于检查地区和年份构成的影响。</p>
+<p id="paragraph-50">年度资料覆盖 2010 至 2024 年。事故按发生年匹配，统计单位为已收录的报告份数；伤亡报告指至少一人死亡或因伤住院至少一晚。693 份中，691 份涉及主管道，2 份涉及钢制主管道阀。</p>
+<p id="paragraph-51">年度资料有 22,035 条记录，其中两条申报的塑料里程为 −0.5 英里，均来自堪萨斯州同一家运营商，分别为 2022 和 2023 年。负长度没有实际含义，排除两条后采用 22,033 条年报。693 份事故均有对应州、年份和材料的有效里程。<a href="data/p322_source_comparisons_annual_record_exposure.csv">年度记录与排除明细</a></p>
+<p id="paragraph-52">材料按原表类别对应。事故中的铸铁／锻铁对应年度主管道铸铁里程；年度表另列的修复铸铁累计 326.052 英里·年，保持单独分类。早期事故表及 2010 至 2014 年报只有铸铁总类，修复状态缺少独立记录，全期结果因此沿用原表的铁管类别。<a href="data/p322_source_audit_official_field_dictionary.pdf">事故字段说明</a></p>
+<p id="paragraph-53">铁管的53份属于2010至2024年主管道及主管道阀范围，前文60份材料报告覆盖更多部件及更长时期。进户管仅比较事故中的伤亡比例，本研究尚未建立按年份、材料对应的进户管长度记录，未计算其每英里报告率。</p>
+<p id="paragraph-54">2010至2024年，新泽西、纽约、马萨诸塞、宾夕法尼亚和密歇根五州占全国铁管累计里程的63.2%；53份铁管主管道及主管道阀事故中，34份来自五州，占64.2%。两项份额接近，事故集中与在用铁管的铺设集中相对应。</p>
+<p id="paragraph-55">按州重抽样时，每轮从 52 个州或辖区中有放回地抽取 52 个，抽中的辖区可重复出现。重新汇总事故数和里程，计算全国报告率与材料率比。5,000 轮结果的 2.5% 和 97.5% 分位数构成相应的 95% 区间。</p>
+<p id="paragraph-56">同州同年比较采用条件 Poisson 模型。模型比较一个州、一年内两种材料的伤亡报告数，并按各自里程调整观察规模。铁管与钢管共有 466 个州年组合，其中 59 个组合记录了伤亡报告并提供率比信息。铁管相对钢管的调整率比为 10.20，95% 区间为 4.41 至 17.82，与全国汇总率比 9.70 接近。这项模型属于课程方法之外的敏感性分析，用于检查地区和年份构成的影响。</p>
 <h3>部件、地点和材料的联合组成</h3>
-<p id="paragraph-56">图 6使用同一批1,550份报告的部件、地点和材料原始分类。左侧两条比例均以各部件的全部报告计算，表示其中来自私人地点的份额；右侧每条以该地点、该部件范围内的全部报告计算，表示各材料的份额。全部部件的公共／私人地点分别为470／638份；主管道为363／91份，进户管为45／162份。</p>
-<p id="paragraph-57">材料原始七类全部保留。图中仅将球墨铸铁、铜、其他材料和材料未知合称“其余4类”；铸铁／锻铁仍单列。所有组成均描述已报告事故，不表示各地点实际管网的材料占比。分别限定部件只解决这里的部件构成差别，尚未控制年份、州、运营商或设施年代。</p>
+<p id="paragraph-57">图 5使用同一批1,550份报告的部件、地点和材料原始分类。左侧两条比例均以各部件的全部报告计算，表示其中来自私人地点的份额；右侧每条以该地点、该部件范围内的全部报告计算，表示各材料的份额。全部部件的公共／私人地点分别为470／638份；主管道为363／91份，进户管为45／162份。</p>
+<p id="paragraph-58">材料原始七类全部保留。图中仅将球墨铸铁、铜、其他材料和材料未知合称“其余4类”；铸铁／锻铁仍单列。所有组成均描述已报告事故，不表示各地点实际管网的材料占比。分别限定部件只解决这里的部件构成差别，尚未控制年份、州、运营商或设施年代。</p>
 <h3>总体关联与材料直接对比</h3>
-<p id="paragraph-58">伤亡比例＝伤亡报告数÷该类全部报告数×100%。部件比较为进户管90／241＝37.3%、主管道146／726＝20.1%，相差17.2个百分点；私人地点179／638＝28.1%，公共地点101／470＝21.5%，相差6.6个百分点。材料比较包括事故中的管道、阀门和表具，球墨铸铁与铸铁／锻铁分列，铜、其他材料及材料未知均保留。</p>
-<p id="paragraph-59">以全体369／1,550＝23.8%作为各类别相同比例的参照，进户管241份应对应57.4份伤亡报告，实际为90份。图 S2列出各类别的实际计数、参考计数与总体检验，Pearson χ²汇总伤亡和其余报告两项计数的偏离。</p>
-<p id="paragraph-60">总体关联检验使用本章的全部 1,550 份报告及原始类别。Pearson χ² 比较实际计数与无关联时预期计数的差异。在同一运营商、同一收件时期内，伤亡标记置换 9,999 次，评价观察到的差异有多突出；这种做法保留小类别，并以组内伤亡标记可交换为前提。</p>
-<p id="paragraph-61">Cramér V 将原始列联表的关联强度归一到 0 至 1。部件为 0.184、材料为 0.089、地点为 0.084，保留作原表的描述结果；各分类的具体差异由正文的百分点差与报告率解释。</p>
-<p id="paragraph-62">预先确定的部件、材料和地点三项关联检验采用 Holm 校正，控制多次检验中误报关联的机会。部件、材料、地点的校正 p 值依次为 0.0006、0.0336、0.0114。以 0.05 为判断标准，三项均有总体关联的统计证据。扩大到 13 项探索比较时，相应值为 0.0014、0.168、0.0342。材料总体关联的判断对校正范围较敏感，因此材料结论同时依据具体差异、区间及匹配里程结果。</p>
-<p id="paragraph-63">十三项包括预定的部件、材料、地点三项关联，部件与时期和地点的两项交互，四项同州同年材料率比较，以及四项按州和年份分别调整的重复比较。三项校正用于研究计划中的关联检验，十三项校正用于检查扩大探索范围后判断是否改变。</p>
-<p id="paragraph-64">全期铁管相对钢管的伤亡比例高14.2个百分点，运营商成组重抽样95%区间为2.7至26.9；相对塑料高10.1个百分点，区间为−1.2至22.6。前者支持铁管高于钢管，后者仍容许两个方向。<a href="data/material_contrasts.csv">两项材料直接比较</a></p>
-<p id="paragraph-65">材料直接对比使用全库 1,550 份报告中的铁、钢与塑料记录。全部 222 家运营商共同重抽 5,000 轮，每轮对铁—钢、铁—塑料采用相同抽样权重，所有轮次均包含三类材料。各对比分别取 2.5% 和 97.5% 分位数作为边际 95% 区间；两项区间分别估计，未作同时覆盖校正。计算未生成 p 值。</p>
+<p id="paragraph-59">伤亡比例＝伤亡报告数÷该类全部报告数×100%。部件比较为进户管90／241＝37.3%、主管道146／726＝20.1%，相差17.2个百分点；私人地点179／638＝28.1%，公共地点101／470＝21.5%，相差6.6个百分点。材料比较包括事故中的管道、阀门和表具，球墨铸铁与铸铁／锻铁分列，铜、其他材料及材料未知均保留。</p>
+<p id="paragraph-60">以全体369／1,550＝23.8%作为各类别相同比例的参照，进户管241份应对应57.4份伤亡报告，实际为90份。图 S2列出各类别的实际计数、参考计数与总体检验，Pearson χ²汇总伤亡和其余报告两项计数的偏离。</p>
+<p id="paragraph-61">总体关联检验使用本章的全部 1,550 份报告及原始类别。Pearson χ² 比较实际计数与无关联时预期计数的差异。在同一运营商、同一收件时期内，伤亡标记置换 9,999 次，评价观察到的差异有多突出；这种做法保留小类别，并以组内伤亡标记可交换为前提。</p>
+<p id="paragraph-62">Cramér V 将原始列联表的关联强度归一到 0 至 1。部件为 0.184、材料为 0.089、地点为 0.084，保留作原表的描述结果；各分类的具体差异由正文的百分点差与报告率解释。</p>
+<p id="paragraph-63">预先确定的部件、材料和地点三项关联检验采用 Holm 校正，控制多次检验中误报关联的机会。部件、材料、地点的校正 p 值依次为 0.0006、0.0336、0.0114。以 0.05 为判断标准，三项均有总体关联的统计证据。扩大到 13 项探索比较时，相应值为 0.0014、0.168、0.0342。材料总体关联的判断对校正范围较敏感，因此材料结论同时依据具体差异、区间及匹配里程结果。</p>
+<p id="paragraph-64">十三项包括预定的部件、材料、地点三项关联，部件与时期和地点的两项交互，四项同州同年材料率比较，以及四项按州和年份分别调整的重复比较。三项校正用于研究计划中的关联检验，十三项校正用于检查扩大探索范围后判断是否改变。</p>
+<p id="paragraph-65">全期铁管相对钢管的伤亡比例高14.2个百分点，运营商成组重抽样95%区间为2.7至26.9；相对塑料高10.1个百分点，区间为−1.2至22.6。前者支持铁管高于钢管，后者仍容许两个方向。<a href="data/p322_source_material_contrasts_contrasts.csv">两项材料直接比较</a></p>
+<p id="paragraph-66">材料直接对比使用全库 1,550 份报告中的铁、钢与塑料记录。全部 222 家运营商共同重抽 5,000 轮，每轮对铁—钢、铁—塑料采用相同抽样权重，所有轮次均包含三类材料。各对比分别取 2.5% 和 97.5% 分位数作为边际 95% 区间；两项区间分别估计，未作同时覆盖校正。计算未生成 p 值。</p>
 <ul>
-<li><a href="data/chapter2/all_period_categories.csv">分期与地点的计数</a></li>
-<li><a href="data/chapter2/period_differences.csv">比例差与变化区间</a></li>
-<li><a href="data/material_evidence.csv">材料计数、累计里程与计算结果</a></li>
-<li><a href="data/rate_summary.csv">事故报告率、伤亡报告率及区间</a></li>
-<li><a href="data/rate_ratios.csv">材料之间的率比与区间</a></li>
+<li><a href="data/p322_source_chapter2_all_period_categories.csv">分期与地点的计数</a></li>
+<li><a href="data/p322_source_chapter2_period_differences.csv">比例差与变化区间</a></li>
+<li><a href="data/p322_source_brief_decision_audit_20261107_material_decision_evidence.csv">材料计数、累计里程与计算结果</a></li>
+<li><a href="data/p322_source_comparisons_rate_summary.csv">事故报告率、伤亡报告率及区间</a></li>
+<li><a href="data/p322_source_comparisons_rate_ratios.csv">材料之间的率比与区间</a></li>
 <li><a href="data/a1_12f7ab_omnibus_tests.csv">总体关联检验</a></li>
 <li><a href="data/a1_0a6269_test_inventory.csv">十三项检验清单</a></li>
 </ul>
 <figure class="figure" data-review="true" id="figure-association"><div class="figure-top"><span class="figure-kicker">图 S2</span><h3>总体关联检验比较实际计数与无关联时的参考计数</h3></div><div class="joint-controls"></div><div aria-label="部件、材料和地点各类报告的伤亡构成" class="revision-chart" data-key="association" role="img" style="height:1090px"></div><figcaption>全体1,550份报告中，369份伴随伤亡。Pearson χ²汇总各类别实际计数与无关联时预期计数的偏离；p值来自同一运营商、同一收件时期内9,999次伤亡标记置换。部件、材料、地点三项预定比较采用Holm校正；Cramér V表示原始列联表的关联强度。各项均保留完整类别。将检验扩大至13项探索比较时，材料的校正结果有所变化，详见资料说明。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="data/a1_12f7ab_omnibus_tests.csv">图中数据 1</a><a download="" href="data/a1_0a6269_test_inventory.csv">图中数据 2</a></div></figure>
-<p id="paragraph-66">设施评估的背景资料：<a href="https://www.phmsa.dot.gov/pipeline/gas-distribution-integrity-management/gas-distribution-integrity-management-program-dimp">PHMSA配气管网管理要求</a>。</p>
+<p id="paragraph-67">设施评估的背景资料：<a href="https://www.phmsa.dot.gov/pipeline/gas-distribution-integrity-management/gas-distribution-integrity-management-program-dimp">PHMSA配气管网管理要求</a>。</p>
+<h3>附录：现存铁管最多五州的材料变化</h3>
+<p id="paragraph-68">五州按2024年铁管在用长度选取并排序，表中净变化均为2024年减2010年，单位为英里；负值为减少，正值为增加。数值显示至一位小数，计算保留原始精度。全国铁管的67.3%位于这五州，具体位置和两年存量可在图 3查询。</p>
+<div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表4．2024年现存铁管最多五州的材料变化。按铁管里程选择并排序，净变化为2024年减2010年，单位英里。来源：PHMSA年度资料。</caption>
+<thead>
+<tr>
+<th>州</th>
+<th style="text-align:right">2024年铁管在用长度</th>
+<th style="text-align:right">铁管净变化</th>
+<th style="text-align:right">钢管净变化</th>
+<th style="text-align:right">塑料管净变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>新泽西</td>
+<td style="text-align:right">2,469.4</td>
+<td style="text-align:right">−2,745.6</td>
+<td style="text-align:right">−2,934.0</td>
+<td style="text-align:right">+8,504.6</td>
+</tr>
+<tr>
+<td>纽约</td>
+<td style="text-align:right">2,166.8</td>
+<td style="text-align:right">−2,473.1</td>
+<td style="text-align:right">−4,246.1</td>
+<td style="text-align:right">+9,379.1</td>
+</tr>
+<tr>
+<td>马萨诸塞</td>
+<td style="text-align:right">2,125.8</td>
+<td style="text-align:right">−1,864.4</td>
+<td style="text-align:right">−1,644.5</td>
+<td style="text-align:right">+4,262.1</td>
+</tr>
+<tr>
+<td>宾夕法尼亚</td>
+<td style="text-align:right">1,827.6</td>
+<td style="text-align:right">−1,356.5</td>
+<td style="text-align:right">−4,656.7</td>
+<td style="text-align:right">+8,447.7</td>
+</tr>
+<tr>
+<td>密歇根</td>
+<td style="text-align:right">1,246.7</td>
+<td style="text-align:right">−1,933.1</td>
+<td style="text-align:right">−1,814.9</td>
+<td style="text-align:right">+9,610.3</td>
+</tr>
+</tbody>
+</table></div>
+<p id="paragraph-69"><a href="data/material_net_map_five_states.csv">五州完整数值</a>。来源：PHMSA年度管网记录，沿用图 3的材料类别、时期和汇总方法。</p>
 </details></article>
 <nav class="continue-reading" aria-label="顺序阅读"><a href="chapter2.html">继续阅读第二章：事故背后的因素研究 →</a></nav>
 <aside class="review-guide"><p>选中文字，或点击章节、图表旁的“批注”，即可填写意见。确认后可通过自己的 GitHub 账号提交。</p><button id="general-review" class="text-button js-only" type="button">写一条批注</button><noscript><p class="noscript">JavaScript 未启用时显示 Matplotlib 静态图。悬停与批注需要 JavaScript。</p></noscript></aside>

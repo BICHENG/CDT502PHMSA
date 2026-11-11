@@ -2,7 +2,7 @@
   "build": "2026-11-11",
   "cohort_sha256": "89c21d2ea6f5cb8ff6daad6ac60160608671a7b49c218bf9f917bfb88a2ce5a1",
   "checks": {
-    "local_links_checked": 330,
+    "local_links_checked": 341,
     "all_21_categories_present": true,
     "remote_runtime_dependencies": 0,
     "machine_local_paths": 0
@@ -62,6 +62,11 @@
       "file": "assets/excavation-charts.js",
       "bytes": 8071,
       "sha256": "52a249313a38c8c3c3f8d19e374115c216b8f413637c0c8cb3179336ef5b6411"
+    },
+    {
+      "file": "assets/integrated-material-map.js",
+      "bytes": 9397,
+      "sha256": "42d79e48ef4bb91ccbe12e7eff3fbca032696b974e07fc9f846026b1c4aadf94"
     },
     {
       "file": "assets/licenses/echarts-examples-LICENSE.txt",
@@ -125,13 +130,13 @@
     },
     {
       "file": "assets/research-revision.js",
-      "bytes": 9355,
-      "sha256": "ecaffaeec3cf6e06a5e4c9fd36d0738dc81111d108685f8cc197d21e081541a7"
+      "bytes": 9369,
+      "sha256": "892411fef79793e4676aa9d343bd6de2761be08b2074ce5d3a90a0806b4a86c8"
     },
     {
       "file": "assets/site.css",
-      "bytes": 20881,
-      "sha256": "8e99608c0ad88b51df080e95ecf110340fede5ed5637b58c5df6a2566292e6da"
+      "bytes": 23757,
+      "sha256": "ec55d9bff174d76222ef1f5cbb7a895bea11ab0b4a0967d5fcf7dc6266f01ef3"
     },
     {
       "file": "assets/site.js",
@@ -145,8 +150,8 @@
     },
     {
       "file": "chapter2.html",
-      "bytes": 51215,
-      "sha256": "af37914887f6d801985651aeb82f5e611c79c31439c28ffae50428d7f043a80b"
+      "bytes": 37529,
+      "sha256": "2b72f7a1d456ced20f7798e824ca538fcffe27f0b8e5aba6cd59443c70103d4c"
     },
     {
       "file": "data/a1_00e609_periods_source.csv",
@@ -704,6 +709,11 @@
       "sha256": "e4e309c8afbc37a93ca24e8705329bffd15c2b7a6f21a698509d7459b18835e2"
     },
     {
+      "file": "data/final_model.json",
+      "bytes": 1962,
+      "sha256": "0b9154fe117493918a99005fdb3fd400bad5383b22497f12c9c0da8908a6dc4f"
+    },
+    {
       "file": "data/forest_case.json",
       "bytes": 1379,
       "sha256": "9957e18ec5378f526d5b4d4a5871d0560449539a191936c9574871a4c8a98acb"
@@ -784,6 +794,21 @@
       "sha256": "b0579469bec8c462d3c03cd3f59564ca6f8374ecca5be5d04f8765d33d5fc3eb"
     },
     {
+      "file": "data/material_net_map.csv",
+      "bytes": 13402,
+      "sha256": "916b7f8d2db52d2892b57f9eeb8d4ebebca5b99375868d21968331e875618534"
+    },
+    {
+      "file": "data/material_net_map_data.js",
+      "bytes": 36214,
+      "sha256": "8f695d0e4ec33106db80bbfcff97335744e8858fb6bab4771421deb520d95f54"
+    },
+    {
+      "file": "data/material_net_map_five_states.csv",
+      "bytes": 486,
+      "sha256": "7dffca4a3c0f156d93f15aedc77223e3a93de631ab104a7baaf06c761373d574"
+    },
+    {
       "file": "data/model_comparison_counts.csv",
       "bytes": 566,
       "sha256": "d0ed04e53692f516908588d76a910b3ff51c215d68d7d85b809c87a76f3835ef"
@@ -839,6 +864,301 @@
       "sha256": "9a5c46745bce881eba4d86c49233f4c63743784cc473710f5a51a20e20930bd4"
     },
     {
+      "file": "data/p322_bundle_verification.json",
+      "bytes": 784,
+      "sha256": "7f32d2d5ab6cb96d31ba79f737411f670910aeaea91741b508871bd78d027539"
+    },
+    {
+      "file": "data/p322_factors_case_timeline.csv",
+      "bytes": 8883,
+      "sha256": "d949e8d285b90b5062acc2aa4d6edac6dc336971951d03ce0c8b07e2bad9fede"
+    },
+    {
+      "file": "data/p322_factors_claim_to_test.csv",
+      "bytes": 5411,
+      "sha256": "cd4a320381935115dfec7b0e260da2f65a36afb156cc4b76ba78869995a1966a"
+    },
+    {
+      "file": "data/p322_factors_diameter_composition_verified.json",
+      "bytes": 452,
+      "sha256": "f1f3192a496e41bfa3313d6ef1e72ab8108b5a3032695be27104aabd3f5d6aaf"
+    },
+    {
+      "file": "data/p322_factors_diameter_pressure_ignition_cells.csv",
+      "bytes": 393,
+      "sha256": "df2b00b652a1bf71bb7fc56503cfde38a23ee1b436e8d48b9016689223962a03"
+    },
+    {
+      "file": "data/p322_factors_excavation_ignition_harm.csv",
+      "bytes": 108,
+      "sha256": "c3973ff6c12120f495773d3fb7801aae4f0f23138cf85cd3af931ecd3e80fc43"
+    },
+    {
+      "file": "data/p322_factors_field_timing.csv",
+      "bytes": 11479,
+      "sha256": "08ca234c2361e73a0feb849c98e077698f91eaf5a9338e593019af001f33c158"
+    },
+    {
+      "file": "data/p322_factors_ignition_composition_accounting.csv",
+      "bytes": 172,
+      "sha256": "27425dae28a305f26a2d6d95fd6d6fd835add798ca92849ff73318701e0bf145"
+    },
+    {
+      "file": "data/p322_factors_material_cause_counts.csv",
+      "bytes": 923,
+      "sha256": "fec8648cedb428b9432dafb94976ef4d9344bb9d8becc313b24f42d388a4427d"
+    },
+    {
+      "file": "data/p322_factors_part_location_people.csv",
+      "bytes": 836,
+      "sha256": "9cddcd76e9ccd0459961c1ced5bc28266c00958cf617f81dfe080f20013cdef3"
+    },
+    {
+      "file": "data/p322_factors_physical_group_profiles_verified.csv",
+      "bytes": 387,
+      "sha256": "74d0c22e76b4fc95a8b5c22d7488b237ad983d3318e9591eee17dd8ebf10e2e9"
+    },
+    {
+      "file": "data/p322_factors_same_material_location.csv",
+      "bytes": 179,
+      "sha256": "a4e5de4d36282fc11ac60f10750617ec5b8faa0be826024983edf620ab51770b"
+    },
+    {
+      "file": "data/p322_models_cluster_metrics.csv",
+      "bytes": 2506,
+      "sha256": "f311543d54b44579751c11d1a9ce087a204ed9b8a911ffbe9e4d28742a08fd7a"
+    },
+    {
+      "file": "data/p322_models_cluster_paired_intervals.csv",
+      "bytes": 2374,
+      "sha256": "698654fb4c61bf173a32f3f19f22670411a30f65032e4b3b1f1397c65ca6bb7c"
+    },
+    {
+      "file": "data/p322_models_cluster_profile_checked.csv",
+      "bytes": 453,
+      "sha256": "0f1a14b50d56b6ee99f03df695ed99cdadf0f3d250390a4849a8e5cfdc0b1802"
+    },
+    {
+      "file": "data/p322_models_conditional_associations.csv",
+      "bytes": 2050,
+      "sha256": "ddadf186c8ea670f1f9069c87c935c5911f9c6f733a50d476b7c8dafdd0465fd"
+    },
+    {
+      "file": "data/p322_models_figure1_input_choice.csv",
+      "bytes": 1082,
+      "sha256": "26d8c95503adf5522b93f5902b4aaa71c0c330c37b59804eb220028fd96911b3"
+    },
+    {
+      "file": "data/p322_models_figure3_probability_and_errors.csv",
+      "bytes": 789,
+      "sha256": "dca50f80e2b4d86ebede48e8d0f885587314592cbc174fffb5c20efb7b099c4f"
+    },
+    {
+      "file": "data/p322_models_information_decisions.csv",
+      "bytes": 4309,
+      "sha256": "7f791ddceddcb7fd8e96b0c1961e52e5f6ea58ecad7e8dd85831d983bc1beaaf"
+    },
+    {
+      "file": "data/p322_models_input_later_metrics.csv",
+      "bytes": 3278,
+      "sha256": "c428abe38d422d0154b396510c607ce664f4301ed4c31668d770783e6e420900"
+    },
+    {
+      "file": "data/p322_models_input_selection_early_only.csv",
+      "bytes": 4165,
+      "sha256": "e3ef9f93cd9e33bfef9d1ca534d1ade57ad2d4cb379f42d55897586b9d191b1b"
+    },
+    {
+      "file": "data/p322_models_method.md",
+      "bytes": 6140,
+      "sha256": "3bafcd7722c774e8be935796116d7287c451ed600a1a8cb1146c0f265195a6a8"
+    },
+    {
+      "file": "data/p322_models_proposal_four_method_predictions.csv",
+      "bytes": 26191,
+      "sha256": "f28c72526f5815a5835d3422de6712bdda3e056d0421a75c4adb0b31a3b8497e"
+    },
+    {
+      "file": "data/p322_models_proposal_four_method_reference.csv",
+      "bytes": 1854,
+      "sha256": "40e744398fd4ea4918670e2d26fa7cc09518bba0853185e9d0cc30a70bd55a63"
+    },
+    {
+      "file": "data/p322_models_raw_calibrated_later_all_records.csv",
+      "bytes": 22938,
+      "sha256": "eb0db026e37c78c7617304570d4f3038891115c166724bb4bda59e1bc2568cd8"
+    },
+    {
+      "file": "data/p322_models_selected_input_comparisons_intervals.csv",
+      "bytes": 3330,
+      "sha256": "60f4f51a82968c883465927179458d5f958c18d13bfbff2e284d6dccd20479a4"
+    },
+    {
+      "file": "data/p322_models_selection_frozen.json",
+      "bytes": 823,
+      "sha256": "5ff764220dc445afbae5a9de627eae88fd7f22906d9e0d7340522043f2199d8f"
+    },
+    {
+      "file": "data/p322_models_split_counts.csv",
+      "bytes": 269,
+      "sha256": "d5226be3617f4dc588d3d7d1f282df0fe3a2e9889c7fc7c46ec67f7deb5af9d1"
+    },
+    {
+      "file": "data/p322_models_steel_plastic_intervals.csv",
+      "bytes": 2506,
+      "sha256": "e2457ec82fc73cde2450d6d4bf01a6ae429676024a247e2a8e42f96bcf9a3f3c"
+    },
+    {
+      "file": "data/p322_models_steel_plastic_metrics.csv",
+      "bytes": 6419,
+      "sha256": "14038b3417a6d236b00edefd86aed934622ba81ec0f42e2f4b63d9924a9445a1"
+    },
+    {
+      "file": "data/p322_models_verification.json",
+      "bytes": 477,
+      "sha256": "94415831544dfbb5c079e299fe5e1eae844aea2405bc26874e78a01261664f00"
+    },
+    {
+      "file": "data/p322_models_worked_case.csv",
+      "bytes": 520,
+      "sha256": "3572dedcac162b1df84e71a7e4723d67080d66a9f7d9319d00f940bcecd79e04"
+    },
+    {
+      "file": "data/p322_models_worked_case_selection.json",
+      "bytes": 247,
+      "sha256": "2b1a31945a3e246db697d4546e38c49480ffd5e692ad315c99e15489a366ecc3"
+    },
+    {
+      "file": "data/p322_reproducibility.zip",
+      "bytes": 246479,
+      "sha256": "f14b4b69d7f52697c4ef97825f169384693caa51e92a16bb19540c37c6a9c305"
+    },
+    {
+      "file": "data/p322_reproducibility_README.md",
+      "bytes": 5920,
+      "sha256": "21f06d11250dfb6d4c91a526c84580e4e809113e9bde6c7c4eee6487b83c0978"
+    },
+    {
+      "file": "data/p322_source_analysis_recompute_cumulative_hits.py",
+      "bytes": 6660,
+      "sha256": "5ee50ed8a26a32adbd37aad098d0719d841764f69b7da24599f5f53842b3167f"
+    },
+    {
+      "file": "data/p322_source_annual_context_cross_year_records.csv",
+      "bytes": 8837,
+      "sha256": "b0290aebf0620ef23b924c13c7a98454e749f153bffaea5c76db390de2571080"
+    },
+    {
+      "file": "data/p322_source_audit_analysis_ready.csv",
+      "bytes": 265587,
+      "sha256": "1df76ec76b09e6d690d6e747b5765749a4487e8a4a8f603d9261dce14b24a201"
+    },
+    {
+      "file": "data/p322_source_audit_before_after_groups.csv",
+      "bytes": 1237,
+      "sha256": "950e747cabbd00bc27b9ec07b2a8a78a2ba6425c28961ee254f84688eb505e78"
+    },
+    {
+      "file": "data/p322_source_audit_official_field_dictionary.pdf",
+      "bytes": 477717,
+      "sha256": "706c2a603e435d530ebb2ebaee7d566b9fae6e89607794a06a7b4afce2f8160d"
+    },
+    {
+      "file": "data/p322_source_brief_decision_audit_20261107_material_decision_evidence.csv",
+      "bytes": 879,
+      "sha256": "9347aef575943c29df40a08a446428ce6c2b710edd6f2e69c5c568b24001117d"
+    },
+    {
+      "file": "data/p322_source_chapter2_all_period_categories.csv",
+      "bytes": 4678,
+      "sha256": "50bb65363f12b5bdae621d6ffa45d55793096ced3c8d9eacb8317a37c56e2a1a"
+    },
+    {
+      "file": "data/p322_source_chapter2_period_differences.csv",
+      "bytes": 422,
+      "sha256": "378996915d736fbeddcabaaa8921ff52175d674aa4ec766ff9b88a4049c15c59"
+    },
+    {
+      "file": "data/p322_source_clustering_protocol.json",
+      "bytes": 2062,
+      "sha256": "b51df841dcb3c2cf16e40dc72efefe44edb7745ae02948167d6f664c2d34cce5"
+    },
+    {
+      "file": "data/p322_source_comparisons_annual_record_exposure.csv",
+      "bytes": 1438183,
+      "sha256": "2aea6e4c5b3bdc3c158d4f15ba3cc9ea71a1e38a56ec223f87009205d1fc612d"
+    },
+    {
+      "file": "data/p322_source_comparisons_rate_ratios.csv",
+      "bytes": 978,
+      "sha256": "b8fb9c93d82bcfb059a54c49589d21a7d91902505011330533a157da5ce1df62"
+    },
+    {
+      "file": "data/p322_source_comparisons_rate_summary.csv",
+      "bytes": 1596,
+      "sha256": "a824f60fc866bf683ed70d949d3dbdea43b763f9e3a0d2d457e825f2a6577292"
+    },
+    {
+      "file": "data/p322_source_data_extent_annual_material_trends_1990_2024.csv",
+      "bytes": 33656,
+      "sha256": "6f7f6974dab43be734d9d2791f2c1d7a2c1285a8a6721c35eac24752c93636b4"
+    },
+    {
+      "file": "data/p322_source_discovery_course_frozen_cluster_centers.json",
+      "bytes": 27100,
+      "sha256": "9c056541eaa6f390b1ae592601e2d79cb0e3889a59a44883e5dc4e2d4d887abb"
+    },
+    {
+      "file": "data/p322_source_excavation_review_findings.md",
+      "bytes": 3288,
+      "sha256": "fca62c9c1c53f8480565fc57da732a6063d292e06a0eaca5fff38386e54ae813"
+    },
+    {
+      "file": "data/p322_source_factors_clock_scope_comparison.csv",
+      "bytes": 540,
+      "sha256": "b0c9bfd3d0a887dfc4087b8d7759e98d7b62e00911957d3a579bf49f69b161dd"
+    },
+    {
+      "file": "data/p322_source_factors_material_season_summary.csv",
+      "bytes": 1467,
+      "sha256": "6d3cadee8aa012d24e80387882560b76fa36aad80eafbd063d8eee9ed92f34bc"
+    },
+    {
+      "file": "data/p322_source_factors_run_receipt.json",
+      "bytes": 2280,
+      "sha256": "a5958687ddb04119979ce9a7bb4243c054161a486cef571a5c0465e26bb1f2bc"
+    },
+    {
+      "file": "data/p322_source_material_contrasts_contrasts.csv",
+      "bytes": 948,
+      "sha256": "45907deb3f8f0ca786e455b8a241584155034fd4244f36527ec0efe93d42b3d7"
+    },
+    {
+      "file": "data/p322_source_models_complete_models.py",
+      "bytes": 30071,
+      "sha256": "030d8077c1f131f016f043c0971ded76b3758a7a200980695e2bafad461f5b09"
+    },
+    {
+      "file": "data/p322_source_models_supplement_checks.py",
+      "bytes": 6219,
+      "sha256": "bac4733fd96438c9f4911673088b4c7810e35b32de04c77815cf327efb5c715a"
+    },
+    {
+      "file": "data/p322_source_models_verify_artifacts.py",
+      "bytes": 5993,
+      "sha256": "1faaa524a5b7286bb3a050a9f10ab0cb66e73b0a7a0a0c1015020310879b4a70"
+    },
+    {
+      "file": "data/p322_source_person_contributions_findings.md",
+      "bytes": 2616,
+      "sha256": "1a4be6a90c0093a6927421c2ab8c17d213dc51c6743e005e5c0181b3d8757801"
+    },
+    {
+      "file": "data/p322_source_prediction_split_counts.csv",
+      "bytes": 1354,
+      "sha256": "1a018c7306ee79342153dcbbfeb14d36ec2a9d356944246e45f65d74d71fd986"
+    },
+    {
       "file": "data/paired_ablation_intervals.csv",
       "bytes": 2325,
       "sha256": "d1f8e45678bd7ee8493fb415086b62113c2b972cf2c18abd0bd56dc5fca204f1"
@@ -872,6 +1192,11 @@
       "file": "data/physical_records_693.csv",
       "bytes": 129791,
       "sha256": "ced64f221c7dcfea3140ae350a54fcbf371189b0939bbd6f76c8db549027957d"
+    },
+    {
+      "file": "data/predict_historical_incident.py",
+      "bytes": 2904,
+      "sha256": "3f5d32217faba745747d77ea722983a7af45aea860bfd89fadbdf785eb28df74"
     },
     {
       "file": "data/pressure_diameter_six_cells.csv",
@@ -1714,6 +2039,36 @@
       "sha256": "d4404c8ef89c7e7566f8dcf65fd6f02537d82751c2139033934ccaeb331d3581"
     },
     {
+      "file": "figures/p322_input_choice.pdf",
+      "bytes": 59725,
+      "sha256": "921c825418651f143bc1c976d701349901452d0cfc01c52fe8dd2366544d1a4d"
+    },
+    {
+      "file": "figures/p322_input_choice.png",
+      "bytes": 260630,
+      "sha256": "08a4292ac75640b434538b1885850f701f3f976c612c7686b6f28da9075238d9"
+    },
+    {
+      "file": "figures/p322_input_choice.svg",
+      "bytes": 18819,
+      "sha256": "d3e4e180eb9508d49799c2f1c8215ec8f35ba7d417866980868ec1032d748e78"
+    },
+    {
+      "file": "figures/p322_model_errors.pdf",
+      "bytes": 54586,
+      "sha256": "ee7a274b69a530529d8d54f48291eaef0a80194a37f3a8d04d5e7ddc7faa0311"
+    },
+    {
+      "file": "figures/p322_model_errors.png",
+      "bytes": 264251,
+      "sha256": "754c4c108ece36f942241476539fe6fff9995f4f09a043800c0f9c484933418a"
+    },
+    {
+      "file": "figures/p322_model_errors.svg",
+      "bytes": 24583,
+      "sha256": "f6e738542fa91a6f19a8fd523a6a322b8a914e98075086aac30c68b0b1564721"
+    },
+    {
       "file": "figures/periods.pdf",
       "bytes": 34259,
       "sha256": "4ee493a76d679228fe97cc01d3e000fae0adaa5d9e2cef07e95e725ae9e42cd5"
@@ -1790,13 +2145,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 54864,
-      "sha256": "e9122fa8505cf6cc6cb5eea7358401a0f63255c8078d00ffde1b1a85e4e39632"
+      "bytes": 55495,
+      "sha256": "718c03f387060ed2dfb78883de4d43acbdd8ce0f27a8fde32847c8750af01b00"
     },
     {
       "file": "supplement.html",
-      "bytes": 42025,
-      "sha256": "d2562d650b365c9b760ca23359dcf56d6061a211e28d5ec41286cc6ecb2bda2b"
+      "bytes": 62815,
+      "sha256": "17bf31bd29de36b132938a0f1955f2644ee56bb3e6d407d9c28629f4dab9584f"
     }
   ]
 }

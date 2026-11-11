@@ -1,7 +1,7 @@
 (() => {
  'use strict';
  const data=window.RESEARCH_REVISION;if(!data||!window.echarts)return;
- if(document.getElementById('material-map'))window.currentMaterialMap=renderMaterialMap('#material-map',MATERIAL_MAP_DATA,USA_GEO);
+ if(document.getElementById('material-map'))window.currentMaterialMap=renderIntegratedMaterialMap('#material-map',MATERIAL_NET_MAP_DATA,USA_GEO);
  if(document.getElementById('material-causes'))window.currentMaterialCauses=renderMaterialCause('#material-causes',MATERIAL_CAUSE_DATA);
  if(document.getElementById('excavation-flow'))window.currentExcavationFlow=renderExcavationFlow('#excavation-flow',EXCAVATION_VISUAL_DATA);
  if(document.getElementById('pressure-diameter'))window.currentPressureDiameter=renderPressureDiameter('#pressure-diameter',EXCAVATION_VISUAL_DATA);

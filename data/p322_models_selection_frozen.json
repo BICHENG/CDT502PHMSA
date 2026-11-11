@@ -1,0 +1,21 @@
+{
+  "frozen_utc_before_new_later_evaluation": "2026-11-11T07:51:44.698586+00:00",
+  "selected_input": "physical_diameter_pressure",
+  "selected_specification": {
+    "categorical": [],
+    "numeric": [
+      "log_diameter",
+      "log_pressure"
+    ],
+    "field_count": 2
+  },
+  "highest_validation_AP_candidate": "full_without_material",
+  "AP_simplification_tolerance": 0.03,
+  "Brier_simplification_tolerance": 0.01,
+  "selected_calibration": "sigmoid",
+  "threshold": 0.29138102310974945,
+  "threshold_rule": "maximum validation F1, ties higher threshold; fixed before this run's later error inspection",
+  "calibration_minimum_validation_Brier_improvement": 0.001,
+  "model_name": "历史事故判别模型",
+  "selection_scope": "early training/validation only; late data previously explored"
+}

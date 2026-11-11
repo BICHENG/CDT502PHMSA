@@ -1,0 +1,26 @@
+{
+  "archive": "p322_reproducibility.zip",
+  "bytes": 246479,
+  "sha256": "f14b4b69d7f52697c4ef97825f169384693caa51e92a16bb19540c37c6a9c305",
+  "packaged_files": 43,
+  "manifest_hashes_verified": true,
+  "entrypoint_imports_verified": true,
+  "verification_exit_code": 0,
+  "verification": {
+    "saved_prediction_sets_reproduced": 50,
+    "maximum_absolute_prediction_error": 0.0,
+    "selected_input_rule_verified": true,
+    "final_confusion_verified": {
+      "n": 112,
+      "casualty_reports": 15,
+      "threshold": 0.29138102310974945,
+      "TP": 8,
+      "FP": 21,
+      "FN": 7,
+      "TN": 76
+    },
+    "proposal_four_models_reproduced": true,
+    "source_hashes_unchanged": true,
+    "scope": "saved artifacts and formulas; no model refits or new model selection"
+  }
+}

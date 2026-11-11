@@ -1,0 +1,2 @@
+﻿REPORT_NUMBER,OPERATOR_ID,incident_year,received_year,role,cas,part,mat,location,cls,age_years,diameter_in,normal_psig,complete_physical,missing_diameter,missing_pressure,probability_raw,probability_sigmoid,raw_validation_F1_threshold,sigmoid_validation_F1_threshold,raw_classification,sigmoid_classification
+20220016,1088,2022,2022,later,1,MAIN,CAST/WROUGHT IRON,PUBLIC PROPERTY,CLASS 3 LOCATION,102.0,12.0,10.0,True,False,False,0.12697323042482372,0.09830265228463318,0.2860451313019893,0.29138102310974945,FN,FN

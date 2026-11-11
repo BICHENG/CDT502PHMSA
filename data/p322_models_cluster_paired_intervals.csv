@@ -1,0 +1,13 @@
+﻿left,right,metric,difference_left_minus_right,ci_lower,ci_upper,valid_draws,single_class_skipped,operators,scope
+cluster_only,physical3,AP,-0.08156056169662285,-0.2508331112152769,0.04923875314468534,2000,0,47,fixed fitted predictions; operator-paired exploratory percentile intervals
+cluster_only,physical3,Brier,0.002360487906751474,-0.012485850786573837,0.014278565899199264,2000,0,47,fixed fitted predictions; operator-paired exploratory percentile intervals
+cluster_only,physical3,budget20_recall,-0.1258741258741259,-0.39033628972653356,0.18438190730837764,2000,0,47,fixed fitted predictions; operator-paired exploratory percentile intervals
+categorical_cluster,categorical_physical,AP,-0.014922947706414114,-0.17257040981153035,0.1227222913309119,2000,0,47,fixed fitted predictions; operator-paired exploratory percentile intervals
+categorical_cluster,categorical_physical,Brier,0.0005188880634939969,-0.013493894254759409,0.013270720794532145,2000,0,47,fixed fitted predictions; operator-paired exploratory percentile intervals
+categorical_cluster,categorical_physical,budget20_recall,-0.13186813186813184,-0.39409090909090905,0.20286120129870103,2000,0,47,fixed fitted predictions; operator-paired exploratory percentile intervals
+categorical_cluster,categorical4,AP,0.038933336667373586,0.002669170765998713,0.0921796723758607,2000,0,47,fixed fitted predictions; operator-paired exploratory percentile intervals
+categorical_cluster,categorical4,Brier,-0.0057779397834080565,-0.013402785269456999,0.0019063051047935925,2000,0,47,fixed fitted predictions; operator-paired exploratory percentile intervals
+categorical_cluster,categorical4,budget20_recall,0.0892857142857143,-0.021165223665223665,0.26334107069401164,2000,0,47,fixed fitted predictions; operator-paired exploratory percentile intervals
+categorical_physical,categorical4,AP,0.0538562843737877,-0.09249525677434949,0.2293375445121832,2000,0,47,fixed fitted predictions; operator-paired exploratory percentile intervals
+categorical_physical,categorical4,Brier,-0.006296827846902053,-0.02316396755724748,0.011685640538577123,2000,0,47,fixed fitted predictions; operator-paired exploratory percentile intervals
+categorical_physical,categorical4,budget20_recall,0.22115384615384615,-0.15394736842105264,0.5,2000,0,47,fixed fitted predictions; operator-paired exploratory percentile intervals
