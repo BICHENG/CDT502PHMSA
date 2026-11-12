@@ -1,4 +1,0 @@
-﻿method,n,casualty_reports,AP,budget20_n,budget20_expected_hits,display_inputs
-categorical4,112,15,0.2889544901741692,23,5.0588235294117645,部件、材料、地点、地区等级
-full7,112,15,0.3233129658579521,23,7.0,部件、材料、地点、地区等级、管龄、管径、正常压力
-selected_raw,112,15,0.3027858226161689,23,7.0,管径、正常压力

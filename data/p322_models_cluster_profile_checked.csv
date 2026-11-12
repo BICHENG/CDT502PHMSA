@@ -1,7 +1,0 @@
-﻿period,cluster,name,n,casualty_reports,operators,age_median,diameter_median,pressure_median
-early,1,较小管径、较年轻组,278,77,101,27.0,2.625,45.0
-early,2,较大管径、较高压力组,192,15,67,47.0,8.0,58.5
-early,3,高龄、低压力组,51,20,23,83.0,6.0,0.34
-later,1,较小管径、较年轻组,44,8,30,18.5,2.6875,50.0
-later,2,较大管径、较高压力组,49,2,31,55.0,8.0,92.0
-later,3,高龄、低压力组,7,3,6,102.0,4.0,0.5

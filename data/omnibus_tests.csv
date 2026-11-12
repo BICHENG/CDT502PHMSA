@@ -1,4 +1,0 @@
-field,categories,reports,pearson_chi2,df,cramers_v,ordinary_independent_report_p_diagnostic,expected_cells_under5,expected_cells_under1,observed_zero_cells,minimum_expected,permutations,upper_tail_count,operator_period_permutation_p,operator_period_blocks,mixed_outcome_blocks,reports_in_mixed_blocks,holm_p_three_fields
-SYSTEM_PART_INVOLVED,10,1550,52.52366617769268,9,0.18408214536905174,3.598101367692426e-08,6,2,1,0.4761290322580645,9999,1,0.0002,303,117,1203,0.0006000000000000001
-MATERIAL_INVOLVED,7,1550,12.231067578834736,6,0.08883136462524766,0.05700808566099375,3,1,1,0.952258064516129,9999,335,0.0336,303,117,1203,0.0336
-LOCATION_TYPE,4,1550,11.03873957861912,3,0.08439056505366492,0.011518229807036292,0,0,0,13.807741935483872,9999,56,0.0057,303,117,1203,0.0114

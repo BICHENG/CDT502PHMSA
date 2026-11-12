@@ -1,5 +1,0 @@
-{
-  "rule": "earliest report number among final-model false negatives with observed diameter and pressure",
-  "report_number": "20220016",
-  "use": "transparent calculation/error example, not a field-time prediction or representative case"
-}
