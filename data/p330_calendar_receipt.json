@@ -1,0 +1,49 @@
+{
+  "status": "exploratory reanalysis after the existing monthly observation; not independent validation",
+  "source": "research/results/course_visual_lab_20261109/natural_context/scope_records_693.csv",
+  "source_sha256": "3fe9a3bacf0c3711211676f6ca17efa1b9318b3044a75b28344cccb2a5cab056",
+  "python": "3.12.13",
+  "sklearn": "1.9.1",
+  "pandas": "3.0.6",
+  "numpy": "2.5.3",
+  "calendar": "observed month-day mapped to leap year 2000; preserves Feb 29; annual period 366 days",
+  "distance": "min(abs(calendar_day_i-calendar_day_j),366-abs(calendar_day_i-calendar_day_j))",
+  "eps_days": 31,
+  "min_samples_including_self": 3,
+  "random_seed": null,
+  "input_order": "material,calendar_day,REPORT_NUMBER",
+  "outcome_used_for_clustering": false,
+  "comparison": "monthly binned analysis retained separately; daily resolution is primary",
+  "primary_results": [
+    {
+      "material": "CAST/WROUGHT IRON",
+      "eps_days": 31,
+      "min_samples": 3,
+      "cyclic": true,
+      "n": 15,
+      "clusters": 1,
+      "noise_n": 1,
+      "groups": "0:n=14,12-31..03-05,span=65d"
+    },
+    {
+      "material": "STEEL",
+      "eps_days": 31,
+      "min_samples": 3,
+      "cyclic": true,
+      "n": 17,
+      "clusters": 3,
+      "noise_n": 2,
+      "groups": "0:n=7,12-23..01-24,span=32d; 1:n=5,05-19..06-23,span=35d; 2:n=3,08-21..10-01,span=41d"
+    },
+    {
+      "material": "PLASTIC",
+      "eps_days": 31,
+      "min_samples": 3,
+      "cyclic": true,
+      "n": 10,
+      "clusters": 3,
+      "noise_n": 0,
+      "groups": "0:n=3,03-26..05-06,span=41d; 1:n=3,06-23..07-12,span=19d; 2:n=4,09-20..11-05,span=46d"
+    }
+  ]
+}

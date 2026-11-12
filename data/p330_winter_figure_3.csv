@@ -1,0 +1,7 @@
+﻿material,period,all_n,natural_n,casualty_n,natural_casualty_n
+CAST/WROUGHT IRON,Apr-Oct,16,0,6,0
+CAST/WROUGHT IRON,Nov-Mar,37,15,16,9
+PLASTIC,Apr-Oct,166,8,36,0
+PLASTIC,Nov-Mar,127,2,34,1
+STEEL,Apr-Oct,203,9,28,1
+STEEL,Nov-Mar,144,8,21,0

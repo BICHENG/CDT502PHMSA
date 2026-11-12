@@ -1,0 +1,7 @@
+material,eps_days,min_samples,cyclic,n,clusters,noise_n,groups
+CAST/WROUGHT IRON,31,3,True,15,1,1,"0:n=14,12-31..03-05,span=65d"
+CAST/WROUGHT IRON,31,3,False,15,1,2,"0:n=13,01-09..03-05,span=56d"
+STEEL,31,3,True,17,3,2,"0:n=7,12-23..01-24,span=32d; 1:n=5,05-19..06-23,span=35d; 2:n=3,08-21..10-01,span=41d"
+STEEL,31,3,False,17,3,3,"0:n=6,01-05..01-24,span=19d; 1:n=5,05-19..06-23,span=35d; 2:n=3,08-21..10-01,span=41d"
+PLASTIC,31,3,True,10,3,0,"0:n=3,03-26..05-06,span=41d; 1:n=3,06-23..07-12,span=19d; 2:n=4,09-20..11-05,span=46d"
+PLASTIC,31,3,False,10,3,0,"0:n=3,03-26..05-06,span=41d; 1:n=3,06-23..07-12,span=19d; 2:n=4,09-20..11-05,span=46d"
