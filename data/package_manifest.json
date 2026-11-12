@@ -15,8 +15,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 220,
-      "sha256": "39a56d534b1fd601d5c9da85112ebd386c42d59fc71ee06e906a007ba3475ef2"
+      "bytes": 218,
+      "sha256": "a878bb98eb5b00426fe4b78bc3de540754c43f3f58f752983f55716da01800ad"
     },
     {
       "file": "assets/chapter2-charts.js",
@@ -120,8 +120,8 @@
     },
     {
       "file": "chapter2.html",
-      "bytes": 40030,
-      "sha256": "1691daa53d9831941532b603d4d437c0fede3b59b557bb5fd2ab35eb7c828026"
+      "bytes": 39986,
+      "sha256": "647766115d227aa9755f6facb1979472c820d932fbfa20b8e74b9b1ff21b05e3"
     },
     {
       "file": "data/a1_00e609_periods_source.csv",
@@ -835,13 +835,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 55743,
-      "sha256": "6a767c5ade6d7a692c0f581837cbcb19b9d92f505a0ecc0b710e36f4a46cddfa"
+      "bytes": 55719,
+      "sha256": "b898d8b194001f337d645d45e09e8212afbc69dacf60e4338e569a4bd7077cbd"
     },
     {
       "file": "supplement.html",
-      "bytes": 669,
-      "sha256": "3c17c386a1fe6989d22e9c0d840112c5a53165c05db115380abc8296be69c2a8"
+      "bytes": 667,
+      "sha256": "ac4ef89f7582043db096dc9d9c7964accd9025eaeb93e57e3aa5e646708af869"
     }
   ]
 }

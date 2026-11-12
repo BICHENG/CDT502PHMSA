@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="zh-CN" data-version="2026-11-13 · 89c21d2ea6f5 · f3f392d3" data-page="index.html">
+<html lang="zh-CN" data-version="2026-11-13 · 89c21d2ea6f5 · d5ce8a4d" data-page="index.html">
 <head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="color-scheme" content="light"/><title>管网背景与基础比较 · CDT502</title><meta name="description" content="介绍美国配气管网与数据质量，比较主要部件、材料和场地的人员后果，以及按管网规模计算的事故报告率。"/><link rel="stylesheet" href="assets/site.css"/><script src="assets/echarts-6.1.0.min.js" defer></script><script src="data/chart_data.js" defer></script><script src="assets/charts.js" defer></script><script src="data/chapter2/chart_data.js" defer></script><script src="assets/chapter2-charts.js" defer></script><script src="assets/usa-geo.js" defer></script><script src="assets/plotly.min.js" defer></script><script src="assets/plotly-geo-assets.js" defer></script><script src="data/material_net_map_data.js" defer></script><script src="assets/integrated-material-map.js" defer></script><script src="data/material_cause_data.js" defer></script><script src="assets/material-cause.js" defer></script><script src="data/excavation_visual_data.js" defer></script><script src="assets/excavation-charts.js" defer></script><script src="data/research_revision.js" defer></script><script src="assets/research-revision.js" defer></script><script src="assets/site.js" defer></script></head>
 <body><a class="skip-link" href="#main">跳到正文</a><header class="site-header"><div class="header-inner"><a class="brand" href="index.html">CDT502 · PHMSA</a><div class="header-actions"><button id="print-page" type="button" class="text-button js-only">打印本页</button></div></div></header>
-<main class="page" id="main"><nav class="chapter-switch" aria-label="研究章节"><a href="index.html" aria-current="page">第一章 · 数据：管网背景与基础比较</a><a href="chapter2.html">第二章 · 聚类和统计：事故背后的因素研究</a></nav><header class="masthead"><p class="eyebrow">第一章 · 数据：管网背景与基础比较</p><h1>管网背景与基础比较</h1><div class="meta"><span>研究对象：美国已报告的燃气配气事故</span><span>管网趋势：1990–2024 年；事故报告：2010–2026 年</span></div></header><nav class="chapter-nav" aria-label="章节导航"><a href="#overview">研究背景与目的</a><a href="#section-2">数据来源与清洗</a><a href="#section-3">在用管网的材料背景</a><a href="#section-4">部件、地点与材料的伤亡差异</a><a href="#section-5">管网规模调整后的材料比较</a><a href="#methods">资料与计算</a></nav>
+<main class="page" id="main"><nav class="chapter-switch" aria-label="研究章节"><a href="index.html" aria-current="page">第一章 · 数据：管网背景与基础比较</a><a href="chapter2.html">第二章 · Exploratory Data Analysis</a></nav><header class="masthead"><p class="eyebrow">第一章 · 数据：管网背景与基础比较</p><h1>管网背景与基础比较</h1><div class="meta"><span>研究对象：美国已报告的燃气配气事故</span><span>管网趋势：1990–2024 年；事故报告：2010–2026 年</span></div></header><nav class="chapter-nav" aria-label="章节导航"><a href="#overview">研究背景与目的</a><a href="#section-2">数据来源与清洗</a><a href="#section-3">在用管网的材料背景</a><a href="#section-4">部件、地点与材料的伤亡差异</a><a href="#section-5">管网规模调整后的材料比较</a><a href="#methods">资料与计算</a></nav>
 <article><section class="article-section" id="overview">
 <h2>1.1 研究背景与目的</h2>
 <p id="paragraph-1">美国的燃气配气系统通过主管道沿道路和街区输送燃气，再由进户管连接家庭、商户等用户。燃气企业既要检查仍在使用的管道，也要保护处理泄漏和施工损伤的现场人员。</p>
@@ -73,7 +73,7 @@
 <p id="paragraph-17">虽然铁管原始报告数最少，但归一化后的全部事故报告率约为钢管的3.30倍；伤亡报告率约为钢管的9.70倍，估计区间为4.76至16.79倍。因此，企业应在当地设施清单中确认仍在用的铁管，结合泄漏、维修和安装年代记录，确定需要复核的管段。</p>
 <p id="paragraph-18">同样长度和年数下的伤亡报告率，等于全部事故报告率乘以事故中的伤亡比例。塑料管的全部事故报告率较低，事故中的伤亡比例较高，最终伤亡报告率估计接近钢管。塑料管相对钢管为1.02倍，估计区间为0.71至1.38倍。理解人员后果还需要结合具体事故过程。</p>
 <p id="paragraph-19">这些比较提出了下一章的两个问题：钢管与塑料管事故造成的人员伤害涉及哪些处置任务；现存铁管的检查还应关注哪些环境和设施条件。第二章先研究两种材料共同常见的开挖损坏，再分析自然因素的月份分布与实际设施规格。</p>
-<p id="paragraph-20"><a href="chapter2.html">继续阅读：事故背后的因素研究</a></p>
+<p id="paragraph-20"><a href="chapter2.html">继续阅读：Exploratory Data Analysis</a></p>
 </section><details class="technical" id="methods"><summary>资料与计算说明</summary>
 <p id="paragraph-21">研究计划的部件初步试算约为进户管37%、主管道20%。本次逐份核对得到90／241＝37.3%、146／726＝20.1%，与初步试算的方向一致；正文采用本次完整计数。</p>
 <p id="paragraph-22">事故附件获取于 2026 年 11 月 7 日。原始资料有 468 个字段，分析表选用部件、材料、地点、日期和伤亡等 15 个字段，并派生 5 个日期或伤亡指标。事故发生年用于匹配年度里程，报告收件年用于分期比较；收件日期覆盖 2010 年 2 月 19 日至 2026 年 2 月 18 日。</p>
@@ -253,7 +253,7 @@
 </table></div>
 <p id="paragraph-70"><a href="data/material_net_map_five_states.csv">五州完整数值</a>。来源：PHMSA年度管网记录，沿用图 S8的材料类别、时期和汇总方法。</p>
 </details></article>
-<nav class="continue-reading" aria-label="顺序阅读"><a href="chapter2.html">继续阅读第二章：事故背后的因素研究 →</a></nav>
+<nav class="continue-reading" aria-label="顺序阅读"><a href="chapter2.html">继续阅读第二章：Exploratory Data Analysis →</a></nav>
 <aside class="review-guide"><p>选中文字，或点击章节、图表旁的“批注”，即可填写意见。确认后可通过自己的 GitHub 账号提交。</p><button id="general-review" class="text-button js-only" type="button">写一条批注</button><noscript><p class="noscript">JavaScript 未启用时显示 Matplotlib 静态图。悬停与批注需要 JavaScript。</p></noscript></aside>
 <footer class="site-footer"><p>CDT502 · PHMSA</p><p>2026-11-13</p></footer></main>
 <button id="selection-review" type="button" class="selection-review" hidden>批注所选文字</button>
