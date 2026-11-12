@@ -2,7 +2,7 @@
   "build": "2026-11-13",
   "cohort_sha256": "89c21d2ea6f5cb8ff6daad6ac60160608671a7b49c218bf9f917bfb88a2ce5a1",
   "checks": {
-    "local_links_checked": 236,
+    "local_links_checked": 233,
     "all_21_categories_present": true,
     "remote_runtime_dependencies": 0,
     "machine_local_paths": 0
@@ -120,8 +120,8 @@
     },
     {
       "file": "chapter2.html",
-      "bytes": 42671,
-      "sha256": "470580d419d0ce7ae90bdc152daa05864f566af7f5a552c5914e6569eb23276e"
+      "bytes": 40030,
+      "sha256": "1691daa53d9831941532b603d4d437c0fede3b59b557bb5fd2ab35eb7c828026"
     },
     {
       "file": "data/a1_00e609_periods_source.csv",
@@ -484,79 +484,59 @@
       "sha256": "1e524b98981e5ad3f8e64053d573b7136fb6b6838d10dbb3bf6af6fdbfafefb5"
     },
     {
-      "file": "data/p330_calendar_cluster_arcs.csv",
-      "bytes": 407,
-      "sha256": "d8528f4da719e8e28ddba8852f86cb46c92d83f8a0a2444e7f486be2367a044e"
+      "file": "data/p332_all_settings.csv",
+      "bytes": 71503,
+      "sha256": "7221ae99b21783c64c9ccb7167bd8fc79690bbf4dce77a1bbce1233625b27348"
     },
     {
-      "file": "data/p330_calendar_distance_comparison.csv",
-      "bytes": 653,
-      "sha256": "e69a8328c5a9c26f3580fc40142038c473ea3403bc82709d0ce921c5ac40724c"
+      "file": "data/p332_calendar_pool.py",
+      "bytes": 6975,
+      "sha256": "6a5359dff79feffa8b60a0a0fb162bfd6e83c9826434795fa47a419c1a9a833e"
     },
     {
-      "file": "data/p330_calendar_operator_checks.csv",
-      "bytes": 951,
-      "sha256": "a299d03a0c94460c5144b5de80689c228b99c84642b882f6ded9abc494195db9"
+      "file": "data/p332_cluster_summary.csv",
+      "bytes": 895,
+      "sha256": "7a791b7bbf132ffaea2f03d4a0616119da6f321a3cdc1d8366da5af78a80c279"
     },
     {
-      "file": "data/p330_calendar_receipt.json",
-      "bytes": 1676,
-      "sha256": "38e2814a1aa700398306125fc96cb098ec05f8a4f8f8dff59997b7c27107dae2"
+      "file": "data/p332_natural_month_counts.csv",
+      "bytes": 1482,
+      "sha256": "5f24444f0432b4a22e2501adf8489aba883b8fe4709f96b496c8400d190e1ff3"
     },
     {
-      "file": "data/p330_calendar_seasons.py",
-      "bytes": 6431,
-      "sha256": "e2e743a05b7fb986d9fa12b7c15c68e7f289f35c3854c437c827d9848b79e984"
+      "file": "data/p332_points.csv",
+      "bytes": 16038,
+      "sha256": "15f95a4189b93c2e86b8dd03055db0d7e115d1ed0ca888f255f803b6aa73604a"
     },
     {
-      "file": "data/p330_calendar_sensitivity.csv",
-      "bytes": 1985,
-      "sha256": "129aeb8fc4389f48644e628434d27d612dc392bebe339af825f2e9cfd02c58ed"
+      "file": "data/p332_pooled_points.csv",
+      "bytes": 9906,
+      "sha256": "947744ac0ee3cc7b77aae6e8ad4c7c1ec2415df31bfb7da02a0c06578cc9bb06"
     },
     {
-      "file": "data/p330_month_binned_comparison.csv",
-      "bytes": 3932,
-      "sha256": "604b19e7a57d4e309bf52af55b22dc4c01a1252e68316fd56988084e53b911b7"
+      "file": "data/p332_receipt.json",
+      "bytes": 3232,
+      "sha256": "6a0c285b0738140f54150c4f56b9c4b6c7d18e7dce3bb148f0a4b98b38c922ad"
     },
     {
-      "file": "data/p330_natural_date_clusters.csv",
-      "bytes": 5240,
-      "sha256": "14321eaf943d933b0068f04795397de209f48a34dcf4e27a326289dd5ecb5373"
+      "file": "data/p332_season_context.csv",
+      "bytes": 586,
+      "sha256": "b2ce35262b01c0e99253055c4432dc96d2d3b24b16c0fe2f8bdf934f6c40ca82"
     },
     {
-      "file": "data/p330_season_context.csv",
-      "bytes": 214,
-      "sha256": "84214d3ef52e0a92c4779b1e83d68b8865f8a62ee7838b5bb15d727c607e91a4"
+      "file": "data/p332_season_counts.csv",
+      "bytes": 129,
+      "sha256": "f41a16bc48627b335d70fa1c3f8d95c4367e8ffad10517f2a5f6a21122da3313"
     },
     {
-      "file": "data/p330_season_input_693.csv",
+      "file": "data/p332_season_input_693.csv",
       "bytes": 80028,
       "sha256": "8af4577e51bd11c0ece4ed0951b71a72f29c48d345b1bad8cd7f85e1b5d76e0f"
     },
     {
-      "file": "data/p330_winter_figure_1.csv",
-      "bytes": 6531,
-      "sha256": "dbca7aabe837462142a330844faa1c18b54895f63cb190b3b621f3881bd7107b"
-    },
-    {
-      "file": "data/p330_winter_figure_2.csv",
-      "bytes": 668,
-      "sha256": "82f5ba8f812ec2f7e1d0edffeb77668f57437af6b103d356fe1acb0b93ed7f76"
-    },
-    {
-      "file": "data/p330_winter_figure_3.csv",
-      "bytes": 248,
-      "sha256": "b7d975072bf5c78424acb0bda04df27f7f990500977aff553543e63f404ab7f0"
-    },
-    {
-      "file": "data/p330_winter_figure_4.csv",
-      "bytes": 553,
-      "sha256": "3481d074ab5d6e57dfe63ef01727dd926c0eed385bc5a2b108f77ae149ec083f"
-    },
-    {
-      "file": "data/p331_dbscan_plotted_points.csv",
-      "bytes": 5100,
-      "sha256": "b8a6ac14e23961076b243d612a13980a2d703b8fb007e2e438ac79e013830906"
+      "file": "data/p332_sensitivity.csv",
+      "bytes": 314,
+      "sha256": "bd5ac87b674ee35f2e814b3c6d0200be632b71f1fee688e710e2fe19b970eb0e"
     },
     {
       "file": "data/research_revision.js",
@@ -664,16 +644,6 @@
       "sha256": "a84e7c0d27dc56829b4d332131ce68064704f8d641b5e29a24a5c65eb0a7a88e"
     },
     {
-      "file": "figures/a1_ch2_excavation_flow.png",
-      "bytes": 387620,
-      "sha256": "2636db95fe02a1cdeaec4de34f5c31453c6a7fae2a62f313744d6c50968e2212"
-    },
-    {
-      "file": "figures/a1_ch2_excavation_flow.svg",
-      "bytes": 11445,
-      "sha256": "9c68268efeab786fe3e17fc9b2cd5ddc1d7030652a501171e0d3efe073d4693e"
-    },
-    {
       "file": "figures/a1_ch2_locations.pdf",
       "bytes": 46288,
       "sha256": "a049c75da06d95ebe567ae9acf6f6e87b51ce2b29711246c4ce1a2372f800177"
@@ -779,84 +749,94 @@
       "sha256": "30155e3c15849ead4f022c59398d16fdf88008f82efd71ca0d75014d1b925063"
     },
     {
-      "file": "figures/p328_joint_overview.pdf",
-      "bytes": 59463,
-      "sha256": "6875e718fcadefac57d949f1aea0cd587f61ea8d6c550dc0c790b813a53d1141"
+      "file": "figures/p332_excavation_flow.png",
+      "bytes": 387620,
+      "sha256": "2636db95fe02a1cdeaec4de34f5c31453c6a7fae2a62f313744d6c50968e2212"
     },
     {
-      "file": "figures/p328_joint_overview.png",
-      "bytes": 439525,
-      "sha256": "056cce94851f992e24f89d06c27b276f1d11aa9b3658a99ad10a0eae04e1a680"
+      "file": "figures/p332_excavation_flow.svg",
+      "bytes": 11541,
+      "sha256": "f5dda93d58e7dd7ba152268b1f7a96dacee5fd68c1ce4e28591b42e7e5fb2f7a"
     },
     {
-      "file": "figures/p328_joint_overview.svg",
-      "bytes": 20076,
-      "sha256": "ae5d12e6626b7ab83cd5035c0a61474e6439b32e37828a1d1c3124ccfd532a8f"
+      "file": "figures/p332_joint_overview.pdf",
+      "bytes": 58996,
+      "sha256": "529ce10dcbb5293310f500ae98dc1c7f5aa0ab653f246ae1c0993eeabae3cc89"
     },
     {
-      "file": "figures/p328_material_overview.pdf",
-      "bytes": 140561,
-      "sha256": "465a0c32f237b4b606f61ae0f48032b50b5a9d7da1884b50f8892cc5685a830b"
+      "file": "figures/p332_joint_overview.png",
+      "bytes": 437567,
+      "sha256": "7321b458f1f259fdce09b71e496ddadffff6deba283e3161f3b1a876f6550c9b"
     },
     {
-      "file": "figures/p328_material_overview.png",
-      "bytes": 371906,
-      "sha256": "5c491e969332d415ad8ba4c9611617e35aee56c2de0da1d41727164022411183"
+      "file": "figures/p332_joint_overview.svg",
+      "bytes": 20070,
+      "sha256": "e13d59340e17072503fff72ac894975080fcc81686385891251f9fa6c9dd96e0"
     },
     {
-      "file": "figures/p328_material_overview.svg",
-      "bytes": 331889,
-      "sha256": "6534f486b99ae5529abd001c90561e165234c1dddc77a75e6d63b4ef1277019f"
+      "file": "figures/p332_material_overview.pdf",
+      "bytes": 140063,
+      "sha256": "e6a8fdba2910b07cdb99915487b8659c08d7d81327b47714696e024397c2713c"
     },
     {
-      "file": "figures/p329_physical_context.pdf",
-      "bytes": 153475,
-      "sha256": "220b7fb04aa42dc875b34a8e47868da8d6d4368560a6e1440ab1c5df832c9234"
+      "file": "figures/p332_material_overview.png",
+      "bytes": 369908,
+      "sha256": "23af779193f5989303797ccb16811208e5bbc9aa24474fa63c9faeda09d91f76"
     },
     {
-      "file": "figures/p329_physical_context.png",
-      "bytes": 674408,
-      "sha256": "253c0276a264bc283c68bcc568dc9bda2230af2d2842cb43fce6d64a75a62c45"
+      "file": "figures/p332_material_overview.svg",
+      "bytes": 331883,
+      "sha256": "d98bbcdcc5484454541c5efdd279b56abc528143ebd485294d3cbf3adb35da32"
     },
     {
-      "file": "figures/p329_physical_context.svg",
-      "bytes": 471439,
-      "sha256": "6d3a2df3d28ba7ad9882de7bdf3fc013ab51e7b784cfb67a8094b19938887987"
+      "file": "figures/p332_natural_context.pdf",
+      "bytes": 76155,
+      "sha256": "f56e1587115c3e1b4671cc70369815b46988f66abe996646026f769a1f8aadc4"
     },
     {
-      "file": "figures/p330_natural_context.pdf",
-      "bytes": 95152,
-      "sha256": "6791d066bb1a00d42b5f59f38ffa2c1be09b62db579b68adbc1444a7e4f4709a"
+      "file": "figures/p332_natural_context.png",
+      "bytes": 492721,
+      "sha256": "85728df2b24b8a3da5cdddd7e83c697f7ce8901d7ef9cf3b7e0151866913d83b"
     },
     {
-      "file": "figures/p330_natural_context.png",
-      "bytes": 463777,
-      "sha256": "30492fe08172e8d4f4ac9b98faf8b3716de50467faace1f1b5455a65fc4efeb2"
+      "file": "figures/p332_natural_context.svg",
+      "bytes": 72902,
+      "sha256": "2071f58df82da9938eebca51014610f163916d5cf5016a0df8205e4be759b1ac"
     },
     {
-      "file": "figures/p330_natural_context.svg",
-      "bytes": 97558,
-      "sha256": "929f71025a8f1e4a5e6bc2387de65839ec0751988867fe61058d4903e4caf667"
+      "file": "figures/p332_physical_context.pdf",
+      "bytes": 152967,
+      "sha256": "235ed41572588187c6b04ac062200c5294a9c6ed90c9ab133ff696108d7d8a36"
     },
     {
-      "file": "figures/p331_dbscan_points.pdf",
-      "bytes": 44546,
-      "sha256": "997460944618349b9c5589d447e8d76925e75d62a7600c01eed73b40ac100df2"
+      "file": "figures/p332_physical_context.png",
+      "bytes": 673003,
+      "sha256": "b50934a513b2829b788701b09ed6eceed7ffd5674613526a29ef022d2228b6c6"
     },
     {
-      "file": "figures/p331_dbscan_points.png",
-      "bytes": 280217,
-      "sha256": "1de7faebe273b2ee1e85a2990a65a73c8c8fc5b62ec0387d20f795c67b5eedaf"
+      "file": "figures/p332_physical_context.svg",
+      "bytes": 471433,
+      "sha256": "92785b5ac517203cbbfd2b20f05447273b734e0ed22fe75d87a503c547d5c70a"
     },
     {
-      "file": "figures/p331_dbscan_points.svg",
-      "bytes": 40660,
-      "sha256": "ef8176726a563a9b910df3ec0584f051cd40e3191971b7a8efe3b486aced2988"
+      "file": "figures/p332_pooled_dbscan.pdf",
+      "bytes": 36852,
+      "sha256": "d27fda83fa3a73a56f7913bacfaaa3699f948013ee29cfa148ea390d6d4aac8c"
+    },
+    {
+      "file": "figures/p332_pooled_dbscan.png",
+      "bytes": 192314,
+      "sha256": "1a064f8bb9c7c272b7d58842d05a8597af022395505404b25826f599878590ac"
+    },
+    {
+      "file": "figures/p332_pooled_dbscan.svg",
+      "bytes": 38827,
+      "sha256": "09a783092329dc679166e5595dcfb01ebb16bfe50a1915ccf5ceb51458f85788"
     },
     {
       "file": "index.html",
-      "bytes": 55720,
-      "sha256": "2bbb49670baca08a96ff03667a05599a7b36ec3db33f0d41e31a5c2b5fbd5325"
+      "bytes": 55743,
+      "sha256": "6a767c5ade6d7a692c0f581837cbcb19b9d92f505a0ecc0b710e36f4a46cddfa"
     },
     {
       "file": "supplement.html",

@@ -1,0 +1,97 @@
+<svg width="1002" height="510" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 1002 510">
+<rect width="1002" height="510" x="0" y="0" fill="#fff"></rect>
+<text dominant-baseline="central" text-anchor="start" style="font: 12px 'Microsoft YaHei'" y="6" transform="translate(70 4)" fill="#526a77">材料与全部报告</text>
+<text dominant-baseline="central" text-anchor="start" style="font: 12px 'Microsoft YaHei'" y="6" transform="translate(420.84 4)" fill="#526a77">燃气点燃记录</text>
+<text dominant-baseline="central" text-anchor="start" style="font: 12px 'Microsoft YaHei'" y="6" transform="translate(819 4)" fill="#526a77">伤亡记录</text>
+<path d="M12 0C170.85 0 206.15 0 365 0L365 15.4987C206.15 15.4987 170.85 15.4987 12 15.4987Z" transform="translate(100 35)" fill="#a76936" fill-opacity="0.7" class="zr0-cls-0"></path>
+<path d="M12 15.4987C170.85 15.4987 206.15 42.4987 365 42.4987L365 178.8875C206.15 178.8875 170.85 151.8875 12 151.8875Z" transform="translate(100 35)" fill="#d9e1e6" fill-opacity="0.8" class="zr0-cls-1"></path>
+<path d="M12 178.8875C170.85 178.8875 206.15 205.8875 365 205.8875L365 283.3811C206.15 283.3811 170.85 256.3811 12 256.3811Z" transform="translate(100 35)" fill="#a76936" fill-opacity="0.7" class="zr0-cls-0"></path>
+<path d="M12 256.3811C170.85 256.3811 206.15 310.3811 365 310.3811L365 384C206.15 384 170.85 330 12 330Z" transform="translate(100 35)" fill="#d9e1e6" fill-opacity="0.8" class="zr0-cls-1"></path>
+<path d="M377 0C535.85 0 571.15 0 730 0L730 4.6496C571.15 4.6496 535.85 4.6496 377 4.6496Z" transform="translate(100 35)" fill="#982f3f" fill-opacity="0.84" class="zr0-cls-2"></path>
+<path d="M377 4.6496C535.85 4.6496 571.15 31.6496 730 31.6496L730 42.4987C571.15 42.4987 535.85 15.4987 377 15.4987Z" transform="translate(100 35)" fill="#c5dfe2" fill-opacity="0.74" class="zr0-cls-3"></path>
+<path d="M377 42.4987C535.85 42.4987 571.15 69.4987 730 69.4987L730 205.8875C571.15 205.8875 535.85 178.8875 377 178.8875Z" transform="translate(100 35)" fill="#c5dfe2" fill-opacity="0.74" class="zr0-cls-3"></path>
+<path d="M377 205.8875C535.85 205.8875 571.15 232.8875 730 232.8875L730 257.6854C571.15 257.6854 535.85 230.6854 377 230.6854Z" transform="translate(100 35)" fill="#982f3f" fill-opacity="0.84" class="zr0-cls-2"></path>
+<path d="M377 230.6854C535.85 230.6854 571.15 284.6854 730 284.6854L730 337.3811C571.15 337.3811 535.85 283.3811 377 283.3811Z" transform="translate(100 35)" fill="#c5dfe2" fill-opacity="0.74" class="zr0-cls-3"></path>
+<path d="M377 310.3811C535.85 310.3811 571.15 364.3811 730 364.3811L730 366.7059C571.15 366.7059 535.85 312.7059 377 312.7059Z" transform="translate(100 35)" fill="#982f3f" fill-opacity="0.84" class="zr0-cls-2"></path>
+<path d="M377 312.7059C535.85 312.7059 571.15 393.7059 730 393.7059L730 465C571.15 465 535.85 384 377 384Z" transform="translate(100 35)" fill="#c5dfe2" fill-opacity="0.74" class="zr0-cls-3"></path>
+<path d="M0 0l12 0l0 151.8875l-12 0Z" transform="translate(100 35)" fill="#6a8797" class="zr0-cls-4"></path>
+<path d="M0 178.8875l12 0l0 151.1125l-12 0Z" transform="translate(100 35)" fill="#6a8797" class="zr0-cls-4"></path>
+<path d="M365 0l12 0l0 15.4987l-12 0Z" transform="translate(100 35)" fill="#a76936" class="zr0-cls-0"></path>
+<path d="M365 42.4987l12 0l0 136.3887l-12 0Z" transform="translate(100 35)" fill="#d9e1e6" class="zr0-cls-1"></path>
+<path d="M365 205.8875l12 0l0 77.4936l-12 0Z" transform="translate(100 35)" fill="#a76936" class="zr0-cls-0"></path>
+<path d="M365 310.3811l12 0l0 73.6189l-12 0Z" transform="translate(100 35)" fill="#d9e1e6" class="zr0-cls-1"></path>
+<path d="M730 0l12 0l0 4.6496l-12 0Z" transform="translate(100 35)" fill="#982f3f" class="zr0-cls-2"></path>
+<path d="M730 31.6496l12 0l0 10.8491l-12 0Z" transform="translate(100 35)" fill="#c5dfe2" class="zr0-cls-3"></path>
+<path d="M730 69.4987l12 0l0 136.3887l-12 0Z" transform="translate(100 35)" fill="#c5dfe2" class="zr0-cls-3"></path>
+<path d="M730 232.8875l12 0l0 24.798l-12 0Z" transform="translate(100 35)" fill="#982f3f" class="zr0-cls-2"></path>
+<path d="M730 284.6854l12 0l0 52.6957l-12 0Z" transform="translate(100 35)" fill="#c5dfe2" class="zr0-cls-3"></path>
+<path d="M730 364.3811l12 0l0 2.3248l-12 0Z" transform="translate(100 35)" fill="#982f3f" class="zr0-cls-2"></path>
+<path d="M730 393.7059l12 0l0 71.2941l-12 0Z" transform="translate(100 35)" fill="#c5dfe2" class="zr0-cls-3"></path>
+<path d="M-36.6621 -16l36.6621 0l0 32l-36.6621 0Z" transform="translate(95 110.9437)" fill="none" class="zr0-cls-5"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" y="-8" transform="translate(95 110.9437)" fill="#173241">钢</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="8" transform="translate(95 110.9437)" fill="#173241">196 份</text>
+<path d="M-36.6621 -16l36.6621 0l0 32l-36.6621 0Z" transform="translate(95 289.4437)" fill="none" class="zr0-cls-5"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" y="-8" transform="translate(95 289.4437)" fill="#173241">塑料</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="8" transform="translate(95 289.4437)" fill="#173241">195 份</text>
+<path d="M-38.8887 -16l38.8887 0l0 32l-38.8887 0Z" transform="translate(460 42.7494)" fill="none" class="zr0-cls-5"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" y="-8" transform="translate(460 42.7494)" fill="#173241">钢·点燃</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="8" transform="translate(460 42.7494)" fill="#173241">20 份</text>
+<path d="M-50.8887 -16l50.8887 0l0 32l-50.8887 0Z" transform="translate(460 145.6931)" fill="none" class="zr0-cls-5"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" y="-8" transform="translate(460 145.6931)" fill="#173241">钢·未点燃</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="8" transform="translate(460 145.6931)" fill="#173241">176 份</text>
+<path d="M-50.8887 -16l50.8887 0l0 32l-50.8887 0Z" transform="translate(460 279.6343)" fill="none" class="zr0-cls-5"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" y="-8" transform="translate(460 279.6343)" fill="#173241">塑料·点燃</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="8" transform="translate(460 279.6343)" fill="#173241">100 份</text>
+<path d="M-62.8887 -16l62.8887 0l0 32l-62.8887 0Z" transform="translate(460 382.1905)" fill="none" class="zr0-cls-5"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" y="-8" transform="translate(460 382.1905)" fill="#173241">塑料·未点燃</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="8" transform="translate(460 382.1905)" fill="#173241">95 份</text>
+<path d="M0 -16l50.1387 0l0 32l-50.1387 0Z" transform="translate(847 37.3248)" fill="none" class="zr0-cls-5"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" y="-8" transform="translate(847 37.3248)" fill="#173241">钢·点燃</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="8" transform="translate(847 37.3248)" fill="#173241">伤亡 6 份</text>
+<path d="M0 -16l57.1758 0l0 32l-57.1758 0Z" transform="translate(847 72.0742)" fill="none" class="zr0-cls-5"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" y="-8" transform="translate(847 72.0742)" fill="#173241">钢·点燃</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="8" transform="translate(847 72.0742)" fill="#173241">其余 14 份</text>
+<path d="M0 -16l64.2129 0l0 32l-64.2129 0Z" transform="translate(847 172.6931)" fill="none" class="zr0-cls-5"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" y="-8" transform="translate(847 172.6931)" fill="#173241">钢·未点燃</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="8" transform="translate(847 172.6931)" fill="#173241">其余 176 份</text>
+<path d="M0 -16l57.1758 0l0 32l-57.1758 0Z" transform="translate(847 280.2864)" fill="none" class="zr0-cls-5"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" y="-8" transform="translate(847 280.2864)" fill="#173241">塑料·点燃</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="8" transform="translate(847 280.2864)" fill="#173241">伤亡 32 份</text>
+<path d="M0 -16l57.1758 0l0 32l-57.1758 0Z" transform="translate(847 346.0332)" fill="none" class="zr0-cls-5"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" y="-8" transform="translate(847 346.0332)" fill="#173241">塑料·点燃</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="8" transform="translate(847 346.0332)" fill="#173241">其余 68 份</text>
+<path d="M0 -16l62.8887 0l0 32l-62.8887 0Z" transform="translate(847 400.5435)" fill="none" class="zr0-cls-5"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" y="-8" transform="translate(847 400.5435)" fill="#173241">塑料·未点燃</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="8" transform="translate(847 400.5435)" fill="#173241">伤亡 3 份</text>
+<path d="M0 -16l62.8887 0l0 32l-62.8887 0Z" transform="translate(847 464.3529)" fill="none" class="zr0-cls-5"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" y="-8" transform="translate(847 464.3529)" fill="#173241">塑料·未点燃</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="8" transform="translate(847 464.3529)" fill="#173241">其余 92 份</text>
+<style ><![CDATA[
+.zr0-cls-0:hover {
+cursor:pointer;
+fill:rgba(183,115,59,1);
+}
+.zr0-cls-1:hover {
+cursor:pointer;
+fill:rgba(238,247,253,1);
+}
+.zr0-cls-2:hover {
+cursor:pointer;
+fill:rgba(167,51,69,1);
+}
+.zr0-cls-3:hover {
+cursor:pointer;
+fill:rgba(216,245,248,1);
+}
+.zr0-cls-4:hover {
+cursor:pointer;
+fill:rgba(116,148,166,1);
+}
+.zr0-cls-5:hover {
+cursor:pointer;
+}
+
+]]>
+
+</style>
+</svg>
