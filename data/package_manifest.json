@@ -2,7 +2,7 @@
   "build": "2026-11-13",
   "cohort_sha256": "89c21d2ea6f5cb8ff6daad6ac60160608671a7b49c218bf9f917bfb88a2ce5a1",
   "checks": {
-    "local_links_checked": 226,
+    "local_links_checked": 236,
     "all_21_categories_present": true,
     "remote_runtime_dependencies": 0,
     "machine_local_paths": 0
@@ -105,8 +105,8 @@
     },
     {
       "file": "assets/site.css",
-      "bytes": 23757,
-      "sha256": "ec55d9bff174d76222ef1f5cbb7a895bea11ab0b4a0967d5fcf7dc6266f01ef3"
+      "bytes": 24223,
+      "sha256": "7b94a189948824c684d20cdbbadd6883a9f099417bd5bf6f2659e9b0ab2a9b15"
     },
     {
       "file": "assets/site.js",
@@ -120,8 +120,8 @@
     },
     {
       "file": "chapter2.html",
-      "bytes": 40343,
-      "sha256": "cf8c0c58ef6ff36ca7d118cfe76131c6d42a5b718f4378ad09bf9beb9bffdd6e"
+      "bytes": 42671,
+      "sha256": "470580d419d0ce7ae90bdc152daa05864f566af7f5a552c5914e6569eb23276e"
     },
     {
       "file": "data/a1_00e609_periods_source.csv",
@@ -554,6 +554,11 @@
       "sha256": "3481d074ab5d6e57dfe63ef01727dd926c0eed385bc5a2b108f77ae149ec083f"
     },
     {
+      "file": "data/p331_dbscan_plotted_points.csv",
+      "bytes": 5100,
+      "sha256": "b8a6ac14e23961076b243d612a13980a2d703b8fb007e2e438ac79e013830906"
+    },
+    {
       "file": "data/research_revision.js",
       "bytes": 8269,
       "sha256": "914a686301bfcc2fd5b0ca7263f57c579898fed4932d36905941a89666c49e13"
@@ -834,9 +839,24 @@
       "sha256": "929f71025a8f1e4a5e6bc2387de65839ec0751988867fe61058d4903e4caf667"
     },
     {
+      "file": "figures/p331_dbscan_points.pdf",
+      "bytes": 44546,
+      "sha256": "997460944618349b9c5589d447e8d76925e75d62a7600c01eed73b40ac100df2"
+    },
+    {
+      "file": "figures/p331_dbscan_points.png",
+      "bytes": 280217,
+      "sha256": "1de7faebe273b2ee1e85a2990a65a73c8c8fc5b62ec0387d20f795c67b5eedaf"
+    },
+    {
+      "file": "figures/p331_dbscan_points.svg",
+      "bytes": 40660,
+      "sha256": "ef8176726a563a9b910df3ec0584f051cd40e3191971b7a8efe3b486aced2988"
+    },
+    {
       "file": "index.html",
-      "bytes": 54691,
-      "sha256": "76e80fe718dcb52d8d76190e1eccd3c673fb7eaff67563dcf5111eefd15c275f"
+      "bytes": 55720,
+      "sha256": "2bbb49670baca08a96ff03667a05599a7b36ec3db33f0d41e31a5c2b5fbd5325"
     },
     {
       "file": "supplement.html",
