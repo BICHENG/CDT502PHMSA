@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="950.4pt" height="396pt" viewBox="0 0 950.4 396" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-12T19:07:46.022722</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 396 
+L 950.4 396 
+L 950.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 251.038656 101.772 
+L 571.057344 101.772 
+L 571.057344 207.108 
+L 251.038656 207.108 
+z
+" clip-path="url(#p0669d82426)" style="fill: #a52a35"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 578.926656 101.772 
+L 898.945344 101.772 
+L 898.945344 207.108 
+L 578.926656 207.108 
+z
+" clip-path="url(#p0669d82426)" style="fill: #f5dde0"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 251.038656 212.652 
+L 571.057344 212.652 
+L 571.057344 317.988 
+L 251.038656 317.988 
+z
+" clip-path="url(#p0669d82426)" style="fill: #d5e7e9"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 578.926656 212.652 
+L 898.945344 212.652 
+L 898.945344 317.988 
+L 578.926656 317.988 
+z
+" clip-path="url(#p0669d82426)" style="fill: #bedade"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #243f4c" transform="translate(365.548 54.640304)">模型标记为伤亡</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #243f4c" transform="translate(373.159094 75.416182)">分数≥29.1%</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #243f4c" transform="translate(699.936 54.589522)">模型判为其余</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #243f4c" transform="translate(701.053187 75.416182)">分数&lt;29.1%</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #243f4c" transform="translate(123.3152 147.885156)">真实结果：伤亡</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #243f4c" transform="translate(185.280512 170.047109)">15份</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #243f4c" transform="translate(123.3152 258.759063)">真实结果：其余</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; fill: #243f4c" transform="translate(185.280512 280.927109)">97份</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 34px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="411.048" y="151.989313" transform="rotate(-0 411.048 151.989313)">8份</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="411.048" y="184.80616" transform="rotate(-0 411.048 184.80616)">识别</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 34px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #a52a35" x="738.936" y="151.989313" transform="rotate(-0 738.936 151.989313)">7份</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #a52a35" x="738.936" y="184.798191" transform="rotate(-0 738.936 184.798191)">漏判</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 34px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243f4c" x="411.048" y="262.869313" transform="rotate(-0 411.048 262.869313)">21份</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243f4c" x="411.048" y="295.736629" transform="rotate(-0 411.048 295.736629)">误报</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 34px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243f4c" x="738.936" y="262.869313" transform="rotate(-0 738.936 262.869313)">76份</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #243f4c" x="738.936" y="295.7778" transform="rotate(-0 738.936 295.7778)">正确排除</text>
+   </g>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 11.5px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5c7180" x="33.264" y="17.82" transform="rotate(-0 33.264 17.82)">三材料主管道及阀 · 2022年起112份报告，伤亡15份、其余97份 · 管径＋正常压力评分</text>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 11.5px; font-family: 'Microsoft YaHei', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #5c7180" x="33.264" y="380.16" transform="rotate(-0 33.264 380.16)">29.1%由244份早期验证报告选定</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0669d82426">
+   <rect x="247.104" y="99" width="655.776" height="221.76"/>
+  </clipPath>
+ </defs>
+</svg>

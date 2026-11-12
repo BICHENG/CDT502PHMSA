@@ -1,0 +1,2 @@
+﻿method,reference,metric,low95,high95,replicates,operators,scope
+forest,part_only,AP,0.016734343850679637,0.11479539127661632,1200,93,"paired late-operator bootstrap; predictions fixed; exploratory, no selection correction"

@@ -2,7 +2,7 @@
   "build": "2026-11-12",
   "cohort_sha256": "89c21d2ea6f5cb8ff6daad6ac60160608671a7b49c218bf9f917bfb88a2ce5a1",
   "checks": {
-    "local_links_checked": 355,
+    "local_links_checked": 376,
     "all_21_categories_present": true,
     "remote_runtime_dependencies": 0,
     "machine_local_paths": 0
@@ -150,8 +150,8 @@
     },
     {
       "file": "chapter2.html",
-      "bytes": 35265,
-      "sha256": "890a3cc637ec786b4f605e08a51dbd5edebae7547d80eb55f671a1874b556e04"
+      "bytes": 35294,
+      "sha256": "6927bc03181118059f181cf20aaee346e9440069c87a4a63beff17a32cb399e0"
     },
     {
       "file": "data/a1_00e609_periods_source.csv",
@@ -1194,6 +1194,81 @@
       "sha256": "ee04c281ecdcc58e30ea24df2d1d778991a286911717351e93f285b0c142b36b"
     },
     {
+      "file": "data/p328_context_joint.csv",
+      "bytes": 546,
+      "sha256": "1f753514064090d25735ebd737be00694a734a331d222ce3f29d55de5283ecad"
+    },
+    {
+      "file": "data/p328_context_joint_counts_full.csv",
+      "bytes": 4069,
+      "sha256": "da3b295bf426e9af34f4ae39aa1ebf67815c316b3691374fa3067f3c0e66c5e9"
+    },
+    {
+      "file": "data/p328_context_joint_people_full.csv",
+      "bytes": 836,
+      "sha256": "9cddcd76e9ccd0459961c1ced5bc28266c00958cf617f81dfe080f20013cdef3"
+    },
+    {
+      "file": "data/p328_context_material_map.csv",
+      "bytes": 379,
+      "sha256": "ed38e8b451d0bfdc35dcd3e61d07020ba2d8a2e37f76d832f91a93e852071e4f"
+    },
+    {
+      "file": "data/p328_context_material_map_states.csv",
+      "bytes": 13402,
+      "sha256": "916b7f8d2db52d2892b57f9eeb8d4ebebca5b99375868d21968331e875618534"
+    },
+    {
+      "file": "data/p328_models_input_choice.csv",
+      "bytes": 366,
+      "sha256": "65b98ccb760880cdddc308d44063e453ec3b303a621f34a4bddcfa8fce974faa"
+    },
+    {
+      "file": "data/p328_models_input_choice_early_context.csv",
+      "bytes": 802,
+      "sha256": "d43bb8d5b67f9ee3c192b1fbc11342ef88eafee1d65f56c53d1aec13a7b73bbc"
+    },
+    {
+      "file": "data/p328_models_input_choice_paired_AP.csv",
+      "bytes": 634,
+      "sha256": "3300704ec8f98e7d908a4cbd400e1a8c46aeb8dfce481bcd38c1f77e93632784"
+    },
+    {
+      "file": "data/p328_models_model_comparison.csv",
+      "bytes": 2045,
+      "sha256": "42c11c2451b32a36b7abe494cbb9c14207c4dd18d71b078675d7a65dfa8f8298"
+    },
+    {
+      "file": "data/p328_models_model_comparison_cumulative.csv",
+      "bytes": 77552,
+      "sha256": "6fb484ecd29c360f83403a03efd13da03443c1cdcc145b430da80d38d8f35056"
+    },
+    {
+      "file": "data/p328_models_model_comparison_paired_AP.csv",
+      "bytes": 228,
+      "sha256": "827e85aac3508f5be3798c90d481877c21f50a79fdfa6af4d2ce898e7854c841"
+    },
+    {
+      "file": "data/p328_models_model_errors.csv",
+      "bytes": 560,
+      "sha256": "792b68615d1ce5c739589408113cc4402ed6f4a5cb968767c329f0465aa56831"
+    },
+    {
+      "file": "data/p328_models_model_errors_records.csv",
+      "bytes": 22938,
+      "sha256": "eb0db026e37c78c7617304570d4f3038891115c166724bb4bda59e1bc2568cd8"
+    },
+    {
+      "file": "data/p328_winter_natural_month_counts.csv",
+      "bytes": 1482,
+      "sha256": "5f24444f0432b4a22e2501adf8489aba883b8fe4709f96b496c8400d190e1ff3"
+    },
+    {
+      "file": "data/p328_winter_season_context.csv",
+      "bytes": 586,
+      "sha256": "b2ce35262b01c0e99253055c4432dc96d2d3b24b16c0fe2f8bdf934f6c40ca82"
+    },
+    {
       "file": "data/paired_ablation_intervals.csv",
       "bytes": 2325,
       "sha256": "d1f8e45678bd7ee8493fb415086b62113c2b972cf2c18abd0bd56dc5fca204f1"
@@ -1514,21 +1589,6 @@
       "sha256": "dbed4b51024c61d38fdbf1efba21cdb4473552d09286d55dd157258b73abe44a"
     },
     {
-      "file": "figures/a1_ch2_natural_context.pdf",
-      "bytes": 57996,
-      "sha256": "31dcd334254ea6d0186408f2363b57eb21e52617f4f97f6671a57eafafaac6cf"
-    },
-    {
-      "file": "figures/a1_ch2_natural_context.png",
-      "bytes": 403637,
-      "sha256": "b7e03fa0a397fe25bfadb57246c03dfa0334dad4e2aebffa61a41dbc473a4712"
-    },
-    {
-      "file": "figures/a1_ch2_natural_context.svg",
-      "bytes": 68270,
-      "sha256": "4e0613ab1a379de27f15f2ca9e9ffde7e2ab8e05c5c543a7989a2ff62864c488"
-    },
-    {
       "file": "figures/a1_ch2_physical_clustering.pdf",
       "bytes": 83854,
       "sha256": "89d7b62f907ef6eef6d3635f14c54b9294a949d28a325daf268f344b36aea073"
@@ -1642,21 +1702,6 @@
       "file": "figures/a1_ch3_forest_tree.svg",
       "bytes": 29386,
       "sha256": "0393ebaffafa5e404f4f2b006d230838fa1b52019c6807eae9a1bbac8929f70b"
-    },
-    {
-      "file": "figures/a1_ch3_model_comparison.pdf",
-      "bytes": 41031,
-      "sha256": "92eb1a7344489d60f7955171b971747f09f9feb1acb74f5888b795d4f890f1a3"
-    },
-    {
-      "file": "figures/a1_ch3_model_comparison.png",
-      "bytes": 199412,
-      "sha256": "4d35ed772b31fa8df6180223603aa795154611e31252aa5b82008100b3266cf0"
-    },
-    {
-      "file": "figures/a1_ch3_model_comparison.svg",
-      "bytes": 21008,
-      "sha256": "898035c17ddcbb3615bdaf2d59caeec110e1482ff33b16b769a8b7787f822cae"
     },
     {
       "file": "figures/a1_ch3_probability_reliability.pdf",
@@ -2049,21 +2094,6 @@
       "sha256": "d4404c8ef89c7e7566f8dcf65fd6f02537d82751c2139033934ccaeb331d3581"
     },
     {
-      "file": "figures/p322_model_errors.pdf",
-      "bytes": 54586,
-      "sha256": "ee7a274b69a530529d8d54f48291eaef0a80194a37f3a8d04d5e7ddc7faa0311"
-    },
-    {
-      "file": "figures/p322_model_errors.png",
-      "bytes": 264251,
-      "sha256": "754c4c108ece36f942241476539fe6fff9995f4f09a043800c0f9c484933418a"
-    },
-    {
-      "file": "figures/p322_model_errors.svg",
-      "bytes": 24583,
-      "sha256": "f6e738542fa91a6f19a8fd523a6a322b8a914e98075086aac30c68b0b1564721"
-    },
-    {
       "file": "figures/p325_early_input_choice.pdf",
       "bytes": 59725,
       "sha256": "921c825418651f143bc1c976d701349901452d0cfc01c52fe8dd2366544d1a4d"
@@ -2077,21 +2107,6 @@
       "file": "figures/p325_early_input_choice.svg",
       "bytes": 18819,
       "sha256": "d3e4e180eb9508d49799c2f1c8215ec8f35ba7d417866980868ec1032d748e78"
-    },
-    {
-      "file": "figures/p325_p322_input_choice.pdf",
-      "bytes": 67194,
-      "sha256": "79a6b7f365b33756ea793935898a8461d63b6026bbb7acc4ea7ba72d7e667ac4"
-    },
-    {
-      "file": "figures/p325_p322_input_choice.png",
-      "bytes": 235702,
-      "sha256": "c83f2a57211ffeaa812680fa00383ea6e87e0c23881ff683caa10ed4670f59c6"
-    },
-    {
-      "file": "figures/p325_p322_input_choice.svg",
-      "bytes": 117524,
-      "sha256": "d9913dc9b75fef12ed409e02f891ccd57bb05758da1e3371903e6601953561fe"
     },
     {
       "file": "figures/p325_physical_context.pdf",
@@ -2137,6 +2152,111 @@
       "file": "figures/p327_material_primary.svg",
       "bytes": 14230,
       "sha256": "30155e3c15849ead4f022c59398d16fdf88008f82efd71ca0d75014d1b925063"
+    },
+    {
+      "file": "figures/p328_joint_overview.pdf",
+      "bytes": 59463,
+      "sha256": "6875e718fcadefac57d949f1aea0cd587f61ea8d6c550dc0c790b813a53d1141"
+    },
+    {
+      "file": "figures/p328_joint_overview.png",
+      "bytes": 439525,
+      "sha256": "056cce94851f992e24f89d06c27b276f1d11aa9b3658a99ad10a0eae04e1a680"
+    },
+    {
+      "file": "figures/p328_joint_overview.svg",
+      "bytes": 20076,
+      "sha256": "ae5d12e6626b7ab83cd5035c0a61474e6439b32e37828a1d1c3124ccfd532a8f"
+    },
+    {
+      "file": "figures/p328_material_overview.pdf",
+      "bytes": 140561,
+      "sha256": "465a0c32f237b4b606f61ae0f48032b50b5a9d7da1884b50f8892cc5685a830b"
+    },
+    {
+      "file": "figures/p328_material_overview.png",
+      "bytes": 371906,
+      "sha256": "5c491e969332d415ad8ba4c9611617e35aee56c2de0da1d41727164022411183"
+    },
+    {
+      "file": "figures/p328_material_overview.svg",
+      "bytes": 331889,
+      "sha256": "6534f486b99ae5529abd001c90561e165234c1dddc77a75e6d63b4ef1277019f"
+    },
+    {
+      "file": "figures/p328_model_comparison.pdf",
+      "bytes": 80633,
+      "sha256": "dc9c9d143909b4fbba3fc9b9da9dd08e375622eb6b810dfd69e74d2b9e023bce"
+    },
+    {
+      "file": "figures/p328_model_comparison.png",
+      "bytes": 456393,
+      "sha256": "ddbd02ee4594b56611c0e34dca5d1f8ca6f7a23aaf0b80c6b7aa6bf825e18771"
+    },
+    {
+      "file": "figures/p328_model_comparison.svg",
+      "bytes": 29592,
+      "sha256": "c2e38694f543cdc7beeaefcc79876f0102e1f0c340ac3a7a5922dcb24f7714b9"
+    },
+    {
+      "file": "figures/p328_natural_context.pdf",
+      "bytes": 76961,
+      "sha256": "8cc4baec2aabb63096762c02f08098da46ae1763d2e7f0c3f43d371298c8b6a2"
+    },
+    {
+      "file": "figures/p328_natural_context.png",
+      "bytes": 522671,
+      "sha256": "a7703214c67bd323dd7f8eac5c810f74a18e062d6ca9962b4ca9d7ce4761abf1"
+    },
+    {
+      "file": "figures/p328_natural_context.svg",
+      "bytes": 72968,
+      "sha256": "741bd5631319a1ea7596790560ca39662c86b5459dac8b5ca5e483c61969ba65"
+    },
+    {
+      "file": "figures/p328_original_score_distribution.pdf",
+      "bytes": 54586,
+      "sha256": "ee7a274b69a530529d8d54f48291eaef0a80194a37f3a8d04d5e7ddc7faa0311"
+    },
+    {
+      "file": "figures/p328_original_score_distribution.png",
+      "bytes": 264251,
+      "sha256": "754c4c108ece36f942241476539fe6fff9995f4f09a043800c0f9c484933418a"
+    },
+    {
+      "file": "figures/p328_original_score_distribution.svg",
+      "bytes": 24583,
+      "sha256": "f6e738542fa91a6f19a8fd523a6a322b8a914e98075086aac30c68b0b1564721"
+    },
+    {
+      "file": "figures/p328_p322_input_choice.pdf",
+      "bytes": 78736,
+      "sha256": "17a6be3e6e2f558492df7485f0437abc33232a3b90fe65282f594f6d86355184"
+    },
+    {
+      "file": "figures/p328_p322_input_choice.png",
+      "bytes": 346970,
+      "sha256": "1f04fd7810bad07927f0a3eb0e357172755e4a0a4c374fd749269c59e7608c4a"
+    },
+    {
+      "file": "figures/p328_p322_input_choice.svg",
+      "bytes": 18472,
+      "sha256": "a9b68a46a8077a737cdaaebc8b1d586baa0159611e306f9abdfeb3354d1b3bab"
+    },
+    {
+      "file": "figures/p328_p322_model_errors.pdf",
+      "bytes": 51520,
+      "sha256": "7a09442c2e0df195fbd274bd86c16a1e1ffda1a1e063d19754636187231d5ac4"
+    },
+    {
+      "file": "figures/p328_p322_model_errors.png",
+      "bytes": 212499,
+      "sha256": "a0348e8849833c1273d5b81e830b2a7f6045f13d562449de1632976a7419863b"
+    },
+    {
+      "file": "figures/p328_p322_model_errors.svg",
+      "bytes": 6526,
+      "sha256": "4dee6efafee5246e0be77fb8d6307dc23a742074d9c0246a990b87bd3d4390f8"
     },
     {
       "file": "figures/periods.pdf",
@@ -2215,13 +2335,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 52827,
-      "sha256": "5145ee627b6669b3c3690d996e97e4d14f1f490fef444af6ad015f3ae9d0b44f"
+      "bytes": 56096,
+      "sha256": "002483522bee0bad8fc2d8889e42393019bc51061143de2c6ee3533ff9d59d5e"
     },
     {
       "file": "supplement.html",
-      "bytes": 62319,
-      "sha256": "ced591f48d1148ec5a1923c08b52bd2c47102d2a2266e954fa7d5c0aa284de7e"
+      "bytes": 62842,
+      "sha256": "7b44799b6c8dac2c16f4028479c92f8bf07b84d1978ea32572c29ce36b3c1cef"
     }
   ]
 }

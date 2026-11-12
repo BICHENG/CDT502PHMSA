@@ -1,0 +1,3 @@
+﻿comparison,left,right,difference,ci_lower,ci_upper,source_left,source_right,source_difference,source_ci_lower,source_ci_upper,transform,operators,valid_draws
+full7_minus_categorical4,full7,categorical4,0.03435847568378286,-0.12149397403742598,0.1978528271613349,categorical4,full7,-0.03435847568378286,-0.1978528271613349,0.12149397403742598,difference=-source_difference; lower=-source_upper; upper=-source_lower,53,2000
+selected_raw_minus_full7,selected_raw,full7,-0.020527143241783175,-0.09853923600418155,0.08977715780087356,selected_raw,full7,-0.020527143241783175,-0.09853923600418155,0.08977715780087356,identity,53,2000

@@ -1,0 +1,5 @@
+﻿cell,actual,prediction,count,display,threshold,threshold_source
+TP,伤亡,标记伤亡,8,识别,0.29138102310974945,"maximum F1 on 244 early-validation reports, ties higher threshold"
+FN,伤亡,判为其余,7,漏判,0.29138102310974945,"maximum F1 on 244 early-validation reports, ties higher threshold"
+FP,其余,标记伤亡,21,误报,0.29138102310974945,"maximum F1 on 244 early-validation reports, ties higher threshold"
+TN,其余,判为其余,76,正确排除,0.29138102310974945,"maximum F1 on 244 early-validation reports, ties higher threshold"
