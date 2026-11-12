@@ -2,7 +2,7 @@
   "build": "2026-11-12",
   "cohort_sha256": "89c21d2ea6f5cb8ff6daad6ac60160608671a7b49c218bf9f917bfb88a2ce5a1",
   "checks": {
-    "local_links_checked": 346,
+    "local_links_checked": 355,
     "all_21_categories_present": true,
     "remote_runtime_dependencies": 0,
     "machine_local_paths": 0
@@ -150,8 +150,8 @@
     },
     {
       "file": "chapter2.html",
-      "bytes": 35919,
-      "sha256": "238114bc635849034bbd667188e242b001035dfec6bc81a8756767eb2f944999"
+      "bytes": 35265,
+      "sha256": "890a3cc637ec786b4f605e08a51dbd5edebae7547d80eb55f671a1874b556e04"
     },
     {
       "file": "data/a1_00e609_periods_source.csv",
@@ -1184,6 +1184,16 @@
       "sha256": "1e524b98981e5ad3f8e64053d573b7136fb6b6838d10dbb3bf6af6fdbfafefb5"
     },
     {
+      "file": "data/p327_material_full.csv",
+      "bytes": 846,
+      "sha256": "fe458c9c720f8ef18da9d761e95d0575e5309c392465a7280716fe879bc0aa9d"
+    },
+    {
+      "file": "data/p327_material_primary.csv",
+      "bytes": 437,
+      "sha256": "ee04c281ecdcc58e30ea24df2d1d778991a286911717351e93f285b0c142b36b"
+    },
+    {
       "file": "data/paired_ablation_intervals.csv",
       "bytes": 2325,
       "sha256": "d1f8e45678bd7ee8493fb415086b62113c2b972cf2c18abd0bd56dc5fca204f1"
@@ -1402,16 +1412,6 @@
       "file": "figures/a1_ch1_joint_marginals.svg",
       "bytes": 18713,
       "sha256": "30d57601ac1fc2f273cb0ef2b377fc20eed9dddced0762922da8d02211e29d4c"
-    },
-    {
-      "file": "figures/a1_ch1_material.pdf",
-      "bytes": 38515,
-      "sha256": "f05748795a782f1fe12ecfc7a17ef4e30dd10fdbe6475c3f077b6ae16b193800"
-    },
-    {
-      "file": "figures/a1_ch1_material.png",
-      "bytes": 246385,
-      "sha256": "01897fd8dbc04af5c2d79ad1ce0654c88a70792ce0f2abd614dce01e1e91470e"
     },
     {
       "file": "figures/a1_ch1_material_net_change.pdf",
@@ -2109,6 +2109,36 @@
       "sha256": "6a0b1dcaa00bc9d0fc3d0f45b091964ea4f46b469b6d51a0e5d95f0c95423926"
     },
     {
+      "file": "figures/p327_material_full.pdf",
+      "bytes": 41253,
+      "sha256": "cad45d949b1bc0b4765d7fc043e32b1c6384610fad847a4f2733e1bb4ff6f440"
+    },
+    {
+      "file": "figures/p327_material_full.png",
+      "bytes": 286877,
+      "sha256": "1bad8d734aaef774991a0d71eacc3982bea0f1de45730b619f03409902d55d94"
+    },
+    {
+      "file": "figures/p327_material_full.svg",
+      "bytes": 23790,
+      "sha256": "60c3ef1f4af5ea50ae246a0ffd3c8dfb2424d96e4cf464accec700e463aacb66"
+    },
+    {
+      "file": "figures/p327_material_primary.pdf",
+      "bytes": 36327,
+      "sha256": "cf19b75aca38d52f9d318a58bc4a4091d1da7015ef88b82e0a15fdedde8f0baf"
+    },
+    {
+      "file": "figures/p327_material_primary.png",
+      "bytes": 193284,
+      "sha256": "8e8d43f214b7ee13d77e8256d88dac15e21a7d26b3d7ce06651ec9d53759aa02"
+    },
+    {
+      "file": "figures/p327_material_primary.svg",
+      "bytes": 14230,
+      "sha256": "30155e3c15849ead4f022c59398d16fdf88008f82efd71ca0d75014d1b925063"
+    },
+    {
       "file": "figures/periods.pdf",
       "bytes": 34259,
       "sha256": "4ee493a76d679228fe97cc01d3e000fae0adaa5d9e2cef07e95e725ae9e42cd5"
@@ -2185,13 +2215,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 52920,
-      "sha256": "5f269cc7b624ceb5cf16cfc774ff6ae27f43d3895ff03ee6e1a71ce3a7e8d523"
+      "bytes": 52827,
+      "sha256": "5145ee627b6669b3c3690d996e97e4d14f1f490fef444af6ad015f3ae9d0b44f"
     },
     {
       "file": "supplement.html",
-      "bytes": 62566,
-      "sha256": "0cc9014c7c63c78427b2afa1543143afc9646322d9597ea0d834deaa05d7f685"
+      "bytes": 62319,
+      "sha256": "ced591f48d1148ec5a1923c08b52bd2c47102d2a2266e954fa7d5c0aa284de7e"
     }
   ]
 }
