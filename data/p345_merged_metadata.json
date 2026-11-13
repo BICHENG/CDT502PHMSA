@@ -1,0 +1,46 @@
+{
+  "analysis_unit": "一行一份事故报告",
+  "reports": 1550,
+  "casualty_reports": 369,
+  "analysis_columns_before": 35,
+  "analysis_columns_after": 32,
+  "raw_source_columns": 468,
+  "age_valid_n": 1268,
+  "age_missing_n": 282,
+  "paired_age_diagnostic_n": 76,
+  "age_pair_correlation": 0.9817210635923834,
+  "age_pc1_variance_fraction": 0.9908605317961916,
+  "pressure_valid_n": 1550,
+  "pressure_pc1_variance_fraction": 0.9700288420778651,
+  "retained_analysis_dimensions": {
+    "共同压力": [
+      "PRESSURE_PC1"
+    ],
+    "服役年龄": [
+      "AGE_YEARS"
+    ],
+    "钢管尺寸": [
+      "PIPE_DIAMETER",
+      "WT_STEEL"
+    ]
+  },
+  "steel_geometry_valid_pairs": 274,
+  "steel_geometry_pc1_variance_fraction": 0.824559075773038,
+  "pressure_score_max_recalculation_error": 8.881784197001252e-16,
+  "source_zip_sha256": "89c21d2ea6f5cb8ff6daad6ac60160608671a7b49c218bf9f917bfb88a2ce5a1",
+  "csv_encoding": "UTF-8 with BOM",
+  "csv_blank": "空白保留缺失，不作零值",
+  "age_rule": "AGE_YEARS = IYEAR - INSTALLATION_YEAR；有效安装年不晚于事故发生年",
+  "manufacture_year_imputation": false,
+  "rows_dropped_for_pairwise_age": 0,
+  "scope": "本章描述性资料合并；PCA拟合使用完整描述性样本，未来预测评价另在训练样本内拟合预处理",
+  "used_by_DBSCAN": false,
+  "files": {
+    "merged_incidents.csv": "589e3ec3e347449cc7812ae61cf369aa56d8255fc6f1ce4e45eb750d21db2d5c",
+    "merged_components.csv": "d3803a14a0f1757423b3b917b220d8c118909b45da616f79fa4cb590593391fc",
+    "merged_dictionary.csv": "3a4290002008bd277c312bd4190b55ccbbe86eac452cba8a5c5e00e946800db3",
+    "merged_models.json": "f7738a0107981f6382c031bbc0aa8de488415e502823f9e38b8bfa807ef5fb47",
+    "before_merge_incidents.csv": "d339991fa3713db9ed5586cf2216c144872240abc0236d17474c78796f3ff48d",
+    "field_comparison.csv": "25040d3c64e0823e69d35c14b51510d73bd4e03dbf191e1cca26d4562a4dbfcb"
+  }
+}

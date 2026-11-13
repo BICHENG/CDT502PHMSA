@@ -1,9 +1,0 @@
-﻿scope,clock,partition,n,cas_n
-full1550,received_year,through_2021,1286,304
-full1550,received_year,2022_onward_within_selected_scope,264,65
-full1550,incident_year,through_2021,1293,304
-full1550,incident_year,2022_onward_within_selected_scope,257,65
-main_three_materials_693,received_year,through_2021,581,126
-main_three_materials_693,received_year,2022_onward_within_selected_scope,112,15
-main_three_materials_693,incident_year,through_2021,586,126
-main_three_materials_693,incident_year,2022_onward_within_selected_scope,107,15

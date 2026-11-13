@@ -1,0 +1,255 @@
+{
+  "source_sha256": "89c21d2ea6f5cb8ff6daad6ac60160608671a7b49c218bf9f917bfb88a2ce5a1",
+  "models": {
+    "pressure_with_incident": {
+      "concept": "三项压力合并的扩展检验",
+      "dictionary_page": 7,
+      "eligibility": "all_reports",
+      "eligible_n": 1550,
+      "fields": [
+        "ACCIDENT_PSIG",
+        "NORMAL_PSIG",
+        "MOP_PSIG"
+      ],
+      "n": 1550,
+      "transform": "log1p",
+      "standardization_ddof": 0,
+      "mean_after_transform": [
+        3.6262165465887137,
+        3.636377219587296,
+        3.8871404913901406
+      ],
+      "scale_after_transform": [
+        1.3486651314235092,
+        1.3221379404814173,
+        1.2924661401108606
+      ],
+      "pca_center_after_standardization": [
+        -1.00851227011111e-16,
+        -6.417805355252518e-17,
+        -5.134244284202015e-16
+      ],
+      "components": [
+        [
+          0.575121219499105,
+          0.5814214275986451,
+          0.5754864954201929
+        ],
+        [
+          0.7173727943464574,
+          -0.02031468564627137,
+          -0.6963932707017269
+        ],
+        [
+          -0.393207142373352,
+          0.813348902425181,
+          -0.4287793209919711
+        ]
+      ],
+      "correlation_loadings": [
+        [
+          0.9810978919623674,
+          0.18345858027417283,
+          -0.06156196643045139
+        ],
+        [
+          0.9918454016626118,
+          -0.005195211494988954,
+          0.1273409163554829
+        ],
+        [
+          0.9817210152692697,
+          -0.17809334527638188,
+          -0.06713127845454005
+        ]
+      ],
+      "correlation_matrix_after_transform": [
+        [
+          0.9999999999999996,
+          0.9643049693807617,
+          0.9346243998058044
+        ],
+        [
+          0.9643049693807617,
+          0.9999999999999996,
+          0.9660921487904213
+        ],
+        [
+          0.9346243998058044,
+          0.9660921487904213,
+          0.9999999999999999
+        ]
+      ],
+      "eigenvalues_population_covariance": [
+        2.910086526233595,
+        0.06540128053042535,
+        0.024512193235979113
+      ],
+      "explained_variance_ratio": [
+        0.9700288420778651,
+        0.021800426843475128,
+        0.008170731078659824
+      ],
+      "cumulative_variance_ratio": [
+        0.9700288420778651,
+        0.9918292689213403,
+        1.0
+      ],
+      "axes_for_95_percent_variance": 1,
+      "numerical_checks": {
+        "numpy_eigenvalue_ratio_max_error": 1.1796119636642288e-16,
+        "numpy_eigenvector_max_error": 7.438494264988549e-15,
+        "all_axes_reconstruction_max_error_standardized": 8.881784197001252e-16
+      },
+      "usage": "PRESSURE_PC1为描述共同压力水平的合并字段，具体事故压力与允许上限另存逐份对照表"
+    },
+    "component_age": {
+      "concept": "构件安装与制造年龄",
+      "dictionary_page": 5,
+      "eligibility": "both_years_numeric_and_not_after_incident_year",
+      "eligible_n": 1550,
+      "fields": [
+        "INSTALLATION_AGE",
+        "MANUFACTURED_AGE"
+      ],
+      "n": 76,
+      "transform": "identity",
+      "standardization_ddof": 0,
+      "mean_after_transform": [
+        19.710526315789473,
+        20.710526315789473
+      ],
+      "scale_after_transform": [
+        18.793066883318602,
+        19.031010558582704
+      ],
+      "pca_center_after_standardization": [
+        5.551115123125783e-17,
+        6.573688961596321e-17
+      ],
+      "components": [
+        [
+          0.7071067811865474,
+          0.7071067811865477
+        ],
+        [
+          0.7071067811865477,
+          -0.7071067811865474
+        ]
+      ],
+      "correlation_loadings": [
+        [
+          0.9954197766752433,
+          0.09560056591782426
+        ],
+        [
+          0.9954197766752437,
+          -0.09560056591782422
+        ]
+      ],
+      "correlation_matrix_after_transform": [
+        [
+          1.0000000000000002,
+          0.9817210635923835
+        ],
+        [
+          0.9817210635923835,
+          1.0
+        ]
+      ],
+      "eigenvalues_population_covariance": [
+        1.9817210635923836,
+        0.01827893640761652
+      ],
+      "explained_variance_ratio": [
+        0.9908605317961916,
+        0.00913946820380845
+      ],
+      "cumulative_variance_ratio": [
+        0.9908605317961916,
+        1.0
+      ],
+      "axes_for_95_percent_variance": 1,
+      "numerical_checks": {
+        "numpy_eigenvalue_ratio_max_error": 2.220446049250313e-16,
+        "numpy_eigenvector_max_error": 2.220446049250313e-16,
+        "all_axes_reconstruction_max_error_standardized": 2.220446049250313e-16
+      },
+      "usage": "76份配对PCA用于支持共同年龄概念；AGE_YEARS以安装年龄表示服役年数，AGE_PC1_PAIRED仅在配对对照表保留"
+    },
+    "steel_geometry": {
+      "concept": "钢管的几何尺寸",
+      "dictionary_page": 5,
+      "eligibility": "steel_main_or_service_with_two_positive_dimensions",
+      "eligible_n": 453,
+      "fields": [
+        "PIPE_DIAMETER",
+        "WT_STEEL"
+      ],
+      "n": 274,
+      "transform": "log",
+      "standardization_ddof": 0,
+      "mean_after_transform": [
+        1.636970322134147,
+        -1.5316091370122582
+      ],
+      "scale_after_transform": [
+        0.8936130833331826,
+        0.41060801495105137
+      ],
+      "pca_center_after_standardization": [
+        1.2966108316790148e-16,
+        3.111865996029636e-16
+      ],
+      "components": [
+        [
+          0.7071067811865476,
+          0.7071067811865475
+        ],
+        [
+          0.7071067811865475,
+          -0.7071067811865476
+        ]
+      ],
+      "correlation_loadings": [
+        [
+          0.9080523529913009,
+          0.41885668697892586
+        ],
+        [
+          0.9080523529913008,
+          -0.4188566869789259
+        ]
+      ],
+      "correlation_matrix_after_transform": [
+        [
+          0.9999999999999998,
+          0.6491181515460763
+        ],
+        [
+          0.6491181515460763,
+          1.0000000000000004
+        ]
+      ],
+      "eigenvalues_population_covariance": [
+        1.6491181515460762,
+        0.3508818484539238
+      ],
+      "explained_variance_ratio": [
+        0.824559075773038,
+        0.17544092422696206
+      ],
+      "cumulative_variance_ratio": [
+        0.824559075773038,
+        1.0
+      ],
+      "axes_for_95_percent_variance": 2,
+      "numerical_checks": {
+        "numpy_eigenvalue_ratio_max_error": 1.6653345369377348e-16,
+        "numpy_eigenvector_max_error": 3.3306690738754696e-16,
+        "all_axes_reconstruction_max_error_standardized": 8.881784197001252e-16
+      },
+      "usage": "274份钢主管道或进户管的完整配对记录，单轴损失17.5%的标准化变异；主表的PIPE_DIAMETER和WT_STEEL分别保留"
+    }
+  }
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "scope": "main_42",
+    "eps": 1,
+    "min_samples": 4,
+    "geography_scale_km": 1000,
+    "groups": [
+      {
+        "scope": "main_42",
+        "eps": 1,
+        "group": 1,
+        "reports": 13,
+        "core": 11,
+        "border": 2,
+        "winter_reports": 13,
+        "materials": {
+          "CAST/WROUGHT IRON": 12,
+          "STEEL": 1
+        },
+        "months": {
+          "1": 4,
+          "2": 6,
+          "3": 1,
+          "12": 2
+        },
+        "causes": {
+          "TEMPERATURE": 9,
+          "EARTH MOVEMENT, NOT DUE TO HEAVY RAINS/FLOODS": 3,
+          "OTHER NATURAL FORCE DAMAGE": 1
+        },
+        "operators": 10,
+        "casualty_reports": 6,
+        "report_numbers": [
+          "20100012",
+          "20110046",
+          "20110047",
+          "20110379",
+          "20130037",
+          "20140014",
+          "20150014",
+          "20150025",
+          "20150029",
+          "20150036",
+          "20180015",
+          "20180026",
+          "20210020"
+        ]
+      },
+      {
+        "scope": "main_42",
+        "eps": 1,
+        "group": 2,
+        "reports": 4,
+        "core": 1,
+        "border": 3,
+        "winter_reports": 4,
+        "materials": {
+          "STEEL": 4
+        },
+        "months": {
+          "1": 4
+        },
+        "causes": {
+          "HEAVY RAINS/FLOODS": 2,
+          "EARTH MOVEMENT, NOT DUE TO HEAVY RAINS/FLOODS": 1,
+          "TEMPERATURE": 1
+        },
+        "operators": 3,
+        "casualty_reports": 0,
+        "report_numbers": [
+          "20100022",
+          "20180019",
+          "20180090",
+          "20230006"
+        ]
+      }
+    ],
+    "noise": 25
+  },
+  {
+    "scope": "all_natural_106",
+    "eps": 1,
+    "min_samples": 4,
+    "geography_scale_km": 1000,
+    "groups": [
+      {
+        "scope": "all_natural_106",
+        "eps": 1,
+        "group": 1,
+        "reports": 42,
+        "core": 34,
+        "border": 8,
+        "winter_reports": 1,
+        "materials": {
+          "STEEL": 17,
+          "OTHER": 9,
+          "PLASTIC": 8,
+          "COPPER": 5,
+          "UNKNOWN": 3
+        },
+        "months": {
+          "3": 1,
+          "4": 6,
+          "5": 7,
+          "6": 4,
+          "7": 10,
+          "8": 4,
+          "9": 5,
+          "10": 5
+        },
+        "causes": {
+          "LIGHTNING": 25,
+          "HEAVY RAINS/FLOODS": 11,
+          "HIGH WINDS": 3,
+          "OTHER NATURAL FORCE DAMAGE": 2,
+          "EARTH MOVEMENT, NOT DUE TO HEAVY RAINS/FLOODS": 1
+        },
+        "operators": 25,
+        "casualty_reports": 1,
+        "report_numbers": [
+          "20100025",
+          "20100082",
+          "20100094",
+          "20100095",
+          "20110059",
+          "20110161",
+          "20110204",
+          "20110233",
+          "20110281",
+          "20110282",
+          "20110367",
+          "20110372",
+          "20120090",
+          "20120092",
+          "20130116",
+          "20140044",
+          "20150042",
+          "20150061",
+          "20150063",
+          "20150083",
+          "20150085",
+          "20150094",
+          "20170051",
+          "20170067",
+          "20180062",
+          "20180082",
+          "20180100",
+          "20190050",
+          "20190054",
+          "20190077",
+          "20190080",
+          "20190084",
+          "20190088",
+          "20190102",
+          "20200058",
+          "20200072",
+          "20200082",
+          "20200092",
+          "20210079",
+          "20210091",
+          "20230045",
+          "20240037"
+        ]
+      },
+      {
+        "scope": "all_natural_106",
+        "eps": 1,
+        "group": 2,
+        "reports": 26,
+        "core": 24,
+        "border": 2,
+        "winter_reports": 26,
+        "materials": {
+          "CAST/WROUGHT IRON": 13,
+          "OTHER": 4,
+          "PLASTIC": 4,
+          "STEEL": 3,
+          "UNKNOWN": 2
+        },
+        "months": {
+          "1": 7,
+          "2": 11,
+          "3": 4,
+          "12": 4
+        },
+        "causes": {
+          "TEMPERATURE": 13,
+          "EARTH MOVEMENT, NOT DUE TO HEAVY RAINS/FLOODS": 5,
+          "OTHER NATURAL FORCE DAMAGE": 4,
+          "LIGHTNING": 2,
+          "HEAVY RAINS/FLOODS": 1,
+          "TREES/VEGETATION ROOTS": 1
+        },
+        "operators": 21,
+        "casualty_reports": 9,
+        "report_numbers": [
+          "20100008",
+          "20100012",
+          "20110042",
+          "20110046",
+          "20110047",
+          "20110379",
+          "20130005",
+          "20130018",
+          "20130037",
+          "20140002",
+          "20140014",
+          "20140031",
+          "20150011",
+          "20150014",
+          "20150024",
+          "20150025",
+          "20150029",
+          "20150033",
+          "20150036",
+          "20180015",
+          "20180026",
+          "20180032",
+          "20200029",
+          "20200073",
+          "20210020",
+          "20220027"
+        ]
+      },
+      {
+        "scope": "all_natural_106",
+        "eps": 1,
+        "group": 3,
+        "reports": 14,
+        "core": 10,
+        "border": 4,
+        "winter_reports": 14,
+        "materials": {
+          "STEEL": 11,
+          "OTHER": 2,
+          "PLASTIC": 1
+        },
+        "months": {
+          "1": 7,
+          "2": 6,
+          "3": 1
+        },
+        "causes": {
+          "SNOW/ICE IMPACT OR ACCUMULATION": 4,
+          "OTHER NATURAL FORCE DAMAGE": 3,
+          "TEMPERATURE": 3,
+          "EARTH MOVEMENT, NOT DUE TO HEAVY RAINS/FLOODS": 2,
+          "HEAVY RAINS/FLOODS": 2
+        },
+        "operators": 11,
+        "casualty_reports": 2,
+        "report_numbers": [
+          "20100003",
+          "20100022",
+          "20130027",
+          "20140019",
+          "20150010",
+          "20160025",
+          "20180019",
+          "20180090",
+          "20200034",
+          "20220007",
+          "20230006",
+          "20230025",
+          "20240009",
+          "20240036"
+        ]
+      }
+    ],
+    "noise": 24
+  }
+]

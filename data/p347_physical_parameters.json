@@ -1,0 +1,52 @@
+{
+  "input_fields": [
+    "AGE_YEARS",
+    "PIPE_DIAMETER",
+    "PRESSURE_PC1"
+  ],
+  "transforms": [
+    "identity",
+    "log1p",
+    "identity"
+  ],
+  "mean": [
+    38.7487922705314,
+    1.7846237304243806,
+    0.1770034208378875
+  ],
+  "population_sd": [
+    27.130174999100333,
+    0.5717506471707973,
+    1.5354826314601109
+  ],
+  "fit_n": 621,
+  "scope": "Descriptive EDA fitted on all 621 complete MAIN reports; no temporal prediction split",
+  "seed": 20261109,
+  "n_init": 50,
+  "max_iter": 500,
+  "algorithm": "lloyd",
+  "selected_k": 3,
+  "display_group_order": [
+    2,
+    1,
+    0
+  ],
+  "centers_in_z": [
+    [
+      1.2934119829642805,
+      0.29665905775114837,
+      -2.428646648185218
+    ],
+    [
+      0.2917402187138988,
+      0.9232459411041559,
+      0.5793453981210057
+    ],
+    [
+      -0.4144035152722695,
+      -0.678679249246783,
+      0.009922964668636226
+    ]
+  ],
+  "outcome_and_material_used_for_fit": false
+}

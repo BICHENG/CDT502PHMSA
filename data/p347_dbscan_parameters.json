@@ -1,0 +1,36 @@
+{
+  "raw_fields": [
+    "LOCAL_DATETIME",
+    "LOCATION_TYPE",
+    "NORMAL_PSIG",
+    "MOP_PSIG"
+  ],
+  "scope": "42 natural-force MAIN reports; occurrence years 2010–2024; iron, steel, plastic",
+  "eps": 1,
+  "min_samples_including_self": 4,
+  "pressure_scale_fit_n": 1550,
+  "log1p_pressure_mean": [
+    3.636377219587296,
+    3.8871404913901406
+  ],
+  "log1p_pressure_population_sd": [
+    1.3221379404814173,
+    1.2924661401108606
+  ],
+  "reference_year": 2000,
+  "period_days": 366,
+  "day_scale": 45,
+  "geographical_distance_included": false,
+  "site_squared_weight": 0.2,
+  "pressure_squared_weight": 0.1,
+  "excluded_from_distance": [
+    "LOCATION_LATITUDE",
+    "LOCATION_LONGITUDE",
+    "MATERIAL_INVOLVED",
+    "cas",
+    "winter",
+    "CAUSE_DETAILS"
+  ],
+  "exploratory_status": "Metric specified after prior monthly observations; descriptive grouping, not independent hypothesis confirmation",
+  "display": "Original month-day on an August-to-July axis and log1p normal pressure; clustering uses all four raw fields"
+}

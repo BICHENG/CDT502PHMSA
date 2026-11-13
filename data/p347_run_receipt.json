@@ -1,0 +1,175 @@
+{
+  "excavation": {
+    "n": 391,
+    "common_ignition_share": 0.3069053708439898,
+    "raw_gap_percentage_points": 14.88749345892203,
+    "common_mix_gap_percentage_points": 2.802530623233275
+  },
+  "dbscan": [
+    {
+      "scope": "main_42",
+      "eps": 1.0,
+      "group": 1,
+      "reports": 21,
+      "core": 21,
+      "border": 0,
+      "winter_reports": 21,
+      "materials": {
+        "CAST/WROUGHT IRON": 14,
+        "STEEL": 7
+      },
+      "months": {
+        "1": 12,
+        "2": 6,
+        "3": 1,
+        "12": 2
+      },
+      "causes": {
+        "TEMPERATURE": 11,
+        "EARTH MOVEMENT, NOT DUE TO HEAVY RAINS/FLOODS": 6,
+        "OTHER NATURAL FORCE DAMAGE": 2,
+        "HEAVY RAINS/FLOODS": 2
+      },
+      "operators": 17,
+      "casualty_reports": 8,
+      "report_numbers": [
+        "20100012",
+        "20100022",
+        "20110046",
+        "20110047",
+        "20110379",
+        "20120011",
+        "20130037",
+        "20140014",
+        "20150011",
+        "20150014",
+        "20150025",
+        "20150029",
+        "20150036",
+        "20160018",
+        "20180015",
+        "20180019",
+        "20180026",
+        "20180090",
+        "20210020",
+        "20230006",
+        "20240009"
+      ]
+    },
+    {
+      "scope": "main_42",
+      "eps": 1.0,
+      "group": 2,
+      "reports": 12,
+      "core": 11,
+      "border": 1,
+      "winter_reports": 2,
+      "materials": {
+        "PLASTIC": 6,
+        "STEEL": 6
+      },
+      "months": {
+        "3": 2,
+        "4": 2,
+        "5": 4,
+        "6": 2,
+        "7": 2
+      },
+      "causes": {
+        "HEAVY RAINS/FLOODS": 7,
+        "LIGHTNING": 2,
+        "HIGH WINDS": 1,
+        "OTHER NATURAL FORCE DAMAGE": 1,
+        "EARTH MOVEMENT, NOT DUE TO HEAVY RAINS/FLOODS": 1
+      },
+      "operators": 10,
+      "casualty_reports": 1,
+      "report_numbers": [
+        "20110059",
+        "20110161",
+        "20120090",
+        "20150061",
+        "20160037",
+        "20160111",
+        "20170051",
+        "20190075",
+        "20190080",
+        "20190086",
+        "20200058",
+        "20230024"
+      ]
+    },
+    {
+      "scope": "main_42",
+      "eps": 1.0,
+      "group": 3,
+      "reports": 7,
+      "core": 6,
+      "border": 1,
+      "winter_reports": 1,
+      "materials": {
+        "PLASTIC": 4,
+        "STEEL": 3
+      },
+      "months": {
+        "8": 1,
+        "9": 3,
+        "10": 2,
+        "11": 1
+      },
+      "causes": {
+        "HEAVY RAINS/FLOODS": 4,
+        "OTHER NATURAL FORCE DAMAGE": 1,
+        "TEMPERATURE": 1,
+        "EARTH MOVEMENT, NOT DUE TO HEAVY RAINS/FLOODS": 1
+      },
+      "operators": 7,
+      "casualty_reports": 1,
+      "report_numbers": [
+        "20100094",
+        "20100095",
+        "20110372",
+        "20160122",
+        "20180096",
+        "20180100",
+        "20230054"
+      ]
+    }
+  ],
+  "physical": {
+    "n": 621,
+    "k": 3,
+    "group_sizes": [
+      336,
+      229,
+      56
+    ],
+    "ARI": 0.9575170674473307,
+    "selected": [
+      {
+        "input": "normal_pressure_reference",
+        "k": 3,
+        "reports": 621,
+        "silhouette": 0.3432123799022532,
+        "inertia": 942.0423029863966
+      },
+      {
+        "input": "common_pressure",
+        "k": 3,
+        "reports": 621,
+        "silhouette": 0.3464596615488323,
+        "inertia": 930.036067428533
+      }
+    ]
+  },
+  "provenance": {
+    "python": "3.12.13",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1",
+    "inputs": {
+      "research/eda_pca/merged_incidents.csv": "589e3ec3e347449cc7812ae61cf369aa56d8255fc6f1ce4e45eb750d21db2d5c",
+      "research/eda_pca/merged_components.csv": "d3803a14a0f1757423b3b917b220d8c118909b45da616f79fa4cb590593391fc"
+    }
+  }
+}

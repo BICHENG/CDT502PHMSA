@@ -1,140 +1,90 @@
 <!doctype html>
-<html lang="zh-CN" data-version="2026-11-13 · 89c21d2ea6f5 · e3e53e04" data-page="chapter2.html">
+<html lang="zh-CN" data-version="2026-11-13 · 89c21d2ea6f5 · 1dae6385" data-page="chapter2.html">
 <head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="color-scheme" content="light"/><title>Exploratory Data Analysis · CDT502</title><meta name="description" content="研究开挖后的点燃与处置伤害、冬季铁管的环境线索，以及管龄、管径和压力形成的设施分组。"/><link rel="stylesheet" href="assets/site.css"/><script src="assets/echarts-6.1.0.min.js" defer></script><script src="assets/usa-geo.js" defer></script><script src="assets/plotly.min.js" defer></script><script src="assets/plotly-geo-assets.js" defer></script><script src="data/material_net_map_data.js" defer></script><script src="assets/integrated-material-map.js" defer></script><script src="data/material_cause_data.js" defer></script><script src="assets/material-cause.js" defer></script><script src="data/excavation_visual_data.js" defer></script><script src="assets/excavation-charts.js" defer></script><script src="data/research_revision.js" defer></script><script src="assets/research-revision.js" defer></script><script src="assets/site.js" defer></script></head>
 <body><a class="skip-link" href="#main">跳到正文</a><header class="site-header"><div class="header-inner"><a class="brand" href="index.html">CDT502 · PHMSA</a><div class="header-actions"><button id="print-page" type="button" class="text-button js-only">打印本页</button></div></div></header>
-<main class="page" id="main"><nav class="chapter-switch" aria-label="研究章节"><a href="index.html">第一章 · 数据：管网背景与基础比较</a><a href="chapter2.html" aria-current="page">第二章 · Exploratory Data Analysis</a></nav><header class="masthead"><p class="eyebrow">第二章 · Exploratory Data Analysis</p><h1>Exploratory Data Analysis</h1><div class="meta"><span>研究对象：美国已报告的燃气配气事故</span><span>报告中的事故发生于 2010–2026 年</span></div></header><nav class="chapter-nav" aria-label="章节导航"><a href="#section-1">施工损伤后的点燃与处置伤害</a><a href="#section-2">自然因素事故中的季节线索</a><a href="#section-3">管龄、管径与压力的设施分组</a><a href="#section-4">检查与人员保护的结论</a><a href="#methods">资料与计算</a></nav>
+<main class="page" id="main"><nav class="chapter-switch" aria-label="研究章节"><a href="index.html">第一章 · Research objectives and descriptive analysis</a><a href="chapter2.html" aria-current="page">第二章 · Exploratory Data Analysis</a></nav><header class="masthead"><p class="eyebrow">第二章 · Exploratory Data Analysis</p><h1>Exploratory Data Analysis</h1><div class="meta"><span>研究对象：美国已报告的燃气配气事故</span><span>报告中的事故发生于 2010–2026 年</span></div></header><nav class="chapter-nav" aria-label="章节导航"><a href="#section-1">施工损伤后的点燃与处置伤害</a><a href="#section-2">自然因素事故中的季节线索</a><a href="#section-3">管龄、管径与压力的设施分组</a><a href="#section-4">检查与人员保护的结论</a><a href="#methods">资料与计算</a></nav>
 <article><section class="article-section" id="overview">
-<p id="paragraph-1">第一章发现，钢管与塑料管的伤亡报告率接近，铁管按管网规模计算的报告率较高。要明确检查与人员保护重点，还需要了解具体环境、设施条件和受伤任务。本章先研究施工损伤，再分析季节分布与设施规格。</p>
+<p id="paragraph-1">第一章发现，钢管与塑料管的伤亡报告率接近，铁管按管网规模计算的报告率较高。企业要据此安排检查与人员保护，还需了解损伤后发生了什么、哪些环境条件值得复核，以及设施规格是否相近。本章围绕施工处置、季节环境和设施分组，分别研究这三个问题。</p>
 </section><section class="article-section" id="section-1"><h2>2.1 施工损伤后的点燃与处置伤害</h2>
-<p id="paragraph-2">施工挖伤管道后，燃气企业还需查漏、停气和修复。明确人员保护重点，需要同时了解泄漏燃气的状态，以及人员受伤时正在做什么。本节先比较钢管与塑料管的开挖损坏报告，再核对原案中的处置任务。</p>
-<p id="paragraph-3">在2010至2024年的主管道及主管道阀报告中，开挖损坏是钢管、塑料管共同最常见的原因，两组共391份。图 5分别按燃气是否被点燃、事故是否伴随伤亡分类，保留每种材料的完整计数。</p>
-<figure class="figure" data-review="true" id="figure-excavation_flow"><div class="figure-top"><span class="figure-kicker">图 5</span><h3>塑料管开挖报告更常记录燃气点燃，伤亡多见于点燃组</h3></div><img alt="钢管196份中20份点燃、其中6份伤亡；塑料管195份中100份点燃、其中32份伤亡。未记录点燃部分，钢管0/176份伤亡，塑料管3/95份伤亡。" src="figures/p332_excavation_flow.png"/><figcaption>2010至2024年钢和塑料主管道及主管道阀391份开挖损坏报告。流带宽度表示份数，各材料分别按燃气点燃记录与伤亡结果分类。棕色为点燃、浅灰为未记录点燃；末端深红为伤亡、浅青为其余。伤亡指死亡或因伤住院至少一晚。具体受伤时序由原案另行核对。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/p332_excavation_flow.png">下载 PNG</a><a download="" href="figures/p332_excavation_flow.svg">下载 SVG</a><a download="" href="data/a1_720662_conditional_counts.csv">图中数据 1</a><a download="" href="data/a1_ad4157_composition_accounting.csv">图中数据 2</a></div></figure>
-<p id="paragraph-4">两种材料的开挖报告数接近，伤亡报告却分别为6份和35份。塑料管记录燃气点燃的比例较高；在点燃报告内，两种材料的伤亡比例则为30%和32%，较为接近。总体伤亡差异还伴有点燃构成差异，复盘应具体核对燃气状态与现场活动。<a href="data/p322_factors_excavation_ignition_harm.csv">联合计数</a></p>
-<p id="paragraph-5">人员保护的覆盖范围，要由受伤任务进一步确定。35份塑料管开挖伤亡报告中，有6份明确记载第三方先损伤管道，燃气公司人员随后在查找损伤、停气、安装旁通或修漏中受伤。2019年的一宗事故中，人员到场后，在夹断管道、停止气流期间发生点燃，三名装配工烧伤，其中一人住院。<a href="data/p322_factors_case_timeline.csv">原案时序与引句</a></p>
-<p id="paragraph-6">人员保护应延续到损伤后的查漏、停气、旁通和修漏阶段。企业复盘时应分别记录最初损伤者与后续处置人员，核对各阶段的燃气状态、人员位置和受伤时刻。</p>
+<p id="paragraph-2">施工挖伤管道后，燃气企业还需查漏、停气和修复。人员保护需要覆盖这些后续任务，因此本节先比较泄漏燃气的点燃记录与伤亡，再核对人员受伤时正在做什么。</p>
+<p id="paragraph-3">2010至2024年的钢管、塑料管主管道及主管道阀报告中，共有391份归为开挖损坏。钢管196份、塑料管195份，数量接近，伴随伤亡的却分别为6份与35份。图 6沿两种材料的报告，依次展示点燃和伤亡构成。</p>
+<figure class="figure figure-paired" data-review="true" id="figure-excavation_flow"><div class="figure-top"><span class="figure-kicker">图 6</span><h3>统一点燃构成后，钢塑开挖伤亡比例差明显缩小</h3></div><div class="figure-panel"><h4>报告中的点燃与伤亡路径</h4><img alt="钢管196份中20份点燃、其中6份伤亡；塑料管195份中100份点燃、其中32份伤亡。未记录点燃部分，钢管0/176份伤亡，塑料管3/95份伤亡。" src="figures/p332_excavation_flow.png"/></div><div class="figure-panel"><h4>共同点燃构成下的比例比较</h4><img alt="钢管从原有构成下3.1%换算为共同构成下9.2%；塑料从17.9%换算为12.0%。比例差从14.9缩至2.8个百分点。" src="figures/p347_ignition_composition.png"/></div><figcaption>2010至2024年391份钢塑主管道及主管道阀开挖报告。上图流带宽度为报告份数，深红为伤亡、浅青为其余报告；棕色为记录燃气点燃。下图保留各材料点燃、其余报告内的伤亡比例，以合计点燃份额30.7%重算，差距从14.9缩至2.8个百分点。连线表示两种构成的算术比较，竖括号为比例差。受伤任务与时序由原案核对。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/p332_excavation_flow.png">流图 PNG</a><a download="" href="figures/p332_excavation_flow.svg">流图 SVG</a><a download="" href="figures/p347_ignition_composition.png">构成比较 PNG</a><a download="" href="figures/p347_ignition_composition.pdf">构成比较 PDF</a><a download="" href="figures/p347_ignition_composition.svg">构成比较 SVG</a><a download="" href="data/p347_excavation_conditional_counts.csv">图中数据 1</a><a download="" href="data/p347_excavation_composition.csv">图中数据 2</a></div></figure>
+<p id="paragraph-4">塑料管约一半报告记录燃气被点燃，钢管约一成；但在已点燃报告内，两组均约三成伴随伤亡。为了解点燃构成对总体差异的影响，本研究采用两种材料合计的点燃份额30.7%作为共同权重，保留各材料在点燃、其余报告内的伤亡比例。重算后，钢塑伤亡比例差从14.9缩至2.8个百分点。这说明总体差异很大一部分与点燃构成有关，复盘应继续追踪燃气状态和人员活动。<a href="data/p347_excavation_composition.csv">条件计数与构成重算</a></p>
+<p id="paragraph-5">原案说明了人员保护需要延续到哪些任务。35份塑料管开挖伤亡报告中，6份明确记载第三方先损伤管道，燃气公司人员随后在查找损伤、停气、安装旁通或修漏中受伤。2019年的一宗事故中，人员到场后，在夹断管道、停止气流期间发生点燃，三名装配工烧伤，其中一人住院。<a href="data/p322_factors_case_timeline.csv">原案时序与引句</a></p>
+<p id="paragraph-6">因此，第三方造成的损伤被发现后，现场人员仍可能在处置阶段受伤。企业复盘应分别记录最初损伤者与后续处置人员，核对查漏、停气、旁通和修漏期间的燃气状态、人员位置与受伤时刻。</p>
 </section><section class="article-section" id="section-2"><h2>2.2 自然因素事故中的季节线索</h2>
-<p id="paragraph-7">检查环境条件，需要先了解历史事故在一年中的哪些时段集中。我们从2010至2024年三类材料主管道及主管道阀的693份报告中，提取原报告归为“自然因素”的全部42份，先看各月全貌，再将三种材料共同聚类，比较密集日期中有哪些材料。</p>
-<figure class="figure" data-review="true" id="figure-natural_context"><div class="figure-top"><span class="figure-kicker">图 6</span><h3>铁管的自然因素报告集中在11月至次年3月</h3></div><img alt="三种材料的逐月自然因素报告数；铁管15份均在11月至次年3月，钢管8份在这段时间、9份在其余月份，塑料分别为2份与8份。月份图只保留柱形，无日期散点。" src="figures/p332_natural_context.png"/><figcaption>2010至2024年三类材料主管道及主管道阀的42份自然因素报告。上方按月计数，三图使用相同份数尺度，深红为其中伴随死亡或因伤住院至少一晚的报告。下方按固定月份合并：11月至次年3月与4至10月，铁管分别15与0份、钢8与9份、塑料2与8份。每份报告只计一次。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/p332_natural_context.png">下载 PNG</a><a download="" href="figures/p332_natural_context.pdf">下载 PDF</a><a download="" href="figures/p332_natural_context.svg">下载 SVG</a><a download="" href="data/p332_natural_month_counts.csv">图中数据 1</a><a download="" href="data/p332_season_context.csv">图中数据 2</a></div></figure>
-<p id="paragraph-8">铁管15份自然因素报告都在11月至次年3月；钢管与塑料管在其余月份也有报告。为了从共同的日期分布中寻找密集段，我们用DBSCAN对全部42份一起归组，材料与伤亡留到分组后查看。</p>
-<p id="paragraph-9">各年的发生月日对应到366天参考日历，日序记为<i>t</i>。令θ＝2π(<i>t</i>−1)／366，二维坐标为<i>x</i>＝sinθ、<i>y</i>＝cosθ，使年末与年初在图上相邻。两份报告<i>i</i>、<i>j</i>的距离定义为：</p>
-<p id="paragraph-10"><math aria-label="D i j 等于两个日期坐标的欧氏距离" display="block" id="season-distance" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>D</mi><mo>(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo>)</mo><mo>=</mo><msqrt><mrow><msup><mrow><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><msub><mi>x</mi><mi>j</mi></msub><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mi>y</mi><mi>j</mi></msub><mo>)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow></math></p>
-<p id="paragraph-11">θ以弧度计，两轴与距离<i>D</i>均无量纲。邻域半径<i>r</i><sub>w</sub>＝2sin(π<i>w</i>／366)，分别对应两周与一个月，即<i>w</i>＝14或31天；邻域内至少3份报告（含自身）的位置为核心点。这里的二维坐标共同表示同一个日期变量，邻近记录连接成组。<a href="#season-method">完整距离与参数</a></p>
-<figure class="figure" data-review="true" id="figure-season_pooled"><div class="figure-top"><span class="figure-kicker">图 7</span><h3>两周邻域的跨年密集段以铁、钢为主</h3></div><img alt="所有材料一起归组的二维日期点图。两周邻域的跨年到4月初一组25份，其中23份为铁或钢；另有夏季9份、秋季5份、稀疏点3份。一个月邻域将全年42份连成一组。" src="figures/p332_pooled_dbscan.png"/><figcaption>两图均对同一批42份自然因素报告共同归组，最低3份含自身。左侧两周邻域形成25、9、5份三组和3份稀疏点；跨年组从12月23日至4月9日，含铁14、钢9、塑料2份。右侧一个月邻域下42份同组。颜色表示组别，圆、三角、方形分别表示铁、钢、塑料，材料留到归组后比较。黑叉为稀疏点，三份分别来自铁、钢、塑料；同月日点原位重合。两轴是同一日期的圆周坐标，均无量纲。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/p332_pooled_dbscan.png">下载 PNG</a><a download="" href="figures/p332_pooled_dbscan.pdf">下载 PDF</a><a download="" href="figures/p332_pooled_dbscan.svg">下载 SVG</a><a download="" href="data/p332_pooled_points.csv">图中数据 1</a><a download="" href="data/p332_cluster_summary.csv">图中数据 2</a></div></figure>
-<p id="paragraph-12">两周邻域下，12月底至4月初形成25份的密集组，其中23份为铁管或钢管；钢管与塑料管还出现在夏季、秋季的组中。将邻域放宽为一个月，全年42份连成一组。这个对照说明日期密集段可供继续查阅，但组的边界随邻域宽度变化。</p>
-<p id="paragraph-13">结合逐月分布，铁管的冬季集中最清楚。原案进一步指向需要核对的地面条件：2014年的报告记录实测冻土，填报者认为断裂可能与冻胀有关；2015年的报告记载开挖后发现管道压在旧砖基础上，填报原因为土壤沉降。因此，企业检查现存铁管时，应结合冬季事故、安装维修史，核对当地冻土、沉降与管道支撑条件。</p>
+<p id="paragraph-7">企业检查现存铁管时，需要了解哪些环境条件常见于历史事故。为寻找季节与运行条件相近的事故，本节从2010至2024年三类材料主管道及主管道阀的693份报告中，提取原报告归为“自然因素”的全部42份；这42份实际均为主管道报告。</p>
+<p id="paragraph-8">DBSCAN根据邻近报告的密度形成组。本次使用月日、场地类型、正常压力和允许压力四个原始字段：月日反映季节，场地和压力补充设施情境。各地报告共同参与比较，材料与伤亡在分组后查看。邻域内至少4份报告、含自身的位置为核心点，邻近的核心点及其边缘记录连接成组。<a href="#season-method">距离函数与参数</a></p>
+<figure class="figure" data-review="true" id="figure-season_pooled"><div class="figure-top"><span class="figure-kicker">图 7</span><h3>21份铁、钢自然因素事故形成跨年的冬季群</h3></div><img alt="月日与正常压力点图。21份冬季群含14铁7钢，全在12月至3月；另外12份3至7月群、7份8至11月群，另有2份未成群。" src="figures/p347_natural_dbscan.png"/><figcaption>同一42份自然因素主管道报告的四字段DBSCAN，输入月日、场地、正常与允许压力。横轴从8月排至次年7月，保持跨年冬季连续；纵轴为正常压力，间距按ln（1＋原值），刻度单位psig。颜色为21、12、7份三群及2份未成群，点形表示分组后查看的材料；实心为核心点，空心为边缘或未成群。位置只展示两个字段，归组按完整四字段距离；同位置原位重合。eps＝1，min_samples＝4含自身。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/p347_natural_dbscan.png">下载 PNG</a><a download="" href="figures/p347_natural_dbscan.pdf">下载 PDF</a><a download="" href="figures/p347_natural_dbscan.svg">下载 SVG</a><a download="" href="data/p347_dbscan_main_42_points.csv">图中数据 1</a><a download="" href="data/p347_dbscan_parameters.json">图中数据 2</a><a download="" href="data/p347_dbscan_pair_terms.csv">图中数据 3</a></div></figure>
+<p id="paragraph-9">最大一组有21份报告，含14份铁管、7份钢管，全部发生于12月至3月，来自17家运营商。其中11份归为温度作用、6份为地面移动，提示冬季金属管道事故值得继续核对温度与地面条件。其余形成12份、7份两组，另有2份未成群；全部报告仍在图中保留。</p>
+<p id="paragraph-10">图 8展示全部42份的月份分布，补充聚类以外的全貌：铁管15份自然因素报告都在11月至次年3月，冬季集中最明显；钢管和塑料管在其他月份也有报告。</p>
+<figure class="figure" data-review="true" id="figure-natural_context"><div class="figure-top"><span class="figure-kicker">图 8</span><h3>铁管的自然因素报告集中在11月至次年3月</h3></div><img alt="三种材料的逐月自然因素报告数；铁管15份均在11月至次年3月，钢管8份在这段时间、9份在其余月份，塑料分别为2份与8份。月份图只保留柱形，无日期散点。" src="figures/p332_natural_context.png"/><figcaption>2010至2024年三类材料主管道及主管道阀的42份自然因素报告。上方按月计数，三图使用相同份数尺度，深红为其中伴随死亡或因伤住院至少一晚的报告。下方按固定月份合并：11月至次年3月与4至10月，铁管分别15与0份、钢8与9份、塑料2与8份。每份报告只计一次。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/p332_natural_context.png">下载 PNG</a><a download="" href="figures/p332_natural_context.pdf">下载 PDF</a><a download="" href="figures/p332_natural_context.svg">下载 SVG</a><a download="" href="data/p332_natural_month_counts.csv">图中数据 1</a><a download="" href="data/p332_season_context.csv">图中数据 2</a></div></figure>
+<p id="paragraph-11">自然因素原案还提供了具体检查线索。2014年的一份报告记录现场冻土，填报者认为断裂可能与冻胀有关；2015年的一份报告记载管道压在旧砖基础上，填报原因为土壤沉降。结合季节分布、相似事故群与这些原案，企业检查现存铁管时，应复核当地冻土、沉降和管道支撑条件，并对照安装与维修记录。</p>
 </section><section class="article-section" id="section-3"><h2>2.3 管龄、管径与压力的设施分组</h2>
-<p id="paragraph-14">季节分析补充了铁管的地面条件线索；企业为铁管、钢管和塑料管选择历史参照时，还需确认设施规格是否相近。同为钢管、使用年数接近，管径和正常运行压力仍可能相差很大。本节用管龄、管径和正常压力共同分组，检查材料名称之外还应核实哪些设施记录。</p>
-<p id="paragraph-15">2010至2024年三类材料的693份报告中，623份管龄已知；排除两份缺少管径的阀门报告后，得到621份三项资料完整的主管道报告。K-means通过“就近归组—更新中心”的重复计算，寻找条件相近的组。管径和压力先作对数变换，缩小大值间距；三项输入再统一尺度，避免单位大小主导分组。材料与伤亡留到分组后比较。</p>
-<figure class="figure" data-review="true" id="figure-physical_context"><div class="figure-top"><span class="figure-kicker">图 8</span><h3>同为钢管、相近管龄，设施的管径与压力仍有差别</h3></div><img alt="全部材料621份真实报告及三个冻结归组中心；另一面板仅比较三组钢管中位数，钢管份数为84、197、19。" src="figures/p332_physical_context.png"/><figcaption>三项资料完整的621份主管道报告。左侧位置表示管径与正常压力，圆面积为管龄，零管龄用叉号；星号为三种材料共同归组所用的中心。右侧分别列各组钢管子集的中位数，份数为84、197、19。两轴按log1p间距显示，刻度保留原单位；中心计算与标准化方法见资料说明。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/p332_physical_context.png">下载 PNG</a><a download="" href="figures/p332_physical_context.pdf">下载 PDF</a><a download="" href="figures/p332_physical_context.svg">下载 SVG</a><a download="" href="data/p329_physical_physical_context_points.csv">图中数据 1</a><a download="" href="data/p329_physical_physical_context_centers.csv">图中数据 2</a><a download="" href="data/p329_physical_physical_context_steel_medians.csv">图中数据 3</a></div></figure>
-<p id="paragraph-16">图 8左侧每个点是一份真实报告，位置表示管径和压力，圆面积表示管龄；星号标出铁、钢、塑料共同分组得到的中心。右侧列出各组钢管的管龄、管径和正常压力中位数。三组钢管的管龄中位数都约52年，但管径与正常压力明显不同。同材料、相近管龄的设施，实际规格仍有明显差别。<a href="data/p322_factors_physical_group_profiles_verified.csv">原单位分组画像</a></p>
-<p id="paragraph-17">因此，企业以材料和管龄寻找相似事故时，还需核实管径与正常运行压力，进一步区分实际设施条件。<a href="#physical-method">三个输入与完整分组方法</a></p>
+<p id="paragraph-12">选择相似事故作为检查参照，需要了解设施的实际规格。同一种材料、使用年数接近的管道，管径和压力仍可能相差很大。本节采用服役年龄、管径和第一章得到的共同压力进行K-means聚类，研究材料名称之外还有哪些设施差别。</p>
+<p id="paragraph-13">分析采用三项资料完整的621份主管道报告。管径取对数后，年龄、管径和共同压力各自统一尺度，再重复“就近归组—更新中心”。比较2至8组的结果，三组的平均轮廓系数最高，本节采用三组描述设施条件。材料与伤亡均留到分组后查看。</p>
+<figure class="figure" data-review="true" id="figure-physical_context"><div class="figure-top"><span class="figure-kicker">图 9</span><h3>同为钢管、年龄接近，管径和压力仍相差明显</h3></div><img alt="左侧621份真实设施记录与三个中心，右侧三组钢管原单位画像。钢管年龄中位数50.5、53、52年，管径2.375、8、5英寸，正常压力50、122.5、0.31 psig。" src="figures/p347_physical_clusters.png"/><figcaption>621份完整主管道资料共同拟合的K-means，输入为服役年龄、管径与共同压力。左图保留全部真实报告，圆面积为年龄、零年龄用叉号，颜色为336、229、56份三组，星号为实际组中心。横轴管径以英寸标注、间距按ln（1＋管径）；纵轴为共同压力得分，无量纲。右图仅比较各组钢管的原单位中位数，管径以英寸、正常压力以psig计，两轴间距均取ln（1＋原值）。同位置点重合保留，右图年龄标签为钢管子集的中位数。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/p347_physical_clusters.png">下载 PNG</a><a download="" href="figures/p347_physical_clusters.pdf">下载 PDF</a><a download="" href="figures/p347_physical_clusters.svg">下载 SVG</a><a download="" href="data/p347_physical_points.csv">图中数据 1</a><a download="" href="data/p347_physical_centers.csv">图中数据 2</a><a download="" href="data/p347_physical_profiles.csv">图中数据 3</a><a download="" href="data/p347_physical_k_selection.csv">图中数据 4</a></div></figure>
+<p id="paragraph-14">图 9左侧保留全部621份真实报告及三个组中心。较年轻／小口径组以塑料为主，高龄／低压组以铁管为主，钢管则跨越三组。右侧进一步比较同为钢管的设施：三组年龄中位数均约51至53年，但管径与正常压力在图上明显分开，正常压力中位数从0.31跨至122.5 psig。相近的钢管年龄，对应着明显不同的规格与压力。</p>
+<p id="paragraph-15">采用共同压力后，主要分组结构与只用正常压力的参照方案接近。因此，企业整理相似事故或核对设施条件时，应同时收集年龄、管径与压力；仅凭材料名称和使用年数，仍会合并实际条件差别很大的设施。<a href="data/p347_physical_profiles.csv">原单位画像与输入对照</a></p>
 </section><section class="article-section" id="section-4"><h2>2.4 检查与人员保护的结论</h2>
-<p id="paragraph-18">本章将第一章的类别差异落实到三类具体工作：施工损伤复盘要继续追踪停气、旁通与修漏阶段；铁管检查要结合冬季记录复核地面与支撑条件；选择历史参照要同时核实管龄、管径和正常压力。企业可以据此补齐事故复盘和设施清单中的关键信息，再结合当前泄漏、维修及现场测量安排检查与人员保护。</p>
+<p id="paragraph-16">施工损伤后的人员保护，应延续到查漏、停气、旁通和修漏任务；现存铁管的环境检查，应结合冬季记录复核冻土、沉降与支撑条件；选择相似设施作参照，应同时核实年龄、管径和压力。企业可以将这些线索与当地泄漏、维修及现场测量记录结合，确定需要进一步检查的设施与需要重点保护的作业阶段。</p>
 </section><details class="technical" id="methods"><summary>资料与计算说明</summary>
-<p id="paragraph-19">分析单位是一份事故报告，伤亡标记表示整起事故有死亡或住院至少一晚的伤害；报告数不等于伤者人数。逐份核对五类人员人数之和与总死亡、住院人数相同。公众和工作人员等的报告标记可以重叠。事故表的伤亡结局覆盖整起事故，人员受伤时的具体任务由原案另行核对。<a href="https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2023-12/Current_GD_Incident_Instructions_PHMSA%20F%207100.1_2023-09%20and%20Beyond.pdf">PHMSA填报说明</a> · <a href="data/p322_factors_field_timing.csv">字段及可知时点</a></p>
-<div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表S3．管龄、管径与正常压力的资料范围及用途。安装年份已知与三项物理资料完整分别统计。来源：2010至2024年三材料主管道及阀报告。</caption>
+<p id="paragraph-17">分析单位为一份事故报告。伤亡表示整起事故至少一人死亡，或因伤入院并至少住一晚；多人伤亡仍计一份。受伤者的任务和事件先后，由事故经过核对。<a href="https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2023-12/Current_GD_Incident_Instructions_PHMSA%20F%207100.1_2023-09%20and%20Beyond.pdf">PHMSA填报说明</a></p>
+<div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表S3．表．本章各专题的比较范围。事故发生于2010至2024年；伤亡指至少一人死亡或因伤住院至少一晚，同一报告计一份。来源：PHMSA事故资料及本研究整理。</caption>
 <thead>
 <tr>
-<th>对照范围</th>
-<th>报告数与用途</th>
+<th>比较用途</th>
+<th>范围与数量</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>锁定全库</td>
-<td>1,550份、369份伤亡，用于字段、人员定义和时间覆盖核对</td>
+<td>材料、原因与设施条件</td>
+<td>2010至2024年，主管道或主管道阀，铁／钢／塑料，共693份、141份伤亡</td>
 </tr>
 <tr>
-<td>原始部件为MAIN或SERVICE</td>
-<td>967份、174个运营商，用于部件与场地比较；不把阀门并入这两种部件</td>
+<td>点燃与处置伤害</td>
+<td>上述范围中的钢塑开挖391份，41份伴随伤亡</td>
 </tr>
 <tr>
-<td>发生年2010—2024、MAIN或MAIN VALVE、钢／塑料／铸锻铁</td>
-<td>693份、141份伤亡、141个运营商，用于材料原因、季节和设施条件比较</td>
+<td>季节相似群</td>
+<td>上述范围内全部42份自然因素报告，均为主管道；15铁、17钢、10塑料</td>
 </tr>
 <tr>
-<td>上述范围内钢塑开挖</td>
-<td>391份，其中钢196、塑料195；共同正常压力范围为287份</td>
-</tr>
-<tr>
-<td>三项物理资料完整</td>
-<td>621份、125份伤亡；未插补安装年未知的70份和主管阀门管径空白的2份</td>
+<td>设施K-means</td>
+<td>年龄、管径、共同压力完整的621份主管道，125份伴随伤亡</td>
 </tr>
 </tbody>
 </table></div>
-<p id="paragraph-20">上述比较均以已报告事故为研究对象。没有按季节或设施条件匹配的在用管网暴露量，也没有未发生事故的设施对照，不能估计全网事故发生率或每次维修的伤害概率。</p>
-<h3>部件、场地与人员</h3>
-<figure class="figure" data-review="true" id="figure-locations"><div class="figure-top"><span class="figure-kicker">图 S11</span><h3>公共地点较多涉及工作人员，私人地点较多涉及公众</h3></div><img alt="公共地点较多涉及工作人员，私人地点较多涉及公众。公共和私人地点各并列进户管、主管道。圆点为涉及公众伤亡的报告比例，菱形为涉及工作人员等伤亡的报告比例；同一报告可涉及两类人员。比例按相应场地、部件的全部报告数计算。本图显示967份主管道与进户管报告中的公共、私人地点661份，其余场地306份见完整数据。" src="figures/a1_ch2_locations.png"/><figcaption>公共和私人地点各并列进户管、主管道。圆点为涉及公众伤亡的报告比例，菱形为涉及工作人员等伤亡的报告比例；同一报告可涉及两类人员。比例按相应场地、部件的全部报告数计算。本图显示967份主管道与进户管报告中的公共、私人地点661份，其余场地306份见完整数据。公共主管道、公共进户管、私人主管道、私人进户管分别有1、1、4、5份报告同时涉及两类人员。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch2_locations.png">下载 PNG</a><a download="" href="figures/a1_ch2_locations.pdf">下载 PDF</a><a download="" href="figures/a1_ch2_locations.svg">下载 SVG</a><a download="" href="data/a1_8c507b_locations_plotted_four_groups.csv">图中数据 1</a><a download="" href="data/a1_3df619_locations_all_four_sites.csv">图中数据 2</a></div></figure>
-<p id="paragraph-21">公共与私人地点分别比较MAIN和SERVICE，报告公众、工作人员等及两类重叠的计数。工作人员等是EMP、CONTR、ER、WORKER的并集，不简称为员工。公共进户管与主管道的整报告伤亡比例差为26.3个百分点，私人地点为−1.1个百分点；两个地点差值相减为27.3个百分点。既有分析按全部174个运营商共同重抽样5,000次，seed=202611061，95%探索性百分位区间为3.6至51.2个百分点。公共地点观察到的工作人员贡献较大，但“工作人员贡献减公众贡献”的区间跨零，不将观察排序写成已确立的总体排序。<a href="data/p322_source_person_contributions_findings.md">既有共同重抽样结果</a></p>
-<p id="paragraph-22">材料核对限定为2021年及以前收到的全部塑料MAIN记录：私人公众伤亡12／35，公共9／136。原类别聚类用于发现比较入口，正文对照没有只挑选某一组成员。类别K-means按部件、材料、地点、地区等级独热编码，统一除以√8使四字段等权；早期1,286份形成中心，后期264份分配到固定中心。候选2—8组，每组至少65份早期报告，按早期平均轮廓系数选出8组，n_init=50、max_iter=500、seed=20261107。伤亡不参加编码、选组或拟合。实际联合属性与逐项众数分开，不能把组内典型属性拼成每份记录都满足的条件。场地是释放设施所在地点的报告分类，不是伤者室内外位置；这些对照也不识别场地对伤害的因果效应。<a href="data/p322_source_discovery_course_frozen_cluster_centers.json">原逐份类别分组与固定参数</a></p>
-<h3>主要原因分类与其他作业伤害</h3>
-<p id="paragraph-23">PHMSA主要原因是调查后填写的事故分类。“开挖损坏”涵盖挖掘、钻孔等活动造成的损伤，包括施工当时受损与旧施工损伤后的失效；“错误操作”涵盖运行、维护和维修中的操作问题。分类描述事故归因，损伤者身份和受伤任务由其他字段及叙述补充。<a href="https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2023-12/Current_GD_Incident_Instructions_PHMSA%20F%207100.1_2023-09%20and%20Beyond.pdf">原因分类说明，第33至37页</a></p>
-<figure class="figure" data-review="true" id="figure-material_causes"><div class="figure-top"><span class="figure-kicker">图 S12</span><h3>三种材料的全部事故原因与伤亡构成</h3></div><div id="material-causes"></div><figcaption>每行对应一种PHMSA主要原因，每列对应一种材料。圆面积与该格全部报告数成正比，深红扇形表示伤亡部分，浅青表示其余部分。文字为伤亡份数／该格全部份数及伤亡比例；塑料腐蚀格为0份报告，比例留空。范围为2010—2024年三种材料的主管道及主管道阀，共693份报告，其中141份伴随死亡或住院至少一晚的伤害。同一报告只归入一个主要原因类别。来源：PHMSA事故资料。<a href="data/material_cause_counts.csv">全部24格计数</a>。</figcaption><div class="figure-actions"></div></figure>
-<p id="paragraph-24">钢管22份错误操作伤亡报告均涉及员工或承包商，其中五份未记录点燃，原案记有压力释放、堵头或碎屑伤人。部分案件的所报材料是原钢管，受伤发生于连接塑料替换段时。图中的主要原因分类与正文391份钢塑开挖专题分别解释，具体过程保留在<a href="data/p322_source_excavation_review_findings.md">已审读的原案</a>。</p>
-<h3>开挖、规格构成与原案时序</h3>
-<p id="paragraph-25">391份钢塑开挖报告按材料、整报告点燃标记和整报告伤亡交叉计数。Sankey是字段构成图，不表示每份报告均已核实点燃先于伤害。共同点燃构成采用合并样本的120／391点燃、271／391未点燃份额，再分别乘各材料在两个状态中的伤亡比例后求和。塑料减钢的原始伤亡比例差为14.9个百分点，共同构成差为2.8个百分点。这是构成重算，既未建立点燃的因果中介模型，也未估计更换材料或控制点火的干预效果。物理原理和具体伤害机制须另由过程证据支持，算法不补出原案没有记载的动作。<a href="data/p322_factors_ignition_composition_accounting.csv">复算表</a></p>
-<p id="paragraph-26">规格对照保留正常表压1＜pressure≤60 psig，共287份，钢101、塑料186。名义管径分为≤2、＞2且≤4、＞4英寸，合并权重固定为83／287、89／287、115／287。按各材料各档点燃比例重算后，点燃差由36.8缩至21.2个百分点。既有分析在88个运营商内保留同一抽样权重，重复10,000次，seed=5021108；三档全部抽样均有有效单元，差值95%探索区间为11.6至31.7个百分点。原四档方案有486次空单元抽样，保留为审计记录，不用其略不同结果替换三档正文。重加权没有逐条匹配压力，也不能消除未测量的作业和现场差别。<a href="data/p322_factors_diameter_pressure_ignition_cells.csv">三档原计数</a> · <a href="data/p322_factors_diameter_composition_verified.json">核对后的既有区间</a></p>
-<figure class="figure" data-review="true" id="figure-pressure_diameter"><div class="figure-top"><span class="figure-kicker">图 S13</span><h3>按共同管径构成比较后，钢与塑料的点燃比例差缩小</h3></div><img alt="三步依次显示管径份额、六个固定档内点燃比例、重新加权结果。小管径档点燃比例较高，钢管其份额13.9%、塑料37.1%，共同采用28.9%。钢管汇总点燃比例从15.8%变25.9%，塑料从52.7%变47.1%，差由36.8缩至21.2个百分点。" src="figures/a1_ch2_pressure_diameter.png"/><figcaption>正常运行压力大于1且不超过60 psig的287份开挖报告，包括钢管101份、塑料管186份。此图比较燃气点燃，前一桑基图另列点燃记录与伤亡结果的联合分布。左图比较两种材料原有的管径组成；中图列出三个管径档各自的点燃比例与点燃报告数／该档全部报告数；右图比较采用原管径份额和共同份额计算的汇总比例。共同份额来自287份报告的合计管径组成，依次为28.9%、31.0%、40.1%，各材料在每档内的点燃比例保持原值。区间按88家运营商共同重抽样10,000次计算，共同管径份额固定。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch2_pressure_diameter.png">下载 PNG</a><a download="" href="figures/a1_ch2_pressure_diameter.pdf">下载 PDF</a><a download="" href="figures/a1_ch2_pressure_diameter.svg">下载 SVG</a><a download="" href="data/a1_3648e9_pressure_diameter_cells.csv">图中数据 1</a><a download="" href="data/a1_1f34d2_comparison.json">图中数据 2</a></div></figure>
-<p id="paragraph-27">原案机制沿用已完成的57份审读：塑料开挖伤亡35份、钢管错误操作伤亡22份，其中55份有可用事故经过；另两份分别缺所引用附件、仅有补报说明。明确连接第三方先损伤与运营商后续作业伤害的六例，与仅有抢修场景的两例分开。既有109条引句已逐条匹配原始TXT，本轮另核对12份代表性时序及其12条支持原句。它们用于确认“谁在什么任务中受伤”，不将员工身份、最终原因或未知顺序自动编码成作业阶段。<a href="data/p322_source_excavation_review_findings.md">完整既有审读</a> · <a href="data/p322_factors_case_timeline.csv">本轮时序与未知项</a></p>
-<p id="paragraph-28"><a id="season-method"></a></p>
-<h3>三种材料共同参与的日期聚类</h3>
-<p id="paragraph-29">研究范围为2010至2024年三类材料主管道及主管道阀693份报告，按原主要原因字段NATURAL FORCE DAMAGE提取全部42份，铁15、钢17、塑料10。所有材料共同拟合，材料、原因细项、伤亡与冬季标签用于分组后的解释。参考日历采用2000闰年以保留2月29日，日序<i>t</i>取1至366；各年相同月日对应同一位置。</p>
-<p id="paragraph-30">θ＝2π(<i>t</i>−1)／366，<i>x</i>＝sinθ，<i>y</i>＝cosθ。实际DBSCAN输入为这两个坐标，采用欧氏距离，半径为<i>r</i><sub>w</sub>＝2sin(π<i>w</i>／366)，最低3份含自身。两轴来自同一个季节日期变量；图形为日期表示，地理位置没有参加分组。材料用点型区分、归组用颜色区分，重复月日原位重合。</p>
-<p id="paragraph-31">两周与一个月沿用既有参数复查中的14天和31天，分别展示，不依据想得到的材料结论选择“最优”半径。14天得到25、9、5份三组与3份稀疏点；25份组从12月23日至4月9日，铁14、钢9、塑料2。31天则42份全部同组。组可通过邻近记录接续，整体跨度可以超过邻域半径。完整复查保留14、31、45天与最低3、4、5份的9种设置。<a href="data/p332_sensitivity.csv">完整参数对照</a> · <a href="data/p332_cluster_summary.csv">各组构成与日期</a></p>
-<p id="paragraph-32">核对圆周日差<i>d</i>＝min(｜<i>t</i><sub>i</sub>−<i>t</i><sub>j</sub>｜,366−｜<i>t</i><sub>i</sub>−<i>t</i><sub>j</sub>｜)与二维弦长<i>D</i>的关系为<i>D</i>＝2sin(π<i>d</i>／366)。全部1,764个有序记录对的邻接、DBSCAN标签和核心点在两种实现中一致。浮点比较加入1e−12绝对容差，以计入恰在14或31天边界上的记录；输入按日序、报告编号排序，无随机抽样。<a href="data/p332_points.csv">坐标、标签与核心点</a> · <a href="data/p332_receipt.json">环境、公式与核验</a></p>
-<p id="paragraph-33">本轮在既有月份观察后，用同一批报告做合并探索。密集段描述时间分布，冻土、沉降与支撑条件由原案另行核对。固定冬季比较仍采用11月至次年3月，铁管自然因素为15／37，其余月份0／16；合并聚类的日期范围用于解释组别，与固定季节比较各有用途。3份稀疏点全部保留，其中铁管与塑料各有1份伴随伤亡。<a href="data/p332_all_settings.csv">全部设置的逐份记录</a> · <a href="data/p332_season_counts.csv">原季节计数</a></p>
-<p id="paragraph-34">下载<a href="data/p332_calendar_pool.py">Python脚本</a>与<a href="data/p332_season_input_693.csv">693份复算输入</a>，可运行：</p>
-<pre><code class="language-text">python p332_calendar_pool.py --input p332_season_input_693.csv --output season_results
+<p id="paragraph-18">比较描述已报告事故中的构成与相似条件。季节分布和设施分组提供环境及信息采集线索；相应的全网事故率还需匹配各季节、各设施条件的在用管网规模。</p>
+<h3>点燃构成、条件比例与处置时序</h3>
+<p id="paragraph-19">主要原因沿用PHMSA的调查分类。开挖损坏涵盖挖掘、钻孔等造成的当时损伤及旧施工损伤后的失效；错误操作涵盖运行、维护与维修的操作问题。损伤者身份和受伤任务由人员字段及叙述补充。<a href="https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2023-12/Current_GD_Incident_Instructions_PHMSA%20F%207100.1_2023-09%20and%20Beyond.pdf">原因分类，第33至37页</a></p>
+<p id="paragraph-20">共同点燃份额为120／391，其余报告份额为271／391。钢管重算为30.7%×30.0%＋69.3%×0.0%＝9.2%；塑料管为30.7%×32.0%＋69.3%×3.2%≈12.0%，计算使用未四舍五入的比例。重算固定各材料在两种点燃状态内的观察比例，用于辨认汇总构成的影响。点燃与伤亡是整报告字段，因果过程及保护措施效果需要具体时序和额外对照。</p>
+<p id="paragraph-21"><a href="data/p347_excavation_records.csv">391份逐份输入</a> · <a href="data/p347_excavation_conditional_counts.csv">四个条件单元</a> · <a href="data/p347_excavation_composition.csv">构成比较</a> · <a href="data/p322_factors_case_timeline.csv">原案时序</a></p>
+<p id="paragraph-22"><a id="season-method"></a></p>
+<h3>月日、场地与两项压力的DBSCAN距离</h3>
+<p id="paragraph-23">四个原始字段为LOCAL_DATETIME、LOCATION_TYPE、NORMAL_PSIG、MOP_PSIG。对两份报告<i>i</i>、<i>j</i>，定义：</p>
+<p id="paragraph-24"><math aria-label="D i j 等于季节距离平方、场地差异及两项压力差平方加权和的平方根" display="block" id="season-distance" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>D</mi><mo stretchy="false">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt><mrow><msubsup><mi>T</mi><mrow><mi>i</mi><mi>j</mi></mrow><mn>2</mn></msubsup><mo>+</mo><mn>0.2</mn><msub><mi>S</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>+</mo><mn>0.1</mn><msup><mrow><mo stretchy="false">(</mo><msub><mi>P</mi><mi>i</mi></msub><mo>−</mo><msub><mi>P</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>0.1</mn><msup><mrow><mo stretchy="false">(</mo><msub><mi>Q</mi><mi>i</mi></msub><mo>−</mo><msub><mi>Q</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow></math></p>
+<p id="paragraph-25"><i>T</i>为366天参考日历上的最短跨年月日差除以45天。场地相同则<i>S</i>＝0，相异则<i>S</i>＝1。<i>P</i>为ln（1＋正常压力）的标准化值，<i>Q</i>为ln（1＋允许压力）的标准化值；均值和总体标准差取自全部1,550份报告。各项统一为无量纲，场地与压力用于区分同一季节内的设施情境。</p>
+<p id="paragraph-26">邻域阈值eps＝1，最低4份含自身；邻域数量达到4的位置为核心点，核心点相连并吸收邻域内的边缘点，其余记为未成群。分组具有连接性，整个群的跨度可以超过单个邻域。算法使用完整四字段距离；图上显示月日与正常压力。横轴从8月排至次年7月，使跨年的冬季连续；纵轴间距取ln（1＋正常压力），刻度保留psig。<a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html">DBSCAN方法说明</a></p>
+<p id="paragraph-27">距离设置依据已有月份观察，用于探索相似事故。冬季群21份均为核心点；另外两组分别12份、7份，各含一个边缘点。冬季群细项为温度作用11份、地面移动6份、暴雨／洪水2份、其他自然因素2份。</p>
+<p id="paragraph-28">保持42份和参数相同，加入经纬度地区项时，冬季报告分为13份、4份两个地域群；去掉地区项后，跨地区的相似冬季报告共同形成21份群，更贴合本节的季节比较目的。<a href="data/p347_dbscan_geography_control.json">地理项对照</a></p>
+<p id="paragraph-29">阈值改为0.8时得到11、10、8、7份四群，6份未成群；改为1.2时，42份全部相连。在范围更广的106份自然因素报告中，当前阈值也会连成跨月的大群。因此，本节按既定42份主管道范围描述相似事故，结合原月份全貌和具体归因解释冬季线索。<a href="data/p347_dbscan_main_42_points.csv">逐份组别、核心及近邻数量</a> · <a href="data/p347_dbscan_pair_terms.csv">距离项与邻接</a> · <a href="data/p347_dbscan_sensitivity.csv">阈值对照</a> · <a href="data/p347_dbscan_profiles.json">各群构成</a></p>
+<p id="paragraph-30">原月份图按发生月统计，冬季固定为11月至次年3月；原报告中的冻土、沉降和支撑记录用于解释环境过程。季节图覆盖全部42份，保留了聚类未成群报告。<a href="data/p332_natural_month_counts.csv">原月份计数</a></p>
+<p id="paragraph-31"><a id="physical-method"></a></p>
+<h3>年龄、管径与共同压力的K-means方法</h3>
+<p id="paragraph-32">693份报告中，623份安装年份已知，两份阀门报告缺少管径，其余621份主管道资料完整。服役年龄AGE_YEARS为发生年减安装年，保留有限且非负的值；管径PIPE_DIAMETER须大于零；共同压力PRESSURE_PC1采用第一章三项压力PCA的已保存得分。管径取ln（1＋原值），共同压力得分直接使用，再以全部621份各自的均值与总体标准差统一三个输入的尺度。</p>
+<p id="paragraph-33">全部621份共同拟合描述性分组。固定seed＝20261109、n_init＝50、max_iter＝500、algorithm＝lloyd，比较k＝2至8，按平均轮廓系数最高选择k＝3。轮廓系数比较组内接近程度和最近其他组的距离，越大表示本次分组越清晰。<a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html">K-means说明</a> · <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html">轮廓系数说明</a></p>
+<p id="paragraph-34">共同压力方案三组为336、229、56份；正常压力参照方案以ln（1＋正常压力）替代共同压力，其余记录、变换、参数与候选组数相同。两套均选三组，平均轮廓系数为0.346与0.343，分组一致性ARI＝0.958，说明主要设施结构得到保留。这些量评价设施分组；人员伤亡预测另需监督模型及回测。</p>
+<p id="paragraph-35">左图星号来自模型中心：在标准化空间求均值，再还原管径变换后定位。右图是各组钢管的原单位中位数，用于解释设施差异。年龄以圆面积表示，零年龄用叉号；同位置记录原位重合，全部保留。图中共同压力为无量纲得分，正常压力单位为psig。</p>
+<p id="paragraph-36"><a href="data/p347_physical_points.csv">621份输入与分组</a> · <a href="data/p347_physical_centers.csv">实际组中心</a> · <a href="data/p347_physical_profiles.csv">各材料原单位画像</a> · <a href="data/p347_physical_k_selection.csv">2至8组比较</a> · <a href="data/p347_physical_parameters.json">完整参数</a></p>
+<h3>数据与复算</h3>
+<p id="paragraph-37">本章从第一章合并后的分析表及原始量对照表按报告编号连接计算。DBSCAN使用上述四个原始字段，K-means使用年龄、管径与共同压力。下载<a href="data/p347_chapter2_reproducible.zip">复算数据与脚本</a>，解压后运行：</p>
+<pre><code class="language-text">python research/analysis/recalculate_chapter2_eda.py
 </code></pre>
-<h3>冬季铁管的两种结局</h3>
-<p id="paragraph-35">冬季固定为11月至次年3月，以LOCAL_DATETIME的发生月份定义；不搜索有利月份边界。自然因素与整报告伤亡分别计算，不先限定15份自然因素再推断全部铁管。铁管冬季自然因素15／37、其余月0／16；伤亡为16／37与6／16。铁管自然因素15份来自12个运营商，逐个去除运营商后构成差仍为37.1—45.5个百分点。伤亡差5.7个百分点的运营商重抽样95%区间为−27.7至38.0个百分点。P320采用2,000次共同重抽样、seed=320；Wilson区间仅作为独立报告假设下的参考。所有区间为探索性，未作多重比较校正。</p>
-<p id="paragraph-36">P320固定L2逻辑回归比较基础信息、加入冬季、再加入冬季×材料。基础信息为材料、发生年份、地点和MAIN／MAIN VALVE；C=1、solver=lbfgs、max_iter=2,000、tol=1e−8、无类别加权、seed=320。发生年只在训练数据标准化，地点字典也只在训练数据形成。五折GroupKFold以运营商分组、shuffle=True、random_state=320，三种输入及两种结局使用相同折；没有按效果调参。下表复用已完成结果，log loss越低越好，AP越高越好。</p>
-<div aria-label="正文表格" class="table-scroll" role="region" tabindex="0"><table><caption>表S4．季节信息对自然因素及伤亡判断的检验。运营商分组与后期评价分开报告；log loss越低越好，AP越高越好。来源：保存的固定回归实验。</caption>
-<thead>
-<tr>
-<th>输入</th>
-<th style="text-align:right">自然因素：运营商分组 log loss／AP</th>
-<th style="text-align:right">自然因素：后期 log loss／AP</th>
-<th style="text-align:right">伤亡：运营商分组 log loss／AP</th>
-<th style="text-align:right">伤亡：后期 log loss／AP</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>基础</td>
-<td style="text-align:right">0.2079／0.2629</td>
-<td style="text-align:right">0.1854／0.2499</td>
-<td style="text-align:right">0.4896／0.3004</td>
-<td style="text-align:right">0.3894／0.2781</td>
-</tr>
-<tr>
-<td>加冬季</td>
-<td style="text-align:right">0.2080／0.2859</td>
-<td style="text-align:right">0.1846／0.2487</td>
-<td style="text-align:right">0.4900／0.3009</td>
-<td style="text-align:right">0.3887／0.3052</td>
-</tr>
-<tr>
-<td>加冬季×材料</td>
-<td style="text-align:right">0.2016／0.2865</td>
-<td style="text-align:right">0.1829／0.2515</td>
-<td style="text-align:right">0.4927／0.2957</td>
-<td style="text-align:right">0.3885／0.3205</td>
-</tr>
-</tbody>
-</table></div>
-<p id="paragraph-37">这里的后期按<strong>发生年</strong>切分，2010—2021年586份训练，2022—2024年107份检验，后期只有5份自然因素、15份伤亡、6份铁管；52个后期运营商中44个在训练期出现。这里按事故发生年验证季节线索，区别于收件年分期。季节对自然因素识别有小幅增量，伤亡排序却未同时通过时期和运营商分组检验。季节线索用于复核自然因素及环境条件，整报告伤亡的季节差异仍未确定。零自然因素的非冬季16份不表示该季节不会发生自然因素事故。<a href="data/p322_source_factors_run_receipt.json">模型逐份结果与参数</a> · <a href="data/p322_source_factors_clock_scope_comparison.csv">两种分期核对</a></p>
-<h3>管龄、管径与正常压力的分组方法</h3>
-<p id="paragraph-38">管龄为发生年减安装年，接受有限且非负值；管径须大于零，正常压力非负，明确零值保留。管径和压力先取log1p，再与管龄一起按早期均值、标准差标准化。按收件年分出早期521份与后期100份；仅在早期比较k=2—8，KMeans采用k-means++、n_init=50、max_iter=500、algorithm=lloyd、seed=20261109，以平均轮廓系数最大者为准、同分取较少组。三组0.3293与四组0.3239接近，三组只是本次便于描述的选择，不是唯一自然分类。</p>
-<p id="paragraph-39">材料、原因和伤亡不参加物理分组。后期只分配到冻结中心，本轮用原转换和中心逐份重建621份标签，全部与保存结果一致。三组全期计数322、241、58，钢管各组管龄中位数51.5、52、52年，管径与压力中位数明显不同。图的坐标是原物理量及原单位刻度，不是PCA分量；管龄为圆面积，重叠点不代表独立重复测量。<a href="data/p322_factors_physical_group_profiles_verified.csv">复核画像</a> · <a href="data/p322_source_clustering_protocol.json">原冻结方案</a></p>
-<p id="paragraph-40"><a id="physical-method"></a></p>
-<h3>聚类的实际分组与计算过程</h3>
-<p id="paragraph-41">部件、材料、地点和地区等级的类别聚类用于定位相似事故。下图保存实际归组与计算过程，正文的场地比较扩展到同部件、同材料的全部报告。</p>
-<figure class="figure promoted-figure" data-review="true" id="figure-categorical_clustering"><div class="figure-top"><span class="figure-kicker">图 S14</span><h3>按部件、材料、地点与地区等级形成八组事故</h3></div><img alt="每一点对应一份真实报告。左图横坐标为距本组固定中心的距离，越靠左表示四项类别条件越接近该组中心；上下错位仅防重叠，同距记录仍可重叠。圆点为2010—2021年收件的1,286份报告，空心三角为2022年起的264份报告。各组旁列早期主要条件及份数，各类别的份额分别计算。右图用20220028号塑料主管道报告比较八个固定中心，最短距离决定归组。四项资料等权编码，伤亡结果和人员身份用于分组后的比较。" src="figures/categorical_clustering.png"/><figcaption>每一点对应一份真实报告。左图横坐标为距本组固定中心的距离，越靠左表示四项类别条件越接近该组中心；上下错位仅防重叠，同距记录仍可重叠。圆点为2010—2021年收件的1,286份报告，空心三角为2022年起的264份报告。各组旁列早期主要条件及份数，各类别的份额分别计算。右图用20220028号塑料主管道报告比较八个固定中心，最短距离决定归组。四项资料等权编码，伤亡结果和人员身份用于分组后的比较。<span class="figure-scope">统计单位为报告份数。来源：<a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA固定事故资料</a>及本研究计算。</span></figcaption><div class="figure-actions"><a download="" href="figures/categorical_clustering.png">下载 PNG</a><a download="" href="figures/categorical_clustering.pdf">下载 PDF</a><a download="" href="figures/categorical_clustering.svg">下载 SVG</a><a download="" href="data/categorical_clustering_records.csv">计算数据 CSV</a></div></figure>
-<p id="paragraph-42">管龄、管径和正常运行压力参加物理聚类。图中同时显示实际三维输入、选组依据和固定中心归类；正文二维点图则以原单位说明设施条件。</p>
-<figure class="figure" data-review="true" id="figure-physical_clustering"><div class="figure-top"><span class="figure-kicker">图 S15</span><h3>管龄、管径与正常压力的实际分组过程</h3></div><img alt="真实三维输入坐标和固定中心，2至8组的实际候选分数，以及后期报告按最近中心归组的过程。" src="figures/a1_ch2_physical_clustering.png"/><figcaption>Matplotlib按实际模型输入绘制三维分布及组中心，并列早期候选组数和后期报告的归类示例。三轴是标准化的管龄、log1p管径、log1p压力。3组的早期平均轮廓系数为0.329，4组为0.324；按既定选择规则采用3组。后期示例20220003的管龄5年、管径4英寸、正常压力55 psig，与三中心距离1.015、1.875、3.641，归入较小管径组。早期521份确定尺度及中心，后期100份固定归类；中心用于计算距离，物理主图中的中位数用于描述设施。 <a href="https://datahub.transportation.gov/api/views/27nc-rsge/files/fba42a19-f78d-44c9-9a76-4bacfc15fba0?content=true">PHMSA事故资料</a></figcaption><div class="figure-actions"><a download="" href="figures/a1_ch2_physical_clustering.png">下载 PNG</a><a download="" href="figures/a1_ch2_physical_clustering.pdf">下载 PDF</a><a download="" href="figures/a1_ch2_physical_clustering.svg">下载 SVG</a><a download="" href="data/a1_2caf69_physical_k_selection.csv">图中数据 1</a><a download="" href="data/a1_a171a1_physical_frozen_parameters.json">图中数据 2</a></div></figure>
+<p id="paragraph-38"><a href="data/p347_run_receipt.json">运行记录及数据指纹</a>保存输入版本、样本量和计算环境。</p>
 </details></article>
-<nav class="continue-reading" aria-label="顺序阅读"><a href="index.html">← 回到第一章：管网背景与基础比较</a></nav>
+<nav class="continue-reading" aria-label="顺序阅读"><a href="index.html">← 回到第一章：Research objectives and descriptive analysis</a></nav>
 <aside class="review-guide"><p>选中文字，或点击章节、图表旁的“批注”，即可填写意见。确认后可通过自己的 GitHub 账号提交。</p><button id="general-review" class="text-button js-only" type="button">写一条批注</button><noscript><p class="noscript">JavaScript 未启用时显示 Matplotlib 静态图。悬停与批注需要 JavaScript。</p></noscript></aside>
 <footer class="site-footer"><p>CDT502 · PHMSA</p><p>2026-11-13</p></footer></main>
 <button id="selection-review" type="button" class="selection-review" hidden>批注所选文字</button>

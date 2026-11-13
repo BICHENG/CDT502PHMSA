@@ -1,0 +1,5 @@
+﻿material,ignited,reports,casualty_reports,proportion
+STEEL,False,176,0,0.0
+STEEL,True,20,6,0.3
+PLASTIC,False,95,3,0.031578947368421054
+PLASTIC,True,100,32,0.32

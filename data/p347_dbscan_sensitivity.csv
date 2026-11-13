@@ -1,0 +1,7 @@
+﻿scope,eps,min_samples,reports,groups,noise,group_sizes
+main_42,0.8,4,42,4,6,11;10;8;7
+main_42,1.0,4,42,3,2,21;12;7
+main_42,1.2,4,42,1,0,42
+all_natural_106,0.8,4,106,1,4,102
+all_natural_106,1.0,4,106,1,3,103
+all_natural_106,1.2,4,106,1,0,106
